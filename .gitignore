@@ -1,5 +1,6 @@
-# Firebase Configuration (GİZLİ!)
-firebase-config.js
+# Firebase Configuration (GİZLİ - sadece development için!)
+# NOT: Production için firebase-config.js commit edildi
+# firebase-config.js
 
 # Python
 __pycache__/
