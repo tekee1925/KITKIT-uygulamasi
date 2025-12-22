@@ -1,0 +1,1948 @@
+{
+  "questions": [
+    {
+      "passage": "",
+      "question": "She _______ to the gym every morning.",
+      "options": ["go", "goes", "going", "went", "gone"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular uses 'goes'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ my homework yesterday.",
+      "options": ["do", "does", "did", "done", "doing"],
+      "correctAnswer": 2,
+      "explanation": "Past simple tense for completed actions.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "They are _______ a movie right now.",
+      "options": ["watch", "watches", "watched", "watching", "to watch"],
+      "correctAnswer": 3,
+      "explanation": "Present continuous uses 'are + verb-ing'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Can you _______ me a favor?",
+      "options": ["make", "do", "give", "take", "have"],
+      "correctAnswer": 1,
+      "explanation": "'Do a favor' is a common phrase.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The book is _______ the table.",
+      "options": ["in", "on", "at", "by", "with"],
+      "correctAnswer": 1,
+      "explanation": "'On' is used for surfaces.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I usually wake up _______ 7 o'clock.",
+      "options": ["in", "on", "at", "by", "for"],
+      "correctAnswer": 2,
+      "explanation": "'At' is used with specific times.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "She is _______ than her sister.",
+      "options": ["tall", "taller", "tallest", "more tall", "most tall"],
+      "correctAnswer": 1,
+      "explanation": "Comparative form of 'tall' is 'taller'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "We _______ to Paris last summer.",
+      "options": ["go", "goes", "went", "gone", "going"],
+      "correctAnswer": 2,
+      "explanation": "Past simple for completed past actions.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "There _______ many people at the party.",
+      "options": ["is", "are", "was", "were", "be"],
+      "correctAnswer": 3,
+      "explanation": "'Were' for plural past.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I need _______ water.",
+      "options": ["some", "any", "a", "an", "the"],
+      "correctAnswer": 0,
+      "explanation": "'Some' is used in affirmative sentences.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He _______ like coffee.",
+      "options": ["don't", "doesn't", "isn't", "aren't", "not"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular negative.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "My birthday is _______ March.",
+      "options": ["in", "on", "at", "by", "for"],
+      "correctAnswer": 0,
+      "explanation": "'In' is used with months.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "She plays the piano very _______.",
+      "options": ["good", "well", "better", "best", "nice"],
+      "correctAnswer": 1,
+      "explanation": "Adverb form is 'well'.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "I _______ to school by bus.",
+      "options": ["go", "goes", "going", "went", "gone"],
+      "correctAnswer": 0,
+      "explanation": "First person present simple.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The weather is _______ today.",
+      "options": ["beauty", "beautiful", "beautifully", "beautify", "beauties"],
+      "correctAnswer": 1,
+      "explanation": "Adjective form is 'beautiful'.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "We _______ our homework now.",
+      "options": ["do", "does", "did", "are doing", "done"],
+      "correctAnswer": 3,
+      "explanation": "Present continuous for current actions.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She has _______ friends.",
+      "options": ["much", "many", "a lot", "lots", "few"],
+      "correctAnswer": 1,
+      "explanation": "'Many' is used with countable nouns.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ English for three years.",
+      "options": ["study", "studies", "studied", "have studied", "studying"],
+      "correctAnswer": 3,
+      "explanation": "Present perfect for duration.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The cat is sleeping _______ the sofa.",
+      "options": ["in", "on", "at", "under", "over"],
+      "correctAnswer": 1,
+      "explanation": "'On' for surfaces.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "Could you _______ the window, please?",
+      "options": ["open", "opens", "opened", "opening", "to open"],
+      "correctAnswer": 0,
+      "explanation": "Modal verb + base form.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "I am interested _______ learning Spanish.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 0,
+      "explanation": "'Interested in' is the correct phrase.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "She _______ to the market every Saturday.",
+      "options": ["go", "goes", "going", "went", "gone"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular present.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "This is _______ expensive than that one.",
+      "options": ["more", "most", "much", "many", "very"],
+      "correctAnswer": 0,
+      "explanation": "Comparative form uses 'more'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I don't have _______ money.",
+      "options": ["some", "any", "a", "an", "the"],
+      "correctAnswer": 1,
+      "explanation": "'Any' in negative sentences.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He _______ his homework every day.",
+      "options": ["do", "does", "did", "done", "doing"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "We are going _______ vacation next week.",
+      "options": ["in", "on", "at", "to", "for"],
+      "correctAnswer": 1,
+      "explanation": "'On vacation' is the correct phrase.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The children are playing _______ the garden.",
+      "options": ["in", "on", "at", "by", "with"],
+      "correctAnswer": 0,
+      "explanation": "'In' for enclosed spaces.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I _______ my keys yesterday.",
+      "options": ["lose", "loses", "lost", "losing", "have lost"],
+      "correctAnswer": 2,
+      "explanation": "Past simple for completed action.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She is _______ student in the class.",
+      "options": ["good", "better", "best", "the best", "well"],
+      "correctAnswer": 3,
+      "explanation": "Superlative with 'the'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ watching TV when you called.",
+      "options": ["am", "was", "were", "be", "been"],
+      "correctAnswer": 1,
+      "explanation": "Past continuous.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "There is _______ apple on the table.",
+      "options": ["a", "an", "the", "some", "any"],
+      "correctAnswer": 1,
+      "explanation": "'An' before vowel sound.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He drives _______ carefully.",
+      "options": ["very", "much", "many", "more", "most"],
+      "correctAnswer": 0,
+      "explanation": "'Very' modifies adverbs.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "I was born _______ 1995.",
+      "options": ["in", "on", "at", "by", "for"],
+      "correctAnswer": 0,
+      "explanation": "'In' with years.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "She _______ a doctor.",
+      "options": ["am", "is", "are", "be", "been"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular 'is'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "We _______ to the cinema last night.",
+      "options": ["go", "goes", "went", "gone", "going"],
+      "correctAnswer": 2,
+      "explanation": "Past simple.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I like _______ music.",
+      "options": ["listen", "listens", "listening", "listened", "to listen"],
+      "correctAnswer": 2,
+      "explanation": "'Like + gerund'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The shop opens _______ 9 AM.",
+      "options": ["in", "on", "at", "by", "for"],
+      "correctAnswer": 2,
+      "explanation": "'At' with specific times.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "They _______ in London.",
+      "options": ["live", "lives", "living", "lived", "to live"],
+      "correctAnswer": 0,
+      "explanation": "Plural form uses base verb.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I have _______ brother.",
+      "options": ["a", "an", "the", "some", "any"],
+      "correctAnswer": 0,
+      "explanation": "'A' before consonant sound.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She is good _______ mathematics.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 2,
+      "explanation": "'Good at' is the correct phrase.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "We _______ dinner at 7 PM.",
+      "options": ["have", "has", "having", "had", "to have"],
+      "correctAnswer": 0,
+      "explanation": "Plural subject uses 'have'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The meeting is _______ Monday.",
+      "options": ["in", "on", "at", "by", "for"],
+      "correctAnswer": 1,
+      "explanation": "'On' with days.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I _______ tired today.",
+      "options": ["am", "is", "are", "be", "been"],
+      "correctAnswer": 0,
+      "explanation": "First person 'am'.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She speaks English _______.",
+      "options": ["fluent", "fluently", "fluence", "fluency", "more fluent"],
+      "correctAnswer": 1,
+      "explanation": "Adverb form.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "They are _______ students.",
+      "options": ["a", "an", "the", "some", "any"],
+      "correctAnswer": 3,
+      "explanation": "'Some' for plural.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ see you tomorrow.",
+      "options": ["will", "would", "shall", "should", "might"],
+      "correctAnswer": 0,
+      "explanation": "'Will' for future.",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He lives _______ New York.",
+      "options": ["in", "on", "at", "by", "to"],
+      "correctAnswer": 0,
+      "explanation": "'In' for cities.",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The book is _______ interesting.",
+      "options": ["very", "much", "many", "more", "most"],
+      "correctAnswer": 0,
+      "explanation": "'Very' with adjectives.",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "With its unique geographical location straddling Europe and Asia, Turkey has a rich and complex history that has influenced its culture, politics, and identity. For centuries, it was the center of the vast Ottoman Empire. Following the empire's collapse after World War I, modern Turkey was founded in 1923 by Mustafa Kemal Atatürk.",
+      "question": "According to the passage, the establishment of modern Turkey was a direct result of _______.",
+      "options": [
+        "a series of reforms to modernize the country",
+        "the nation's contemporary challenges and triumphs",
+        "the collapse of the Ottoman Empire",
+        "the adoption of the Latin alphabet",
+        "its unique geographical location"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The passage states that 'Following the empire's collapse after World War I, modern Turkey was founded in 1923.'",
+      "level": "B2",
+      "topic": "Reading Comprehension"
+    },
+    {
+      "passage": "Climate change poses significant challenges to global agriculture. Rising temperatures and unpredictable weather patterns threaten crop yields worldwide. Scientists warn that without immediate action, food security could become a critical issue.",
+      "question": "The main concern expressed in the passage is _______.",
+      "options": [
+        "the cost of scientific research",
+        "threats to food production",
+        "weather prediction accuracy",
+        "agricultural technology",
+        "global temperature records"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The passage emphasizes that climate change threatens crop yields and food security.",
+      "level": "B1",
+      "topic": "Reading Comprehension"
+    },
+    {
+      "passage": "Artificial intelligence is transforming industries at an unprecedented rate. From healthcare to finance, AI systems are being deployed to enhance efficiency and accuracy. However, ethical concerns about data privacy and job displacement remain significant.",
+      "question": "According to the passage, AI technology _______.",
+      "options": [
+        "only benefits the healthcare sector",
+        "has no negative consequences",
+        "raises ethical questions",
+        "is limited to financial applications",
+        "reduces system efficiency"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The passage mentions 'ethical concerns about data privacy and job displacement.'",
+      "level": "C1",
+      "topic": "Reading Comprehension"
+    },
+    {
+      "passage": "Regular exercise offers numerous health benefits. It strengthens the cardiovascular system, improves mental health, and helps maintain a healthy weight. Experts recommend at least 30 minutes of moderate activity most days of the week.",
+      "question": "The passage suggests that regular exercise _______.",
+      "options": [
+        "is only good for weight loss",
+        "should be done every single day",
+        "provides multiple health advantages",
+        "requires intense physical activity",
+        "is primarily for mental health"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The passage lists 'numerous health benefits' including cardiovascular, mental health, and weight maintenance.",
+      "level": "A2",
+      "topic": "Reading Comprehension"
+    },
+    {
+      "passage": "",
+      "question": "The company decided to _______ the project due to budget constraints.",
+      "options": ["postpone", "enjoy", "celebrate", "ignore", "destroy"],
+      "correctAnswer": 0,
+      "explanation": "'Postpone' means to delay, which makes sense in the context of budget constraints.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "By the time you arrive, I _______ the report.",
+      "options": ["finish", "finished", "will have finished", "am finishing", "have finished"],
+      "correctAnswer": 2,
+      "explanation": "Future perfect tense is used for actions that will be completed before a specific time in the future.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She was so tired that she could _______ keep her eyes open.",
+      "options": ["nearly", "hardly", "almost", "quite", "very"],
+      "correctAnswer": 1,
+      "explanation": "'Hardly' means 'almost not,' which fits the context of being very tired.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The scientist's groundbreaking research _______ new possibilities in the field.",
+      "options": ["opened up", "closed down", "put off", "gave away", "took back"],
+      "correctAnswer": 0,
+      "explanation": "'Opened up' means to create or reveal new opportunities.",
+      "level": "C1",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "If I _______ about the meeting earlier, I would have prepared better.",
+      "options": ["know", "knew", "had known", "have known", "will know"],
+      "correctAnswer": 2,
+      "explanation": "Third conditional uses 'had + past participle' in the if-clause for hypothetical past situations.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The manager asked the team to _______ their efforts to meet the deadline.",
+      "options": ["reduce", "intensify", "abandon", "question", "forget"],
+      "correctAnswer": 1,
+      "explanation": "'Intensify' means to increase or strengthen, which is appropriate for meeting a deadline.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Despite _______ hard, she couldn't pass the exam.",
+      "options": ["study", "studied", "studying", "to study", "studies"],
+      "correctAnswer": 2,
+      "explanation": "After 'despite', we use a gerund (verb + -ing).",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The exhibition will _______ until the end of the month.",
+      "options": ["run", "walk", "jump", "fly", "swim"],
+      "correctAnswer": 0,
+      "explanation": "'Run' in this context means to continue or operate for a period of time.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Neither the students _______ the teacher was aware of the schedule change.",
+      "options": ["or", "and", "nor", "but", "so"],
+      "correctAnswer": 2,
+      "explanation": "'Neither...nor' is the correct correlative conjunction pair.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The new policy will come _______ effect next Monday.",
+      "options": ["into", "in", "on", "at", "by"],
+      "correctAnswer": 0,
+      "explanation": "The phrase is 'come into effect', meaning to become active or valid.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "The rise of social media has fundamentally altered how people communicate and share information. While it offers unprecedented connectivity, concerns about privacy, misinformation, and mental health impacts have emerged as significant challenges.",
+      "question": "According to the passage, social media _______.",
+      "options": [
+        "has only positive effects",
+        "is primarily used for business",
+        "presents both benefits and concerns",
+        "has no impact on communication",
+        "eliminates privacy issues"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The passage mentions benefits (connectivity) and concerns (privacy, misinformation, mental health).",
+      "level": "B2",
+      "topic": "Reading Comprehension"
+    },
+    {
+      "passage": "",
+      "question": "She managed to _______ a solution to the complex problem.",
+      "options": ["come up with", "come down with", "come across", "come along", "come through"],
+      "correctAnswer": 0,
+      "explanation": "'Come up with' means to think of or produce an idea or solution.",
+      "level": "C1",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "The project requires _______ attention to detail.",
+      "options": ["meticulous", "careless", "random", "casual", "lazy"],
+      "correctAnswer": 0,
+      "explanation": "'Meticulous' means showing great attention to detail, very careful and precise.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "I wish I _______ more time to spend with my family.",
+      "options": ["have", "had", "will have", "have had", "am having"],
+      "correctAnswer": 1,
+      "explanation": "After 'I wish' for present situations, we use past simple to express a wish.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "Renewable energy sources such as solar and wind power are becoming increasingly cost-effective. Many countries are investing heavily in these technologies to reduce carbon emissions and combat climate change.",
+      "question": "The main point of the passage is that renewable energy _______.",
+      "options": [
+        "is too expensive to implement",
+        "is gaining economic viability",
+        "only works in certain countries",
+        "increases carbon emissions",
+        "is not related to climate change"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The passage states that renewable energy is 'becoming increasingly cost-effective.'",
+      "level": "A2",
+      "topic": "Reading Comprehension"
+    },
+    {
+      "passage": "",
+      "question": "The company's profits have been declining _______ the past three years.",
+      "options": ["since", "for", "during", "while", "until"],
+      "correctAnswer": 1,
+      "explanation": "'For' is used with a period of time (three years).",
+      "level": "A2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "If I _______ you, I would accept the offer.",
+      "options": ["am", "was", "were", "be", "been"],
+      "correctAnswer": 2,
+      "explanation": "Second conditional uses 'were'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She has been working here _______ 2020.",
+      "options": ["since", "for", "from", "at", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Since' with specific time.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The project must _______ by Friday.",
+      "options": ["complete", "completed", "be completed", "completing", "completes"],
+      "correctAnswer": 2,
+      "explanation": "Passive voice with modal.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I'm looking forward _______ you again.",
+      "options": ["see", "seeing", "to see", "to seeing", "saw"],
+      "correctAnswer": 3,
+      "explanation": "'Look forward to + gerund'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The book _______ I read was fascinating.",
+      "options": ["who", "which", "where", "when", "whose"],
+      "correctAnswer": 1,
+      "explanation": "'Which' for things.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She suggested _______ a break.",
+      "options": ["take", "takes", "taking", "to take", "took"],
+      "correctAnswer": 2,
+      "explanation": "'Suggest + gerund'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I've never been _______ enthusiastic about sports.",
+      "options": ["particular", "particularly", "particulars", "particulate", "particle"],
+      "correctAnswer": 1,
+      "explanation": "Adverb form needed.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The meeting has been _______ until next week.",
+      "options": ["put off", "put on", "put up", "put down", "put away"],
+      "correctAnswer": 0,
+      "explanation": "'Put off' means postpone.",
+      "level": "B1",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "Despite _______ tired, she continued working.",
+      "options": ["be", "being", "been", "to be", "was"],
+      "correctAnswer": 1,
+      "explanation": "'Despite + gerund'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He's capable _______ doing much better.",
+      "options": ["in", "on", "of", "for", "with"],
+      "correctAnswer": 2,
+      "explanation": "'Capable of' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The film was _______ boring that I fell asleep.",
+      "options": ["so", "such", "very", "too", "much"],
+      "correctAnswer": 0,
+      "explanation": "'So...that' structure.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I wish I _______ more time to study.",
+      "options": ["have", "has", "had", "having", "will have"],
+      "correctAnswer": 2,
+      "explanation": "'I wish + past simple'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She accused him _______ lying.",
+      "options": ["of", "for", "with", "in", "on"],
+      "correctAnswer": 0,
+      "explanation": "'Accuse of' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The teacher made us _______ our homework.",
+      "options": ["do", "doing", "to do", "did", "done"],
+      "correctAnswer": 0,
+      "explanation": "'Make + object + infinitive'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I'd rather _______ at home tonight.",
+      "options": ["stay", "stayed", "staying", "to stay", "stays"],
+      "correctAnswer": 0,
+      "explanation": "'Would rather + base form'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She's been learning French _______ three years.",
+      "options": ["since", "for", "from", "at", "in"],
+      "correctAnswer": 1,
+      "explanation": "'For' with duration.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The problem needs _______ immediately.",
+      "options": ["solve", "solving", "to solve", "solved", "solves"],
+      "correctAnswer": 1,
+      "explanation": "'Need + gerund' (passive meaning).",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He apologized _______ being late.",
+      "options": ["of", "for", "with", "in", "on"],
+      "correctAnswer": 1,
+      "explanation": "'Apologize for' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "You _______ have told me earlier!",
+      "options": ["should", "would", "could", "might", "must"],
+      "correctAnswer": 0,
+      "explanation": "'Should have' for past advice.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The concert was _______ good as I expected.",
+      "options": ["so", "as", "very", "too", "much"],
+      "correctAnswer": 1,
+      "explanation": "'As...as' for comparison.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I'm not used _______ up early.",
+      "options": ["wake", "waking", "to wake", "to waking", "woke"],
+      "correctAnswer": 3,
+      "explanation": "'Be used to + gerund'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The book _______ by millions of people.",
+      "options": ["read", "reads", "was read", "reading", "to read"],
+      "correctAnswer": 2,
+      "explanation": "Passive voice.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She insisted _______ paying for dinner.",
+      "options": ["of", "on", "in", "for", "with"],
+      "correctAnswer": 1,
+      "explanation": "'Insist on' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I can't _______ his name.",
+      "options": ["remember", "remind", "recall", "recognize", "memorize"],
+      "correctAnswer": 0,
+      "explanation": "'Remember' for recalling information.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The weather is getting _______ worse.",
+      "options": ["more", "most", "much", "many", "very"],
+      "correctAnswer": 2,
+      "explanation": "'Much' modifies comparative.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He's interested _______ photography.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 0,
+      "explanation": "'Interested in' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I _______ rather stay home than go out.",
+      "options": ["will", "would", "should", "could", "might"],
+      "correctAnswer": 1,
+      "explanation": "'Would rather' for preference.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The car needs _______.",
+      "options": ["repair", "repairing", "to repair", "repaired", "repairs"],
+      "correctAnswer": 1,
+      "explanation": "'Need + gerund' (passive).",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She succeeded _______ passing the exam.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 0,
+      "explanation": "'Succeed in' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I haven't seen him _______ Monday.",
+      "options": ["since", "for", "from", "at", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Since' with specific time.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The movie was _______ interesting.",
+      "options": ["extreme", "extremely", "extremes", "extremity", "extremeness"],
+      "correctAnswer": 1,
+      "explanation": "Adverb form needed.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "She prevented me _______ making a mistake.",
+      "options": ["of", "from", "for", "with", "in"],
+      "correctAnswer": 1,
+      "explanation": "'Prevent from' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I'm looking _______ my keys. Have you seen them?",
+      "options": ["at", "for", "after", "up", "into"],
+      "correctAnswer": 1,
+      "explanation": "'Look for' means search.",
+      "level": "B1",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "He's responsible _______ the project.",
+      "options": ["of", "for", "with", "in", "on"],
+      "correctAnswer": 1,
+      "explanation": "'Responsible for' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The house _______ last year.",
+      "options": ["build", "builds", "built", "was built", "building"],
+      "correctAnswer": 3,
+      "explanation": "Passive voice past.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I'd prefer _______ coffee to tea.",
+      "options": ["drink", "drinking", "to drink", "drunk", "drinks"],
+      "correctAnswer": 2,
+      "explanation": "'Prefer + to infinitive'.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She's afraid _______ flying.",
+      "options": ["of", "from", "for", "with", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Afraid of' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The problem is _______ difficult to solve.",
+      "options": ["so", "such", "very", "too", "much"],
+      "correctAnswer": 3,
+      "explanation": "'Too' for excessive degree.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "He gave _______ smoking last year.",
+      "options": ["up", "in", "away", "out", "off"],
+      "correctAnswer": 0,
+      "explanation": "'Give up' means quit.",
+      "level": "B1",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "I'm good _______ solving problems.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 2,
+      "explanation": "'Good at' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The train _______ by the time we arrived.",
+      "options": ["leave", "leaves", "left", "had left", "leaving"],
+      "correctAnswer": 3,
+      "explanation": "Past perfect for earlier action.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She's keen _______ learning new skills.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 1,
+      "explanation": "'Keen on' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I need to _______ my English.",
+      "options": ["improve", "improves", "improving", "improved", "improvement"],
+      "correctAnswer": 0,
+      "explanation": "'Need to + infinitive'.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "He's addicted _______ social media.",
+      "options": ["in", "on", "to", "for", "with"],
+      "correctAnswer": 2,
+      "explanation": "'Addicted to' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The work should _______ carefully.",
+      "options": ["do", "done", "be done", "doing", "does"],
+      "correctAnswer": 2,
+      "explanation": "Passive with modal.",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I depend _______ my family for support.",
+      "options": ["in", "on", "at", "for", "with"],
+      "correctAnswer": 1,
+      "explanation": "'Depend on' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "She _______ me to help her.",
+      "options": ["said", "told", "spoke", "talked", "asked"],
+      "correctAnswer": 4,
+      "explanation": "'Ask someone to do something'.",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "I'm tired _______ waiting.",
+      "options": ["of", "from", "for", "with", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Tired of' is correct.",
+      "level": "B1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "Had I known about the meeting, I _______ attended.",
+      "options": ["will have", "would have", "will", "would", "had"],
+      "correctAnswer": 1,
+      "explanation": "Third conditional structure.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The proposal _______ by the committee next week.",
+      "options": ["reviews", "will review", "will be reviewed", "is reviewing", "reviewed"],
+      "correctAnswer": 2,
+      "explanation": "Future passive voice.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She came across _______ an old friend yesterday.",
+      "options": ["with", "to", "-", "at", "on"],
+      "correctAnswer": 2,
+      "explanation": "'Come across' needs no preposition.",
+      "level": "B2",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "The candidate's _______ was impressive during the interview.",
+      "options": ["demonstrate", "demonstration", "demonstrative", "demonstratively", "demonstrated"],
+      "correctAnswer": 1,
+      "explanation": "Noun form needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Not only _______ late, but he also forgot the documents.",
+      "options": ["he was", "was he", "he is", "is he", "he has"],
+      "correctAnswer": 1,
+      "explanation": "Inversion after 'not only'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The research _______ significant implications for medical science.",
+      "options": ["has", "have", "having", "had", "will have"],
+      "correctAnswer": 0,
+      "explanation": "Singular subject agreement.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She tends _______ very critical of herself.",
+      "options": ["be", "being", "to be", "been", "is"],
+      "correctAnswer": 2,
+      "explanation": "'Tend to + infinitive'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The phenomenon can be attributed _______ climate change.",
+      "options": ["to", "for", "with", "in", "on"],
+      "correctAnswer": 0,
+      "explanation": "'Attributed to' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "_______ the difficulties, they managed to complete the project.",
+      "options": ["Despite", "Although", "However", "Nevertheless", "Though"],
+      "correctAnswer": 0,
+      "explanation": "'Despite' + noun phrase.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The theory was _______ criticized by experts.",
+      "options": ["harsh", "harshly", "harshness", "harsher", "harshest"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Little _______ that her life was about to change.",
+      "options": ["she knew", "knew she", "she knows", "did she know", "does she know"],
+      "correctAnswer": 3,
+      "explanation": "Inversion with 'little'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The company is _______ the verge of bankruptcy.",
+      "options": ["on", "in", "at", "by", "to"],
+      "correctAnswer": 0,
+      "explanation": "'On the verge of' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The experiment yielded _______ results.",
+      "options": ["promise", "promised", "promising", "promises", "promisingly"],
+      "correctAnswer": 2,
+      "explanation": "Adjective form needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Scarcely _______ the door when the phone rang.",
+      "options": ["I had opened", "had I opened", "I opened", "did I open", "I have opened"],
+      "correctAnswer": 1,
+      "explanation": "Inversion with 'scarcely'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The policy has been subject _______ intense debate.",
+      "options": ["to", "for", "with", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Subject to' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "She insisted that he _______ immediately.",
+      "options": ["leaves", "leave", "left", "leaving", "to leave"],
+      "correctAnswer": 1,
+      "explanation": "Subjunctive after 'insist that'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The evidence _______ to the conclusion that he was innocent.",
+      "options": ["points", "point", "pointing", "pointed", "to point"],
+      "correctAnswer": 0,
+      "explanation": "Singular subject verb.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "_______ circumstances would I agree to such terms.",
+      "options": ["Under no", "In no", "On no", "At no", "By no"],
+      "correctAnswer": 0,
+      "explanation": "'Under no circumstances' with inversion.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The findings are consistent _______ previous research.",
+      "options": ["to", "with", "for", "in", "on"],
+      "correctAnswer": 1,
+      "explanation": "'Consistent with' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The manager demanded that the report _______ by Friday.",
+      "options": ["submits", "submit", "be submitted", "submitted", "is submitted"],
+      "correctAnswer": 2,
+      "explanation": "Subjunctive passive.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The argument lacks _______ evidence.",
+      "options": ["substantiate", "substantial", "substance", "substantially", "substantiation"],
+      "correctAnswer": 1,
+      "explanation": "Adjective form needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Rarely _______ such dedication in a new employee.",
+      "options": ["I have seen", "have I seen", "I saw", "did I see", "I see"],
+      "correctAnswer": 1,
+      "explanation": "Inversion with 'rarely'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The crisis stems _______ years of mismanagement.",
+      "options": ["from", "with", "in", "on", "to"],
+      "correctAnswer": 0,
+      "explanation": "'Stem from' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The solution proved _______ effective.",
+      "options": ["high", "highly", "height", "higher", "highest"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "No sooner _______ than it started raining.",
+      "options": ["we arrived", "had we arrived", "we had arrived", "did we arrive", "we arrive"],
+      "correctAnswer": 1,
+      "explanation": "Inversion with 'no sooner'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The team is composed _______ experienced professionals.",
+      "options": ["of", "by", "with", "from", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Composed of' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "It is imperative that you _______ on time.",
+      "options": ["are", "be", "being", "were", "been"],
+      "correctAnswer": 1,
+      "explanation": "Subjunctive after 'imperative'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The decision had far-reaching _______.",
+      "options": ["imply", "implications", "implicate", "implied", "implying"],
+      "correctAnswer": 1,
+      "explanation": "Noun plural needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Only after the investigation _______ the truth emerge.",
+      "options": ["does", "did", "do", "done", "doing"],
+      "correctAnswer": 1,
+      "explanation": "Inversion with 'only after'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The article touches _______ several important issues.",
+      "options": ["on", "in", "at", "with", "to"],
+      "correctAnswer": 0,
+      "explanation": "'Touch on' means mention briefly.",
+      "level": "B2",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "The professor's lecture was highly _______.",
+      "options": ["inform", "information", "informative", "informed", "informatively"],
+      "correctAnswer": 2,
+      "explanation": "Adjective form needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Were I in your position, I _______ differently.",
+      "options": ["act", "acted", "would act", "will act", "have acted"],
+      "correctAnswer": 2,
+      "explanation": "Conditional with inversion.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The project is dependent _______ adequate funding.",
+      "options": ["on", "of", "with", "for", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Dependent on' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The data suggests a _______ correlation.",
+      "options": ["signify", "significance", "significant", "significantly", "signified"],
+      "correctAnswer": 2,
+      "explanation": "Adjective needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Under no circumstances _______ this information be disclosed.",
+      "options": ["should", "would", "could", "might", "will"],
+      "correctAnswer": 0,
+      "explanation": "Modal with negative inversion.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The theory accounts _______ all observed phenomena.",
+      "options": ["for", "to", "with", "in", "on"],
+      "correctAnswer": 0,
+      "explanation": "'Account for' means explain.",
+      "level": "B2",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "The results were _______ inconclusive.",
+      "options": ["large", "largely", "largeness", "larger", "largest"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "So intense _______ the heat that work had to stop.",
+      "options": ["was", "is", "were", "are", "been"],
+      "correctAnswer": 0,
+      "explanation": "Inversion with 'so...that'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The system is prone _______ errors.",
+      "options": ["to", "for", "with", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Prone to' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The study demonstrates a _______ need for reform.",
+      "options": ["compel", "compulsion", "compelling", "compelled", "compulsory"],
+      "correctAnswer": 2,
+      "explanation": "Adjective form needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Not until the deadline _______ start working.",
+      "options": ["he did", "did he", "he does", "does he", "he will"],
+      "correctAnswer": 1,
+      "explanation": "Inversion with 'not until'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The concept is analogous _______ a computer program.",
+      "options": ["to", "with", "for", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Analogous to' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The analysis provides _______ insights.",
+      "options": ["value", "valuable", "valuably", "valued", "valuation"],
+      "correctAnswer": 1,
+      "explanation": "Adjective needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Seldom _______ such a well-organized event.",
+      "options": ["I have attended", "have I attended", "I attended", "did I attend", "I attend"],
+      "correctAnswer": 1,
+      "explanation": "Inversion with 'seldom'.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The findings are indicative _______ a larger trend.",
+      "options": ["of", "to", "with", "for", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Indicative of' is correct.",
+      "level": "B2",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The conference proved to be _______ beneficial.",
+      "options": ["exceed", "exceedingly", "exceeded", "exceeds", "excess"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "In no way _______ this be considered acceptable.",
+      "options": ["can", "could", "may", "might", "should"],
+      "correctAnswer": 0,
+      "explanation": "Modal with negative inversion.",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The outcome hinges _______ several factors.",
+      "options": ["on", "to", "with", "for", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Hinge on' means depend on.",
+      "level": "B2",
+      "topic": "Phrasal Verbs"
+    },
+    {
+      "passage": "",
+      "question": "The legislation, _______ enacted, will have profound implications.",
+      "options": ["once", "while", "unless", "although", "since"],
+      "correctAnswer": 0,
+      "explanation": "'Once' for future condition.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Her argument was predicated _______ faulty assumptions.",
+      "options": ["on", "upon", "in", "with", "by"],
+      "correctAnswer": 0,
+      "explanation": "'Predicated on/upon' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The phenomenon defies _______ explanation.",
+      "options": ["simple", "simply", "simplicity", "simpler", "simplest"],
+      "correctAnswer": 0,
+      "explanation": "Adjective before noun.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "_______ had the meeting commenced than disagreements arose.",
+      "options": ["Scarcely", "Hardly", "No sooner", "Barely", "Rarely"],
+      "correctAnswer": 2,
+      "explanation": "'No sooner...than' structure.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The study's methodology was _______ flawed.",
+      "options": ["inherent", "inherently", "inherence", "inherit", "inheritance"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The policy's efficacy remains _______ to empirical verification.",
+      "options": ["subject", "subjected", "subjecting", "subjective", "subjects"],
+      "correctAnswer": 0,
+      "explanation": "'Subject to' meaning 'dependent on'.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Notwithstanding the obstacles, the project proceeded _______.",
+      "options": ["apace", "apiece", "apart", "aside", "awry"],
+      "correctAnswer": 0,
+      "explanation": "'Apace' means quickly.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The discourse is imbued _______ ideological undertones.",
+      "options": ["with", "by", "in", "of", "from"],
+      "correctAnswer": 0,
+      "explanation": "'Imbued with' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The paradigm shift necessitated a _______ of assumptions.",
+      "options": ["reappraisal", "reappraise", "reappraising", "reappraised", "reappraisals"],
+      "correctAnswer": 0,
+      "explanation": "Noun form needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Were it not for his intervention, disaster _______ ensued.",
+      "options": ["will have", "would have", "shall have", "should have", "must have"],
+      "correctAnswer": 1,
+      "explanation": "Third conditional with inversion.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The analysis is contingent _______ accurate data.",
+      "options": ["upon", "on", "with", "to", "for"],
+      "correctAnswer": 0,
+      "explanation": "'Contingent upon/on' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "His rhetoric was characterized by _______ ambiguity.",
+      "options": ["deliberate", "deliberately", "deliberation", "deliberated", "deliberating"],
+      "correctAnswer": 0,
+      "explanation": "Adjective before noun.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The findings _______ conventional wisdom.",
+      "options": ["belie", "belief", "believe", "believed", "believing"],
+      "correctAnswer": 0,
+      "explanation": "'Belie' means contradict.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Lest the precedent _______ misunderstood, clarification is needed.",
+      "options": ["be", "is", "was", "were", "been"],
+      "correctAnswer": 0,
+      "explanation": "Subjunctive after 'lest'.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The hypothesis is couched _______ technical jargon.",
+      "options": ["in", "with", "by", "through", "from"],
+      "correctAnswer": 0,
+      "explanation": "'Couched in' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The disparity is _______ pronounced in urban areas.",
+      "options": ["particular", "particularly", "particulars", "particularity", "particularize"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The proposal _______ close scrutiny before approval.",
+      "options": ["warrants", "warrant", "warranting", "warranted", "to warrant"],
+      "correctAnswer": 0,
+      "explanation": "Third person singular present.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The phenomenon is symptomatic _______ broader issues.",
+      "options": ["of", "to", "with", "for", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Symptomatic of' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "His contributions were _______ instrumental to success.",
+      "options": ["indispute", "indisputable", "indisputably", "disputed", "disputing"],
+      "correctAnswer": 2,
+      "explanation": "Adverb modifying adjective.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The committee _______ to reconvene next month.",
+      "options": ["is", "are", "being", "been", "be"],
+      "correctAnswer": 0,
+      "explanation": "Collective noun as singular.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The argument is predicated _______ logical fallacies.",
+      "options": ["on", "upon", "in", "with", "by"],
+      "correctAnswer": 0,
+      "explanation": "'Predicated on/upon'.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The manifesto articulates a _______ vision.",
+      "options": ["comprehend", "comprehensive", "comprehensively", "comprehension", "comprehended"],
+      "correctAnswer": 1,
+      "explanation": "Adjective needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "But for governmental intervention, the crisis _______ worsened.",
+      "options": ["will have", "would have", "shall have", "should have", "must have"],
+      "correctAnswer": 1,
+      "explanation": "Third conditional alternative.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The theory is consonant _______ empirical evidence.",
+      "options": ["with", "to", "in", "of", "from"],
+      "correctAnswer": 0,
+      "explanation": "'Consonant with' means consistent.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The implications are _______ far-reaching.",
+      "options": ["potent", "potentially", "potency", "potentiate", "potentiality"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The assertion _______ substantiation.",
+      "options": ["lacks", "lack", "lacking", "lacked", "to lack"],
+      "correctAnswer": 0,
+      "explanation": "Singular verb agreement.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The methodology is fraught _______ complications.",
+      "options": ["with", "by", "in", "of", "from"],
+      "correctAnswer": 0,
+      "explanation": "'Fraught with' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The discourse exhibits _______ sophistication.",
+      "options": ["consider", "considerable", "considerably", "consideration", "considered"],
+      "correctAnswer": 1,
+      "explanation": "Adjective before noun.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The evidence _______ to a different conclusion.",
+      "options": ["points", "point", "pointing", "pointed", "to point"],
+      "correctAnswer": 0,
+      "explanation": "Singular subject verb.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The framework is conducive _______ innovation.",
+      "options": ["to", "for", "with", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Conducive to' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The narrative is _______ nuanced.",
+      "options": ["exception", "exceptionally", "exceptional", "except", "excepting"],
+      "correctAnswer": 1,
+      "explanation": "Adverb modifying adjective.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The panel _______ to address these concerns.",
+      "options": ["endeavor", "endeavors", "endeavoring", "endeavored", "to endeavor"],
+      "correctAnswer": 1,
+      "explanation": "Plural subject as singular.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The critique is rooted _______ theoretical frameworks.",
+      "options": ["in", "on", "at", "with", "by"],
+      "correctAnswer": 0,
+      "explanation": "'Rooted in' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The analysis demonstrates _______ rigor.",
+      "options": ["method", "methodical", "methodically", "methodology", "methods"],
+      "correctAnswer": 1,
+      "explanation": "Adjective before noun.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The proposition _______ careful consideration.",
+      "options": ["merits", "merit", "meriting", "merited", "to merit"],
+      "correctAnswer": 0,
+      "explanation": "Singular verb form.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The approach is tantamount _______ admission.",
+      "options": ["to", "with", "of", "for", "in"],
+      "correctAnswer": 0,
+      "explanation": "'Tantamount to' means equivalent.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The findings are _______ compelling.",
+      "options": ["undeniable", "undeniably", "undeniability", "deny", "denial"],
+      "correctAnswer": 1,
+      "explanation": "Adverb needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The hypothesis _______ rigorous testing.",
+      "options": ["undergoes", "undergo", "undergoing", "underwent", "to undergo"],
+      "correctAnswer": 0,
+      "explanation": "Singular present form.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The concept is intrinsic _______ the theory.",
+      "options": ["to", "with", "in", "of", "from"],
+      "correctAnswer": 0,
+      "explanation": "'Intrinsic to' is correct.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The exposition was _______ lucid.",
+      "options": ["remark", "remarkable", "remarkably", "remarked", "remarking"],
+      "correctAnswer": 2,
+      "explanation": "Adverb modifying adjective.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The data _______ further analysis.",
+      "options": ["necessitates", "necessitate", "necessitating", "necessitated", "to necessitate"],
+      "correctAnswer": 0,
+      "explanation": "Singular noun verb.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The principle is germane _______ the discussion.",
+      "options": ["to", "with", "for", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Germane to' means relevant.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The argument exhibits _______ coherence.",
+      "options": ["admire", "admirable", "admirably", "admiration", "admired"],
+      "correctAnswer": 1,
+      "explanation": "Adjective before noun.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The conclusion _______ from the premises.",
+      "options": ["follows", "follow", "following", "followed", "to follow"],
+      "correctAnswer": 0,
+      "explanation": "Singular verb agreement.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The measure is commensurate _______ the risk.",
+      "options": ["with", "to", "for", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Commensurate with' means proportionate.",
+      "level": "C1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The thesis is _______ provocative.",
+      "options": ["intellect", "intellectual", "intellectually", "intelligence", "intelligent"],
+      "correctAnswer": 2,
+      "explanation": "Adverb needed.",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The phenomenon _______ explanation.",
+      "options": ["defies", "defy", "defying", "defied", "to defy"],
+      "correctAnswer": 0,
+      "explanation": "Singular present verb.",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The strategy is antithetical _______ our values.",
+      "options": ["to", "with", "for", "in", "of"],
+      "correctAnswer": 0,
+      "explanation": "'Antithetical to' means opposed.",
+      "level": "C1",
+      "topic": "Prepositions"
+    }
+  ]
+}
