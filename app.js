@@ -680,6 +680,16 @@ function render() {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // İlk render - loading göster
+    const app = document.getElementById('app');
+    app.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column;">
+            <div style="font-size: 48px; margin-bottom: 20px;">📚</div>
+            <h2 style="color: white; margin-bottom: 10px;">KİTKİT</h2>
+            <p style="color: rgba(255,255,255,0.8);">Yükleniyor...</p>
+        </div>
+    `;
+    
     await loadQuestions();
     await waitForFirebase();
     
