@@ -450,28 +450,85 @@ body {
 }
 
 .exam-item {
-    padding: 16px;
-    background: #E3F2FD;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    padding: 18px;
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border-left: 4px solid #2196F3;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exam-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
+}
+
+.exam-item.yds-exam {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-left-color: #4CAF50;
+}
+
+.exam-item.yokdil-exam {
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+    border-left-color: #FF9800;
+}
+
+.exam-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.exam-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-yds {
+    background: #4CAF50;
+    color: white;
+}
+
+.badge-yokdil {
+    background: #FF9800;
+    color: white;
 }
 
 .exam-item .exam-name {
     font-weight: 600;
-    margin-bottom: 4px;
+    font-size: 15px;
+    color: #333;
 }
 
 .exam-item .exam-date {
     font-size: 14px;
     color: #666;
+    margin: 6px 0;
 }
 
 .exam-item .days-left {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #2196F3;
-    margin-top: 4px;
+    margin-top: 8px;
 }
+
+.exam-item .days-left.urgent {
+    color: #F44336;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
 
 .tips-section .tip-item {
     padding: 16px;

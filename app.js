@@ -281,6 +281,40 @@ const availableTopics = [
     { id: 'prepositions', name: 'Prepositions', icon: '🔗', description: 'In, on, at, for, etc.' }
 ];
 
+// Gerçek YDS ve YÖKDİL sınav tarihleri (2025)
+const upcomingExams = [
+    { name: 'YDS/1 (İlkbahar)', date: '2025-03-30', type: 'YDS' },
+    { name: 'YÖKDİL Sosyal/1', date: '2025-05-11', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Fen/1', date: '2025-05-11', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Sağlık/1', date: '2025-05-11', type: 'YÖKDİL' },
+    { name: 'YDS/2 (Sonbahar)', date: '2025-09-14', type: 'YDS' },
+    { name: 'YÖKDİL Sosyal/2', date: '2025-11-09', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Fen/2', date: '2025-11-09', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Sağlık/2', date: '2025-11-09', type: 'YÖKDİL' }
+];
+
+// Yaklaşan sınavları hesapla (bugünden sonraki 3 sınav)
+function getUpcomingExams() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
+    return upcomingExams
+        .map(exam => {
+            const examDate = new Date(exam.date);
+            const daysLeft = Math.ceil((examDate - today) / (1000 * 60 * 60 * 24));
+            
+            return {
+                name: exam.name,
+                date: examDate.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }),
+                daysLeft: daysLeft,
+                type: exam.type,
+                isPast: daysLeft < 0
+            };
+        })
+        .filter(exam => !exam.isPast) // Geçmiş sınavları filtrele
+        .slice(0, 3); // İlk 3 yaklaşan sınav
+}
+
 const statsData = {
     generalProgress: 68,
     wordsLearned: 1240,
@@ -293,11 +327,7 @@ const statsData = {
     correctAnswers: 967,
     wrongAnswers: 135,
     skipped: 111,
-    upcomingExams: [
-        { name: 'YDS/1', date: '24 Mart 2024', daysLeft: 19 },
-        { name: 'YÖKDİL Sosyal', date: '12 Mayıs 2024', daysLeft: 67 },
-        { name: 'YDS/2', date: '8 Eylül 2024', daysLeft: 135 }
-    ],
+    upcomingExams: getUpcomingExams(),
     recentActivities: [
         { name: 'Kelime Alıştırması #12', date: '18 Mart 2024', score: 18, total: 20, percentage: 90 },
         { name: 'Tam Deneme Sınavı 3', date: '17 Mart 2024', score: 62, total: 80, percentage: 77 },
@@ -562,13 +592,16 @@ function renderDashboard() {
                     
                     <div class="card upcoming-exams">
                         <h2>Yaklaşan Sınavlar</h2>
-                        ${statsData.upcomingExams.map(exam => `
-                            <div class="exam-item">
-                                <div class="exam-name">${exam.name}</div>
-                                <div class="exam-date">${exam.date}</div>
-                                <div class="days-left">${exam.daysLeft} gün kaldı</div>
+                        ${statsData.upcomingExams.length > 0 ? statsData.upcomingExams.map(exam => `
+                            <div class="exam-item ${exam.type === 'YDS' ? 'yds-exam' : 'yokdil-exam'}">
+                                <div class="exam-header">
+                                    <span class="exam-badge ${exam.type === 'YDS' ? 'badge-yds' : 'badge-yokdil'}">${exam.type}</span>
+                                    <div class="exam-name">${exam.name}</div>
+                                </div>
+                                <div class="exam-date">📅 ${exam.date}</div>
+                                <div class="days-left ${exam.daysLeft <= 30 ? 'urgent' : ''}">${exam.daysLeft > 0 ? `⏳ ${exam.daysLeft} gün kaldı` : '🎯 Bugün!'}</div>
                             </div>
-                        `).join('')}
+                        `).join('') : '<p style="text-align: center; color: #999; padding: 20px;">Yaklaşan sınav bulunmuyor</p>'}
                     </div>
                 </div>
                 
