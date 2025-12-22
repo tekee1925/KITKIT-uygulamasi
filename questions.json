@@ -2177,6 +2177,627 @@
       "explanation": "'Antithetical to' means opposed.",
       "level": "C1",
       "topic": "Prepositions"
+    },
+    {
+      "passage": "Sarah was feeling tired after work. She decided to _____ early and get some rest before the big presentation the next day.",
+      "question": "Choose the correct option to complete the sentence.",
+      "options": ["turn in", "turn up", "turn down", "turn over", "turn out"],
+      "correctAnswer": 0,
+      "explanation": "'Turn in' means to go to bed.",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The company's profits have been _____ steadily over the past three years, mainly due to increased competition.",
+      "question": "Fill in the blank.",
+      "options": ["rising", "declining", "maintaining", "fluctuating", "stabilizing"],
+      "correctAnswer": 1,
+      "explanation": "The context suggests a negative trend due to competition.",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "Despite the _____ weather conditions, the rescue team managed to reach the stranded hikers.",
+      "question": "Select the most appropriate word.",
+      "options": ["favorable", "adverse", "pleasant", "mild", "moderate"],
+      "correctAnswer": 1,
+      "explanation": "'Adverse' means unfavorable or harmful.",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The new policy aims to _____ the gap between rich and poor communities.",
+      "question": "Complete the sentence.",
+      "options": ["widen", "bridge", "create", "ignore", "establish"],
+      "correctAnswer": 1,
+      "explanation": "'Bridge the gap' means to reduce the difference.",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "After months of negotiations, the two countries finally _____ a peace agreement.",
+      "question": "Choose the best option.",
+      "options": ["broke", "reached", "avoided", "rejected", "postponed"],
+      "correctAnswer": 1,
+      "explanation": "'Reached an agreement' is a common collocation.",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The scientist's theory was _____ by empirical evidence.",
+      "question": "Fill in the blank.",
+      "options": ["contradicted", "supported", "ignored", "questioned", "dismissed"],
+      "correctAnswer": 1,
+      "explanation": "Empirical evidence typically supports theories.",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The children were _____ excited about the upcoming trip to the zoo.",
+      "question": "Select the correct word.",
+      "options": ["extremely", "barely", "hardly", "scarcely", "rarely"],
+      "correctAnswer": 0,
+      "explanation": "'Extremely excited' expresses high enthusiasm.",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The manager decided to _____ the meeting until everyone could attend.",
+      "question": "Complete the text.",
+      "options": ["cancel", "postpone", "finish", "start", "ignore"],
+      "correctAnswer": 1,
+      "explanation": "'Postpone' means to delay to a later time.",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The artist's work reflects a _____ blend of traditional and modern styles.",
+      "question": "Choose the appropriate word.",
+      "options": ["unique", "common", "ordinary", "typical", "standard"],
+      "correctAnswer": 0,
+      "explanation": "'Unique blend' suggests something distinctive.",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "The government's _____ response to the crisis was widely criticized.",
+      "question": "Fill in the blank.",
+      "options": ["swift", "delayed", "immediate", "prompt", "quick"],
+      "correctAnswer": 1,
+      "explanation": "The criticism suggests the response was slow.",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Although she was tired, _____ to the party.",
+      "options": ["she decided to go", "she deciding to go", "she decide to go", "she decides to go", "she decided going"],
+      "correctAnswer": 0,
+      "explanation": "Correct sentence structure with past tense.",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Not only did he finish the project on time, _____.",
+      "options": ["but he also exceeded expectations", "but also he exceeded expectations", "and he exceeded expectations", "he exceeded expectations", "also exceeded expectations"],
+      "correctAnswer": 0,
+      "explanation": "'Not only...but also' requires this structure.",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Had I known about the traffic, _____.",
+      "options": ["I would have left earlier", "I will leave earlier", "I left earlier", "I would leave earlier", "I had left earlier"],
+      "correctAnswer": 0,
+      "explanation": "Third conditional structure for past hypothetical.",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "The more you practice, _____.",
+      "options": ["the better you become", "you become better", "better you become", "the you become better", "you better become"],
+      "correctAnswer": 0,
+      "explanation": "'The more...the better' is a comparative structure.",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "She is looking forward _____.",
+      "options": ["to meeting her friends", "to meet her friends", "meeting her friends", "meet her friends", "for meeting her friends"],
+      "correctAnswer": 0,
+      "explanation": "'Look forward to' is followed by gerund.",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "By this time tomorrow, _____.",
+      "options": ["we will have finished the report", "we finish the report", "we finished the report", "we are finishing the report", "we have finished the report"],
+      "correctAnswer": 0,
+      "explanation": "Future perfect for action completed by a future time.",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Seldom _____ such a beautiful sunset.",
+      "options": ["have I seen", "I have seen", "I saw", "did I saw", "I see"],
+      "correctAnswer": 0,
+      "explanation": "Negative adverbs cause inversion.",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Despite _____, he managed to succeed.",
+      "options": ["facing many challenges", "face many challenges", "to face many challenges", "faced many challenges", "faces many challenges"],
+      "correctAnswer": 0,
+      "explanation": "'Despite' is followed by a gerund or noun.",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "It's high time _____.",
+      "options": ["we left", "we leave", "we will leave", "we are leaving", "we have left"],
+      "correctAnswer": 0,
+      "explanation": "'It's high time' is followed by past simple.",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "No sooner had she arrived _____ the meeting started.",
+      "options": ["than", "when", "then", "that", "as"],
+      "correctAnswer": 0,
+      "explanation": "'No sooner...than' is the correct structure.",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "I am going to the store. (Türkçe: Mağazaya gidiyorum.)",
+      "options": ["Correct", "I am going at the store.", "I going to the store.", "I am go to the store.", "I will going to the store."],
+      "correctAnswer": 0,
+      "explanation": "Present continuous for future plans.",
+      "level": "A2",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Translate: 'Eğer erken kalksaydım, otobüsü kaçırmazdım.'",
+      "options": ["If I had woken up early, I wouldn't have missed the bus.", "If I woke up early, I wouldn't miss the bus.", "If I wake up early, I won't miss the bus.", "If I would wake up early, I wouldn't miss the bus.", "If I will wake up early, I won't miss the bus."],
+      "correctAnswer": 0,
+      "explanation": "Third conditional for past unreal situation.",
+      "level": "B2",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Çevir: 'Bu kitap geçen yıl yazılmıştı.'",
+      "options": ["This book had been written last year.", "This book was written last year.", "This book has been written last year.", "This book is written last year.", "This book will be written last year."],
+      "correctAnswer": 1,
+      "explanation": "Past simple passive for completed past action.",
+      "level": "B1",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Translate to English: 'Yağmur yağmasına rağmen maça gittik.'",
+      "options": ["Despite the rain, we went to the match.", "Despite it rained, we went to the match.", "Although the rain, we went to the match.", "Even the rain, we went to the match.", "In spite it rained, we went to the match."],
+      "correctAnswer": 0,
+      "explanation": "'Despite' is followed by a noun, not a clause.",
+      "level": "B2",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Türkçeye çevir: 'She must have forgotten about the meeting.'",
+      "options": ["Toplantıyı unutmuş olmalı.", "Toplantıyı unutmalı.", "Toplantıyı unutacak.", "Toplantıyı unutuyor olmalı.", "Toplantıyı unuttu."],
+      "correctAnswer": 0,
+      "explanation": "'Must have + past participle' expresses past deduction.",
+      "level": "C1",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Çevir: 'Ne kadar çok çalışırsan, o kadar başarılı olursun.'",
+      "options": ["The harder you work, the more successful you become.", "The more you work hard, the successful you become.", "You work harder, you become successful.", "If you work hard, you will successful.", "Working hard makes you successful."],
+      "correctAnswer": 0,
+      "explanation": "'The + comparative...the + comparative' structure.",
+      "level": "B2",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Translate: 'Keşke daha çok çalışmış olsaydım.'",
+      "options": ["I wish I had studied harder.", "I wish I studied harder.", "I wish I would study harder.", "I hope I studied harder.", "I wish I study harder."],
+      "correctAnswer": 0,
+      "explanation": "'I wish + past perfect' for past regret.",
+      "level": "C1",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "English translation: 'O an geldiğinde ben çoktan ayrılmıştım.'",
+      "options": ["By the time he arrived, I had already left.", "When he arrived, I already left.", "He arrived when I had left already.", "By the time he arrives, I have left.", "When he will arrive, I will have left."],
+      "correctAnswer": 0,
+      "explanation": "Past perfect for action completed before another past action.",
+      "level": "B2",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Türkçe: 'Rarely have I encountered such rudeness.'",
+      "options": ["Nadiren böyle kabalıkla karşılaştım.", "Nadiren ben böyle kabalık gördüm.", "Ben nadiren böyle kaba insanlarla karşılaştım.", "Böyle kabalıkla nadiren karşılaşırım.", "Böyle kaba insanlar nadirdir."],
+      "correctAnswer": 0,
+      "explanation": "Inverted structure for emphasis with negative adverb.",
+      "level": "C2",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "Çevir: 'Henüz karar vermedim ama muhtemelen kabul edeceğim.'",
+      "options": ["I haven't decided yet, but I will probably accept.", "I didn't decide yet, but I probably accept.", "I don't decide yet, but I will probably accept.", "I am not deciding yet, but I probably will accept.", "I won't decide yet, but I probably accept."],
+      "correctAnswer": 0,
+      "explanation": "Present perfect for unfinished action, future for prediction.",
+      "level": "B1",
+      "topic": "Translation"
+    },
+    {
+      "passage": "",
+      "question": "A: Where are you going? B: _____",
+      "options": ["I'm going to the library.", "I going library.", "I go to library.", "I'm go library.", "Library I'm going."],
+      "correctAnswer": 0,
+      "explanation": "Present continuous for current action.",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Would you mind opening the window? B: _____",
+      "options": ["Not at all.", "Yes, please.", "No, I would.", "Yes, I mind.", "I don't."],
+      "correctAnswer": 0,
+      "explanation": "'Not at all' means 'I don't mind'.",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: I'm afraid I can't make it to the meeting tomorrow. B: _____",
+      "options": ["That's alright. We can reschedule.", "You should come anyway.", "Why you can't come?", "Meeting is important.", "You must to come."],
+      "correctAnswer": 0,
+      "explanation": "Polite and appropriate response.",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: How do you find living in the city? B: _____",
+      "options": ["It's quite hectic, but I enjoy the convenience.", "I find by looking.", "I live in apartment.", "City is big.", "I like city."],
+      "correctAnswer": 0,
+      "explanation": "'How do you find' means 'What do you think about'.",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Could you do me a favor? B: _____",
+      "options": ["Sure, what is it?", "Yes, I could.", "No, I can't do.", "Favor is difficult.", "What favor?"],
+      "correctAnswer": 0,
+      "explanation": "Natural response to a favor request.",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: I haven't seen you in ages! B: _____",
+      "options": ["I know! It's been way too long.", "I see you yesterday.", "We meet last week.", "I didn't saw you.", "You not seeing me."],
+      "correctAnswer": 0,
+      "explanation": "Informal, natural response between friends.",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: What do you say we grab a coffee after work? B: _____",
+      "options": ["Sounds great! I could use a break.", "I say nothing.", "Coffee is good.", "After work okay.", "We can coffee."],
+      "correctAnswer": 0,
+      "explanation": "Enthusiastic and natural response.",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: I'm terribly sorry for the inconvenience. B: _____",
+      "options": ["Don't worry about it. These things happen.", "You are sorry.", "Inconvenience is bad.", "Why you sorry?", "It's your mistake."],
+      "correctAnswer": 0,
+      "explanation": "Polite and understanding response.",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Do you fancy going to the cinema tonight? B: _____",
+      "options": ["I'd love to, but I have other plans.", "I fancy cinema.", "Tonight is good.", "Cinema I like.", "Yes, I fancy."],
+      "correctAnswer": 0,
+      "explanation": "'Fancy' means 'would like' in British English.",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: How's your new job going? B: _____",
+      "options": ["It's challenging, but I'm learning a lot.", "Job is going work.", "I go to job.", "New job is new.", "It going good."],
+      "correctAnswer": 0,
+      "explanation": "Natural response describing job experience.",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence has the same meaning as 'She rarely complains about anything'?",
+      "options": ["She seldom complains about anything.", "She always complains about everything.", "She often complains about things.", "She never is happy.", "She complains rarely things."],
+      "correctAnswer": 0,
+      "explanation": "'Rarely' and 'seldom' are synonyms.",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Choose the sentence closest in meaning: 'Despite his age, he is very active.'",
+      "options": ["Although he is old, he is very active.", "Because he is old, he is active.", "He is old, so he is active.", "He is active without age.", "His age makes him active."],
+      "correctAnswer": 0,
+      "explanation": "'Despite' and 'although' both show contrast.",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Similar meaning to 'No sooner had he arrived than it started raining.'",
+      "options": ["As soon as he arrived, it started raining.", "Before he arrived, it started raining.", "After it rained, he arrived.", "He arrived because it rained.", "It will rain when he arrives."],
+      "correctAnswer": 0,
+      "explanation": "'No sooner...than' = 'as soon as'.",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Same meaning: 'It's necessary for you to finish this today.'",
+      "options": ["You must finish this today.", "You can finish this today.", "You might finish this today.", "You will finish this today.", "You finished this today."],
+      "correctAnswer": 0,
+      "explanation": "'It's necessary' = 'must' (obligation).",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Closest in meaning: 'I would rather stay home than go out.'",
+      "options": ["I prefer staying home to going out.", "I must stay home instead of going out.", "I will stay home and go out.", "I like going out more than staying home.", "I stayed home yesterday."],
+      "correctAnswer": 0,
+      "explanation": "'Would rather' = 'prefer'.",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Similar meaning: 'She is unlikely to accept the offer.'",
+      "options": ["She probably won't accept the offer.", "She will definitely accept the offer.", "She must accept the offer.", "She accepted the offer.", "She is accepting the offer."],
+      "correctAnswer": 0,
+      "explanation": "'Unlikely' = 'probably not'.",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Same meaning as 'He tends to arrive late.'",
+      "options": ["He usually arrives late.", "He never arrives late.", "He arrived late yesterday.", "He must arrive late.", "He will arrive late tomorrow."],
+      "correctAnswer": 0,
+      "explanation": "'Tends to' = 'usually'.",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Closest meaning: 'Scarcely had we sat down when the phone rang.'",
+      "options": ["We had just sat down when the phone rang.", "We sat down after the phone rang.", "The phone rang before we sat down.", "We didn't sit down because the phone rang.", "We sit down and the phone rings."],
+      "correctAnswer": 0,
+      "explanation": "'Scarcely...when' = 'just...when'.",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Similar to 'It's worth visiting that museum.'",
+      "options": ["That museum is worth a visit.", "That museum is expensive.", "You must visit that museum.", "That museum visited me.", "Visiting museums is good."],
+      "correctAnswer": 0,
+      "explanation": "Both structures express the same idea.",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Same meaning: 'She couldn't help laughing.'",
+      "options": ["She couldn't stop herself from laughing.", "She didn't help people laugh.", "She helped people not laugh.", "She can laugh now.", "She will help with laughing."],
+      "correctAnswer": 0,
+      "explanation": "'Couldn't help' = 'couldn't stop oneself from'.",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "Technology has revolutionized the way we communicate. (I) Social media platforms allow people to stay connected across vast distances. (II) However, some argue that this constant connectivity has negative effects. (III) My favorite color is blue. (IV) Studies show that excessive social media use can lead to anxiety and depression. (V) Therefore, it's important to find a balance in our digital lives.",
+      "question": "Which sentence breaks the unity of the paragraph?",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III about favorite color is irrelevant to the topic.",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Climate change is one of the most pressing issues of our time. (I) Rising global temperatures are causing ice caps to melt. (II) This leads to rising sea levels that threaten coastal communities. (III) Pizza is a popular food in many countries. (IV) Scientists warn that immediate action is needed to reduce carbon emissions. (V) Governments worldwide must work together to address this crisis.",
+      "question": "Which sentence is irrelevant?",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III about pizza is unrelated to climate change.",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Regular exercise offers numerous health benefits. (I) It strengthens the cardiovascular system and improves heart health. (II) Exercise also helps maintain a healthy weight. (III) The stock market experienced volatility yesterday. (IV) Additionally, physical activity has been shown to reduce stress and improve mental well-being. (V) For these reasons, doctors recommend at least 30 minutes of exercise daily.",
+      "question": "Identify the sentence that breaks coherence.",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III about stock market is off-topic.",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Learning a foreign language has many advantages. (I) It enhances cognitive abilities and improves memory. (II) Bilingual individuals often have better problem-solving skills. (III) I enjoy watching movies. (IV) Moreover, knowing another language opens up career opportunities. (V) It also allows for deeper cultural understanding and appreciation.",
+      "question": "Which sentence disrupts the flow?",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III is irrelevant to language learning benefits.",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "The ancient library of Alexandria was one of the largest and most significant libraries of the ancient world. (I) It housed countless scrolls and manuscripts. (II) Cars were invented in the late 19th century. (III) Scholars from across the Mediterranean came to study there. (IV) Tragically, the library was destroyed, and much of its collection was lost. (V) This loss represents one of the greatest tragedies in the history of knowledge.",
+      "question": "Which sentence should be removed?",
+      "options": ["II", "I", "III", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence II about cars is completely unrelated.",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Renewable energy sources are becoming increasingly important. (I) Solar and wind power are clean alternatives to fossil fuels. (II) These technologies are becoming more affordable. (III) Coffee is grown in many tropical countries. (IV) Governments are investing heavily in renewable infrastructure. (V) This shift is crucial for combating climate change.",
+      "question": "Select the irrelevant sentence.",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III about coffee doesn't relate to renewable energy.",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Artificial intelligence is transforming various industries. (I) In healthcare, AI assists doctors in diagnosing diseases more accurately. (II) The retail sector uses AI for personalized customer recommendations. (III) Elephants are the largest land animals. (IV) Manufacturing companies employ AI to optimize production processes. (V) As AI continues to evolve, its applications will only expand further.",
+      "question": "Which sentence breaks the unity?",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III is irrelevant to AI applications.",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Reading books regularly improves vocabulary and language skills. (I) It also enhances imagination and creativity. (II) Many successful people attribute their achievements to reading. (III) Basketball is played with five players on each team. (IV) Furthermore, reading reduces stress and promotes relaxation. (V) Therefore, developing a reading habit is highly beneficial.",
+      "question": "Identify the sentence that doesn't fit.",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III about basketball is off-topic.",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "Effective time management is essential for success. (I) Prioritizing tasks helps ensure important work gets done first. (II) Using tools like calendars and to-do lists can improve organization. (III) Dolphins are intelligent marine mammals. (IV) Breaking large projects into smaller tasks makes them more manageable. (V) With good time management, productivity and work-life balance both improve.",
+      "question": "Which sentence is out of place?",
+      "options": ["III", "I", "II", "IV", "V"],
+      "correctAnswer": 0,
+      "explanation": "Sentence III about dolphins is unrelated to time management.",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "The Internet has fundamentally changed how we access information. (I) _____ (II) Online encyclopedias and databases provide instant access to vast amounts of knowledge. (III) This democratization of information has empowered people worldwide. (IV) However, it has also raised concerns about information quality and fake news. (V) Critical thinking skills are more important than ever in the digital age.",
+      "question": "Which sentence best completes the paragraph?",
+      "options": ["In the past, people relied on libraries and printed materials.", "Many people enjoy playing video games online.", "The weather affects our daily activities.", "Computers use binary code to process data.", "Shopping online is very convenient."],
+      "correctAnswer": 0,
+      "explanation": "This sentence provides context about information access before the Internet.",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "_____ (I) This practice involves being present in the moment without judgment. (II) Research shows that regular meditation can reduce stress and anxiety. (III) It also improves focus and emotional well-being. (IV) Many people incorporate meditation into their daily routines. (V) Even just a few minutes per day can make a significant difference.",
+      "question": "Choose the best opening sentence.",
+      "options": ["Meditation has gained popularity as a wellness practice.", "Exercise is important for physical health.", "Technology has advanced rapidly.", "Many people work from home now.", "Traveling broadens our perspectives."],
+      "correctAnswer": 0,
+      "explanation": "This introduces the topic of meditation that the paragraph discusses.",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "Urban gardening is becoming increasingly popular in cities. (I) People are growing vegetables and herbs on balconies and rooftops. (II) _____ (III) Community gardens also provide social benefits by bringing neighbors together. (IV) These green spaces improve air quality and reduce urban heat. (V) As cities grow, urban agriculture offers a sustainable solution.",
+      "question": "Select the most appropriate sentence for blank (II).",
+      "options": ["This practice allows city dwellers to produce their own fresh food.", "Many people prefer shopping at supermarkets.", "Rural areas have more space for farming.", "Gardening tools can be expensive.", "Some people don't like vegetables."],
+      "correctAnswer": 0,
+      "explanation": "This sentence connects growing food to the benefits discussed next.",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "The concept of a circular economy is gaining traction globally. (I) Unlike the traditional linear model of take-make-dispose, it focuses on reuse and recycling. (II) Products are designed to be durable and easily repairable. (III) _____ (IV) This approach reduces waste and environmental impact. (V) Many companies are now adopting circular economy principles.",
+      "question": "What fits best in position (III)?",
+      "options": ["Materials are kept in use for as long as possible.", "Some people prefer disposable products.", "Manufacturing has a long history.", "Profits are important for businesses.", "Technology changes rapidly."],
+      "correctAnswer": 0,
+      "explanation": "This continues explaining circular economy principles.",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "_____ (I) Traditional storytelling methods are being supplemented by digital platforms. (II) Podcasts and audiobooks have made literature more accessible. (III) Interactive e-books engage readers in new ways. (IV) Despite these innovations, the fundamental human love for stories remains unchanged. (V) Technology simply provides new mediums for this ancient art form.",
+      "question": "Choose the best opening for this paragraph.",
+      "options": ["The art of storytelling is evolving with technology.", "Many people enjoy reading physical books.", "Libraries are important community resources.", "Writing skills require practice.", "Education systems vary worldwide."],
+      "correctAnswer": 0,
+      "explanation": "This introduces the theme of storytelling and technology.",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "Remote work has transformed professional life for millions. (I) Employees can now work from anywhere with internet access. (II) This flexibility offers better work-life balance for many. (III) _____ (IV) Companies are rethinking traditional office spaces. (V) The future of work will likely be a hybrid model combining remote and in-person collaboration.",
+      "question": "Which sentence completes the paragraph best?",
+      "options": ["However, it also presents challenges like isolation and communication difficulties.", "Some people prefer working in offices.", "Technology is advancing quickly.", "Many cities have tall buildings.", "Traffic congestion is a problem."],
+      "correctAnswer": 0,
+      "explanation": "This provides balance by mentioning challenges after benefits.",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "Protecting biodiversity is crucial for ecosystem health. (I) Every species plays a role in maintaining ecological balance. (II) _____ (III) Conservation efforts focus on protecting habitats and endangered species. (IV) International cooperation is essential for these efforts to succeed. (V) The survival of future generations depends on the actions we take today.",
+      "question": "Select the appropriate sentence for blank (II).",
+      "options": ["When one species disappears, it can have cascading effects throughout the ecosystem.", "Many people enjoy visiting national parks.", "Animals are interesting to observe.", "Pollution affects many areas.", "Seasons change throughout the year."],
+      "correctAnswer": 0,
+      "explanation": "This explains why biodiversity matters, connecting to conservation efforts.",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "_____ (I) These sustainable practices reduce reliance on chemical pesticides and fertilizers. (II) Crop rotation and companion planting improve soil health naturally. (III) Many farmers are seeing increased yields and lower costs. (IV) Consumer demand for organic products continues to grow. (V) This shift represents a return to traditional farming wisdom combined with modern knowledge.",
+      "question": "What should begin this paragraph?",
+      "options": ["Organic farming methods are experiencing a renaissance.", "Farming has existed for thousands of years.", "Many people live in cities.", "Technology improves agriculture.", "Food prices vary by region."],
+      "correctAnswer": 0,
+      "explanation": "This introduces organic farming as the paragraph's topic.",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "Financial literacy is an essential life skill. (I) Understanding budgeting helps people manage their money effectively. (II) Knowing about investments allows for long-term wealth building. (III) _____ (IV) These skills provide security and reduce financial stress. (V) Schools should incorporate financial education into their curricula.",
+      "question": "Choose the best sentence for position (III).",
+      "options": ["Being able to distinguish between needs and wants prevents unnecessary spending.", "Many people use credit cards.", "Banks provide various services.", "Money has been used for centuries.", "Some countries have different currencies."],
+      "correctAnswer": 0,
+      "explanation": "This adds another important financial literacy skill fitting the pattern.",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "Cultural exchange programs benefit participants in numerous ways. (I) They promote understanding between different societies. (II) Participants develop language skills and cultural awareness. (III) _____ (IV) These experiences often inspire lifelong connections and friendships. (V) In an increasingly globalized world, such programs are more valuable than ever.",
+      "question": "What fits best in blank (III)?",
+      "options": ["Living in another country challenges assumptions and broadens perspectives.", "Many universities offer study abroad programs.", "Learning languages takes time.", "Different countries have unique customs.", "Traveling can be expensive."],
+      "correctAnswer": 0,
+      "explanation": "This explains a key benefit of cultural exchange programs.",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
     }
   ]
 }
