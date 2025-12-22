@@ -256,6 +256,61 @@ body {
     color: #333;
 }
 
+/* Level and Topic Selection */
+.level-buttons, .topic-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-level, .btn-topic {
+    padding: 14px 10px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-level:hover, .btn-topic:hover {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.btn-level:active, .btn-topic:active {
+    transform: translateY(0);
+}
+
+.topic-buttons {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-random {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn-random:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(17, 153, 142, 0.3);
+}
+
 /* Quiz History */
 .quiz-history-item {
     display: flex;

@@ -16,6 +16,8 @@ const state = {
     quizActive: false,
     currentTestQuestions: [],
     showRegister: false,
+    selectedLevel: null, // A2, B1, B2, C1, C2
+    selectedTopic: null, // Grammar, Vocabulary, Reading, etc.
     userStats: {
         totalQuizzes: 0,
         totalQuestions: 0,
@@ -292,15 +294,30 @@ async function loadQuestions() {
     }
 }
 
-function startQuiz() {
+function startQuiz(level = null, topic = null) {
     if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
         alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
         return;
     }
     
-    // Random 20 soru seç
-    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
-    state.currentTestQuestions = shuffled.slice(0, 20);
+    // Filtrele: level veya topic seçildiyse
+    let filteredQuestions = allQuestions;
+    if (level) {
+        filteredQuestions = filteredQuestions.filter(q => q.level === level);
+    }
+    if (topic) {
+        filteredQuestions = filteredQuestions.filter(q => q.topic === topic);
+    }
+    
+    if (filteredQuestions.length === 0) {
+        alert('Bu kategoride soru bulunamadı.');
+        return;
+    }
+    
+    // Random 20 soru seç (veya mevcut kadar)
+    const shuffled = [...filteredQuestions].sort(() => 0.5 - Math.random());
+    const questionCount = Math.min(20, shuffled.length);
+    state.currentTestQuestions = shuffled.slice(0, questionCount);
     
     // State'i sıfırla
     state.currentQuestion = 0;
@@ -311,10 +328,14 @@ function startQuiz() {
     state.quizActive = true;
     state.timer = 1200; // 20 dakika
     state.startTime = Date.now();
+    state.selectedLevel = level;
+    state.selectedTopic = topic;
     
     // Timer başlat
     startTimer();
     
+    // Quiz sayfasına geç
+    state.currentPage = 'quiz';
     render();
 }
 
@@ -485,12 +506,29 @@ function renderDashboard() {
                 
                 <div class="cards-grid">
                     <div class="card">
-                        <h2>Hızlı Başlat</h2>
-                        <p style="margin-bottom: 20px;">20 soruluk yeni bir test çöz</p>
-                        <button onclick="startQuiz()" class="btn-primary">Test Başlat</button>
+                        <h2>🎯 Seviyeye Göre Test</h2>
+                        <div class="level-buttons">
+                            <button onclick="startQuiz('A2', null)" class="btn-level">A2</button>
+                            <button onclick="startQuiz('B1', null)" class="btn-level">B1</button>
+                            <button onclick="startQuiz('B2', null)" class="btn-level">B2</button>
+                            <button onclick="startQuiz('C1', null)" class="btn-level">C1</button>
+                            <button onclick="startQuiz('C2', null)" class="btn-level">C2</button>
+                        </div>
                     </div>
                     
                     <div class="card">
+                        <h2>📚 Konuya Göre Test</h2>
+                        <div class="topic-buttons">
+                            <button onclick="startQuiz(null, 'Grammar')" class="btn-topic">Grammar</button>
+                            <button onclick="startQuiz(null, 'Vocabulary')" class="btn-topic">Vocabulary</button>
+                            <button onclick="startQuiz(null, 'Reading')" class="btn-topic">Reading</button>
+                            <button onclick="startQuiz(null, 'Prepositions')" class="btn-topic">Prepositions</button>
+                        </div>
+                        <button onclick="startQuiz(null, null)" class="btn-random">🎲 Rastgele Test Başlat</button>
+                    </div>
+                </div>
+                
+                <div class="card">
                         <h2>Son Testlerin</h2>
                         ${recentQuizzes.length > 0 ? recentQuizzes.map(quiz => `
                             <div class="quiz-history-item">
