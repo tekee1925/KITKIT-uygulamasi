@@ -1,42 +1,68 @@
-# KİTKİT Quiz Uygulaması
+# 📚 YDS Hazırlık Uygulaması
 
-Kullanıcı adı tabanlı kimlik doğrulaması ve Firebase backend ile quiz uygulaması.
+Firebase tabanlı, kullanıcı adı ile giriş yapılan interaktif YDS sınav hazırlık platformu.
 
-## Kurulum Talimatları
+## 🚀 Özellikler
 
-### 1. Firebase Yapılandırması
+- ✅ **Kullanıcı Adı ile Giriş** - Email yerine benzersiz kullanıcı adı sistemi
+- ✅ **Güvenli Kimlik Doğrulama** - Firebase Authentication ile güvenli giriş
+- ✅ **Soru Bankası** - JSON tabanlı esnek soru yapısı
+- ✅ **İlerleme Takibi** - Firestore ile kullanıcı verilerinin saklanması
+- ✅ **Responsive Tasarım** - Mobil ve masaüstü uyumlu arayüz
 
-1. `firebase-config.template.js` dosyasını kopyalayın ve `firebase-config.js` olarak kaydedin:
+## 📋 Kurulum
+
+### Adım 1: Projeyi Klonlayın
+
+```bash
+git clone https://github.com/tekee1925/YDS-uygulamasi.git
+cd YDS-uygulamasi
+```
+
+### Adım 2: Firebase Yapılandırması
+
+1. **Firebase projesi oluşturun:**
+   - [Firebase Console](https://console.firebase.google.com) adresine gidin
+   - "Add project" ile yeni proje oluşturun
+   - Web uygulaması (</>) ekleyin
+
+2. **Config dosyasını hazırlayın:**
    ```bash
    copy firebase-config.template.js firebase-config.js
    ```
 
-2. `firebase-config.js` dosyasını açın ve kendi Firebase proje bilgilerinizi ekleyin:
-   - Firebase Console'dan (https://console.firebase.google.com) projenizi açın
-   - Project Settings > Your apps bölümünden web app config'inizi kopyalayın
-   - Tüm `YOUR_*` placeholder'ları gerçek değerlerle değiştirin
+3. **Firebase ayarlarınızı ekleyin:**
+   - Firebase Console > Project Settings > Your apps
+   - Config bilgilerini kopyalayın
+   - `firebase-config.js` dosyasındaki `YOUR_*` değerlerini gerçek değerlerle değiştirin
 
-### 2. Firebase Proje Ayarları
+### Adım 3: Firebase Servislerini Aktifleştirin
 
-Firebase Console'da aşağıdaki servisleri aktif edin:
+**Authentication:**
+- Firebase Console > Authentication
+- "Get started" butonuna tıklayın
+- Sign-in method > Email/Password'u aktifleştirin
 
-#### Authentication
-- Email/Password authentication'ı aktif edin
+**Firestore Database:**
+- Firebase Console > Firestore Database
+- "Create database" butonuna tıklayın
+- Test mode seçin (geliştirme için)
+- Region seçin (örn: europe-west)
 
-#### Firestore Database
-- Test mode ile database oluşturun
-- Security Rules'ı aşağıdaki gibi güncelleyin:
+**Security Rules:**
+
+Firestore > Rules sekmesinde aşağıdaki kuralları ekleyin:
 
 ```javascript
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Users koleksiyonu - sadece kendi verilerine erişim
+    // Users - sadece kendi verilerine erişim
     match /users/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
     
-    // Usernames koleksiyonu - herkes okuyabilir, sadece authenticated kullanıcılar yazabilir
+    // Usernames - herkes okuyabilir, authenticated kullanıcılar yazabilir
     match /usernames/{username} {
       allow read: if true;
       allow write: if request.auth != null;
@@ -45,34 +71,69 @@ service cloud.firestore {
 }
 ```
 
-### 3. Uygulamayı Çalıştırma
-
-Local bir web server başlatın:
+### Adım 4: Uygulamayı Çalıştırın
 
 ```bash
 # Python 3
 python -m http.server 8000
-
-# veya Python 2
-python -m SimpleHTTPServer 8000
 ```
 
-Tarayıcınızda `http://localhost:8000` adresini açın.
+Tarayıcınızda **http://localhost:8000** adresini açın.
 
-## Özellikler
+## 🎯 Kullanım
 
-- ✅ Kullanıcı adı tabanlı kayıt/giriş sistemi
-- ✅ Kullanıcı adı benzersizlik kontrolü
-- ✅ Soru ve cevapların Firebase'de saklanması
-- ✅ Kullanıcı progress tracking
-- ✅ Güvenli kimlik doğrulama
+1. **Kayıt Olun:** Kullanıcı adı, ad soyad ve şifre ile kayıt olun
+2. **Giriş Yapın:** Kullanıcı adınız ve şifrenizle giriş yapın
+3. **Sorulara Başlayın:** Quiz sorularını cevaplayın
+4. **İlerlemenizi Takip Edin:** Verileriniz otomatik olarak kaydedilir
 
-## Güvenlik Notu
+## 🛠️ Teknolojiler
 
-⚠️ **ÖNEMLİ**: `firebase-config.js` dosyası gizli bilgiler içerir ve `.gitignore` ile hariç tutulmuştur. Bu dosyayı asla GitHub'a yüklemeyin!
+- **Frontend:** Vanilla JavaScript (ES6 Modules)
+- **Backend:** Firebase
+  - Authentication (Email/Password)
+  - Firestore Database
+- **Styling:** Custom CSS
 
-## Teknik Detaylar
+## 📁 Proje Yapısı
 
-- Frontend: Vanilla JavaScript (ES6 Modules)
-- Backend: Firebase (Authentication + Firestore)
-- Hosting: Static web hosting (GitHub Pages, Netlify, Vercel, vb. kullanılabilir)
+```
+YDS-uygulamasi/
+├── index.html                      # Ana HTML dosyası
+├── app.js                          # Uygulama mantığı
+├── styles.css                      # Stil dosyası
+├── questions.json                  # Soru bankası
+├── firebase-config.js              # Firebase config (GİZLİ - .gitignore)
+├── firebase-config.template.js     # Config şablonu
+├── .gitignore                      # Git ignore kuralları
+├── FIREBASE_SETUP.md              # Detaylı Firebase kurulum
+└── README.md                       # Bu dosya
+```
+
+## 🔒 Güvenlik
+
+⚠️ **ÖNEMLİ:** `firebase-config.js` dosyası hassas bilgiler içerir!
+
+- ✅ `.gitignore` ile GitHub'dan hariç tutulmuştur
+- ✅ Asla public repository'ye yüklemeyin
+- ✅ Şablon dosya (`firebase-config.template.js`) kullanın
+
+## 📝 Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır.
+
+## 🤝 Katkıda Bulunma
+
+1. Fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing`)
+3. Commit edin (`git commit -m 'Yeni özellik eklendi'`)
+4. Push edin (`git push origin feature/amazing`)
+5. Pull Request açın
+
+## 📧 İletişim
+
+Sorularınız için issue açabilirsiniz.
+
+---
+
+⭐ Beğendiyseniz yıldız vermeyi unutmayın!
