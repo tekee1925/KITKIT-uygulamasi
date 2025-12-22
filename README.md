@@ -2,6 +2,12 @@
 
 Firebase tabanlı, kullanıcı adı ile giriş yapılan interaktif YDS sınav hazırlık platformu.
 
+## 🌐 Canlı Demo
+
+**[🎯 Uygulamayı Deneyin](https://tekee1925.github.io/YDS-uygulamasi/)**
+
+> Kayıt olup hemen kullanmaya başlayabilirsiniz!
+
 ## 🚀 Özellikler
 
 - ✅ **Kullanıcı Adı ile Giriş** - Email yerine benzersiz kullanıcı adı sistemi
