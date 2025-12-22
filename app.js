@@ -283,7 +283,9 @@ function logout() {
 async function loadQuestions() {
     try {
         const response = await fetch('questions.json');
-        allQuestions = await response.json();
+        const data = await response.json();
+        // JSON dosyası { questions: [...] } formatında
+        allQuestions = Array.isArray(data) ? data : (data.questions || []);
     } catch (error) {
         console.error('Sorular yüklenemedi:', error);
         alert('Sorular yüklenemedi. Lütfen sayfayı yenileyin.');
@@ -291,7 +293,7 @@ async function loadQuestions() {
 }
 
 function startQuiz() {
-    if (allQuestions.length === 0) {
+    if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
         alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
         return;
     }
