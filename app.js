@@ -281,16 +281,16 @@ const availableTopics = [
     { id: 'prepositions', name: 'Prepositions', icon: '🔗', description: 'In, on, at, for, etc.' }
 ];
 
-// Gerçek YDS ve YÖKDİL sınav tarihleri (2025)
+// Gerçek YDS ve YÖKDİL sınav tarihleri (2026)
 const upcomingExams = [
-    { name: 'YDS/1 (İlkbahar)', date: '2025-03-30', type: 'YDS' },
-    { name: 'YÖKDİL Sosyal/1', date: '2025-05-11', type: 'YÖKDİL' },
-    { name: 'YÖKDİL Fen/1', date: '2025-05-11', type: 'YÖKDİL' },
-    { name: 'YÖKDİL Sağlık/1', date: '2025-05-11', type: 'YÖKDİL' },
-    { name: 'YDS/2 (Sonbahar)', date: '2025-09-14', type: 'YDS' },
-    { name: 'YÖKDİL Sosyal/2', date: '2025-11-09', type: 'YÖKDİL' },
-    { name: 'YÖKDİL Fen/2', date: '2025-11-09', type: 'YÖKDİL' },
-    { name: 'YÖKDİL Sağlık/2', date: '2025-11-09', type: 'YÖKDİL' }
+    { name: 'YDS/1 (İlkbahar)', date: '2026-03-29', type: 'YDS' },
+    { name: 'YÖKDİL Sosyal/1', date: '2026-05-10', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Fen/1', date: '2026-05-10', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Sağlık/1', date: '2026-05-10', type: 'YÖKDİL' },
+    { name: 'YDS/2 (Sonbahar)', date: '2026-09-13', type: 'YDS' },
+    { name: 'YÖKDİL Sosyal/2', date: '2026-11-08', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Fen/2', date: '2026-11-08', type: 'YÖKDİL' },
+    { name: 'YÖKDİL Sağlık/2', date: '2026-11-08', type: 'YÖKDİL' }
 ];
 
 // Yaklaşan sınavları hesapla (bugünden sonraki 3 sınav)
