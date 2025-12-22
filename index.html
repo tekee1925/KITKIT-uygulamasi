@@ -43,9 +43,22 @@
             getDocs
         };
 
+        console.log('Firebase initialized successfully');
+
         // Firebase hazır olduğunda app.js'i yükle
         const script = document.createElement('script');
         script.src = 'app.js';
+        script.onload = () => console.log('app.js loaded successfully');
+        script.onerror = (e) => {
+            console.error('Failed to load app.js:', e);
+            document.getElementById('app').innerHTML = `
+                <div style="padding: 40px; text-align: center; color: white;">
+                    <h1>Yükleme Hatası</h1>
+                    <p>app.js yüklenemedi. Lütfen sayfayı yenileyin.</p>
+                    <button onclick="location.reload()" style="padding: 10px 20px; margin-top: 20px; cursor: pointer;">Yenile</button>
+                </div>
+            `;
+        };
         document.body.appendChild(script);
     </script>
 </body>
