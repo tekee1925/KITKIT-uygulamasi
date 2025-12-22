@@ -350,6 +350,93 @@ function startMockExam(examNumber) {
     render();
 }
 
+function startLevelTest(level, testNumber) {
+    if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
+        alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
+        return;
+    }
+    
+    // Belirli seviyedeki soruları filtrele
+    const filteredQuestions = allQuestions.filter(q => q.level === level);
+    
+    if (filteredQuestions.length < 10) {
+        alert(`${level} seviyesinde yeterli soru yok. En az 10 soru gerekli.`);
+        return;
+    }
+    
+    // Test numarasına göre seed bazlı sıralama
+    const seed = level.charCodeAt(0) * 1000 + testNumber * 100;
+    const seededRandom = (index) => {
+        const x = Math.sin(seed + index) * 10000;
+        return x - Math.floor(x);
+    };
+    
+    const shuffled = [...filteredQuestions]
+        .map((q, i) => ({ q, sort: seededRandom(i) }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(item => item.q);
+    
+    // 10 soru seç
+    state.currentTestQuestions = shuffled.slice(0, 10);
+    
+    // State'i sıfırla
+    state.currentQuestion = 0;
+    state.score = 0;
+    state.correctAnswers = 0;
+    state.wrongAnswers = 0;
+    state.selectedAnswer = null;
+    state.quizActive = true;
+    state.timer = 600; // 10 dakika (10 soru için)
+    state.startTime = Date.now();
+    state.selectedLevel = level;
+    state.selectedTopic = null;
+    
+    // Timer başlat
+    startTimer();
+    
+    // Quiz sayfasına geç
+    state.currentPage = 'quiz';
+    render();
+}
+
+function startTopicTest(topic) {
+    if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
+        alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
+        return;
+    }
+    
+    // Belirli konudaki soruları filtrele
+    const filteredQuestions = allQuestions.filter(q => q.topic === topic);
+    
+    if (filteredQuestions.length < 10) {
+        alert(`${topic} konusunda yeterli soru yok. En az 10 soru gerekli.`);
+        return;
+    }
+    
+    // Random 10 soru seç
+    const shuffled = [...filteredQuestions].sort(() => 0.5 - Math.random());
+    state.currentTestQuestions = shuffled.slice(0, 10);
+    
+    // State'i sıfırla
+    state.currentQuestion = 0;
+    state.score = 0;
+    state.correctAnswers = 0;
+    state.wrongAnswers = 0;
+    state.selectedAnswer = null;
+    state.quizActive = true;
+    state.timer = 600; // 10 dakika
+    state.startTime = Date.now();
+    state.selectedLevel = null;
+    state.selectedTopic = topic;
+    
+    // Timer başlat
+    startTimer();
+    
+    // Quiz sayfasına geç
+    state.currentPage = 'quiz';
+    render();
+}
+
 function startQuiz(level = null, topic = null) {
     if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
         alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
@@ -531,6 +618,27 @@ function renderLogin() {
 function renderHome() {
     const recentQuizzes = state.userStats.quizHistory.slice(-3).reverse();
     
+    // 2026 Sınav Tarihleri
+    const exams = [
+        { name: 'YDS', date: new Date('2026-02-22'), type: 'YDS' },
+        { name: 'YÖKDİL', date: new Date('2026-03-15'), type: 'YÖKDİL' },
+        { name: 'YDS', date: new Date('2026-05-17'), type: 'YDS' },
+        { name: 'YÖKDİL', date: new Date('2026-06-14'), type: 'YÖKDİL' },
+        { name: 'YDS', date: new Date('2026-08-16'), type: 'YDS' },
+        { name: 'YÖKDİL', date: new Date('2026-09-20'), type: 'YÖKDİL' },
+        { name: 'YDS', date: new Date('2026-11-15'), type: 'YDS' },
+        { name: 'YÖKDİL', date: new Date('2026-12-13'), type: 'YÖKDİL' }
+    ];
+    
+    const now = new Date();
+    const upcomingExams = exams.filter(exam => exam.date > now).slice(0, 3);
+    
+    function getCountdown(examDate) {
+        const diff = examDate - now;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        return days;
+    }
+    
     return `
         <div class="dashboard">
             ${renderNavbar('home')}
@@ -541,22 +649,24 @@ function renderHome() {
                     <p>Bugün hangi konuya odaklanmak istersin?</p>
                 </div>
                 
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>Çözülen Test</h3>
-                        <div class="value">${state.userStats.totalQuizzes}</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Toplam Soru</h3>
-                        <div class="value">${state.userStats.totalQuestions}</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Doğru Cevap</h3>
-                        <div class="value">${state.userStats.correctAnswers}</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Ortalama Başarı</h3>
-                        <div class="value">${state.userStats.averageScore}%</div>
+                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                    <h2>📅 Yaklaşan Sınavlar (2026)</h2>
+                    <div style="display: grid; gap: 15px; margin-top: 20px;">
+                        ${upcomingExams.map(exam => {
+                            const days = getCountdown(exam.date);
+                            return `
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: white; border-radius: 10px; border-left: 4px solid ${exam.type === 'YDS' ? '#2196F3' : '#FF9800'};">
+                                    <div>
+                                        <div style="font-size: 18px; font-weight: bold; color: #333;">${exam.name}</div>
+                                        <div style="color: #666; margin-top: 5px;">${exam.date.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div style="font-size: 32px; font-weight: bold; color: ${days <= 30 ? '#EF5350' : '#667eea'};">${days}</div>
+                                        <div style="color: #666; font-size: 14px;">gün kaldı</div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
                     </div>
                 </div>
                 
@@ -606,6 +716,8 @@ function renderHome() {
 
 function renderStats() {
     const allQuizzes = state.userStats.quizHistory.slice().reverse();
+    const successRate = state.userStats.totalQuestions > 0 ? Math.round((state.userStats.correctAnswers / state.userStats.totalQuestions) * 100) : 0;
+    const failureRate = 100 - successRate;
     
     return `
         <div class="dashboard">
@@ -644,6 +756,48 @@ function renderStats() {
                     </div>
                 </div>
                 
+                <div class="card" style="background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
+                    <h2>📊 Başarı Grafiği</h2>
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+                            <div style="flex: 1;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span style="font-weight: 600; color: #4CAF50;">✓ Doğru</span>
+                                    <span style="font-weight: bold; color: #4CAF50;">${successRate}%</span>
+                                </div>
+                                <div style="height: 30px; background: #E0E0E0; border-radius: 15px; overflow: hidden;">
+                                    <div style="height: 100%; background: linear-gradient(90deg, #4CAF50, #8BC34A); width: ${successRate}%; transition: width 1s;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="flex: 1;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span style="font-weight: 600; color: #EF5350;">✗ Yanlış</span>
+                                    <span style="font-weight: bold; color: #EF5350;">${failureRate}%</span>
+                                </div>
+                                <div style="height: 30px; background: #E0E0E0; border-radius: 15px; overflow: hidden;">
+                                    <div style="height: 100%; background: linear-gradient(90deg, #EF5350, #FF9800); width: ${failureRate}%; transition: width 1s;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; padding-top: 20px; border-top: 2px dashed #4CAF50;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Toplam Soru</div>
+                            <div style="font-size: 28px; font-weight: bold; color: #2196F3;">${state.userStats.totalQuestions}</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Doğru Sayısı</div>
+                            <div style="font-size: 28px; font-weight: bold; color: #4CAF50;">${state.userStats.correctAnswers}</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Yanlış Sayısı</div>
+                            <div style="font-size: 28px; font-weight: bold; color: #EF5350;">${state.userStats.wrongAnswers}</div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="card">
                     <h2>📈 Test Geçmişi</h2>
                     ${allQuizzes.length > 0 ? allQuizzes.map(quiz => `
@@ -670,6 +824,20 @@ function renderStats() {
 }
 
 function renderTests() {
+    const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    const topics = [
+        { id: 'Vocabulary', name: 'Kelime – Phrasal Verb', icon: '📖' },
+        { id: 'Grammar', name: 'Tense – Preposition – Dilbilgisi', icon: '📚' },
+        { id: 'Cloze', name: 'Cloze Test', icon: '📝' },
+        { id: 'Completion', name: 'Cümle Tamamlama', icon: '✍️' },
+        { id: 'Translation', name: 'Çeviri', icon: '🔄' },
+        { id: 'Reading', name: 'Paragraf', icon: '📰' },
+        { id: 'Dialog', name: 'Diyalog Tamamlama', icon: '💬' },
+        { id: 'Paraphrase', name: 'Yakın Anlamlı Cümle', icon: '🔁' },
+        { id: 'Paragraph-Completion', name: 'Paragraf Tamamlama', icon: '📄' },
+        { id: 'Irrelevant', name: 'Anlatım Bütünlüğünü Bozan Cümle', icon: '❌' }
+    ];
+    
     return `
         <div class="dashboard">
             ${renderNavbar('tests')}
@@ -681,26 +849,30 @@ function renderTests() {
                 </div>
                 
                 <div class="card">
-                    <h2>🎯 Seviyeye Göre Test (20 Soru)</h2>
-                    <p style="margin-bottom: 20px; color: #666;">İngilizce seviyene uygun sorularla pratik yap</p>
-                    <div class="level-buttons" style="grid-template-columns: repeat(6, 1fr);">
-                        <button onclick="startQuiz('A1', null)" class="btn-level">A1</button>
-                        <button onclick="startQuiz('A2', null)" class="btn-level">A2</button>
-                        <button onclick="startQuiz('B1', null)" class="btn-level">B1</button>
-                        <button onclick="startQuiz('B2', null)" class="btn-level">B2</button>
-                        <button onclick="startQuiz('C1', null)" class="btn-level">C1</button>
-                        <button onclick="startQuiz('C2', null)" class="btn-level">C2</button>
-                    </div>
+                    <h2>🎯 Seviyeye Göre Testler</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Her seviye için 3 test, her test 10 soru</p>
+                    ${levels.map(level => `
+                        <div style="margin-bottom: 30px; padding: 20px; background: #F5F7FA; border-radius: 12px;">
+                            <h3 style="margin-bottom: 15px; color: #333;">${level} Seviyesi</h3>
+                            <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
+                                <button onclick="startLevelTest('${level}', 1)" class="btn-level">Test 1</button>
+                                <button onclick="startLevelTest('${level}', 2)" class="btn-level">Test 2</button>
+                                <button onclick="startLevelTest('${level}', 3)" class="btn-level">Test 3</button>
+                            </div>
+                        </div>
+                    `).join('')}
                 </div>
                 
                 <div class="card">
-                    <h2>📚 Konuya Göre Test (20 Soru)</h2>
-                    <p style="margin-bottom: 20px; color: #666;">Belirli konularda kendinizi test edin</p>
-                    <div class="topic-buttons">
-                        <button onclick="startQuiz(null, 'Grammar')" class="btn-topic">Grammar</button>
-                        <button onclick="startQuiz(null, 'Vocabulary')" class="btn-topic">Vocabulary</button>
-                        <button onclick="startQuiz(null, 'Reading')" class="btn-topic">Reading</button>
-                        <button onclick="startQuiz(null, 'Prepositions')" class="btn-topic">Prepositions</button>
+                    <h2>📚 Konuya Göre Testler</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Her konu için 10 soruluk testler</p>
+                    <div style="display: grid; gap: 12px;">
+                        ${topics.map(topic => `
+                            <button onclick="startTopicTest('${topic.id}')" class="btn-topic-test">
+                                <span style="font-size: 24px; margin-right: 10px;">${topic.icon}</span>
+                                <span>${topic.name}</span>
+                            </button>
+                        `).join('')}
                     </div>
                 </div>
                 
