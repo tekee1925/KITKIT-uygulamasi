@@ -200,7 +200,7 @@ async function handleLogin() {
         await waitForFirebase();
         const user = await firebaseLogin(username, password);
         await loadUserData(user.uid);
-        state.currentPage = 'dashboard';
+        state.currentPage = 'home';
         render();
     } catch (error) {
         if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
@@ -247,7 +247,7 @@ async function handleRegisterSubmit() {
         await waitForFirebase();
         const user = await firebaseRegister(username, password, fullname);
         await loadUserData(user.uid);
-        state.currentPage = 'dashboard';
+        state.currentPage = 'home';
         render();
     } catch (error) {
         if (error.message === 'Bu kullanıcı adı zaten kullanılıyor') {
@@ -300,7 +300,7 @@ function exitQuiz() {
             clearInterval(state.timerInterval);
         }
         state.quizActive = false;
-        state.currentPage = 'dashboard';
+        state.currentPage = 'tests';
         state.selectedAnswer = null;
         state.currentQuestion = 0;
         state.currentTestQuestions = [];
@@ -528,17 +528,17 @@ function renderLogin() {
     `;
 }
 
-function renderDashboard() {
-    const recentQuizzes = state.userStats.quizHistory.slice(-5).reverse();
+function renderHome() {
+    const recentQuizzes = state.userStats.quizHistory.slice(-3).reverse();
     
     return `
         <div class="dashboard">
-            ${renderNavbar('dashboard')}
+            ${renderNavbar('home')}
             
             <div class="dashboard-content">
                 <div class="welcome-section">
-                    <h1>Hoş geldin, ${state.user.name}!</h1>
-                    <p>Hemen bir test çözmeye başla</p>
+                    <h1>Hoş geldin, ${state.user.name}! 👋</h1>
+                    <p>Bugün hangi konuya odaklanmak istersin?</p>
                 </div>
                 
                 <div class="stats-grid">
@@ -560,64 +560,216 @@ function renderDashboard() {
                     </div>
                 </div>
                 
-                <div class="card" style="grid-column: 1 / -1;">
-                    <h2>📝 Deneme Sınavları (80 Soru)</h2>
-                    <p style="margin-bottom: 20px; color: #666;">Gerçek sınav formatında tam deneme testleri</p>
-                    <div class="level-buttons">
-                        <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">1. Deneme</button>
-                        <button onclick="startMockExam(2)" class="btn-level" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none;">2. Deneme</button>
-                        <button onclick="startMockExam(3)" class="btn-level" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; border: none;">3. Deneme</button>
-                    </div>
-                </div>
-                
                 <div class="cards-grid">
                     <div class="card">
-                        <h2>🎯 Seviyeye Göre Test</h2>
-                        <div class="level-buttons" style="grid-template-columns: repeat(6, 1fr);">
-                            <button onclick="startQuiz('A1', null)" class="btn-level">A1</button>
-                            <button onclick="startQuiz('A2', null)" class="btn-level">A2</button>
-                            <button onclick="startQuiz('B1', null)" class="btn-level">B1</button>
-                            <button onclick="startQuiz('B2', null)" class="btn-level">B2</button>
-                            <button onclick="startQuiz('C1', null)" class="btn-level">C1</button>
-                            <button onclick="startQuiz('C2', null)" class="btn-level">C2</button>
-                        </div>
+                        <h2>🎯 Hızlı Başlat</h2>
+                        <p style="margin-bottom: 20px; color: #666;">Hemen teste başla!</p>
+                        <button onclick="startQuiz(null, null)" class="btn-primary">🚀 Rastgele Test (20 Soru)</button>
+                        <button onclick="changePage(event, 'tests')" class="btn-secondary" style="margin-top: 10px;">📝 Testlere Git</button>
                     </div>
                     
                     <div class="card">
-                        <h2>📚 Konuya Göre Test</h2>
-                        <div class="topic-buttons">
-                            <button onclick="startQuiz(null, 'Grammar')" class="btn-topic">Grammar</button>
-                            <button onclick="startQuiz(null, 'Vocabulary')" class="btn-topic">Vocabulary</button>
-                            <button onclick="startQuiz(null, 'Reading')" class="btn-topic">Reading</button>
-                            <button onclick="startQuiz(null, 'Prepositions')" class="btn-topic">Prepositions</button>
+                        <h2>🎯 Deneme Sınavları</h2>
+                        <p style="margin-bottom: 20px; color: #666;">80 soruluk tam denemeler</p>
+                        <button onclick="startMockExam(1)" class="btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">1. Deneme Başlat</button>
+                        <button onclick="changePage(event, 'mock-exams')" class="btn-secondary" style="margin-top: 10px;">Tüm Denemelere Git</button>
+                    </div>
+                </div>
+                
+                ${recentQuizzes.length > 0 ? `
+                <div class="card">
+                    <h2>📚 Son Testlerin</h2>
+                    ${recentQuizzes.map(quiz => `
+                        <div class="quiz-history-item">
+                            <div>
+                                <div class="quiz-score">${quiz.score}/${quiz.total}</div>
+                                <div class="quiz-date">${new Date(quiz.date).toLocaleDateString('tr-TR')}</div>
+                            </div>
+                            <div class="quiz-percentage" style="color: ${quiz.percentage >= 70 ? '#4CAF50' : '#FF9800'}">
+                                %${quiz.percentage}
+                            </div>
                         </div>
-                        <button onclick="startQuiz(null, null)" class="btn-random">🎲 Rastgele Test Başlat</button>
+                    `).join('')}
+                    <button onclick="changePage(event, 'stats')" class="btn-secondary" style="margin-top: 15px;">Tüm İstatistikleri Gör</button>
+                </div>
+                ` : `
+                <div class="card" style="text-align: center; padding: 40px;">
+                    <h2>📚 İlk Testini Çöz!</h2>
+                    <p style="color: #666; margin: 20px 0;">Henüz hiç test çözmedin. Hemen başla ve ilerlemeni takip et!</p>
+                    <button onclick="startQuiz(null, null)" class="btn-primary">İlk Testi Başlat</button>
+                </div>
+                `}
+            </div>
+        </div>
+    `;
+}
+
+function renderStats() {
+    const allQuizzes = state.userStats.quizHistory.slice().reverse();
+    
+    return `
+        <div class="dashboard">
+            ${renderNavbar('stats')}
+            
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h1>📊 İstatistikler</h1>
+                    <p>Performansını takip et ve gelişimini gör</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Çözülen Test</h3>
+                        <div class="value">${state.userStats.totalQuizzes}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Toplam Soru</h3>
+                        <div class="value">${state.userStats.totalQuestions}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Doğru Cevap</h3>
+                        <div class="value">${state.userStats.correctAnswers}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Yanlış Cevap</h3>
+                        <div class="value">${state.userStats.wrongAnswers}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Ortalama Başarı</h3>
+                        <div class="value">${state.userStats.averageScore}%</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>En İyi Skor</h3>
+                        <div class="value">${allQuizzes.length > 0 ? Math.max(...allQuizzes.map(q => q.percentage)) : 0}%</div>
                     </div>
                 </div>
                 
                 <div class="card">
-                        <h2>Son Testlerin</h2>
-                        ${recentQuizzes.length > 0 ? recentQuizzes.map(quiz => `
-                            <div class="quiz-history-item">
-                                <div>
-                                    <div class="quiz-score">${quiz.score}/${quiz.total}</div>
-                                    <div class="quiz-date">${new Date(quiz.date).toLocaleDateString('tr-TR')}</div>
-                                </div>
-                                <div class="quiz-percentage" style="color: ${quiz.percentage >= 70 ? '#4CAF50' : '#FF9800'}">
-                                    %${quiz.percentage}
-                                </div>
+                    <h2>📈 Test Geçmişi</h2>
+                    ${allQuizzes.length > 0 ? allQuizzes.map(quiz => `
+                        <div class="quiz-history-item">
+                            <div>
+                                <div class="quiz-score">${quiz.score}/${quiz.total} Soru</div>
+                                <div class="quiz-date">${new Date(quiz.date).toLocaleDateString('tr-TR', { 
+                                    year: 'numeric', 
+                                    month: 'long', 
+                                    day: 'numeric',
+                                    hour: '2-digit',
+                                    minute: '2-digit'
+                                })}</div>
                             </div>
-                        `).join('') : '<p style="text-align: center; color: #999;">Henüz test çözmedin</p>'}
-                    </div>
+                            <div class="quiz-percentage" style="color: ${quiz.percentage >= 70 ? '#4CAF50' : quiz.percentage >= 50 ? '#FF9800' : '#EF5350'}">
+                                %${quiz.percentage}
+                            </div>
+                        </div>
+                    `).join('') : '<p style="text-align: center; color: #999; padding: 40px;">Henüz test çözmedin. İlk testini çöz ve istatistiklerini görmeye başla!</p>'}
                 </div>
             </div>
         </div>
     `;
 }
 
+function renderTests() {
+    return `
+        <div class="dashboard">
+            ${renderNavbar('tests')}
+            
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h1>📝 Testler</h1>
+                    <p>Seviyene ve konuya göre test çöz</p>
+                </div>
+                
+                <div class="card">
+                    <h2>🎯 Seviyeye Göre Test (20 Soru)</h2>
+                    <p style="margin-bottom: 20px; color: #666;">İngilizce seviyene uygun sorularla pratik yap</p>
+                    <div class="level-buttons" style="grid-template-columns: repeat(6, 1fr);">
+                        <button onclick="startQuiz('A1', null)" class="btn-level">A1</button>
+                        <button onclick="startQuiz('A2', null)" class="btn-level">A2</button>
+                        <button onclick="startQuiz('B1', null)" class="btn-level">B1</button>
+                        <button onclick="startQuiz('B2', null)" class="btn-level">B2</button>
+                        <button onclick="startQuiz('C1', null)" class="btn-level">C1</button>
+                        <button onclick="startQuiz('C2', null)" class="btn-level">C2</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>📚 Konuya Göre Test (20 Soru)</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Belirli konularda kendinizi test edin</p>
+                    <div class="topic-buttons">
+                        <button onclick="startQuiz(null, 'Grammar')" class="btn-topic">Grammar</button>
+                        <button onclick="startQuiz(null, 'Vocabulary')" class="btn-topic">Vocabulary</button>
+                        <button onclick="startQuiz(null, 'Reading')" class="btn-topic">Reading</button>
+                        <button onclick="startQuiz(null, 'Prepositions')" class="btn-topic">Prepositions</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>🎲 Rastgele Test</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Tüm seviye ve konulardan karışık 20 soru</p>
+                    <button onclick="startQuiz(null, null)" class="btn-random">🎲 Rastgele Test Başlat</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderMockExams() {
+    return `
+        <div class="dashboard">
+            ${renderNavbar('mock-exams')}
+            
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h1>🎯 Deneme Sınavları</h1>
+                    <p>Gerçek sınav formatında 80 soruluk tam denemeler</p>
+                </div>
+                
+                <div class="card">
+                    <h2>📝 Deneme Sınavları (80 Soru - 80 Dakika)</h2>
+                    <p style="margin-bottom: 20px; color: #666;">
+                        Her deneme tüm konular ve düzeylerden 80 soru içerir. Her deneme için 80 dakika süreniz var.
+                        <br><strong>Not:</strong> Her deneme her seferinde aynı soruları içerir, böylece ilerlemenizi takip edebilirsiniz.
+                    </p>
+                    <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
+                        <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px;">
+                            <div style="font-size: 24px; margin-bottom: 10px;">1️⃣</div>
+                            <div>1. Deneme</div>
+                        </button>
+                        <button onclick="startMockExam(2)" class="btn-level" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none; padding: 20px;">
+                            <div style="font-size: 24px; margin-bottom: 10px;">2️⃣</div>
+                            <div>2. Deneme</div>
+                        </button>
+                        <button onclick="startMockExam(3)" class="btn-level" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; border: none; padding: 20px;">
+                            <div style="font-size: 24px; margin-bottom: 10px;">3️⃣</div>
+                            <div>3. Deneme</div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                    <h2>💡 İpuçları</h2>
+                    <ul style="color: #666; line-height: 2;">
+                        <li>✅ Deneme sınavlarını gerçek sınav gibi düşünün</li>
+                        <li>⏱️ Süre yönetimini pratik edin (soru başına ~1 dakika)</li>
+                        <li>📊 Her denemeden sonra sonuçlarınızı inceleyin</li>
+                        <li>🎯 Zayıf olduğunuz konulara odaklanın</li>
+                        <li>🔄 Aynı denemeyi tekrar çözerek ilerlemenizi ölçün</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderDashboard() {
+    // Backward compatibility - redirect to home
+    return renderHome();
+}
+
 function renderQuiz() {
     if (!state.quizActive) {
-        return renderDashboard();
+        return renderHome();
     }
     
     const currentQ = state.currentTestQuestions[state.currentQuestion];
@@ -685,8 +837,9 @@ function renderQuizResult() {
                 </div>
                 
                 <div class="result-actions">
-                    <button onclick="changePage(null, 'dashboard')" class="btn-secondary">Ana Sayfa</button>
-                    <button onclick="startQuiz()" class="btn-primary">Yeni Test</button>
+                    <button onclick="changePage(null, 'home')" class="btn-secondary">🏠 Ana Sayfa</button>
+                    <button onclick="changePage(null, 'stats')" class="btn-secondary">📊 İstatistikler</button>
+                    <button onclick="startQuiz(null, null)" class="btn-primary">🔄 Yeni Test</button>
                 </div>
             </div>
         </div>
@@ -741,12 +894,13 @@ function renderNavbar(activePage) {
                 <span style="font-weight: bold; font-size: 20px; margin-left: 10px;">KİTKİT</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#" class="${activePage === 'dashboard' ? 'active' : ''}" onclick="changePage(event, 'dashboard')">Ana Sayfa</a></li>
-                <li><a href="#" class="${activePage === 'profile' ? 'active' : ''}" onclick="changePage(event, 'profile')">Profil</a></li>
+                <li><a href="#" class="${activePage === 'home' ? 'active' : ''}" onclick="changePage(event, 'home')">🏠 Anasayfa</a></li>
+                <li><a href="#" class="${activePage === 'stats' ? 'active' : ''}" onclick="changePage(event, 'stats')">📊 İstatistikler</a></li>
+                <li><a href="#" class="${activePage === 'tests' ? 'active' : ''}" onclick="changePage(event, 'tests')">📝 Testler</a></li>
+                <li><a href="#" class="${activePage === 'mock-exams' ? 'active' : ''}" onclick="changePage(event, 'mock-exams')">🎯 Denemeler</a></li>
+                <li><a href="#" class="${activePage === 'profile' ? 'active' : ''}" onclick="changePage(event, 'profile')">👤 Profil</a></li>
             </ul>
-            <div class="user-profile" onclick="changePage(event, 'profile')" style="cursor: pointer;" title="Profil">
-                👤
-            </div>
+            <button onclick="logout()" class="btn-logout">Çıkış Yap</button>
         </nav>
     `;
 }
@@ -764,8 +918,20 @@ function render() {
         case 'login':
             content = renderLogin();
             break;
+        case 'home':
+            content = renderHome();
+            break;
+        case 'stats':
+            content = renderStats();
+            break;
+        case 'tests':
+            content = renderTests();
+            break;
+        case 'mock-exams':
+            content = renderMockExams();
+            break;
         case 'dashboard':
-            content = renderDashboard();
+            content = renderHome(); // Redirect old dashboard to home
             break;
         case 'quiz':
             content = renderQuiz();
@@ -777,7 +943,7 @@ function render() {
             content = renderProfile();
             break;
         default:
-            content = renderDashboard();
+            content = renderHome();
     }
     
     app.innerHTML = content;
