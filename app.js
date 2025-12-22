@@ -294,6 +294,62 @@ async function loadQuestions() {
     }
 }
 
+function exitQuiz() {
+    if (confirm('Testi sonlandırmak istediğinize emin misiniz? İlerlemeniz kaydedilmeyecek.')) {
+        if (state.timerInterval) {
+            clearInterval(state.timerInterval);
+        }
+        state.quizActive = false;
+        state.currentPage = 'dashboard';
+        state.selectedAnswer = null;
+        state.currentQuestion = 0;
+        state.currentTestQuestions = [];
+        render();
+    }
+}
+
+function startMockExam(examNumber) {
+    if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
+        alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
+        return;
+    }
+    
+    // Seed bazlı rastgele sıralama için basit hash fonksiyonu
+    const seed = examNumber * 12345;
+    const seededRandom = (index) => {
+        const x = Math.sin(seed + index) * 10000;
+        return x - Math.floor(x);
+    };
+    
+    // Soruları kopyala ve seed bazlı karıştır
+    const shuffled = [...allQuestions]
+        .map((q, i) => ({ q, sort: seededRandom(i) }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(item => item.q);
+    
+    // İlk 80 soruyu al
+    state.currentTestQuestions = shuffled.slice(0, Math.min(80, shuffled.length));
+    
+    // State'i sıfırla
+    state.currentQuestion = 0;
+    state.score = 0;
+    state.correctAnswers = 0;
+    state.wrongAnswers = 0;
+    state.selectedAnswer = null;
+    state.quizActive = true;
+    state.timer = 80 * 60; // 80 dakika (soru başına 1 dakika)
+    state.startTime = Date.now();
+    state.selectedLevel = null;
+    state.selectedTopic = null;
+    
+    // Timer başlat
+    startTimer();
+    
+    // Quiz sayfasına geç
+    state.currentPage = 'quiz';
+    render();
+}
+
 function startQuiz(level = null, topic = null) {
     if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
         alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
@@ -504,10 +560,21 @@ function renderDashboard() {
                     </div>
                 </div>
                 
+                <div class="card" style="grid-column: 1 / -1;">
+                    <h2>📝 Deneme Sınavları (80 Soru)</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Gerçek sınav formatında tam deneme testleri</p>
+                    <div class="level-buttons">
+                        <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">1. Deneme</button>
+                        <button onclick="startMockExam(2)" class="btn-level" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none;">2. Deneme</button>
+                        <button onclick="startMockExam(3)" class="btn-level" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; border: none;">3. Deneme</button>
+                    </div>
+                </div>
+                
                 <div class="cards-grid">
                     <div class="card">
                         <h2>🎯 Seviyeye Göre Test</h2>
-                        <div class="level-buttons">
+                        <div class="level-buttons" style="grid-template-columns: repeat(6, 1fr);">
+                            <button onclick="startQuiz('A1', null)" class="btn-level">A1</button>
                             <button onclick="startQuiz('A2', null)" class="btn-level">A2</button>
                             <button onclick="startQuiz('B1', null)" class="btn-level">B1</button>
                             <button onclick="startQuiz('B2', null)" class="btn-level">B2</button>
@@ -562,6 +629,7 @@ function renderQuiz() {
             <div class="quiz-header">
                 <div class="quiz-progress">Soru ${state.currentQuestion + 1} / ${state.currentTestQuestions.length}</div>
                 <div class="timer">⏱️ ${minutes}:${seconds.toString().padStart(2, '0')}</div>
+                <button onclick="exitQuiz()" class="btn-exit-quiz" title="Ana Sayfaya Dön">✕ Çıkış</button>
             </div>
             
             <div class="question-card">

@@ -2,6 +2,240 @@
   "questions": [
     {
       "passage": "",
+      "question": "Hello! My name _______ John.",
+      "options": ["am", "is", "are", "be", "was"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular uses 'is' with the verb 'to be'.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ a student.",
+      "options": ["am", "is", "are", "be", "been"],
+      "correctAnswer": 0,
+      "explanation": "First person singular uses 'am' with the verb 'to be'.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "They _______ from Spain.",
+      "options": ["am", "is", "are", "be", "was"],
+      "correctAnswer": 2,
+      "explanation": "Plural subjects use 'are' with the verb 'to be'.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "What _______ your name?",
+      "options": ["am", "is", "are", "be", "been"],
+      "correctAnswer": 1,
+      "explanation": "'Your name' is third person singular, so we use 'is'.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ coffee every morning.",
+      "options": ["drink", "drinks", "drinking", "drank", "drunk"],
+      "correctAnswer": 0,
+      "explanation": "First person singular uses base form in present simple.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She _______ English very well.",
+      "options": ["speak", "speaks", "speaking", "spoke", "spoken"],
+      "correctAnswer": 1,
+      "explanation": "Third person singular adds -s in present simple.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "This is _______ book.",
+      "options": ["a", "an", "the", "some", "any"],
+      "correctAnswer": 0,
+      "explanation": "Use 'a' before consonant sounds for singular countable nouns.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "That is _______ apple.",
+      "options": ["a", "an", "the", "some", "any"],
+      "correctAnswer": 1,
+      "explanation": "Use 'an' before vowel sounds.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "How _______ you?",
+      "options": ["am", "is", "are", "be", "been"],
+      "correctAnswer": 2,
+      "explanation": "'You' always takes 'are' in questions and statements.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I _______ two brothers.",
+      "options": ["has", "have", "having", "had", "haven"],
+      "correctAnswer": 1,
+      "explanation": "First person uses 'have' in present simple.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "What is this?",
+      "options": ["It is a pen", "This are pen", "It pen", "Is pen", "Are pen"],
+      "correctAnswer": 0,
+      "explanation": "Correct structure: It is + article + noun.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Where _______ you live?",
+      "options": ["does", "do", "is", "are", "did"],
+      "correctAnswer": 1,
+      "explanation": "Questions with 'you' use 'do' in present simple.",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "_______ do you do?",
+      "options": ["What", "Where", "When", "Who", "Why"],
+      "correctAnswer": 0,
+      "explanation": "'What do you do?' asks about someone's job or occupation.",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Nice to _______ you!",
+      "options": ["meet", "see", "know", "make", "have"],
+      "correctAnswer": 0,
+      "explanation": "'Nice to meet you' is a common greeting phrase.",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "I live _______ London.",
+      "options": ["at", "in", "on", "by", "to"],
+      "correctAnswer": 1,
+      "explanation": "Use 'in' for cities and countries.",
+      "level": "A1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The cat is _______ the box.",
+      "options": ["at", "in", "on", "by", "to"],
+      "correctAnswer": 1,
+      "explanation": "Use 'in' for something inside a container.",
+      "level": "A1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I go _______ school every day.",
+      "options": ["at", "in", "on", "by", "to"],
+      "correctAnswer": 4,
+      "explanation": "Use 'to' to show direction or destination.",
+      "level": "A1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "The picture is _______ the wall.",
+      "options": ["at", "in", "on", "by", "to"],
+      "correctAnswer": 2,
+      "explanation": "Use 'on' for things attached to surfaces.",
+      "level": "A1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "I'm _______ home.",
+      "options": ["at", "in", "on", "by", "to"],
+      "correctAnswer": 0,
+      "explanation": "Use 'at home' as a fixed expression.",
+      "level": "A1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "",
+      "question": "See you _______ Monday!",
+      "options": ["at", "in", "on", "by", "to"],
+      "correctAnswer": 2,
+      "explanation": "Use 'on' with days of the week.",
+      "level": "A1",
+      "topic": "Prepositions"
+    },
+    {
+      "passage": "Hi! My name is Sarah. I am from the UK. I live in London with my family. I have one brother and one sister. My brother's name is Tom and my sister's name is Emma. We have a small dog. His name is Max. I love my family!",
+      "question": "Where is Sarah from?",
+      "options": ["USA", "UK", "Canada", "Australia", "Ireland"],
+      "correctAnswer": 1,
+      "explanation": "The text states 'I am from the UK'.",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Hi! My name is Sarah. I am from the UK. I live in London with my family. I have one brother and one sister. My brother's name is Tom and my sister's name is Emma. We have a small dog. His name is Max. I love my family!",
+      "question": "How many siblings does Sarah have?",
+      "options": ["One", "Two", "Three", "Four", "None"],
+      "correctAnswer": 1,
+      "explanation": "Sarah has one brother (Tom) and one sister (Emma) - two siblings total.",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Hi! My name is Sarah. I am from the UK. I live in London with my family. I have one brother and one sister. My brother's name is Tom and my sister's name is Emma. We have a small dog. His name is Max. I love my family!",
+      "question": "What is the name of Sarah's dog?",
+      "options": ["Tom", "Emma", "Max", "Sam", "Rex"],
+      "correctAnswer": 2,
+      "explanation": "The text states 'His name is Max'.",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Tom is a teacher. He works at a school in Manchester. He teaches English. Tom loves his job. He starts work at 8:00 AM and finishes at 4:00 PM. After work, he goes to the gym. He likes to stay healthy.",
+      "question": "What does Tom do?",
+      "options": ["Doctor", "Teacher", "Engineer", "Driver", "Cook"],
+      "correctAnswer": 1,
+      "explanation": "The text clearly states 'Tom is a teacher'.",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Tom is a teacher. He works at a school in Manchester. He teaches English. Tom loves his job. He starts work at 8:00 AM and finishes at 4:00 PM. After work, he goes to the gym. He likes to stay healthy.",
+      "question": "What time does Tom start work?",
+      "options": ["7:00 AM", "8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM"],
+      "correctAnswer": 1,
+      "explanation": "The text says 'He starts work at 8:00 AM'.",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Tom is a teacher. He works at a school in Manchester. He teaches English. Tom loves his job. He starts work at 8:00 AM and finishes at 4:00 PM. After work, he goes to the gym. He likes to stay healthy.",
+      "question": "Where does Tom go after work?",
+      "options": ["Home", "Restaurant", "Gym", "Park", "Cinema"],
+      "correctAnswer": 2,
+      "explanation": "The text states 'After work, he goes to the gym'.",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
       "question": "She _______ to the gym every morning.",
       "options": ["go", "goes", "going", "went", "gone"],
       "correctAnswer": 1,
