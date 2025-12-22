@@ -679,32 +679,28 @@ function render() {
 // INITIALIZATION
 // ============================================
 
-document.addEventListener('DOMContentLoaded', async () => {
-    // İlk render - loading göster
-    const app = document.getElementById('app');
-    app.innerHTML = `
-        <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column;">
-            <div style="font-size: 48px; margin-bottom: 20px;">📚</div>
-            <h2 style="color: white; margin-bottom: 10px;">KİTKİT</h2>
-            <p style="color: rgba(255,255,255,0.8);">Yükleniyor...</p>
-        </div>
-    `;
-    
-    await loadQuestions();
-    await waitForFirebase();
-    
-    // Auth state listener
-    const { onAuthStateChanged } = window.firebaseModules;
-    onAuthStateChanged(window.firebaseAuth, async (user) => {
-        if (user) {
-            await loadUserData(user.uid);
-            if (state.currentPage === 'login') {
+(async function init() {
+    try {
+        // İlk ekranı hemen göster (giriş)
+        render();
+
+        // Soruları yükle
+        await loadQuestions();
+
+        // Firebase hazır olduğunda auth dinleyicisini bağla
+        await waitForFirebase();
+        const { onAuthStateChanged } = window.firebaseModules;
+        onAuthStateChanged(window.firebaseAuth, async (user) => {
+            if (user) {
+                await loadUserData(user.uid);
                 state.currentPage = 'dashboard';
+                render();
+            } else {
+                state.currentPage = 'login';
+                render();
             }
-            render();
-        } else {
-            state.currentPage = 'login';
-            render();
-        }
-    });
-});
+        });
+    } catch (e) {
+        console.error('Uygulama başlatma hatası:', e);
+    }
+})();
