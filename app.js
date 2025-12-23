@@ -906,87 +906,90 @@ function renderHome() {
                     <p>Bugün hangi konuya odaklanmak istersin?</p>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
-                    <h2>🔥 Günlük Streak</h2>
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 30px; margin-top: 20px;">
-                        <div style="text-align: center;">
-                            <div style="font-size: 72px; font-weight: bold; color: #FF5722;">${state.userStats.dailyStreak}</div>
-                            <div style="font-size: 18px; color: #666; margin-top: 10px;">Gün Üst Üste Giriş!</div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 30px;">
+                    <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
+                        <h2>🔥 Günlük Streak</h2>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 30px; margin-top: 20px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 72px; font-weight: bold; color: #FF5722;">${state.userStats.dailyStreak}</div>
+                                <div style="font-size: 18px; color: #666; margin-top: 10px;">Gün Üst Üste Giriş!</div>
+                            </div>
+                            <div style="font-size: 80px;">🔥</div>
                         </div>
-                        <div style="font-size: 80px;">🔥</div>
-                    </div>
-                    <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center;">
-                        <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Son Giriş</div>
-                        <div style="font-size: 16px; font-weight: 600; color: #333;">
-                            ${state.userStats.lastLoginDate ? new Date(state.userStats.lastLoginDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Bugün'}
-                        </div>
-                    </div>
-                    ${state.userStats.dailyStreak >= 7 ? '<div style="background: linear-gradient(135deg, #FFD700, #FFA500); color: #333; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 15px;">🏆 Harika! 7 günlük streak\'i geçtin!</div>' : ''}
-                    ${state.userStats.dailyStreak >= 30 ? '<div style="background: linear-gradient(135deg, #FF1493, #FF69B4); color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 15px;">🎆 İnanılmaz! 30 günlük streak efsanesi!</div>' : ''}
-                </div>
-                
-                <div class="card" style="background: linear-gradient(135deg, #FF980015 0%, #FF572215 100%); border: 2px solid #FF9800;">
-                    <h2>🎯 Günlük Hedef</h2>
-                    <div style="display: flex; align-items: center; gap: 30px; margin-top: 20px;">
-                        <div style="position: relative; width: 150px; height: 150px;">
-                            <svg width="150" height="150" style="transform: rotate(-90deg);">
-                                <circle cx="75" cy="75" r="65" fill="none" stroke="#E0E0E0" stroke-width="12"></circle>
-                                <circle cx="75" cy="75" r="65" fill="none" stroke="#FF9800" stroke-width="12" 
-                                    stroke-dasharray="${2 * Math.PI * 65}" 
-                                    stroke-dashoffset="${2 * Math.PI * 65 * (1 - Math.min(state.userStats.dailyProgress / state.userStats.dailyGoal, 1))}"
-                                    stroke-linecap="round"
-                                    style="transition: stroke-dashoffset 0.5s ease;">
-                                </circle>
-                            </svg>
-                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                <div style="font-size: 32px; font-weight: bold; color: #FF9800;">${state.userStats.dailyProgress}</div>
-                                <div style="font-size: 14px; color: #666;">/ ${state.userStats.dailyGoal}</div>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center;">
+                            <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Son Giriş</div>
+                            <div style="font-size: 16px; font-weight: 600; color: #333;">
+                                ${state.userStats.lastLoginDate ? new Date(state.userStats.lastLoginDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Bugün'}
                             </div>
                         </div>
-                        <div style="flex: 1;">
-                            <div style="margin-bottom: 15px;">
-                                <div style="font-size: 18px; font-weight: 600; color: #333; margin-bottom: 5px;">Bugünkü İlerleme</div>
-                                <div style="font-size: 14px; color: #666;">${Math.round((state.userStats.dailyProgress / state.userStats.dailyGoal) * 100)}% tamamlandı</div>
-                            </div>
-                            <div style="margin-bottom: 15px;">
-                                <label style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Günlük Hedef:</label>
-                                <div style="display: flex; gap: 10px; align-items: center;">
-                                    <input type="number" id="daily-goal-input" value="${state.userStats.dailyGoal}" min="10" max="200" 
-                                        style="padding: 8px 12px; border: 2px solid #E0E0E0; border-radius: 8px; font-size: 16px; width: 100px;">
-                                    <button onclick="updateDailyGoal()" class="btn-secondary" style="padding: 8px 16px;">Güncelle</button>
+                        ${state.userStats.dailyStreak >= 7 ? '<div style="background: linear-gradient(135deg, #FFD700, #FFA500); color: #333; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 15px;">🏆 Harika! 7 günlük streak\'i geçtin!</div>' : ''}
+                        ${state.userStats.dailyStreak >= 30 ? '<div style="background: linear-gradient(135deg, #FF1493, #FF69B4); color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 15px;">🎆 İnanılmaz! 30 günlük streak efsanesi!</div>' : ''}
+                    </div>
+                    
+                    <div class="card" style="background: linear-gradient(135deg, #FF980015 0%, #FF572215 100%); border: 2px solid #FF9800;">
+                        <h2>🎯 Günlük Hedef</h2>
+                        <div style="display: flex; align-items: center; gap: 30px; margin-top: 20px;">
+                            <div style="position: relative; width: 150px; height: 150px;">
+                                <svg width="150" height="150" style="transform: rotate(-90deg);">
+                                    <circle cx="75" cy="75" r="65" fill="none" stroke="#E0E0E0" stroke-width="12"></circle>
+                                    <circle cx="75" cy="75" r="65" fill="none" stroke="#FF9800" stroke-width="12" 
+                                        stroke-dasharray="${2 * Math.PI * 65}" 
+                                        stroke-dashoffset="${2 * Math.PI * 65 * (1 - Math.min(state.userStats.dailyProgress / state.userStats.dailyGoal, 1))}"
+                                        stroke-linecap="round"
+                                        style="transition: stroke-dashoffset 0.5s ease;">
+                                    </circle>
+                                </svg>
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                                    <div style="font-size: 32px; font-weight: bold; color: #FF9800;">${state.userStats.dailyProgress}</div>
+                                    <div style="font-size: 14px; color: #666;">/ ${state.userStats.dailyGoal}</div>
                                 </div>
                             </div>
-                            ${state.userStats.dailyProgress >= state.userStats.dailyGoal ? 
-                                '<div style="background: #4CAF50; color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600;">🎉 Günlük hedefini tamamladın!</div>' : 
-                                `<div style="background: #FFF3E0; padding: 12px; border-radius: 8px; text-align: center; color: #FF9800; font-weight: 600;">💪 ${state.userStats.dailyGoal - state.userStats.dailyProgress} soru kaldı!</div>`
-                            }
+                            <div style="flex: 1;">
+                                <div style="margin-bottom: 15px;">
+                                    <div style="font-size: 18px; font-weight: 600; color: #333; margin-bottom: 5px;">Bugünkü İlerleme</div>
+                                    <div style="font-size: 14px; color: #666;">${Math.round((state.userStats.dailyProgress / state.userStats.dailyGoal) * 100)}% tamamlandı</div>
+                                </div>
+                                <div style="margin-bottom: 15px;">
+                                    <label style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Günlük Hedef:</label>
+                                    <div style="display: flex; gap: 10px; align-items: center;">
+                                        <input type="number" id="daily-goal-input" value="${state.userStats.dailyGoal}" min="10" max="200" 
+                                            style="padding: 8px 12px; border: 2px solid #E0E0E0; border-radius: 8px; font-size: 16px; width: 100px;">
+                                        <button onclick="updateDailyGoal()" class="btn-secondary" style="padding: 8px 16px;">Güncelle</button>
+                                    </div>
+                                </div>
+                                ${state.userStats.dailyProgress >= state.userStats.dailyGoal ? 
+                                    '<div style="background: #4CAF50; color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600;">🎉 Günlük hedefini tamamladın!</div>' : 
+                                    `<div style="background: #FFF3E0; padding: 12px; border-radius: 8px; text-align: center; color: #FF9800; font-weight: 600;">💪 ${state.userStats.dailyGoal - state.userStats.dailyProgress} soru kaldı!</div>`
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
-                    <h2>📅 Yaklaşan Sınavlar (2026)</h2>
-                    <div style="display: grid; gap: 15px; margin-top: 20px;">
-                        ${upcomingExams.map(exam => {
-                            const days = getCountdown(exam.date);
-                            return `
-                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: white; border-radius: 10px; border-left: 4px solid ${exam.type === 'YDS' ? '#2196F3' : '#FF9800'};">
-                                    <div>
-                                        <div style="font-size: 18px; font-weight: bold; color: #333;">${exam.name}</div>
-                                        <div style="color: #666; margin-top: 5px;">${exam.date.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 30px;">
+                    <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                        <h2>📅 Yaklaşan Sınavlar (2026)</h2>
+                        <div style="display: grid; gap: 15px; margin-top: 20px;">
+                            ${upcomingExams.map(exam => {
+                                const days = getCountdown(exam.date);
+                                return `
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: white; border-radius: 10px; border-left: 4px solid ${exam.type === 'YDS' ? '#2196F3' : '#FF9800'};">
+                                        <div>
+                                            <div style="font-size: 18px; font-weight: bold; color: #333;">${exam.name}</div>
+                                            <div style="color: #666; margin-top: 5px;">${exam.date.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-size: 32px; font-weight: bold; color: ${days <= 30 ? '#EF5350' : '#667eea'};">${days}</div>
+                                            <div style="color: #666; font-size: 14px;">gün kaldı</div>
+                                        </div>
                                     </div>
-                                    <div style="text-align: right;">
-                                        <div style="font-size: 32px; font-weight: bold; color: ${days <= 30 ? '#EF5350' : '#667eea'};">${days}</div>
-                                        <div style="color: #666; font-size: 14px;">gün kaldı</div>
-                                    </div>
-                                </div>
-                            `;
-                        }).join('')}
+                                `;
+                            }).join('')}
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card" style="background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
-                    <h2>✅ Yapılacaklar Listesi</h2>
+                    
+                    <div class="card" style="background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
+                        <h2>✅ Yapılacaklar Listesi</h2>
                     <div style="margin-top: 20px;">
                         <div style="display: flex; gap: 10px; margin-bottom: 20px;">
                             <input type="text" id="todo-input" placeholder="Yeni görev ekle (örn: A1 - Test 1 çözülecek)" 
@@ -1022,7 +1025,7 @@ function renderHome() {
                     </div>
                 </div>
                 
-                <div class="cards-grid">
+                <div class="cards-grid" style="margin-top: 30px;">
                     <div class="card">
                         <h2>🎯 Hızlı Başlat</h2>
                         <p style="margin-bottom: 20px; color: #666;">Hemen teste başla!</p>
@@ -1039,7 +1042,7 @@ function renderHome() {
                 </div>
                 
                 ${recentQuizzes.length > 0 ? `
-                <div class="card">
+                <div class="card" style="margin-top: 30px;">
                     <h2>📚 Son Testlerin</h2>
                     ${recentQuizzes.map(quiz => `
                         <div class="quiz-history-item">
@@ -1055,7 +1058,7 @@ function renderHome() {
                     <button onclick="changePage(event, 'stats')" class="btn-secondary" style="margin-top: 15px;">Tüm İstatistikleri Gör</button>
                 </div>
                 ` : `
-                <div class="card" style="text-align: center; padding: 40px;">
+                <div class="card" style="text-align: center; padding: 40px; margin-top: 30px;">
                     <h2>📚 İlk Testini Çöz!</h2>
                     <p style="color: #666; margin: 20px 0;">Henüz hiç test çözmedin. Hemen başla ve ilerlemeni takip et!</p>
                     <button onclick="startQuiz(null, null)" class="btn-primary">İlk Testi Başlat</button>
