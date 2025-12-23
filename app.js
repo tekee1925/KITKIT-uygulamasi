@@ -18,13 +18,20 @@ const state = {
     showRegister: false,
     selectedLevel: null, // A2, B1, B2, C1, C2
     selectedTopic: null, // Grammar, Vocabulary, Reading, etc.
+    showImmediateFeedback: false, // Anında doğru/yanlış göster
+    userAnswers: [], // Her soru için verilen cevaplar
+    quizCompleted: false, // Test tamamlandı mı
+    showQuestionDetails: false, // Soru detaylarını göster
     userStats: {
         totalQuizzes: 0,
         totalQuestions: 0,
         correctAnswers: 0,
         wrongAnswers: 0,
         averageScore: 0,
-        quizHistory: [] // { date, score, total, percentage, duration }
+        quizHistory: [], // { date, score, total, percentage, duration }
+        dailyGoal: 50,
+        dailyProgress: 0,
+        lastProgressDate: null
     }
 };
 
@@ -115,7 +122,7 @@ async function firebaseRegister(username, password, fullname) {
 
 async function loadUserData(uid) {
     try {
-        const { doc, getDoc } = window.firebaseModules;
+        const { doc, getDoc, updateDoc } = window.firebaseModules;
         const userDoc = await getDoc(doc(window.firebaseDb, 'users', uid));
         
         if (userDoc.exists()) {
@@ -131,8 +138,28 @@ async function loadUserData(uid) {
                 correctAnswers: 0,
                 wrongAnswers: 0,
                 averageScore: 0,
-                quizHistory: []
+                quizHistory: [],
+                dailyGoal: 50,
+                dailyProgress: 0,
+                lastProgressDate: null
             };
+            
+            // Günlük hedef verilerini al veya default değerleri kullan
+            if (!state.userStats.dailyGoal) state.userStats.dailyGoal = 50;
+            if (!state.userStats.dailyProgress) state.userStats.dailyProgress = 0;
+            
+            // Yeni gün kontrolü - eğer son güncelleme bugün değilse progress'i sıfırla
+            const today = new Date().toDateString();
+            const lastDate = state.userStats.lastProgressDate ? new Date(state.userStats.lastProgressDate).toDateString() : null;
+            
+            if (lastDate !== today) {
+                state.userStats.dailyProgress = 0;
+                state.userStats.lastProgressDate = new Date().toISOString();
+                await updateDoc(doc(window.firebaseDb, 'users', uid), {
+                    'stats.dailyProgress': 0,
+                    'stats.lastProgressDate': state.userStats.lastProgressDate
+                });
+            }
         }
     } catch (error) {
         console.error('Load user data error:', error);
@@ -151,7 +178,9 @@ async function saveQuizResult(score, total, duration) {
             score: score,
             total: total,
             percentage: percentage,
-            duration: duration
+            duration: duration,
+            level: state.selectedLevel,
+            topic: state.selectedTopic
         };
         
         // İstatistikleri güncelle
@@ -161,13 +190,19 @@ async function saveQuizResult(score, total, duration) {
         const newWrongAnswers = state.userStats.wrongAnswers + (total - score);
         const newAverageScore = Math.round((newCorrectAnswers / newTotalQuestions) * 100);
         
+        // Günlük ilerlemeyi güncelle
+        const newDailyProgress = state.userStats.dailyProgress + total;
+        const today = new Date().toISOString();
+        
         await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
             'stats.totalQuizzes': newTotalQuizzes,
             'stats.totalQuestions': newTotalQuestions,
             'stats.correctAnswers': newCorrectAnswers,
             'stats.wrongAnswers': newWrongAnswers,
             'stats.averageScore': newAverageScore,
-            'stats.quizHistory': arrayUnion(quizResult)
+            'stats.quizHistory': arrayUnion(quizResult),
+            'stats.dailyProgress': newDailyProgress,
+            'stats.lastProgressDate': today
         });
         
         // State'i güncelle
@@ -177,6 +212,8 @@ async function saveQuizResult(score, total, duration) {
         state.userStats.wrongAnswers = newWrongAnswers;
         state.userStats.averageScore = newAverageScore;
         state.userStats.quizHistory.push(quizResult);
+        state.userStats.dailyProgress = newDailyProgress;
+        state.userStats.lastProgressDate = today;
         
     } catch (error) {
         console.error('Save quiz result error:', error);
@@ -262,6 +299,28 @@ async function handleRegisterSubmit() {
     }
 }
 
+async function updateDailyGoal() {
+    const newGoal = parseInt(document.getElementById('daily-goal-input').value);
+    
+    if (!newGoal || newGoal < 10 || newGoal > 200) {
+        alert('Günlük hedef 10-200 arasında olmalıdır');
+        return;
+    }
+    
+    try {
+        const { doc, updateDoc } = window.firebaseModules;
+        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+            'stats.dailyGoal': newGoal
+        });
+        
+        state.userStats.dailyGoal = newGoal;
+        render();
+    } catch (error) {
+        console.error('Günlük hedef güncelleme hatası:', error);
+        alert('Hedef güncellenirken bir hata oluştu');
+    }
+}
+
 function logout() {
     const { signOut } = window.firebaseModules;
     signOut(window.firebaseAuth);
@@ -272,7 +331,10 @@ function logout() {
         correctAnswers: 0,
         wrongAnswers: 0,
         averageScore: 0,
-        quizHistory: []
+        quizHistory: [],
+        dailyGoal: 50,
+        dailyProgress: 0,
+        lastProgressDate: null
     };
     state.currentPage = 'login';
     render();
@@ -304,6 +366,8 @@ function exitQuiz() {
         state.selectedAnswer = null;
         state.currentQuestion = 0;
         state.currentTestQuestions = [];
+        state.userAnswers = [];
+        state.quizCompleted = false;
         render();
     }
 }
@@ -314,18 +378,8 @@ function startMockExam(examNumber) {
         return;
     }
     
-    // Seed bazlı rastgele sıralama için basit hash fonksiyonu
-    const seed = examNumber * 12345;
-    const seededRandom = (index) => {
-        const x = Math.sin(seed + index) * 10000;
-        return x - Math.floor(x);
-    };
-    
-    // Soruları kopyala ve seed bazlı karıştır
-    const shuffled = [...allQuestions]
-        .map((q, i) => ({ q, sort: seededRandom(i) }))
-        .sort((a, b) => a.sort - b.sort)
-        .map(item => item.q);
+    // Tamamen rastgele karıştır
+    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
     
     // İlk 80 soruyu al
     state.currentTestQuestions = shuffled.slice(0, Math.min(80, shuffled.length));
@@ -337,6 +391,8 @@ function startMockExam(examNumber) {
     state.wrongAnswers = 0;
     state.selectedAnswer = null;
     state.quizActive = true;
+    state.quizCompleted = false;
+    state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
     state.timer = 80 * 60; // 80 dakika (soru başına 1 dakika)
     state.startTime = Date.now();
     state.selectedLevel = null;
@@ -386,6 +442,8 @@ function startLevelTest(level, testNumber) {
     state.wrongAnswers = 0;
     state.selectedAnswer = null;
     state.quizActive = true;
+    state.quizCompleted = false;
+    state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
     state.timer = 600; // 10 dakika (10 soru için)
     state.startTime = Date.now();
     state.selectedLevel = level;
@@ -424,6 +482,8 @@ function startTopicTest(topic) {
     state.wrongAnswers = 0;
     state.selectedAnswer = null;
     state.quizActive = true;
+    state.quizCompleted = false;
+    state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
     state.timer = 600; // 10 dakika
     state.startTime = Date.now();
     state.selectedLevel = null;
@@ -469,6 +529,8 @@ function startQuiz(level = null, topic = null) {
     state.wrongAnswers = 0;
     state.selectedAnswer = null;
     state.quizActive = true;
+    state.quizCompleted = false;
+    state.userAnswers = new Array(questionCount).fill(null);
     state.timer = 1200; // 20 dakika
     state.startTime = Date.now();
     state.selectedLevel = level;
@@ -506,9 +568,44 @@ function startTimer() {
 }
 
 function selectAnswer(index) {
-    if (!state.quizActive) return;
+    if (!state.quizActive && !state.quizCompleted) return;
+    
+    // Eğer anında geri bildirim açıksa ve bu soru zaten cevaplandıysa, değiştirme
+    if (state.showImmediateFeedback && state.userAnswers[state.currentQuestion] !== null) {
+        return;
+    }
+    
     state.selectedAnswer = index;
     render();
+}
+
+function toggleImmediateFeedback() {
+    state.showImmediateFeedback = !state.showImmediateFeedback;
+    render();
+}
+
+function goToQuestion(questionIndex) {
+    if (questionIndex < 0 || questionIndex >= state.currentTestQuestions.length) return;
+    
+    state.currentQuestion = questionIndex;
+    state.selectedAnswer = state.userAnswers[questionIndex];
+    render();
+}
+
+function nextQuestion() {
+    if (state.currentQuestion < state.currentTestQuestions.length - 1) {
+        state.currentQuestion++;
+        state.selectedAnswer = state.userAnswers[state.currentQuestion];
+        render();
+    }
+}
+
+function previousQuestion() {
+    if (state.currentQuestion > 0) {
+        state.currentQuestion--;
+        state.selectedAnswer = state.userAnswers[state.currentQuestion];
+        render();
+    }
 }
 
 function submitAnswer() {
@@ -517,35 +614,57 @@ function submitAnswer() {
         return;
     }
     
-    const currentQ = state.currentTestQuestions[state.currentQuestion];
-    const correct = currentQ.correctAnswer === state.selectedAnswer;
+    // Cevabı kaydet
+    state.userAnswers[state.currentQuestion] = state.selectedAnswer;
     
-    if (correct) {
-        state.score++;
-        state.correctAnswers++;
-    } else {
-        state.wrongAnswers++;
+    // Eğer daha önce cevaplamadıysa skorları güncelle
+    if (state.userAnswers[state.currentQuestion] === state.selectedAnswer) {
+        const currentQ = state.currentTestQuestions[state.currentQuestion];
+        const correct = currentQ.correctAnswer === state.selectedAnswer;
+        
+        if (correct) {
+            state.score++;
+            state.correctAnswers++;
+        } else {
+            state.wrongAnswers++;
+        }
     }
     
-    // Sonraki soruya geç
-    if (state.currentQuestion < state.currentTestQuestions.length - 1) {
-        state.currentQuestion++;
-        state.selectedAnswer = null;
+    // Eğer anında geri bildirim kapalıysa, direkt sonraki soruya geç
+    if (!state.showImmediateFeedback) {
+        if (state.currentQuestion < state.currentTestQuestions.length - 1) {
+            state.currentQuestion++;
+            state.selectedAnswer = state.userAnswers[state.currentQuestion];
+            render();
+        } else {
+            // Son soru - testi bitir
+            finishQuiz();
+        }
+    } else {
+        // Anında geri bildirim açık - sadece render et (doğru/yanlış gösterilecek)
         render();
-    } else {
-        endQuiz();
     }
+}
+
+function finishQuiz() {
+    state.quizCompleted = true;
+    state.quizActive = false;
+    clearInterval(state.timerInterval);
+    render();
 }
 
 async function endQuiz() {
     clearInterval(state.timerInterval);
-    state.quizActive = false;
-    
+    finishQuiz();
+}
+
+async function saveAndShowResults() {
     const duration = Math.round((Date.now() - state.startTime) / 1000);
     
     // Firebase'e kaydet
     await saveQuizResult(state.score, state.currentTestQuestions.length, duration);
     
+    state.showQuestionDetails = false;
     state.currentPage = 'quiz-result';
     render();
 }
@@ -556,6 +675,11 @@ function getPerformanceMessage(percentage) {
     if (percentage >= 70) return { emoji: '👍', message: 'İyi!', color: '#FFA726' };
     if (percentage >= 60) return { emoji: '📚', message: 'Fena değil', color: '#FF9800' };
     return { emoji: '💪', message: 'Daha çok çalışmalısın', color: '#EF5350' };
+}
+
+function toggleQuestionDetails() {
+    state.showQuestionDetails = !state.showQuestionDetails;
+    render();
 }
 
 // ============================================
@@ -577,10 +701,7 @@ function renderLogin() {
         <div class="login-container">
             <div class="login-box">
                 <div class="logo-section">
-                    <svg width="60" height="60" viewBox="0 0 40 40" fill="none">
-                        <rect width="40" height="40" rx="8" fill="#2196F3"/>
-                        <path d="M12 10h8v4h-8v-4zm0 8h8v4h-8v-4zm12-8h4v20h-4v-20z" fill="white"/>
-                    </svg>
+                    <img src="KİTKİTlogo.jpg" alt="KİTKİT Logo" width="120" height="120" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
                     <h1>KİTKİT</h1>
                     <p>İngilizce Sınav Başarısı için Dijital Asistanın</p>
                 </div>
@@ -647,6 +768,45 @@ function renderHome() {
                 <div class="welcome-section">
                     <h1>Hoş geldin, ${state.user.name}! 👋</h1>
                     <p>Bugün hangi konuya odaklanmak istersin?</p>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, #FF980015 0%, #FF572215 100%); border: 2px solid #FF9800;">
+                    <h2>🎯 Günlük Hedef</h2>
+                    <div style="display: flex; align-items: center; gap: 30px; margin-top: 20px;">
+                        <div style="position: relative; width: 150px; height: 150px;">
+                            <svg width="150" height="150" style="transform: rotate(-90deg);">
+                                <circle cx="75" cy="75" r="65" fill="none" stroke="#E0E0E0" stroke-width="12"></circle>
+                                <circle cx="75" cy="75" r="65" fill="none" stroke="#FF9800" stroke-width="12" 
+                                    stroke-dasharray="${2 * Math.PI * 65}" 
+                                    stroke-dashoffset="${2 * Math.PI * 65 * (1 - Math.min(state.userStats.dailyProgress / state.userStats.dailyGoal, 1))}"
+                                    stroke-linecap="round"
+                                    style="transition: stroke-dashoffset 0.5s ease;">
+                                </circle>
+                            </svg>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                                <div style="font-size: 32px; font-weight: bold; color: #FF9800;">${state.userStats.dailyProgress}</div>
+                                <div style="font-size: 14px; color: #666;">/ ${state.userStats.dailyGoal}</div>
+                            </div>
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="margin-bottom: 15px;">
+                                <div style="font-size: 18px; font-weight: 600; color: #333; margin-bottom: 5px;">Bugünkü İlerleme</div>
+                                <div style="font-size: 14px; color: #666;">${Math.round((state.userStats.dailyProgress / state.userStats.dailyGoal) * 100)}% tamamlandı</div>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Günlük Hedef:</label>
+                                <div style="display: flex; gap: 10px; align-items: center;">
+                                    <input type="number" id="daily-goal-input" value="${state.userStats.dailyGoal}" min="10" max="200" 
+                                        style="padding: 8px 12px; border: 2px solid #E0E0E0; border-radius: 8px; font-size: 16px; width: 100px;">
+                                    <button onclick="updateDailyGoal()" class="btn-secondary" style="padding: 8px 16px;">Güncelle</button>
+                                </div>
+                            </div>
+                            ${state.userStats.dailyProgress >= state.userStats.dailyGoal ? 
+                                '<div style="background: #4CAF50; color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600;">🎉 Günlük hedefini tamamladın!</div>' : 
+                                `<div style="background: #FFF3E0; padding: 12px; border-radius: 8px; text-align: center; color: #FF9800; font-weight: 600;">💪 ${state.userStats.dailyGoal - state.userStats.dailyProgress} soru kaldı!</div>`
+                            }
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
@@ -757,7 +917,7 @@ function renderStats() {
                 </div>
                 
                 <div class="card" style="background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
-                    <h2>📊 Başarı Grafiği</h2>
+                    <h2>📊 Genel Başarı Grafiği</h2>
                     <div style="margin: 30px 0;">
                         <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
                             <div style="flex: 1;">
@@ -797,6 +957,149 @@ function renderStats() {
                         </div>
                     </div>
                 </div>
+                
+                ${(() => {
+                    // Son 7 günün tarihlerini oluştur
+                    const last7Days = [];
+                    for (let i = 6; i >= 0; i--) {
+                        const date = new Date();
+                        date.setDate(date.getDate() - i);
+                        last7Days.push({
+                            date: date,
+                            dateStr: date.toDateString(),
+                            label: date.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short' })
+                        });
+                    }
+                    
+                    // Günlük soru sayılarını hesapla
+                    const dailyQuestions = {};
+                    last7Days.forEach(day => {
+                        dailyQuestions[day.dateStr] = 0;
+                    });
+                    
+                    allQuizzes.forEach(quiz => {
+                        const quizDate = new Date(quiz.date).toDateString();
+                        if (dailyQuestions.hasOwnProperty(quizDate)) {
+                            dailyQuestions[quizDate] += quiz.total;
+                        }
+                    });
+                    
+                    const maxQuestions = Math.max(...Object.values(dailyQuestions), 1);
+                    
+                    return `
+                        <div class="card" style="background: linear-gradient(135deg, #2196F315 0%, #00BCD415 100%); border: 2px solid #2196F3;">
+                            <h2>📅 Son 7 Gün Soru Çözüm Grafiği</h2>
+                            <div style="margin-top: 30px;">
+                                <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 200px; gap: 8px; padding: 0 10px;">
+                                    ${last7Days.map(day => {
+                                        const count = dailyQuestions[day.dateStr];
+                                        const height = maxQuestions > 0 ? (count / maxQuestions) * 100 : 0;
+                                        const isToday = day.dateStr === new Date().toDateString();
+                                        
+                                        return `
+                                            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; width: 100%;">
+                                                    ${count > 0 ? `<div style="font-size: 12px; font-weight: bold; color: #2196F3; margin-bottom: 5px;">${count}</div>` : ''}
+                                                    <div style="width: 100%; max-width: 60px; background: ${isToday ? 'linear-gradient(180deg, #FF9800, #FF5722)' : 'linear-gradient(180deg, #2196F3, #00BCD4)'}; height: ${height}%; min-height: ${count > 0 ? '20px' : '5px'}; border-radius: 8px 8px 0 0; transition: height 0.5s; box-shadow: 0 -2px 10px rgba(33, 150, 243, 0.3);"></div>
+                                                </div>
+                                                <div style="text-align: center; font-size: 11px; color: ${isToday ? '#FF9800' : '#666'}; font-weight: ${isToday ? 'bold' : 'normal'};">
+                                                    ${day.label}
+                                                    ${isToday ? '<br><span style="font-size: 10px;">Bugün</span>' : ''}
+                                                </div>
+                                            </div>
+                                        `;
+                                    }).join('')}
+                                </div>
+                                <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 10px; text-align: center;">
+                                    <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Son 7 Gün Toplamı</div>
+                                    <div style="font-size: 28px; font-weight: bold; color: #2196F3;">${Object.values(dailyQuestions).reduce((a, b) => a + b, 0)} Soru</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                })()}
+                
+                ${(() => {
+                    const topics = [
+                        { id: 'Vocabulary', name: 'Kelime – Phrasal Verb', icon: '📖', color: '#2196F3' },
+                        { id: 'Grammar', name: 'Tense – Preposition – Dilbilgisi', icon: '📚', color: '#9C27B0' },
+                        { id: 'Cloze', name: 'Cloze Test', icon: '📝', color: '#FF9800' },
+                        { id: 'Completion', name: 'Cümle Tamamlama', icon: '✍️', color: '#4CAF50' },
+                        { id: 'Translation', name: 'Çeviri', icon: '🔄', color: '#00BCD4' },
+                        { id: 'Reading', name: 'Paragraf', icon: '📰', color: '#F44336' },
+                        { id: 'Dialog', name: 'Diyalog Tamamlama', icon: '💬', color: '#795548' },
+                        { id: 'Paraphrase', name: 'Yakın Anlamlı Cümle', icon: '🔁', color: '#607D8B' },
+                        { id: 'Paragraph-Completion', name: 'Paragraf Tamamlama', icon: '📄', color: '#E91E63' },
+                        { id: 'Irrelevant', name: 'Anlatım Bütünlüğünü Bozan Cümle', icon: '❌', color: '#FF5722' }
+                    ];
+                    
+                    // Konuya göre istatistikleri hesapla
+                    const topicStats = {};
+                    allQuizzes.forEach(quiz => {
+                        if (quiz.topic) {
+                            if (!topicStats[quiz.topic]) {
+                                topicStats[quiz.topic] = { correct: 0, total: 0 };
+                            }
+                            topicStats[quiz.topic].correct += quiz.score;
+                            topicStats[quiz.topic].total += quiz.total;
+                        }
+                    });
+                    
+                    // Sadece çözülmüş konuları göster
+                    const solvedTopics = topics.filter(topic => topicStats[topic.id]);
+                    
+                    if (solvedTopics.length === 0) return '';
+                    
+                    return `
+                        <div class="card">
+                            <h2>🎯 Konuya Göre Başarı Grafikleri</h2>
+                            <div style="display: grid; gap: 20px; margin-top: 20px;">
+                                ${solvedTopics.map(topic => {
+                                    const stats = topicStats[topic.id];
+                                    const topicSuccessRate = Math.round((stats.correct / stats.total) * 100);
+                                    const topicFailureRate = 100 - topicSuccessRate;
+                                    
+                                    return `
+                                        <div style="padding: 20px; background: #F5F7FA; border-radius: 12px; border-left: 4px solid ${topic.color};">
+                                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                                                <span style="font-size: 24px;">${topic.icon}</span>
+                                                <h3 style="margin: 0; color: #333;">${topic.name}</h3>
+                                            </div>
+                                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 15px;">
+                                                <div>
+                                                    <div style="font-size: 12px; color: #666; margin-bottom: 3px;">Toplam Soru</div>
+                                                    <div style="font-size: 20px; font-weight: bold; color: ${topic.color};">${stats.total}</div>
+                                                </div>
+                                                <div>
+                                                    <div style="font-size: 12px; color: #666; margin-bottom: 3px;">Başarı Oranı</div>
+                                                    <div style="font-size: 20px; font-weight: bold; color: ${topicSuccessRate >= 70 ? '#4CAF50' : topicSuccessRate >= 50 ? '#FF9800' : '#EF5350'};">${topicSuccessRate}%</div>
+                                                </div>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 13px;">
+                                                    <span style="color: #4CAF50; font-weight: 600;">✓ Doğru: ${stats.correct}</span>
+                                                    <span style="color: #4CAF50; font-weight: bold;">${topicSuccessRate}%</span>
+                                                </div>
+                                                <div style="height: 20px; background: #E0E0E0; border-radius: 10px; overflow: hidden;">
+                                                    <div style="height: 100%; background: linear-gradient(90deg, #4CAF50, #8BC34A); width: ${topicSuccessRate}%; transition: width 0.5s;"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 13px;">
+                                                    <span style="color: #EF5350; font-weight: 600;">✗ Yanlış: ${stats.total - stats.correct}</span>
+                                                    <span style="color: #EF5350; font-weight: bold;">${topicFailureRate}%</span>
+                                                </div>
+                                                <div style="height: 20px; background: #E0E0E0; border-radius: 10px; overflow: hidden;">
+                                                    <div style="height: 100%; background: linear-gradient(90deg, #EF5350, #FF9800); width: ${topicFailureRate}%; transition: width 0.5s;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    `;
+                })()}
                 
                 <div class="card">
                     <h2>📈 Test Geçmişi</h2>
@@ -848,6 +1151,18 @@ function renderTests() {
                     <p>Seviyene ve konuya göre test çöz</p>
                 </div>
                 
+                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                    <h2>⚙️ Test Ayarları</h2>
+                    <div style="margin-top: 15px;">
+                        <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
+                            ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
+                        </button>
+                        <p style="font-size: 13px; color: #666; margin-top: 10px; text-align: center;">
+                            ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
+                        </p>
+                    </div>
+                </div>
+                
                 <div class="card">
                     <h2>🎯 Seviyeye Göre Testler</h2>
                     <p style="margin-bottom: 20px; color: #666;">Her seviye için 3 test, her test 10 soru</p>
@@ -897,11 +1212,23 @@ function renderMockExams() {
                     <p>Gerçek sınav formatında 80 soruluk tam denemeler</p>
                 </div>
                 
+                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                    <h2>⚙️ Sınav Ayarları</h2>
+                    <div style="margin-top: 15px;">
+                        <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
+                            ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
+                        </button>
+                        <p style="font-size: 13px; color: #666; margin-top: 10px; text-align: center;">
+                            ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
+                        </p>
+                    </div>
+                </div>
+                
                 <div class="card">
                     <h2>📝 Deneme Sınavları (80 Soru - 80 Dakika)</h2>
                     <p style="margin-bottom: 20px; color: #666;">
                         Her deneme tüm konular ve düzeylerden 80 soru içerir. Her deneme için 80 dakika süreniz var.
-                        <br><strong>Not:</strong> Her deneme her seferinde aynı soruları içerir, böylece ilerlemenizi takip edebilirsiniz.
+                        <br><strong>Not:</strong> Her deneme başlatıldığında farklı sorular gelir.
                     </p>
                     <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
                         <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px;">
@@ -940,7 +1267,7 @@ function renderDashboard() {
 }
 
 function renderQuiz() {
-    if (!state.quizActive) {
+    if (!state.quizActive && !state.quizCompleted) {
         return renderHome();
     }
     
@@ -948,32 +1275,173 @@ function renderQuiz() {
     const minutes = Math.floor(state.timer / 60);
     const seconds = state.timer % 60;
     
+    // Bu soru cevaplandı mı?
+    const isAnswered = state.userAnswers[state.currentQuestion] !== null;
+    const userAnswer = state.userAnswers[state.currentQuestion];
+    const correctAnswer = currentQ.correctAnswer;
+    const showFeedback = state.showImmediateFeedback && isAnswered;
+    
+    // Test tamamlandı mı?
+    const allAnswered = state.userAnswers.every(answer => answer !== null);
+    
     return `
         <div class="quiz-container">
             <div class="quiz-header">
                 <div class="quiz-progress">Soru ${state.currentQuestion + 1} / ${state.currentTestQuestions.length}</div>
-                <div class="timer">⏱️ ${minutes}:${seconds.toString().padStart(2, '0')}</div>
-                <button onclick="exitQuiz()" class="btn-exit-quiz" title="Ana Sayfaya Dön">✕ Çıkış</button>
+                ${!state.quizCompleted ? `<div class="timer">⏱️ ${minutes}:${seconds.toString().padStart(2, '0')}</div>` : ''}
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="padding: 8px 16px; font-size: 14px;" title="${state.showImmediateFeedback ? 'Cevabı hemen göstermeyi kapat' : 'Cevabı hemen göstermeyi aç'}">
+                        ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK' : '👁️ Cevabı Hemen Göster: KAPALI'}
+                    </button>
+                    <button onclick="exitQuiz()" class="btn-exit-quiz" title="Ana Sayfaya Dön">✕ Çıkış</button>
+                </div>
+            </div>
+            
+            <!-- Soru Navigasyon Paneli -->
+            <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+                    ${state.currentTestQuestions.map((q, index) => {
+                        const answered = state.userAnswers[index] !== null;
+                        const isCurrent = index === state.currentQuestion;
+                        
+                        // Doğru/Yanlış kontrolü (sadece cevaplandıysa ve anında geri bildirim açıksa)
+                        let isCorrect = false;
+                        if (answered && state.showImmediateFeedback) {
+                            isCorrect = q.correctAnswer === state.userAnswers[index];
+                        }
+                        
+                        // Renk belirleme
+                        let borderColor, bgColor, textColor;
+                        if (isCurrent) {
+                            borderColor = '#2196F3';
+                            bgColor = '#2196F3';
+                            textColor = 'white';
+                        } else if (answered && state.showImmediateFeedback) {
+                            // Anında geri bildirim açıksa doğru/yanlış renklendir
+                            borderColor = isCorrect ? '#4CAF50' : '#EF5350';
+                            bgColor = isCorrect ? '#4CAF50' : '#EF5350';
+                            textColor = 'white';
+                        } else if (answered) {
+                            // Sadece cevaplandı (anında geri bildirim kapalı)
+                            borderColor = '#4CAF50';
+                            bgColor = '#4CAF50';
+                            textColor = 'white';
+                        } else {
+                            // Cevaplanmadı
+                            borderColor = '#E0E0E0';
+                            bgColor = 'white';
+                            textColor = '#666';
+                        }
+                        
+                        return `
+                            <button 
+                                onclick="goToQuestion(${index})" 
+                                style="
+                                    width: 40px; 
+                                    height: 40px; 
+                                    border-radius: 8px; 
+                                    border: 2px solid ${borderColor}; 
+                                    background: ${bgColor}; 
+                                    color: ${textColor}; 
+                                    font-weight: bold; 
+                                    cursor: pointer;
+                                    transition: all 0.3s;
+                                "
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'"
+                                title="${answered && state.showImmediateFeedback ? (isCorrect ? 'Doğru' : 'Yanlış') : (answered ? 'Cevaplandı' : 'Cevaplanmadı')}"
+                            >
+                                ${index + 1}
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+                <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #666;">
+                    <span style="color: #4CAF50; font-weight: bold;">${state.userAnswers.filter(a => a !== null).length}</span> / ${state.currentTestQuestions.length} soru cevaplandı
+                </div>
             </div>
             
             <div class="question-card">
                 <h2>${currentQ.question}</h2>
                 
+                ${showFeedback ? `
+                    <div style="padding: 15px; margin-bottom: 20px; border-radius: 10px; background: ${userAnswer === correctAnswer ? '#4CAF5015' : '#EF535015'}; border: 2px solid ${userAnswer === correctAnswer ? '#4CAF50' : '#EF5350'};">
+                        <div style="font-size: 18px; font-weight: bold; color: ${userAnswer === correctAnswer ? '#4CAF50' : '#EF5350'};">
+                            ${userAnswer === correctAnswer ? '✓ Doğru Cevap!' : '✗ Yanlış Cevap'}
+                        </div>
+                        ${userAnswer !== correctAnswer ? `<div style="margin-top: 5px; color: #666;">Doğru cevap: <strong>${String.fromCharCode(65 + correctAnswer)}</strong></div>` : ''}
+                    </div>
+                ` : ''}
+                
                 <div class="answers-grid">
-                    ${currentQ.options.map((option, index) => `
-                        <button 
-                            class="answer-option ${state.selectedAnswer === index ? 'selected' : ''}"
-                            onclick="selectAnswer(${index})"
-                        >
-                            <span class="option-letter">${String.fromCharCode(65 + index)}</span>
-                            <span class="option-text">${option}</span>
-                        </button>
-                    `).join('')}
+                    ${currentQ.options.map((option, index) => {
+                        let className = 'answer-option';
+                        let style = '';
+                        
+                        if (state.selectedAnswer === index) {
+                            className += ' selected';
+                        }
+                        
+                        // Anında geri bildirim varsa ve cevaplandıysa
+                        if (showFeedback) {
+                            if (index === correctAnswer) {
+                                style = 'border: 3px solid #4CAF50; background: #4CAF5015;';
+                            } else if (index === userAnswer && userAnswer !== correctAnswer) {
+                                style = 'border: 3px solid #EF5350; background: #EF535015;';
+                            }
+                        }
+                        
+                        const disabled = showFeedback ? 'disabled' : '';
+                        
+                        return `
+                            <button 
+                                class="${className}"
+                                onclick="selectAnswer(${index})"
+                                style="${style}"
+                                ${disabled}
+                            >
+                                <span class="option-letter">${String.fromCharCode(65 + index)}</span>
+                                <span class="option-text">${option}</span>
+                            </button>
+                        `;
+                    }).join('')}
                 </div>
                 
-                <button onclick="submitAnswer()" class="btn-primary" style="margin-top: 30px;">
-                    ${state.currentQuestion === state.currentTestQuestions.length - 1 ? 'Testi Bitir' : 'Sonraki Soru'}
-                </button>
+                <div style="display: flex; gap: 10px; margin-top: 30px; flex-wrap: wrap;">
+                    ${state.currentQuestion > 0 ? `
+                        <button onclick="previousQuestion()" class="btn-secondary" style="flex: 1; min-width: 120px;">
+                            ← Önceki Soru
+                        </button>
+                    ` : ''}
+                    
+                    ${!isAnswered ? `
+                        <button onclick="submitAnswer()" class="btn-primary" style="flex: 2; min-width: 150px;">
+                            Cevapla
+                        </button>
+                    ` : state.showImmediateFeedback && state.currentQuestion < state.currentTestQuestions.length - 1 ? `
+                        <button onclick="nextQuestion()" class="btn-primary" style="flex: 2; min-width: 150px;">
+                            Sonraki Soru →
+                        </button>
+                    ` : ''}
+                    
+                    ${state.currentQuestion < state.currentTestQuestions.length - 1 && !state.showImmediateFeedback && isAnswered ? `
+                        <button onclick="nextQuestion()" class="btn-secondary" style="flex: 1; min-width: 120px;">
+                            Sonraki Soru →
+                        </button>
+                    ` : ''}
+                    
+                    ${allAnswered && !state.quizCompleted ? `
+                        <button onclick="saveAndShowResults()" class="btn-primary" style="flex: 2; min-width: 150px; background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);">
+                            ✓ Testi Bitir ve Sonuçları Gör
+                        </button>
+                    ` : ''}
+                    
+                    ${state.quizCompleted ? `
+                        <button onclick="saveAndShowResults()" class="btn-primary" style="flex: 2; min-width: 150px;">
+                            Sonuçları Gör
+                        </button>
+                    ` : ''}
+                </div>
             </div>
         </div>
     `;
@@ -983,6 +1451,73 @@ function renderQuizResult() {
     const percentage = Math.round((state.score / state.currentTestQuestions.length) * 100);
     const performance = getPerformanceMessage(percentage);
     
+    // Eğer soru detayları gösteriliyorsa
+    if (state.showQuestionDetails) {
+        return `
+            <div class="result-container">
+                <div class="result-card" style="max-width: 900px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <h2>📋 Soru Detayları</h2>
+                        <button onclick="toggleQuestionDetails()" class="btn-secondary">
+                            ← Özete Dön
+                        </button>
+                    </div>
+                    <div style="display: grid; gap: 15px;">
+                        ${state.currentTestQuestions.map((q, index) => {
+                            const userAnswer = state.userAnswers[index];
+                            const isCorrect = userAnswer === q.correctAnswer;
+                            
+                            return `
+                                <div style="padding: 15px; background: ${isCorrect ? '#4CAF5010' : '#EF535010'}; border-left: 4px solid ${isCorrect ? '#4CAF50' : '#EF5350'}; border-radius: 8px;">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                                        <div style="flex: 1;">
+                                            <div style="font-weight: bold; color: #333; margin-bottom: 5px;">
+                                                ${index + 1}. ${q.question}
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 15px;">
+                                            <span style="font-size: 24px;">${isCorrect ? '✓' : '✗'}</span>
+                                        </div>
+                                    </div>
+                                    <div style="display: grid; gap: 8px; margin-top: 10px;">
+                                        ${q.options.map((option, optIndex) => {
+                                            const isUserAnswer = userAnswer === optIndex;
+                                            const isCorrectAnswer = q.correctAnswer === optIndex;
+                                            
+                                            let bgColor = 'transparent';
+                                            let borderColor = '#E0E0E0';
+                                            let fontWeight = 'normal';
+                                            
+                                            if (isCorrectAnswer) {
+                                                bgColor = '#4CAF5020';
+                                                borderColor = '#4CAF50';
+                                                fontWeight = 'bold';
+                                            } else if (isUserAnswer && !isCorrect) {
+                                                bgColor = '#EF535020';
+                                                borderColor = '#EF5350';
+                                                fontWeight = 'bold';
+                                            }
+                                            
+                                            return `
+                                                <div style="padding: 10px; background: ${bgColor}; border: 2px solid ${borderColor}; border-radius: 6px; font-weight: ${fontWeight};">
+                                                    <span style="margin-right: 10px; color: #666;">${String.fromCharCode(65 + optIndex)})</span>
+                                                    ${option}
+                                                    ${isCorrectAnswer ? '<span style="margin-left: 10px; color: #4CAF50;">✓ Doğru Cevap</span>' : ''}
+                                                    ${isUserAnswer && !isCorrect ? '<span style="margin-left: 10px; color: #EF5350;">✗ Senin Cevabın</span>' : ''}
+                                                </div>
+                                            `;
+                                        }).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Varsayılan özet görünümü
     return `
         <div class="result-container">
             <div class="result-card">
@@ -1009,9 +1544,13 @@ function renderQuizResult() {
                 </div>
                 
                 <div class="result-actions">
+                    <button onclick="toggleQuestionDetails()" class="btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">📋 Soru Detayları</button>
+                </div>
+                
+                <div class="result-actions" style="margin-top: 10px;">
                     <button onclick="changePage(null, 'home')" class="btn-secondary">🏠 Ana Sayfa</button>
                     <button onclick="changePage(null, 'stats')" class="btn-secondary">📊 İstatistikler</button>
-                    <button onclick="startQuiz(null, null)" class="btn-primary">🔄 Yeni Test</button>
+                    <button onclick="startQuiz(null, null)" class="btn-secondary">🔄 Yeni Test</button>
                 </div>
             </div>
         </div>
@@ -1057,12 +1596,9 @@ function renderProfile() {
 
 function renderNavbar(activePage) {
     return `
-        <nav class="navbar">
+        <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
             <div class="logo">
-                <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
-                    <rect width="40" height="40" rx="8" fill="#2196F3"/>
-                    <path d="M12 10h8v4h-8v-4zm0 8h8v4h-8v-4zm12-8h4v20h-4v-20z" fill="white"/>
-                </svg>
+                <img src="KİTKİTlogo.jpg" alt="KİTKİT Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
                 <span style="font-weight: bold; font-size: 20px; margin-left: 10px;">KİTKİT</span>
             </div>
             <ul class="nav-links">

@@ -198,6 +198,7 @@ body {
 
 .dashboard-content {
     padding: 40px;
+    padding-top: 120px;
     max-width: 1400px;
     margin: 0 auto;
 }
