@@ -1,10 +1,10 @@
-# 📚 YDS Hazırlık Uygulaması
+# 📚 KİTKİT - YDS Hazırlık Uygulaması
 
 Firebase tabanlı, kullanıcı adı ile giriş yapılan interaktif YDS sınav hazırlık platformu.
 
 ## 🌐 Canlı Demo
 
-**[🎯 Uygulamayı Deneyin](https://tekee1925.github.io/YDS-uygulamasi/)**
+**[🎯 Uygulamayı Deneyin](https://tekee1925.github.io/KITKIT-uygulamasi/)**
 
 > Kayıt olup hemen kullanmaya başlayabilirsiniz!
 
@@ -21,8 +21,8 @@ Firebase tabanlı, kullanıcı adı ile giriş yapılan interaktif YDS sınav ha
 ### Adım 1: Projeyi Klonlayın
 
 ```bash
-git clone https://github.com/tekee1925/YDS-uygulamasi.git
-cd YDS-uygulamasi
+git clone https://github.com/tekee1925/KITKIT-uygulamasi.git
+cd KITKIT-uygulamasi
 ```
 
 ### Adım 2: Firebase Yapılandırması
