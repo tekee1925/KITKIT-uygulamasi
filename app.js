@@ -31,7 +31,11 @@ const state = {
         quizHistory: [], // { date, score, total, percentage, duration }
         dailyGoal: 50,
         dailyProgress: 0,
-        lastProgressDate: null
+        lastProgressDate: null,
+        dailyStreak: 0,
+        lastLoginDate: null,
+        todoList: [], // { id, text, completed }
+        completedTests: [] // { type, level, testNumber, topic, examNumber }
     }
 };
 
@@ -120,6 +124,44 @@ async function firebaseRegister(username, password, fullname) {
     }
 }
 
+async function checkAndUpdateStreak(uid) {
+    try {
+        const { doc, updateDoc } = window.firebaseModules;
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        
+        const lastLogin = state.userStats.lastLoginDate ? new Date(state.userStats.lastLoginDate) : null;
+        if (lastLogin) {
+            lastLogin.setHours(0, 0, 0, 0);
+        }
+        
+        const daysDiff = lastLogin ? Math.floor((today - lastLogin) / (1000 * 60 * 60 * 24)) : -1;
+        
+        let newStreak = state.userStats.dailyStreak || 0;
+        
+        if (daysDiff === 0) {
+            // Bugün zaten giriş yapılmış
+            return;
+        } else if (daysDiff === 1) {
+            // Dün giriş yapılmış, streak devam ediyor
+            newStreak++;
+        } else {
+            // Streak kopmuş, yeniden başla
+            newStreak = 1;
+        }
+        
+        state.userStats.dailyStreak = newStreak;
+        state.userStats.lastLoginDate = today.toISOString();
+        
+        await updateDoc(doc(window.firebaseDb, 'users', uid), {
+            'stats.dailyStreak': newStreak,
+            'stats.lastLoginDate': today.toISOString()
+        });
+    } catch (error) {
+        console.error('Streak update error:', error);
+    }
+}
+
 async function loadUserData(uid) {
     try {
         const { doc, getDoc, updateDoc } = window.firebaseModules;
@@ -147,6 +189,9 @@ async function loadUserData(uid) {
             // Günlük hedef verilerini al veya default değerleri kullan
             if (!state.userStats.dailyGoal) state.userStats.dailyGoal = 50;
             if (!state.userStats.dailyProgress) state.userStats.dailyProgress = 0;
+            if (!state.userStats.dailyStreak) state.userStats.dailyStreak = 0;
+            if (!state.userStats.todoList) state.userStats.todoList = [];
+            if (!state.userStats.completedTests) state.userStats.completedTests = [];
             
             // Yeni gün kontrolü - eğer son güncelleme bugün değilse progress'i sıfırla
             const today = new Date().toDateString();
@@ -160,6 +205,9 @@ async function loadUserData(uid) {
                     'stats.lastProgressDate': state.userStats.lastProgressDate
                 });
             }
+            
+            // Streak kontrolü
+            await checkAndUpdateStreak(uid);
         }
     } catch (error) {
         console.error('Load user data error:', error);
@@ -194,6 +242,16 @@ async function saveQuizResult(score, total, duration) {
         const newDailyProgress = state.userStats.dailyProgress + total;
         const today = new Date().toISOString();
         
+        // Tamamlanan testi kaydet
+        const completedTest = {
+            type: state.selectedLevel ? 'level' : (state.selectedTopic ? 'topic' : 'mock'),
+            level: state.selectedLevel,
+            topic: state.selectedTopic,
+            testNumber: state.currentTestNumber,
+            examNumber: state.currentExamNumber,
+            date: today
+        };
+        
         await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
             'stats.totalQuizzes': newTotalQuizzes,
             'stats.totalQuestions': newTotalQuestions,
@@ -202,8 +260,11 @@ async function saveQuizResult(score, total, duration) {
             'stats.averageScore': newAverageScore,
             'stats.quizHistory': arrayUnion(quizResult),
             'stats.dailyProgress': newDailyProgress,
-            'stats.lastProgressDate': today
+            'stats.lastProgressDate': today,
+            'stats.completedTests': arrayUnion(completedTest)
         });
+        
+        state.userStats.completedTests.push(completedTest);
         
         // State'i güncelle
         state.userStats.totalQuizzes = newTotalQuizzes;
@@ -321,6 +382,69 @@ async function updateDailyGoal() {
     }
 }
 
+async function addTodo() {
+    const input = document.getElementById('todo-input');
+    const text = input.value.trim();
+    
+    if (!text) {
+        alert('Lütfen bir görev yazın');
+        return;
+    }
+    
+    try {
+        const { doc, updateDoc, arrayUnion } = window.firebaseModules;
+        const newTodo = {
+            id: Date.now(),
+            text: text,
+            completed: false
+        };
+        
+        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+            'stats.todoList': arrayUnion(newTodo)
+        });
+        
+        state.userStats.todoList.push(newTodo);
+        input.value = '';
+        render();
+    } catch (error) {
+        console.error('Todo ekleme hatası:', error);
+        alert('Görev eklenirken bir hata oluştu');
+    }
+}
+
+async function toggleTodoComplete(id) {
+    try {
+        const { doc, setDoc } = window.firebaseModules;
+        const todo = state.userStats.todoList.find(t => t.id === id);
+        if (todo) {
+            todo.completed = !todo.completed;
+            
+            await setDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+                stats: state.userStats
+            }, { merge: true });
+            
+            render();
+        }
+    } catch (error) {
+        console.error('Todo güncelleme hatası:', error);
+    }
+}
+
+async function deleteTodo(id) {
+    try {
+        const { doc, setDoc } = window.firebaseModules;
+        state.userStats.todoList = state.userStats.todoList.filter(t => t.id !== id);
+        
+        await setDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+            stats: state.userStats
+        }, { merge: true });
+        
+        render();
+    } catch (error) {
+        console.error('Todo silme hatası:', error);
+    }
+}
+
 function logout() {
     const { signOut } = window.firebaseModules;
     signOut(window.firebaseAuth);
@@ -334,7 +458,11 @@ function logout() {
         quizHistory: [],
         dailyGoal: 50,
         dailyProgress: 0,
-        lastProgressDate: null
+        lastProgressDate: null,
+        dailyStreak: 0,
+        lastLoginDate: null,
+        todoList: [],
+        completedTests: []
     };
     state.currentPage = 'login';
     render();
@@ -397,6 +525,8 @@ function startMockExam(examNumber) {
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = null;
+    state.currentExamNumber = examNumber;
+    state.currentTestNumber = null;
     
     // Timer başlat
     startTimer();
@@ -448,6 +578,8 @@ function startLevelTest(level, testNumber) {
     state.startTime = Date.now();
     state.selectedLevel = level;
     state.selectedTopic = null;
+    state.currentTestNumber = testNumber;
+    state.currentExamNumber = null;
     
     // Timer başlat
     startTimer();
@@ -488,6 +620,8 @@ function startTopicTest(topic) {
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = topic;
+    state.currentTestNumber = null;
+    state.currentExamNumber = null;
     
     // Timer başlat
     startTimer();
@@ -535,6 +669,8 @@ function startQuiz(level = null, topic = null) {
     state.startTime = Date.now();
     state.selectedLevel = level;
     state.selectedTopic = topic;
+    state.currentTestNumber = null;
+    state.currentExamNumber = null;
     
     // Timer başlat
     startTimer();
@@ -770,6 +906,25 @@ function renderHome() {
                     <p>Bugün hangi konuya odaklanmak istersin?</p>
                 </div>
                 
+                <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
+                    <h2>🔥 Günlük Streak</h2>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 30px; margin-top: 20px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 72px; font-weight: bold; color: #FF5722;">${state.userStats.dailyStreak}</div>
+                            <div style="font-size: 18px; color: #666; margin-top: 10px;">Gün Üst Üste Giriş!</div>
+                        </div>
+                        <div style="font-size: 80px;">🔥</div>
+                    </div>
+                    <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center;">
+                        <div style="font-size: 14px; color: #666; margin-bottom: 5px;">Son Giriş</div>
+                        <div style="font-size: 16px; font-weight: 600; color: #333;">
+                            ${state.userStats.lastLoginDate ? new Date(state.userStats.lastLoginDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Bugün'}
+                        </div>
+                    </div>
+                    ${state.userStats.dailyStreak >= 7 ? '<div style="background: linear-gradient(135deg, #FFD700, #FFA500); color: #333; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 15px;">🏆 Harika! 7 günlük streak\'i geçtin!</div>' : ''}
+                    ${state.userStats.dailyStreak >= 30 ? '<div style="background: linear-gradient(135deg, #FF1493, #FF69B4); color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 15px;">🎆 İnanılmaz! 30 günlük streak efsanesi!</div>' : ''}
+                </div>
+                
                 <div class="card" style="background: linear-gradient(135deg, #FF980015 0%, #FF572215 100%); border: 2px solid #FF9800;">
                     <h2>🎯 Günlük Hedef</h2>
                     <div style="display: flex; align-items: center; gap: 30px; margin-top: 20px;">
@@ -827,6 +982,43 @@ function renderHome() {
                                 </div>
                             `;
                         }).join('')}
+                    </div>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
+                    <h2>✅ Yapılacaklar Listesi</h2>
+                    <div style="margin-top: 20px;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                            <input type="text" id="todo-input" placeholder="Yeni görev ekle (örn: A1 - Test 1 çözülecek)" 
+                                style="flex: 1; padding: 12px; border: 2px solid #E0E0E0; border-radius: 8px; font-size: 15px;"
+                                onkeypress="if(event.key==='Enter') addTodo()">
+                            <button onclick="addTodo()" class="btn-primary" style="padding: 12px 24px;">➕ Ekle</button>
+                        </div>
+                        
+                        ${state.userStats.todoList && state.userStats.todoList.length > 0 ? `
+                            <div style="display: grid; gap: 10px;">
+                                ${state.userStats.todoList.map(todo => `
+                                    <div style="display: flex; align-items: center; gap: 12px; padding: 15px; background: white; border-radius: 10px; border-left: 4px solid ${todo.completed ? '#4CAF50' : '#2196F3'};">
+                                        <button onclick="toggleTodoComplete(${todo.id})" 
+                                            style="width: 24px; height: 24px; border-radius: 50%; border: 2px solid ${todo.completed ? '#4CAF50' : '#E0E0E0'}; background: ${todo.completed ? '#4CAF50' : 'white'}; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; color: white;">
+                                            ${todo.completed ? '✓' : ''}
+                                        </button>
+                                        <div style="flex: 1; ${todo.completed ? 'text-decoration: line-through; color: #999;' : 'color: #333;'}">
+                                            ${todo.text}
+                                        </div>
+                                        <button onclick="deleteTodo(${todo.id})" 
+                                            style="padding: 6px 12px; background: #EF5350; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;">
+                                            🗑️ Sil
+                                        </button>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : `
+                            <div style="text-align: center; padding: 40px; color: #999;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">📋</div>
+                                <div>Henüz görev eklemedin. Hemen ekle ve hedeflerine ulaş!</div>
+                            </div>
+                        `}
                     </div>
                 </div>
                 
@@ -1141,6 +1333,14 @@ function renderTests() {
         { id: 'Irrelevant', name: 'Anlatım Bütünlüğünü Bozan Cümle', icon: '❌' }
     ];
     
+    // Tamamlanan testleri kontrol et
+    const isTestCompleted = (type, level, testNumber, topic) => {
+        return state.userStats.completedTests && state.userStats.completedTests.some(t => 
+            t.type === type && 
+            (type === 'level' ? (t.level === level && t.testNumber === testNumber) : t.topic === topic)
+        );
+    };
+    
     return `
         <div class="dashboard">
             ${renderNavbar('tests')}
@@ -1170,9 +1370,18 @@ function renderTests() {
                         <div style="margin-bottom: 30px; padding: 20px; background: #F5F7FA; border-radius: 12px;">
                             <h3 style="margin-bottom: 15px; color: #333;">${level} Seviyesi</h3>
                             <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
-                                <button onclick="startLevelTest('${level}', 1)" class="btn-level">Test 1</button>
-                                <button onclick="startLevelTest('${level}', 2)" class="btn-level">Test 2</button>
-                                <button onclick="startLevelTest('${level}', 3)" class="btn-level">Test 3</button>
+                                <button onclick="startLevelTest('${level}', 1)" class="btn-level" style="position: relative;">
+                                    ${isTestCompleted('level', level, 1, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #4CAF50; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>' : ''}
+                                    Test 1
+                                </button>
+                                <button onclick="startLevelTest('${level}', 2)" class="btn-level" style="position: relative;">
+                                    ${isTestCompleted('level', level, 2, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #4CAF50; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>' : ''}
+                                    Test 2
+                                </button>
+                                <button onclick="startLevelTest('${level}', 3)" class="btn-level" style="position: relative;">
+                                    ${isTestCompleted('level', level, 3, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #4CAF50; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>' : ''}
+                                    Test 3
+                                </button>
                             </div>
                         </div>
                     `).join('')}
@@ -1183,7 +1392,8 @@ function renderTests() {
                     <p style="margin-bottom: 20px; color: #666;">Her konu için 10 soruluk testler</p>
                     <div style="display: grid; gap: 12px;">
                         ${topics.map(topic => `
-                            <button onclick="startTopicTest('${topic.id}')" class="btn-topic-test">
+                            <button onclick="startTopicTest('${topic.id}')" class="btn-topic-test" style="position: relative;">
+                                ${isTestCompleted('topic', null, null, topic.id) ? '<span style="position: absolute; top: 10px; right: 10px; background: #4CAF50; color: white; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 16px;">✓</span>' : ''}
                                 <span style="font-size: 24px; margin-right: 10px;">${topic.icon}</span>
                                 <span>${topic.name}</span>
                             </button>
@@ -1202,6 +1412,13 @@ function renderTests() {
 }
 
 function renderMockExams() {
+    // Deneme sınavlarının tamamlanma durumunu kontrol et
+    const isMockExamCompleted = (examNumber) => {
+        return state.userStats.completedTests && state.userStats.completedTests.some(t => 
+            t.type === 'mock' && t.examNumber === examNumber
+        );
+    };
+    
     return `
         <div class="dashboard">
             ${renderNavbar('mock-exams')}
@@ -1231,15 +1448,18 @@ function renderMockExams() {
                         <br><strong>Not:</strong> Her deneme başlatıldığında farklı sorular gelir.
                     </p>
                     <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
-                        <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px;">
+                        <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px; position: relative;">
+                            ${isMockExamCompleted(1) ? '<span style="position: absolute; top: 10px; right: 10px; background: #4CAF50; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">✓</span>' : ''}
                             <div style="font-size: 24px; margin-bottom: 10px;">1️⃣</div>
                             <div>1. Deneme</div>
                         </button>
-                        <button onclick="startMockExam(2)" class="btn-level" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none; padding: 20px;">
+                        <button onclick="startMockExam(2)" class="btn-level" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none; padding: 20px; position: relative;">
+                            ${isMockExamCompleted(2) ? '<span style="position: absolute; top: 10px; right: 10px; background: #4CAF50; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">✓</span>' : ''}
                             <div style="font-size: 24px; margin-bottom: 10px;">2️⃣</div>
                             <div>2. Deneme</div>
                         </button>
-                        <button onclick="startMockExam(3)" class="btn-level" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; border: none; padding: 20px;">
+                        <button onclick="startMockExam(3)" class="btn-level" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; border: none; padding: 20px; position: relative;">
+                            ${isMockExamCompleted(3) ? '<span style="position: absolute; top: 10px; right: 10px; background: #4CAF50; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">✓</span>' : ''}
                             <div style="font-size: 24px; margin-bottom: 10px;">3️⃣</div>
                             <div>3. Deneme</div>
                         </button>
