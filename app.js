@@ -172,7 +172,8 @@ async function loadUserData(uid) {
             state.user = {
                 uid: uid,
                 username: userData.username,
-                name: userData.name
+                name: userData.name,
+                createdAt: userData.createdAt
             };
             state.userStats = userData.stats || {
                 totalQuizzes: 0,
@@ -466,6 +467,109 @@ function logout() {
     };
     state.currentPage = 'login';
     render();
+}
+
+async function updateUserName() {
+    const newName = document.getElementById('nameInput').value.trim();
+    
+    if (!newName) {
+        alert('Lütfen bir isim girin');
+        return;
+    }
+    
+    if (newName === state.user.name) {
+        alert('Yeni isim mevcut isimle aynı');
+        return;
+    }
+    
+    try {
+        const { doc, updateDoc } = window.firebaseModules;
+        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+            name: newName
+        });
+        
+        state.user.name = newName;
+        document.getElementById('displayName').textContent = newName;
+        alert('✅ İsim başarıyla güncellendi!');
+    } catch (error) {
+        console.error('Name update error:', error);
+        alert('❌ İsim güncellenirken bir hata oluştu');
+    }
+}
+
+function confirmDeleteAccount() {
+    const confirmation = confirm(
+        '⚠️ UYARI: Hesabınızı silmek üzeresiniz!\n\n' +
+        'Bu işlem GERİ ALINAMAZ. Tüm verileriniz kalıcı olarak silinecektir:\n' +
+        '• Test geçmişiniz\n' +
+        '• İstatistikleriniz\n' +
+        '• Yapılacaklar listeniz\n' +
+        '• Tüm ilerlemeniz\n\n' +
+        'Hesabınızı silmek istediğinizden emin misiniz?'
+    );
+    
+    if (confirmation) {
+        const secondConfirmation = confirm(
+            '🔴 SON UYARI!\n\n' +
+            'Bu işlem geri alınamaz. Hesabınız ve tüm verileriniz kalıcı olarak silinecek.\n\n' +
+            'Devam etmek istediğinizden EMİN MİSİNİZ?'
+        );
+        
+        if (secondConfirmation) {
+            deleteUserAccount();
+        }
+    }
+}
+
+async function deleteUserAccount() {
+    try {
+        const { deleteUser } = window.firebaseModules;
+        const { doc, deleteDoc } = window.firebaseModules;
+        
+        const username = state.user.username;
+        const uid = state.user.uid;
+        
+        // Firestore verilerini sil
+        await deleteDoc(doc(window.firebaseDb, 'users', uid));
+        await deleteDoc(doc(window.firebaseDb, 'usernames', username.toLowerCase()));
+        
+        // Firebase Auth kullanıcısını sil
+        const currentUser = window.firebaseAuth.currentUser;
+        if (currentUser) {
+            await deleteUser(currentUser);
+        }
+        
+        alert('✅ Hesabınız başarıyla silindi. Bizi tercih ettiğiniz için teşekkürler.');
+        
+        // State'i temizle ve login sayfasına yönlendir
+        state.user = null;
+        state.userStats = {
+            totalQuizzes: 0,
+            totalQuestions: 0,
+            correctAnswers: 0,
+            wrongAnswers: 0,
+            averageScore: 0,
+            quizHistory: [],
+            dailyGoal: 50,
+            dailyProgress: 0,
+            lastProgressDate: null,
+            dailyStreak: 0,
+            lastLoginDate: null,
+            todoList: [],
+            completedTests: []
+        };
+        state.currentPage = 'login';
+        render();
+        
+    } catch (error) {
+        console.error('Delete account error:', error);
+        
+        if (error.code === 'auth/requires-recent-login') {
+            alert('⚠️ Güvenlik nedeniyle hesap silme işlemi için yeniden giriş yapmanız gerekiyor.\n\nLütfen çıkış yapıp tekrar giriş yapın, ardından hesap silme işlemini tekrarlayın.');
+        } else {
+            alert('❌ Hesap silinirken bir hata oluştu: ' + error.message);
+        }
+    }
 }
 
 // ============================================
@@ -1781,6 +1885,12 @@ function renderQuizResult() {
 }
 
 function renderProfile() {
+    const createdDate = state.user.createdAt ? new Date(state.user.createdAt).toLocaleDateString('tr-TR', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+    }) : 'Bilinmiyor';
+    
     return `
         <div class="dashboard">
             ${renderNavbar('profile')}
@@ -1791,26 +1901,35 @@ function renderProfile() {
                     
                     <div class="profile-info">
                         <div class="profile-avatar">👤</div>
-                        <h2>${state.user.name}</h2>
+                        <h2 id="displayName">${state.user.name}</h2>
                         <p>@${state.user.username}</p>
+                        <p style="color: var(--text-muted); font-size: 14px; margin-top: 10px;">
+                            📅 Kayıt Tarihi: ${createdDate}
+                        </p>
                     </div>
                     
-                    <div class="profile-stats">
-                        <div class="profile-stat">
-                            <div class="stat-value">${state.userStats.totalQuizzes}</div>
-                            <div class="stat-label">Çözülen Test</div>
+                    <div style="max-width: 400px; margin: 30px auto;">
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 14px; font-weight: 600;">
+                                Ad Soyad
+                            </label>
+                            <input 
+                                type="text" 
+                                id="nameInput" 
+                                value="${state.user.name}"
+                                style="width: 100%; padding: 12px; background: rgba(0, 26, 51, 0.5); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 2px; color: var(--text-light); font-size: 16px;"
+                                placeholder="Ad Soyad"
+                            />
                         </div>
-                        <div class="profile-stat">
-                            <div class="stat-value">${state.userStats.averageScore}%</div>
-                            <div class="stat-label">Ortalama Başarı</div>
-                        </div>
-                        <div class="profile-stat">
-                            <div class="stat-value">${state.userStats.totalQuestions}</div>
-                            <div class="stat-label">Toplam Soru</div>
-                        </div>
+                        
+                        <button onclick="updateUserName()" class="btn-primary" style="width: 100%; margin-bottom: 15px;">
+                            💾 İsmi Güncelle
+                        </button>
+                        
+                        <button onclick="confirmDeleteAccount()" class="btn-secondary" style="width: 100%; background: rgba(255, 0, 80, 0.2); color: var(--pink-accent); border: 1px solid var(--pink-accent);">
+                            🗑️ Hesabı Sil
+                        </button>
                     </div>
-                    
-                    <button onclick="logout()" class="btn-secondary" style="margin-top: 30px;">Çıkış Yap</button>
                 </div>
             </div>
         </div>
