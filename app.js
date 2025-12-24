@@ -1275,25 +1275,6 @@ function renderHome() {
                         <button onclick="changePage(event, 'tests')" class="btn-secondary" style="margin-top: 10px;">📝 Testlere Git</button>
                     </div>
                     
-                    <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
-                        <h2>🎓 Kişiselleştirilmiş Testler</h2>
-                        <p style="margin-bottom: 20px; color: #666;">Yanlış yaptığın sorulardan oluşan özel testler</p>
-                        ${(state.userStats.wrongQuestions && state.userStats.wrongQuestions.length > 0) ? `
-                            <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
-                                <div style="font-size: 32px; font-weight: bold; color: #FF5722; text-align: center;">${state.userStats.wrongQuestions.length}</div>
-                                <div style="text-align: center; color: #666; margin-top: 5px;">Yanlış Soru Birikti</div>
-                            </div>
-                            <button onclick="changePage(event, 'personalized-tests')" class="btn-primary" style="background: #FF5722;">
-                                📚 Kişiselleştirilmiş Testlere Git
-                            </button>
-                        ` : `
-                            <div style="text-align: center; padding: 30px; color: #999;">
-                                <div style="font-size: 48px; margin-bottom: 15px;">✨</div>
-                                <div>Henüz yanlış yapılan soru yok. Test çözmeye başla!</div>
-                            </div>
-                        `}
-                    </div>
-                    
                     <div class="card">
                         <h2>🎯 Deneme Sınavları</h2>
                         <p style="margin-bottom: 20px; color: #666;">80 soruluk tam denemeler</p>
@@ -1623,6 +1604,36 @@ function renderTests() {
                             ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
                         </p>
                     </div>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
+                    <h2>🎓 Kişiselleştirilmiş Testler</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Yanlış yaptığın sorulardan oluşan özel testler</p>
+                    ${(state.userStats.wrongQuestions && state.userStats.wrongQuestions.length > 0) ? `
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 36px; font-weight: bold; color: #FF5722;">${state.userStats.wrongQuestions.length}</div>
+                                <div style="color: #666; margin-top: 5px;">Yanlış Soru</div>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${Math.ceil(state.userStats.wrongQuestions.length / 10)}</div>
+                                <div style="color: #666; margin-top: 5px;">Test Oluştu</div>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 36px; font-weight: bold; color: #4CAF50;">%${state.userStats.wrongQuestions.length > 0 ? Math.round((state.userStats.wrongQuestions.length / (state.userStats.totalQuestions || 1)) * 100) : 0}</div>
+                                <div style="color: #666; margin-top: 5px;">Hata Oranı</div>
+                            </div>
+                        </div>
+                        <button onclick="changePage(event, 'personalized-tests')" class="btn-primary" style="background: #FF5722; width: 100%; padding: 15px; font-size: 16px;">
+                            📚 Kişiselleştirilmiş Testlere Git →
+                        </button>
+                    ` : `
+                        <div style="text-align: center; padding: 30px; color: #999;">
+                            <div style="font-size: 48px; margin-bottom: 15px;">✨</div>
+                            <div>Henüz yanlış yapılan soru yok.</div>
+                            <div style="margin-top: 10px;">Test çözmeye başladığında yanlış yaptığın sorular buraya eklenecek!</div>
+                        </div>
+                    `}
                 </div>
                 
                 <div class="card">
