@@ -693,7 +693,7 @@ function startLevelTest(level, testNumber) {
     render();
 }
 
-function startTopicTest(topic) {
+function startTopicTest(topic, testNumber = 1) {
     if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
         alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
         return;
@@ -707,9 +707,16 @@ function startTopicTest(topic) {
         return;
     }
     
-    // Random 10 soru seç
-    const shuffled = [...filteredQuestions].sort(() => 0.5 - Math.random());
-    state.currentTestQuestions = shuffled.slice(0, 10);
+    // Test numarasına göre soruları seç (her test farklı sorular)
+    const startIndex = (testNumber - 1) * 10;
+    const endIndex = startIndex + 10;
+    
+    if (filteredQuestions.length < endIndex) {
+        alert(`${topic} konusunda Test ${testNumber} için yeterli soru yok.`);
+        return;
+    }
+    
+    state.currentTestQuestions = filteredQuestions.slice(startIndex, endIndex);
     
     // State'i sıfırla
     state.currentQuestion = 0;
@@ -724,7 +731,7 @@ function startTopicTest(topic) {
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = topic;
-    state.currentTestNumber = null;
+    state.currentTestNumber = testNumber;
     state.currentExamNumber = null;
     
     // Timer başlat
@@ -733,6 +740,20 @@ function startTopicTest(topic) {
     // Quiz sayfasına geç
     state.currentPage = 'quiz';
     render();
+}
+
+// Accordion toggle fonksiyonu
+function toggleAccordion(accordionId) {
+    const content = document.getElementById(accordionId);
+    const icon = document.getElementById(`${accordionId}-icon`);
+    
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+    } else {
+        content.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+    }
 }
 
 function startQuiz(level = null, topic = null) {
@@ -1428,29 +1449,29 @@ function renderStats() {
 function renderTests() {
     const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     const topics = [
-        { id: 'Vocabulary', name: 'Kelime – Phrasal Verb', icon: '📖' },
-        { id: 'Grammar', name: 'Tense – Preposition – Dilbilgisi', icon: '📚' },
+        { id: 'Vocabulary', name: 'Vocabulary & Phrasal Verbs', icon: '📖' },
+        { id: 'Grammar', name: 'Grammar & Tenses', icon: '📚' },
         { id: 'Cloze', name: 'Cloze Test', icon: '📝' },
-        { id: 'Completion', name: 'Cümle Tamamlama', icon: '✍️' },
-        { id: 'Translation', name: 'Çeviri', icon: '🔄' },
-        { id: 'Reading', name: 'Paragraf', icon: '📰' },
-        { id: 'Dialog', name: 'Diyalog Tamamlama', icon: '💬' },
-        { id: 'Paraphrase', name: 'Yakın Anlamlı Cümle', icon: '🔁' },
-        { id: 'Paragraph-Completion', name: 'Paragraf Tamamlama', icon: '📄' },
-        { id: 'Irrelevant', name: 'Anlatım Bütünlüğünü Bozan Cümle', icon: '❌' }
+        { id: 'Completion', name: 'Sentence Completion', icon: '✍️' },
+        { id: 'Reading', name: 'Reading Comprehension', icon: '📰' },
+        { id: 'Dialog', name: 'Dialogue Completion', icon: '💬' },
+        { id: 'Paraphrase', name: 'Paraphrasing', icon: '🔁' },
+        { id: 'Paragraph-Completion', name: 'Paragraph Completion', icon: '📄' },
+        { id: 'Irrelevant', name: 'Finding Irrelevant Sentence', icon: '❌' }
     ];
     
     // Tamamlanan testleri kontrol et
     const isTestCompleted = (type, level, testNumber, topic) => {
         return state.userStats.completedTests && state.userStats.completedTests.some(t => 
             t.type === type && 
-            (type === 'level' ? (t.level === level && t.testNumber === testNumber) : t.topic === topic)
+            (type === 'level' ? (t.level === level && t.testNumber === testNumber) : 
+            (type === 'topic' ? (t.topic === topic && t.testNumber === testNumber) : false))
         );
     };
     
-    return `
+    return \`
         <div class="dashboard">
-            ${renderNavbar('tests')}
+            \${renderNavbar('tests')}
             
             <div class="dashboard-content">
                 <div class="welcome-section">
@@ -1458,64 +1479,92 @@ function renderTests() {
                     <p>Seviyene ve konuya göre test çöz</p>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 100, 255, 0.1), rgba(0, 212, 255, 0.05)); border: 1px solid rgba(0, 212, 255, 0.3);">
                     <h2>⚙️ Test Ayarları</h2>
                     <div style="margin-top: 15px;">
                         <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
-                            ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
+                            \${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
                         </button>
-                        <p style="font-size: 13px; color: #666; margin-top: 10px; text-align: center;">
-                            ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
+                        <p style="font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center;">
+                            \${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
                         </p>
                     </div>
                 </div>
                 
                 <div class="card">
                     <h2>🎯 Seviyeye Göre Testler</h2>
-                    <p style="margin-bottom: 20px; color: #666;">Her seviye için 3 test, her test 10 soru</p>
-                    ${levels.map(level => `
-                        <div style="margin-bottom: 30px; padding: 20px; background: #F5F7FA; border-radius: 12px;">
-                            <h3 style="margin-bottom: 15px; color: #333;">${level} Seviyesi</h3>
-                            <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
-                                <button onclick="startLevelTest('${level}', 1)" class="btn-level" style="position: relative;">
-                                    ${isTestCompleted('level', level, 1, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #4CAF50; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>' : ''}
-                                    Test 1
-                                </button>
-                                <button onclick="startLevelTest('${level}', 2)" class="btn-level" style="position: relative;">
-                                    ${isTestCompleted('level', level, 2, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #4CAF50; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>' : ''}
-                                    Test 2
-                                </button>
-                                <button onclick="startLevelTest('${level}', 3)" class="btn-level" style="position: relative;">
-                                    ${isTestCompleted('level', level, 3, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #4CAF50; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>' : ''}
-                                    Test 3
-                                </button>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">Her seviye için 3 test, her test 10 soru</p>
+                    \${levels.map(level => {
+                        const accordionId = \`level-\${level}\`;
+                        return \`
+                        <div style="margin-bottom: 15px; border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 0; overflow: hidden;">
+                            <button 
+                                onclick="toggleAccordion('\${accordionId}')" 
+                                class="accordion-header"
+                                style="width: 100%; padding: 20px; background: rgba(0, 26, 51, 0.4); border: none; color: var(--text-light); font-size: 18px; font-weight: 700; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s;">
+                                <span>${level} Level</span>
+                                <span id="\${accordionId}-icon" style="font-size: 20px; transition: transform 0.3s;">▼</span>
+                            </button>
+                            <div id="\${accordionId}" class="accordion-content" style="display: none; padding: 20px; background: rgba(0, 26, 51, 0.2);">
+                                <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
+                                    <button onclick="startLevelTest('\${level}', 1)" class="btn-level" style="position: relative;">
+                                        \${isTestCompleted('level', level, 1, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                        Test 1
+                                    </button>
+                                    <button onclick="startLevelTest('\${level}', 2)" class="btn-level" style="position: relative;">
+                                        \${isTestCompleted('level', level, 2, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                        Test 2
+                                    </button>
+                                    <button onclick="startLevelTest('\${level}', 3)" class="btn-level" style="position: relative;">
+                                        \${isTestCompleted('level', level, 3, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                        Test 3
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    `).join('')}
+                        \`;
+                    }).join('')}
                 </div>
                 
                 <div class="card">
                     <h2>📚 Konuya Göre Testler</h2>
-                    <p style="margin-bottom: 20px; color: #666;">Her konu için 10 soruluk testler</p>
-                    <div style="display: grid; gap: 12px;">
-                        ${topics.map(topic => `
-                            <button onclick="startTopicTest('${topic.id}')" class="btn-topic-test" style="position: relative;">
-                                ${isTestCompleted('topic', null, null, topic.id) ? '<span style="position: absolute; top: 10px; right: 10px; background: #4CAF50; color: white; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 16px;">✓</span>' : ''}
-                                <span style="font-size: 24px; margin-right: 10px;">${topic.icon}</span>
-                                <span>${topic.name}</span>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">Her konu için 2 test, her test 10 soru</p>
+                    \${topics.map(topic => {
+                        const accordionId = \`topic-\${topic.id}\`;
+                        return \`
+                        <div style="margin-bottom: 15px; border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 0; overflow: hidden;">
+                            <button 
+                                onclick="toggleAccordion('\${accordionId}')" 
+                                class="accordion-header"
+                                style="width: 100%; padding: 20px; background: rgba(0, 26, 51, 0.4); border: none; color: var(--text-light); font-size: 16px; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s;">
+                                <span><span style="font-size: 24px; margin-right: 10px;">\${topic.icon}</span>\${topic.name}</span>
+                                <span id="\${accordionId}-icon" style="font-size: 20px; transition: transform 0.3s;">▼</span>
                             </button>
-                        `).join('')}
-                    </div>
+                            <div id="\${accordionId}" class="accordion-content" style="display: none; padding: 20px; background: rgba(0, 26, 51, 0.2);">
+                                <div class="level-buttons" style="grid-template-columns: repeat(2, 1fr);">
+                                    <button onclick="startTopicTest('\${topic.id}', 1)" class="btn-level" style="position: relative;">
+                                        \${isTestCompleted('topic', null, 1, topic.id) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                        Test 1
+                                    </button>
+                                    <button onclick="startTopicTest('\${topic.id}', 2)" class="btn-level" style="position: relative;">
+                                        \${isTestCompleted('topic', null, 2, topic.id) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                        Test 2
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        \`;
+                    }).join('')}
                 </div>
                 
                 <div class="card">
                     <h2>🎲 Rastgele Test</h2>
-                    <p style="margin-bottom: 20px; color: #666;">Tüm seviye ve konulardan karışık 20 soru</p>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">Tüm seviye ve konulardan karışık 20 soru</p>
                     <button onclick="startQuiz(null, null)" class="btn-random">🎲 Rastgele Test Başlat</button>
                 </div>
             </div>
         </div>
-    `;
+    \`;
 }
 
 function renderMockExams() {
