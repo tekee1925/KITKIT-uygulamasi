@@ -35,7 +35,8 @@ const state = {
         dailyStreak: 0,
         lastLoginDate: null,
         todoList: [], // { id, text, completed }
-        completedTests: [] // { type, level, testNumber, topic, examNumber }
+        completedTests: [], // { type, level, testNumber, topic, examNumber }
+        wrongQuestions: [] // Yanlış yapılan sorular { question, options, correctAnswer, explanation, userAnswer, date, level, topic }
     }
 };
 
@@ -232,6 +233,25 @@ async function saveQuizResult(score, total, duration) {
             topic: state.selectedTopic
         };
         
+        // Yanlış yapılan soruları topla
+        const wrongQuestions = [];
+        state.currentTestQuestions.forEach((question, index) => {
+            const userAnswer = state.userAnswers[index];
+            if (userAnswer !== null && userAnswer !== question.correctAnswer) {
+                wrongQuestions.push({
+                    passage: question.passage || '',
+                    question: question.question,
+                    options: question.options,
+                    correctAnswer: question.correctAnswer,
+                    explanation: question.explanation,
+                    userAnswer: userAnswer,
+                    date: new Date().toISOString(),
+                    level: question.level,
+                    topic: question.topic
+                });
+            }
+        });
+        
         // İstatistikleri güncelle
         const newTotalQuizzes = state.userStats.totalQuizzes + 1;
         const newTotalQuestions = state.userStats.totalQuestions + total;
@@ -253,7 +273,8 @@ async function saveQuizResult(score, total, duration) {
             date: today
         };
         
-        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+        // Firebase'e kaydet
+        const updateData = {
             'stats.totalQuizzes': newTotalQuizzes,
             'stats.totalQuestions': newTotalQuestions,
             'stats.correctAnswers': newCorrectAnswers,
@@ -263,7 +284,16 @@ async function saveQuizResult(score, total, duration) {
             'stats.dailyProgress': newDailyProgress,
             'stats.lastProgressDate': today,
             'stats.completedTests': arrayUnion(completedTest)
-        });
+        };
+        
+        // Yanlış soruları ekle
+        if (wrongQuestions.length > 0) {
+            wrongQuestions.forEach(wq => {
+                updateData['stats.wrongQuestions'] = arrayUnion(wq);
+            });
+        }
+        
+        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), updateData);
         
         state.userStats.completedTests.push(completedTest);
         
@@ -276,6 +306,14 @@ async function saveQuizResult(score, total, duration) {
         state.userStats.quizHistory.push(quizResult);
         state.userStats.dailyProgress = newDailyProgress;
         state.userStats.lastProgressDate = today;
+        
+        // Yanlış soruları state'e ekle
+        if (wrongQuestions.length > 0) {
+            if (!state.userStats.wrongQuestions) {
+                state.userStats.wrongQuestions = [];
+            }
+            state.userStats.wrongQuestions.push(...wrongQuestions);
+        }
         
     } catch (error) {
         console.error('Save quiz result error:', error);
@@ -463,7 +501,8 @@ function logout() {
         dailyStreak: 0,
         lastLoginDate: null,
         todoList: [],
-        completedTests: []
+        completedTests: [],
+        wrongQuestions: []
     };
     state.currentPage = 'login';
     render();
@@ -556,7 +595,8 @@ async function deleteUserAccount() {
             dailyStreak: 0,
             lastLoginDate: null,
             todoList: [],
-            completedTests: []
+            completedTests: [],
+            wrongQuestions: []
         };
         state.currentPage = 'login';
         render();
@@ -740,6 +780,83 @@ function startTopicTest(topic, testNumber = 1) {
     // Quiz sayfasına geç
     state.currentPage = 'quiz';
     render();
+}
+
+function startPersonalizedTest(testNumber) {
+    const wrongQuestions = state.userStats.wrongQuestions || [];
+    
+    if (wrongQuestions.length === 0) {
+        alert('Henüz yanlış yapılan soru yok.');
+        return;
+    }
+    
+    // Test numarasına göre soruları seç (10'arlık gruplar)
+    const startIndex = (testNumber - 1) * 10;
+    const endIndex = Math.min(startIndex + 10, wrongQuestions.length);
+    
+    if (startIndex >= wrongQuestions.length) {
+        alert('Bu test için yeterli soru yok.');
+        return;
+    }
+    
+    // Yanlış soruları test formatına dönüştür
+    state.currentTestQuestions = wrongQuestions.slice(startIndex, endIndex);
+    
+    // State'i sıfırla
+    state.currentQuestion = 0;
+    state.score = 0;
+    state.correctAnswers = 0;
+    state.wrongAnswers = 0;
+    state.selectedAnswer = null;
+    state.quizActive = true;
+    state.quizCompleted = false;
+    state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
+    state.timer = state.currentTestQuestions.length * 60; // Soru başına 1 dakika
+    state.startTime = Date.now();
+    state.selectedLevel = null;
+    state.selectedTopic = 'Kişiselleştirilmiş';
+    state.currentTestNumber = testNumber;
+    state.currentExamNumber = null;
+    state.isPersonalizedTest = true; // Kişiselleştirilmiş test işareti
+    
+    // Timer başlat
+    startTimer();
+    
+    // Quiz sayfasına geç
+    state.currentPage = 'quiz';
+    render();
+}
+
+async function clearWrongQuestions() {
+    if (!confirm('⚠️ Tüm yanlış soruları silmek istediğinize emin misiniz?\n\nBu işlem geri alınamaz!')) {
+        return;
+    }
+    
+    if (!confirm('✋ Son bir kez soralım: Gerçekten tüm yanlış soruları silmek istiyor musunuz?')) {
+        return;
+    }
+    
+    try {
+        const { doc, updateDoc } = window.firebaseModules;
+        
+        // Firebase'de sıfırla
+        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+            'stats.wrongQuestions': []
+        });
+        
+        // State'i güncelle
+        state.userStats.wrongQuestions = [];
+        
+        alert('✅ Tüm yanlış sorular temizlendi!');
+        
+        // Ana sayfaya yönlendir
+        state.currentPage = 'home';
+        render();
+        
+    } catch (error) {
+        console.error('Clear wrong questions error:', error);
+        alert('❌ Bir hata oluştu. Lütfen tekrar deneyin.');
+    }
 }
 
 // Accordion toggle fonksiyonu
@@ -1156,6 +1273,25 @@ function renderHome() {
                         <p style="margin-bottom: 20px; color: #666;">Hemen teste başla!</p>
                         <button onclick="startQuiz(null, null)" class="btn-primary">🚀 Rastgele Test (20 Soru)</button>
                         <button onclick="changePage(event, 'tests')" class="btn-secondary" style="margin-top: 10px;">📝 Testlere Git</button>
+                    </div>
+                    
+                    <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
+                        <h2>🎓 Kişiselleştirilmiş Testler</h2>
+                        <p style="margin-bottom: 20px; color: #666;">Yanlış yaptığın sorulardan oluşan özel testler</p>
+                        ${(state.userStats.wrongQuestions && state.userStats.wrongQuestions.length > 0) ? `
+                            <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                                <div style="font-size: 32px; font-weight: bold; color: #FF5722; text-align: center;">${state.userStats.wrongQuestions.length}</div>
+                                <div style="text-align: center; color: #666; margin-top: 5px;">Yanlış Soru Birikti</div>
+                            </div>
+                            <button onclick="changePage(event, 'personalized-tests')" class="btn-primary" style="background: #FF5722;">
+                                📚 Kişiselleştirilmiş Testlere Git
+                            </button>
+                        ` : `
+                            <div style="text-align: center; padding: 30px; color: #999;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">✨</div>
+                                <div>Henüz yanlış yapılan soru yok. Test çözmeye başla!</div>
+                            </div>
+                        `}
                     </div>
                     
                     <div class="card">
@@ -1633,6 +1769,115 @@ function renderMockExams() {
     `;
 }
 
+function renderPersonalizedTests() {
+    const wrongQuestions = state.userStats.wrongQuestions || [];
+    
+    // 10'arlık gruplara ayır
+    const testsCount = Math.ceil(wrongQuestions.length / 10);
+    const tests = [];
+    
+    for (let i = 0; i < testsCount; i++) {
+        const startIndex = i * 10;
+        const endIndex = Math.min(startIndex + 10, wrongQuestions.length);
+        const questionCount = endIndex - startIndex;
+        
+        tests.push({
+            testNumber: i + 1,
+            questionCount: questionCount,
+            questions: wrongQuestions.slice(startIndex, endIndex)
+        });
+    }
+    
+    return `
+        <div class="dashboard">
+            ${renderNavbar('home')}
+            
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h1>🎓 Kişiselleştirilmiş Testler</h1>
+                    <p>Yanlış yaptığın sorulardan oluşan özel testler - Hatalarından öğren!</p>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
+                    <h2>📊 İstatistikler</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 36px; font-weight: bold; color: #FF5722;">${wrongQuestions.length}</div>
+                            <div style="color: #666; margin-top: 5px;">Toplam Yanlış Soru</div>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${testsCount}</div>
+                            <div style="color: #666; margin-top: 5px;">Oluşan Test</div>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 36px; font-weight: bold; color: #4CAF50;">%${wrongQuestions.length > 0 ? Math.round((wrongQuestions.length / (state.userStats.totalQuestions || 1)) * 100) : 0}</div>
+                            <div style="color: #666; margin-top: 5px;">Hata Oranı</div>
+                        </div>
+                    </div>
+                </div>
+                
+                ${wrongQuestions.length === 0 ? `
+                    <div class="card">
+                        <div style="text-align: center; padding: 60px 20px; color: #999;">
+                            <div style="font-size: 72px; margin-bottom: 20px;">✨</div>
+                            <h2 style="color: #333; margin-bottom: 15px;">Henüz yanlış yapılan soru yok!</h2>
+                            <p style="font-size: 16px; line-height: 1.6;">
+                                Test çözmeye başladığında yanlış yaptığın sorular buraya eklenecek.<br>
+                                Böylece hatalarından öğrenerek ilerleme kaydedebileceksin! 💪
+                            </p>
+                            <button onclick="changePage(event, 'tests')" class="btn-primary" style="margin-top: 30px; padding: 15px 40px; font-size: 16px;">
+                                🚀 Testlere Başla
+                            </button>
+                        </div>
+                    </div>
+                ` : `
+                    <div class="card">
+                        <h2>📝 Kişiselleştirilmiş Testlerim</h2>
+                        <p style="margin-bottom: 20px; color: #666;">
+                            Her test yanlış yaptığın sorulardan oluşuyor. Testleri çözdükçe o sorular listeden çıkacak.
+                        </p>
+                        
+                        <div class="level-buttons" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                            ${tests.map((test, index) => `
+                                <button onclick="startPersonalizedTest(${test.testNumber})" class="btn-level" 
+                                    style="background: linear-gradient(135deg, ${['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a', '#30cfd0'][index % 6]} 0%, ${['#764ba2', '#f5576c', '#00f2fe', '#38f9d7', '#fee140', '#a044ff'][index % 6]} 100%); 
+                                    color: white; border: none; padding: 25px; position: relative;">
+                                    <div style="font-size: 32px; margin-bottom: 10px;">${['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'][index] || `${index + 1}️⃣`}</div>
+                                    <div style="font-size: 18px; font-weight: bold; margin-bottom: 5px;">Kişiselleştirilmiş Test ${test.testNumber}</div>
+                                    <div style="font-size: 14px; opacity: 0.9;">${test.questionCount} Soru</div>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
+                        <h2>💡 Nasıl Çalışır?</h2>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>✅ Testlerde yanlış yaptığın sorular otomatik olarak kaydediliyor</li>
+                            <li>📚 Her 10 yanlış soru bir kişiselleştirilmiş test oluşturuyor</li>
+                            <li>🎯 Bu testleri çözerek hatalarından öğrenebilirsin</li>
+                            <li>🔄 Aynı soruları tekrar görmek için testleri yeniden çözebilirsin</li>
+                            <li>📊 İlerlemeni takip et ve zayıf noktalarını güçlendir</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="background: linear-gradient(135deg, #EF535015 0%, #FF572215 100%); border: 2px solid #EF5350;">
+                        <h2>🗑️ Yanlış Soruları Temizle</h2>
+                        <p style="margin-bottom: 15px; color: #666;">
+                            Tüm yanlış soruları temizlemek isterseniz aşağıdaki butona tıklayın. 
+                            <strong>Bu işlem geri alınamaz!</strong>
+                        </p>
+                        <button onclick="clearWrongQuestions()" class="btn-secondary" 
+                            style="background: #EF5350; color: white; width: 100%; padding: 15px; font-size: 16px;">
+                            🗑️ Tüm Yanlış Soruları Temizle
+                        </button>
+                    </div>
+                `}
+            </div>
+        </div>
+    `;
+}
+
 function renderDashboard() {
     // Backward compatibility - redirect to home
     return renderHome();
@@ -2024,6 +2269,9 @@ function render() {
             break;
         case 'mock-exams':
             content = renderMockExams();
+            break;
+        case 'personalized-tests':
+            content = renderPersonalizedTests();
             break;
         case 'dashboard':
             content = renderHome(); // Redirect old dashboard to home
