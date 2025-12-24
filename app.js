@@ -1469,9 +1469,9 @@ function renderTests() {
         );
     };
     
-    return \`
+    return `
         <div class="dashboard">
-            \${renderNavbar('tests')}
+            ${renderNavbar('tests')}
             
             <div class="dashboard-content">
                 <div class="welcome-section">
@@ -1483,10 +1483,10 @@ function renderTests() {
                     <h2>⚙️ Test Ayarları</h2>
                     <div style="margin-top: 15px;">
                         <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
-                            \${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
+                            ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
                         </button>
                         <p style="font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center;">
-                            \${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
+                            ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
                         </p>
                     </div>
                 </div>
@@ -1494,66 +1494,66 @@ function renderTests() {
                 <div class="card">
                     <h2>🎯 Seviyeye Göre Testler</h2>
                     <p style="margin-bottom: 20px; color: var(--text-muted);">Her seviye için 3 test, her test 10 soru</p>
-                    \${levels.map(level => {
-                        const accordionId = \`level-\${level}\`;
-                        return \`
+                    ${levels.map(level => {
+                        const accordionId = `level-${level}`;
+                        return `
                         <div style="margin-bottom: 15px; border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 0; overflow: hidden;">
                             <button 
-                                onclick="toggleAccordion('\${accordionId}')" 
+                                onclick="toggleAccordion('${accordionId}')" 
                                 class="accordion-header"
                                 style="width: 100%; padding: 20px; background: rgba(0, 26, 51, 0.4); border: none; color: var(--text-light); font-size: 18px; font-weight: 700; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s;">
                                 <span>${level} Level</span>
-                                <span id="\${accordionId}-icon" style="font-size: 20px; transition: transform 0.3s;">▼</span>
+                                <span id="${accordionId}-icon" style="font-size: 20px; transition: transform 0.3s;">▼</span>
                             </button>
-                            <div id="\${accordionId}" class="accordion-content" style="display: none; padding: 20px; background: rgba(0, 26, 51, 0.2);">
+                            <div id="${accordionId}" class="accordion-content" style="display: none; padding: 20px; background: rgba(0, 26, 51, 0.2);">
                                 <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
-                                    <button onclick="startLevelTest('\${level}', 1)" class="btn-level" style="position: relative;">
-                                        \${isTestCompleted('level', level, 1, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                    <button onclick="startLevelTest('${level}', 1)" class="btn-level" style="position: relative;">
+                                        ${isTestCompleted('level', level, 1, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
                                         Test 1
                                     </button>
-                                    <button onclick="startLevelTest('\${level}', 2)" class="btn-level" style="position: relative;">
-                                        \${isTestCompleted('level', level, 2, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                    <button onclick="startLevelTest('${level}', 2)" class="btn-level" style="position: relative;">
+                                        ${isTestCompleted('level', level, 2, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
                                         Test 2
                                     </button>
-                                    <button onclick="startLevelTest('\${level}', 3)" class="btn-level" style="position: relative;">
-                                        \${isTestCompleted('level', level, 3, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                    <button onclick="startLevelTest('${level}', 3)" class="btn-level" style="position: relative;">
+                                        ${isTestCompleted('level', level, 3, null) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
                                         Test 3
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        \`;
+                        `;
                     }).join('')}
                 </div>
                 
                 <div class="card">
                     <h2>📚 Konuya Göre Testler</h2>
                     <p style="margin-bottom: 20px; color: var(--text-muted);">Her konu için 2 test, her test 10 soru</p>
-                    \${topics.map(topic => {
-                        const accordionId = \`topic-\${topic.id}\`;
-                        return \`
+                    ${topics.map(topic => {
+                        const accordionId = `topic-${topic.id}`;
+                        return `
                         <div style="margin-bottom: 15px; border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 0; overflow: hidden;">
                             <button 
-                                onclick="toggleAccordion('\${accordionId}')" 
+                                onclick="toggleAccordion('${accordionId}')" 
                                 class="accordion-header"
                                 style="width: 100%; padding: 20px; background: rgba(0, 26, 51, 0.4); border: none; color: var(--text-light); font-size: 16px; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s;">
-                                <span><span style="font-size: 24px; margin-right: 10px;">\${topic.icon}</span>\${topic.name}</span>
-                                <span id="\${accordionId}-icon" style="font-size: 20px; transition: transform 0.3s;">▼</span>
+                                <span><span style="font-size: 24px; margin-right: 10px;">${topic.icon}</span>${topic.name}</span>
+                                <span id="${accordionId}-icon" style="font-size: 20px; transition: transform 0.3s;">▼</span>
                             </button>
-                            <div id="\${accordionId}" class="accordion-content" style="display: none; padding: 20px; background: rgba(0, 26, 51, 0.2);">
+                            <div id="${accordionId}" class="accordion-content" style="display: none; padding: 20px; background: rgba(0, 26, 51, 0.2);">
                                 <div class="level-buttons" style="grid-template-columns: repeat(2, 1fr);">
-                                    <button onclick="startTopicTest('\${topic.id}', 1)" class="btn-level" style="position: relative;">
-                                        \${isTestCompleted('topic', null, 1, topic.id) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                    <button onclick="startTopicTest('${topic.id}', 1)" class="btn-level" style="position: relative;">
+                                        ${isTestCompleted('topic', null, 1, topic.id) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
                                         Test 1
                                     </button>
-                                    <button onclick="startTopicTest('\${topic.id}', 2)" class="btn-level" style="position: relative;">
-                                        \${isTestCompleted('topic', null, 2, topic.id) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
+                                    <button onclick="startTopicTest('${topic.id}', 2)" class="btn-level" style="position: relative;">
+                                        ${isTestCompleted('topic', null, 2, topic.id) ? '<span style="position: absolute; top: 5px; right: 5px; background: #00ff88; color: #000; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">✓</span>' : ''}
                                         Test 2
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        \`;
+                        `;
                     }).join('')}
                 </div>
                 
@@ -1564,7 +1564,7 @@ function renderTests() {
                 </div>
             </div>
         </div>
-    \`;
+    `;
 }
 
 function renderMockExams() {
