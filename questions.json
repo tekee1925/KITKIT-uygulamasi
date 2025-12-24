@@ -782,13 +782,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 1).",
+      "question": "Fill in the blanks: Scientists (1)___ climate change for decades. They (2)___ that immediate action is needed.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "have studied/agree",
+        "study/agreeing",
+        "studied/agrees",
+        "are studying/agreed",
+        "studies/agree"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -797,13 +797,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 2).",
+      "question": "Fill in the blanks: The committee (1)___ the proposal carefully before (2)___ a decision.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "will review/making",
+        "reviews/make",
+        "reviewing/makes",
+        "reviewed/made",
+        "review/to make"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -812,13 +812,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 3).",
+      "question": "Fill in the blanks: Education (1)___ opportunities for people (2)___ improve their lives.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "provides/to",
+        "providing/for",
+        "provide/to",
+        "provided/in",
+        "provides/by"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -827,13 +827,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 4).",
+      "question": "Fill in the blanks: The company (1)___ innovative products, which (2)___ customer satisfaction.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "develops/enhances",
+        "develop/enhance",
+        "developing/enhancing",
+        "developed/enhanced",
+        "develops/enhance"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -842,13 +842,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 5).",
+      "question": "Fill in the blanks: Modern medicine (1)___ significantly, (2)___ countless lives worldwide.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "has advanced/saving",
+        "advances/save",
+        "advancing/saves",
+        "advanced/saved",
+        "has advanced/saves"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -857,13 +857,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 6).",
+      "question": "Fill in the blanks: Researchers (1)___ solutions to problems that (2)___ global challenges.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "seek/address",
+        "seeking/addresses",
+        "sought/addressing",
+        "seeks/address",
+        "seek/addresses"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -872,13 +872,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 7).",
+      "question": "Fill in the blanks: International cooperation (1)___ essential for (2)___ environmental issues.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "remains/tackling",
+        "remain/tackle",
+        "remaining/tackles",
+        "remained/tackled",
+        "remains/tackle"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -887,13 +887,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the passage with appropriate words (Test 1, Question 8).",
+      "question": "Fill in the blanks: The government (1)___ policies that (2)___ economic growth and stability.",
       "options": [
-        "option A/B",
-        "option C/D",
-        "option E/F",
-        "option G/H",
-        "option I/J"
+        "implements/promote",
+        "implementing/promotes",
+        "implement/promoting",
+        "implemented/promoted",
+        "implements/promotes"
       ],
       "correctAnswer": 0,
       "explanation": "Doğru kombinasyon",
@@ -1082,13 +1082,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 1).",
+      "question": "The research was groundbreaking _______.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "in that it challenged existing theories",
+        "because it was bad",
+        "when nothing happened",
+        "if nobody cared",
+        "unless it failed"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1097,13 +1097,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 2).",
+      "question": "The economy recovered quickly, _______ experts had predicted.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "as",
+        "despite",
+        "although",
+        "unless",
+        "whether"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1112,13 +1112,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 3).",
+      "question": "The team will achieve success _______ they work together effectively.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "provided that",
+        "in spite of",
+        "even though",
+        "whereas",
+        "nevertheless"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1127,13 +1127,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 4).",
+      "question": "The innovation was revolutionary _______ it transformed the entire industry.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "in that",
+        "so that",
+        "such that",
+        "even if",
+        "as if"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1142,13 +1142,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 5).",
+      "question": "The regulations must be followed, _______ severe penalties will apply.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "otherwise",
+        "moreover",
+        "furthermore",
+        "besides",
+        "hence"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1157,13 +1157,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 6).",
+      "question": "The findings were significant _______ they contradicted previous assumptions.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "in that",
+        "so that",
+        "provided that",
+        "as though",
+        "even though"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1172,13 +1172,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 7).",
+      "question": "The proposal gained support _______ initial skepticism.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "despite",
+        "because of",
+        "due to",
+        "thanks to",
+        "owing to"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1187,13 +1187,13 @@
     },
     {
       "passage": "",
-      "question": "Complete the sentence logically (Test 1, Question 8).",
+      "question": "The system operates efficiently, _______ reducing operational costs.",
       "options": [
-        "logical completion A",
-        "logical completion B",
-        "logical completion C",
-        "logical completion D",
-        "logical completion E"
+        "thereby",
+        "whenever",
+        "unless",
+        "although",
+        "whether"
       ],
       "correctAnswer": 0,
       "explanation": "Mantıksal tamamlama",
@@ -1291,212 +1291,212 @@
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to A2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Social media connects people worldwide. It allows instant communication and information sharing. However, users should be cautious about privacy and misinformation.",
+      "question": "The passage suggests social media users should:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "be careful about privacy",
+        "share everything",
+        "avoid all communication",
+        "ignore information",
+        "delete their accounts"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to B1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Globalization has transformed international trade and cultural exchange. While it creates economic opportunities, it also presents challenges regarding cultural identity and environmental sustainability.",
+      "question": "The passage indicates globalization:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "has both benefits and challenges",
+        "is only positive",
+        "is only negative",
+        "has no impact",
+        "is impossible"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to B2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Quantum computing represents a paradigm shift in computational technology. Unlike classical computers that use bits, quantum computers utilize qubits, enabling exponentially faster processing for specific problems.",
+      "question": "What distinguishes quantum computers from classical ones?",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "use of qubits instead of bits",
+        "larger size",
+        "different color",
+        "lower cost",
+        "simpler design"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "B2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to B2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Quantum computing represents a paradigm shift in computational technology. Unlike classical computers that use bits, quantum computers utilize qubits, enabling exponentially faster processing for specific problems.",
+      "question": "What distinguishes quantum computers from classical ones?",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "use of qubits instead of bits",
+        "larger size",
+        "different color",
+        "lower cost",
+        "simpler design"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "B2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to C1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Contemporary discourse on artificial intelligence encompasses ethical considerations regarding autonomy, accountability, and the potential displacement of human labor. Policymakers must navigate these complexities while fostering innovation.",
+      "question": "The passage emphasizes that AI policy requires:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "balancing ethics with innovation",
+        "ignoring ethical concerns",
+        "stopping all development",
+        "only technical focus",
+        "avoiding regulation"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "C1",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to C1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Contemporary discourse on artificial intelligence encompasses ethical considerations regarding autonomy, accountability, and the potential displacement of human labor. Policymakers must navigate these complexities while fostering innovation.",
+      "question": "The passage emphasizes that AI policy requires:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "balancing ethics with innovation",
+        "ignoring ethical concerns",
+        "stopping all development",
+        "only technical focus",
+        "avoiding regulation"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "C1",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to C2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Poststructuralist theory problematizes traditional epistemological frameworks by deconstructing binary oppositions and questioning the stability of meaning. This intellectual movement has profoundly influenced literary criticism and cultural studies.",
+      "question": "Poststructuralism challenges traditional thinking by:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "deconstructing binary oppositions",
+        "accepting all traditions",
+        "avoiding all questions",
+        "simplifying everything",
+        "ignoring meaning"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to C2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Poststructuralist theory problematizes traditional epistemological frameworks by deconstructing binary oppositions and questioning the stability of meaning. This intellectual movement has profoundly influenced literary criticism and cultural studies.",
+      "question": "Poststructuralism challenges traditional thinking by:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "deconstructing binary oppositions",
+        "accepting all traditions",
+        "avoiding all questions",
+        "simplifying everything",
+        "ignoring meaning"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to A1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Books are important for learning. They help us gain knowledge and understand the world better. Reading regularly improves vocabulary and comprehension skills.",
+      "question": "According to the passage, reading helps with:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "vocabulary and comprehension",
+        "only grammar",
+        "nothing useful",
+        "sports skills",
+        "cooking"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "A1",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to A2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Social media connects people worldwide. It allows instant communication and information sharing. However, users should be cautious about privacy and misinformation.",
+      "question": "The passage suggests social media users should:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "be careful about privacy",
+        "share everything",
+        "avoid all communication",
+        "ignore information",
+        "delete their accounts"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to B1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Globalization has transformed international trade and cultural exchange. While it creates economic opportunities, it also presents challenges regarding cultural identity and environmental sustainability.",
+      "question": "The passage indicates globalization:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "has both benefits and challenges",
+        "is only positive",
+        "is only negative",
+        "has no impact",
+        "is impossible"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to B2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Quantum computing represents a paradigm shift in computational technology. Unlike classical computers that use bits, quantum computers utilize qubits, enabling exponentially faster processing for specific problems.",
+      "question": "What distinguishes quantum computers from classical ones?",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "use of qubits instead of bits",
+        "larger size",
+        "different color",
+        "lower cost",
+        "simpler design"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "B2",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to C1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Contemporary discourse on artificial intelligence encompasses ethical considerations regarding autonomy, accountability, and the potential displacement of human labor. Policymakers must navigate these complexities while fostering innovation.",
+      "question": "The passage emphasizes that AI policy requires:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "balancing ethics with innovation",
+        "ignoring ethical concerns",
+        "stopping all development",
+        "only technical focus",
+        "avoiding regulation"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "C1",
       "topic": "Reading"
     },
     {
-      "passage": "Sample passage discussing various topics relevant to C2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
-      "question": "Based on the passage, what can be inferred?",
+      "passage": "Poststructuralist theory problematizes traditional epistemological frameworks by deconstructing binary oppositions and questioning the stability of meaning. This intellectual movement has profoundly influenced literary criticism and cultural studies.",
+      "question": "Poststructuralism challenges traditional thinking by:",
       "options": [
-        "inference option A",
-        "inference option B",
-        "inference option C",
-        "inference option D",
-        "inference option E"
+        "deconstructing binary oppositions",
+        "accepting all traditions",
+        "avoiding all questions",
+        "simplifying everything",
+        "ignoring meaning"
       ],
       "correctAnswer": 0,
-      "explanation": "Parçadan çıkarım",
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     },
@@ -1682,13 +1682,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 13 about a topic? B: _______.",
+      "question": "A: Shall we meet at 3 pm? B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "That works for me",
+        "I shall too",
+        "Shall we not",
+        "Meeting is good",
+        "Yes, shall"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1697,13 +1697,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 14 about a topic? B: _______.",
+      "question": "A: The report is due tomorrow. B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "I will have it ready on time",
+        "Report tomorrow",
+        "Due is it",
+        "Yes, report",
+        "Tomorrow it"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1712,13 +1712,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 15 about a topic? B: _______.",
+      "question": "A: What did you think of the presentation? B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "It was quite informative and well-structured",
+        "Think presentation",
+        "Yes, thought",
+        "Presenting it",
+        "Was think"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1727,13 +1727,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 16 about a topic? B: _______.",
+      "question": "A: We need to address this issue urgently. B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "I agree, let us prioritize it immediately",
+        "Address urgent",
+        "Issue we need",
+        "Yes, address",
+        "Urgently it"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1742,13 +1742,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 17 about a topic? B: _______.",
+      "question": "A: The data suggests a different conclusion. B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "We should reconsider our initial hypothesis",
+        "Data suggests",
+        "Conclusion different",
+        "Yes, data",
+        "Suggests it"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1757,13 +1757,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 18 about a topic? B: _______.",
+      "question": "A: This approach seems counterproductive. B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "Perhaps we should explore alternative strategies",
+        "Approach seems",
+        "Counterproductive it",
+        "Yes, approach",
+        "Seems it"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1772,13 +1772,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 19 about a topic? B: _______.",
+      "question": "A: Have you reviewed the contract? B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "Yes, I found a few clauses that need clarification",
+        "Contract reviewed",
+        "Yes, contract",
+        "Reviewing it",
+        "Have reviewed"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1787,13 +1787,13 @@
     },
     {
       "passage": "",
-      "question": "A: Question 20 about a topic? B: _______.",
+      "question": "A: The deadline has been extended. B: _______.",
       "options": [
-        "Appropriate response A",
-        "Appropriate response B",
-        "Appropriate response C",
-        "Appropriate response D",
-        "Appropriate response E"
+        "That gives us more time to refine our work",
+        "Deadline extended",
+        "Yes, deadline",
+        "Extended it",
+        "Has been"
       ],
       "correctAnswer": 0,
       "explanation": "Uygun cevap",
@@ -1982,13 +1982,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 13 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The implementation was flawed.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The execution had defects",
+        "Implementation was perfect",
+        "Flawed implementation",
+        "Was implementing",
+        "Implementation flaws"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -1997,13 +1997,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 14 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The outcome surpassed expectations.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The result exceeded anticipated levels",
+        "Outcome was expected",
+        "Surpassed outcome",
+        "Expectations outcome",
+        "Was surpass"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2012,13 +2012,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 15 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The theory lacks empirical support.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The hypothesis needs experimental evidence",
+        "Theory has support",
+        "Lacks theory",
+        "Support empirical",
+        "Empirical lacks"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2027,13 +2027,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 16 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The methodology proved robust.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The approach demonstrated strength",
+        "Methodology was weak",
+        "Proved methodology",
+        "Robust was",
+        "Was proving"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2042,13 +2042,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 17 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The consensus emerged gradually.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "Agreement developed over time",
+        "Consensus was instant",
+        "Emerged consensus",
+        "Gradually was",
+        "Was emerging"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2057,13 +2057,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 18 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The framework requires refinement.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The structure needs improvement",
+        "Framework is perfect",
+        "Requires framework",
+        "Refinement was",
+        "Was requiring"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2072,13 +2072,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 19 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The analysis yielded insights.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The examination produced understanding",
+        "Analysis failed",
+        "Yielded analysis",
+        "Insights were",
+        "Was yielding"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2087,13 +2087,13 @@
     },
     {
       "passage": "",
-      "question": "Find the closest meaning: \"Sample sentence 20 with specific content.\"",
+      "question": "Which sentence is closest in meaning? \"The intervention proved effective.\"",
       "options": [
-        "Paraphrase option A",
-        "Paraphrase option B",
-        "Paraphrase option C",
-        "Paraphrase option D",
-        "Paraphrase option E"
+        "The action showed success",
+        "Intervention failed",
+        "Proved intervention",
+        "Effective was",
+        "Was proving"
       ],
       "correctAnswer": 0,
       "explanation": "En yakın anlam",
@@ -2582,7 +2582,7 @@
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Regular exercise benefits health. (II) Physical activity strengthens body. (III) Clouds float in sky. (IV) Fitness improves wellbeing. (V) Movement keeps people active.",
       "options": [
         "I",
         "II",
@@ -2591,13 +2591,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Technology transforms communication. (II) Digital platforms connect globally. (III) Maple syrup comes from trees. (IV) Innovation enables interaction. (V) Connectivity reshapes society.",
       "options": [
         "I",
         "II",
@@ -2606,13 +2606,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Technology transforms communication. (II) Digital platforms connect globally. (III) Maple syrup comes from trees. (IV) Innovation enables interaction. (V) Connectivity reshapes society.",
       "options": [
         "I",
         "II",
@@ -2621,13 +2621,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B2",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Epistemological frameworks guide inquiry. (II) Knowledge construction involves interpretation. (III) Hummingbirds hover rapidly. (IV) Methodological rigor ensures validity. (V) Theoretical foundations support research.",
       "options": [
         "I",
         "II",
@@ -2636,13 +2636,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C1",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Epistemological frameworks guide inquiry. (II) Knowledge construction involves interpretation. (III) Hummingbirds hover rapidly. (IV) Methodological rigor ensures validity. (V) Theoretical foundations support research.",
       "options": [
         "I",
         "II",
@@ -2651,13 +2651,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C2",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Regular exercise benefits health. (II) Physical activity strengthens body. (III) Clouds float in sky. (IV) Fitness improves wellbeing. (V) Movement keeps people active.",
       "options": [
         "I",
         "II",
@@ -2666,13 +2666,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A1",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Regular exercise benefits health. (II) Physical activity strengthens body. (III) Clouds float in sky. (IV) Fitness improves wellbeing. (V) Movement keeps people active.",
       "options": [
         "I",
         "II",
@@ -2681,13 +2681,13 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
     {
       "passage": "",
-      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "question": "Which sentence is irrelevant? (I) Technology transforms communication. (II) Digital platforms connect globally. (III) Maple syrup comes from trees. (IV) Innovation enables interaction. (V) Connectivity reshapes society.",
       "options": [
         "I",
         "II",
@@ -2696,7 +2696,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "III numaralı cümle bütünlüğü bozar",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -2822,16 +2822,16 @@
     },
     {
       "passage": "",
-      "question": "A1 level Irrelevant question (Test 1, Q9)",
+      "question": "Which sentence is irrelevant? (I) Vegetables are healthy. (II) They provide vitamins. (III) Cars need fuel. (IV) Eating vegetables is good. (V) Fresh produce is best.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 3,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -2957,16 +2957,16 @@
     },
     {
       "passage": "",
-      "question": "A1 level Irrelevant question (Test 2, Q8)",
+      "question": "Which sentence is irrelevant? (I) Music can relax people. (II) Many enjoy listening to songs. (III) Trees produce oxygen. (IV) Musicians create melodies. (V) Concerts are popular.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
       "correctAnswer": 2,
-      "explanation": "İlgisiz cümle açıklaması",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -3092,16 +3092,16 @@
     },
     {
       "passage": "",
-      "question": "A1 level Irrelevant question (Test 3, Q7)",
+      "question": "Which sentence is irrelevant? (I) Dogs are loyal pets. (II) They need daily walks. (III) Mountains are tall. (IV) Training helps dogs behave. (V) Many families have dogs.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 1,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -3272,16 +3272,16 @@
     },
     {
       "passage": "",
-      "question": "A2 level Irrelevant question (Test 1, Q9)",
+      "question": "Which sentence is irrelevant? (I) Online shopping grows rapidly. (II) Customers appreciate convenience. (III) Elephants have good memory. (IV) E-commerce platforms expand. (V) Delivery services improve.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 3,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -3407,16 +3407,16 @@
     },
     {
       "passage": "",
-      "question": "A2 level Irrelevant question (Test 2, Q8)",
+      "question": "Which sentence is irrelevant? (I) Public transportation reduces traffic. (II) Buses and trains serve commuters. (III) Chocolate tastes sweet. (IV) Transit systems need investment. (V) Urban mobility improves.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
       "correctAnswer": 2,
-      "explanation": "İlgisiz cümle açıklaması",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -3542,16 +3542,16 @@
     },
     {
       "passage": "",
-      "question": "A2 level Irrelevant question (Test 3, Q7)",
+      "question": "Which sentence is irrelevant? (I) Recycling helps the environment. (II) Waste management is crucial. (III) Soccer is popular worldwide. (IV) Sustainable practices matter. (V) Resources must be conserved.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 1,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -3722,16 +3722,16 @@
     },
     {
       "passage": "",
-      "question": "B1 level Irrelevant question (Test 1, Q9)",
+      "question": "Which sentence is irrelevant? (I) Remote work increases flexibility. (II) Digital tools enable collaboration. (III) Dolphins are intelligent mammals. (IV) Productivity can improve at home. (V) Work arrangements evolve.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 3,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -3857,16 +3857,16 @@
     },
     {
       "passage": "",
-      "question": "B1 level Irrelevant question (Test 2, Q8)",
+      "question": "Which sentence is irrelevant? (I) Financial literacy empowers individuals. (II) Understanding budgets helps planning. (III) Roses have thorns. (IV) Investment knowledge proves valuable. (V) Economic education matters.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
       "correctAnswer": 2,
-      "explanation": "İlgisiz cümle açıklaması",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -3992,16 +3992,16 @@
     },
     {
       "passage": "",
-      "question": "B1 level Irrelevant question (Test 3, Q7)",
+      "question": "Which sentence is irrelevant? (I) Healthcare systems face challenges. (II) Medical advances improve treatment. (III) Rainbows appear after rain. (IV) Access to care remains unequal. (V) Reform discussions continue.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 1,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -4172,16 +4172,16 @@
     },
     {
       "passage": "",
-      "question": "B2 level Irrelevant question (Test 1, Q9)",
+      "question": "Which sentence is irrelevant? (I) Urbanization accelerates globally. (II) Cities expand infrastructure. (III) Penguins live in Antarctica. (IV) Population density increases. (V) Metropolitan planning adapts.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 3,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -4307,16 +4307,16 @@
     },
     {
       "passage": "",
-      "question": "B2 level Irrelevant question (Test 2, Q8)",
+      "question": "Which sentence is irrelevant? (I) Biotechnology advances rapidly. (II) Genetic research progresses. (III) Vanilla flavors desserts. (IV) Medical applications emerge. (V) Ethical debates intensify.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
       "correctAnswer": 2,
-      "explanation": "İlgisiz cümle açıklaması",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -4442,16 +4442,16 @@
     },
     {
       "passage": "",
-      "question": "B2 level Irrelevant question (Test 3, Q7)",
+      "question": "Which sentence is irrelevant? (I) Media literacy becomes essential. (II) Critical thinking combats misinformation. (III) Honey comes from bees. (IV) Information overload challenges society. (V) Digital citizenship requires education.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 1,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -4622,16 +4622,16 @@
     },
     {
       "passage": "",
-      "question": "C1 level Irrelevant question (Test 1, Q9)",
+      "question": "Which sentence is irrelevant? (I) Macroeconomic policies shape nations. (II) Fiscal strategies influence growth. (III) Butterflies undergo metamorphosis. (IV) Monetary decisions affect stability. (V) Economic governance proves complex.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 3,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -4757,16 +4757,16 @@
     },
     {
       "passage": "",
-      "question": "C1 level Irrelevant question (Test 2, Q8)",
+      "question": "Which sentence is irrelevant? (I) Neuroscience illuminates cognition. (II) Brain plasticity enables learning. (III) Giraffes have long necks. (IV) Neural pathways adapt continuously. (V) Consciousness remains mysterious.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
       "correctAnswer": 2,
-      "explanation": "İlgisiz cümle açıklaması",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -4892,16 +4892,16 @@
     },
     {
       "passage": "",
-      "question": "C1 level Irrelevant question (Test 3, Q7)",
+      "question": "Which sentence is irrelevant? (I) Jurisprudence evolves with society. (II) Legal frameworks require updating. (III) Strawberries contain vitamin C. (IV) Judicial interpretation shapes law. (V) Constitutional principles endure.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 1,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -5072,16 +5072,16 @@
     },
     {
       "passage": "",
-      "question": "C2 level Irrelevant question (Test 1, Q9)",
+      "question": "Which sentence is irrelevant? (I) Phenomenological inquiry examines consciousness. (II) Subjective experience merits investigation. (III) Snowflakes have unique patterns. (IV) Intentionality structures perception. (V) Lived experience informs understanding.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 3,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -5207,16 +5207,16 @@
     },
     {
       "passage": "",
-      "question": "C2 level Irrelevant question (Test 2, Q8)",
+      "question": "Which sentence is irrelevant? (I) Hermeneutics interprets meaning. (II) Textual analysis reveals significance. (III) Carrots improve eyesight. (IV) Contextual understanding matters. (V) Interpretive frameworks guide scholarship.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
       "correctAnswer": 2,
-      "explanation": "İlgisiz cümle açıklaması",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -5342,16 +5342,16 @@
     },
     {
       "passage": "",
-      "question": "C2 level Irrelevant question (Test 3, Q7)",
+      "question": "Which sentence is irrelevant? (I) Dialectical reasoning synthesizes oppositions. (II) Thesis and antithesis generate synthesis. (III) Waterfalls create mist. (IV) Contradictions drive development. (V) Progressive understanding emerges.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
       ],
-      "correctAnswer": 1,
-      "explanation": "İlgisiz cümle açıklaması",
+      "correctAnswer": 2,
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C2",
       "topic": "Irrelevant"
     },
