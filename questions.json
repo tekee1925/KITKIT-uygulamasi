@@ -2,7 +2,307 @@
   "questions": [
     {
       "passage": "",
-      "question": "John _______ to work every day by bus.",
+      "question": "I am _______ tired to continue working.",
+      "options": [
+        "very",
+        "too",
+        "enough",
+        "much",
+        "so"
+      ],
+      "correctAnswer": 1,
+      "explanation": "too + adjective means excessively",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "She _______ her keys in the car yesterday.",
+      "options": [
+        "forgot",
+        "left",
+        "lost",
+        "missed",
+        "dropped"
+      ],
+      "correctAnswer": 1,
+      "explanation": "left = placed and forgot to take",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The meeting was _______ until next week.",
+      "options": [
+        "delayed",
+        "postponed",
+        "cancelled",
+        "avoided",
+        "rejected"
+      ],
+      "correctAnswer": 1,
+      "explanation": "postponed = rescheduled for later",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "He _______ his promise to help me.",
+      "options": [
+        "broke",
+        "damaged",
+        "ruined",
+        "destroyed",
+        "cracked"
+      ],
+      "correctAnswer": 0,
+      "explanation": "break a promise is a common collocation",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The company _______ off 50 employees last month.",
+      "options": [
+        "fired",
+        "laid",
+        "dismissed",
+        "expelled",
+        "removed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "laid off = terminated employment",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Please _______ me a favor and close the window.",
+      "options": [
+        "make",
+        "do",
+        "give",
+        "take",
+        "have"
+      ],
+      "correctAnswer": 1,
+      "explanation": "do someone a favor is idiomatic",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The new policy has _______ a lot of controversy.",
+      "options": [
+        "raised",
+        "risen",
+        "aroused",
+        "arose",
+        "provoked"
+      ],
+      "correctAnswer": 2,
+      "explanation": "arouse controversy is standard collocation",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "She _______ down the job offer because of the low salary.",
+      "options": [
+        "turned",
+        "put",
+        "let",
+        "broke",
+        "cut"
+      ],
+      "correctAnswer": 0,
+      "explanation": "turn down = reject",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The project _______ through due to lack of funding.",
+      "options": [
+        "went",
+        "fell",
+        "came",
+        "broke",
+        "got"
+      ],
+      "correctAnswer": 1,
+      "explanation": "fall through = fail to be completed",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The government is trying to _______ inflation under control.",
+      "options": [
+        "bring",
+        "take",
+        "put",
+        "keep",
+        "hold"
+      ],
+      "correctAnswer": 0,
+      "explanation": "bring under control is standard phrase",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The scandal _______ to light after an investigation.",
+      "options": [
+        "came",
+        "brought",
+        "went",
+        "turned",
+        "made"
+      ],
+      "correctAnswer": 0,
+      "explanation": "come to light = become known",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "We need to _______ up with new ideas for the campaign.",
+      "options": [
+        "come",
+        "go",
+        "make",
+        "take",
+        "put"
+      ],
+      "correctAnswer": 0,
+      "explanation": "come up with = think of",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The evidence _______ to his involvement in the crime.",
+      "options": [
+        "points",
+        "shows",
+        "indicates",
+        "displays",
+        "presents"
+      ],
+      "correctAnswer": 0,
+      "explanation": "point to = suggest/indicate",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The new regulations will _______ into effect next month.",
+      "options": [
+        "come",
+        "go",
+        "take",
+        "bring",
+        "put"
+      ],
+      "correctAnswer": 0,
+      "explanation": "come into effect = become active",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The CEO _______ down last year after 20 years of service.",
+      "options": [
+        "stepped",
+        "went",
+        "came",
+        "put",
+        "laid"
+      ],
+      "correctAnswer": 0,
+      "explanation": "step down = resign",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The lawyer _______ loopholes in the contract.",
+      "options": [
+        "exploited",
+        "used",
+        "took",
+        "made",
+        "had"
+      ],
+      "correctAnswer": 0,
+      "explanation": "exploit loopholes is standard collocation",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The committee _______ a blind eye to the violations.",
+      "options": [
+        "turned",
+        "made",
+        "gave",
+        "took",
+        "put"
+      ],
+      "correctAnswer": 0,
+      "explanation": "turn a blind eye = ignore deliberately",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The proposal _______ well with the shareholders.",
+      "options": [
+        "went",
+        "made",
+        "took",
+        "came",
+        "did"
+      ],
+      "correctAnswer": 0,
+      "explanation": "go well = be received positively",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The company _______ the market with cheap products.",
+      "options": [
+        "flooded",
+        "filled",
+        "covered",
+        "spread",
+        "distributed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "flood the market is idiomatic",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "She _______ her authority to intimidate employees.",
+      "options": [
+        "abused",
+        "used",
+        "misused",
+        "overused",
+        "exploited"
+      ],
+      "correctAnswer": 0,
+      "explanation": "abuse authority/power is standard",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "She _______ to the gym every morning.",
       "options": [
         "go",
         "goes",
@@ -11,22 +311,22 @@
         "went"
       ],
       "correctAnswer": 1,
-      "explanation": "Third person singular takes '-s' in present simple tense.",
+      "explanation": "Third person singular takes -s",
       "level": "A1",
       "topic": "Grammar"
     },
     {
       "passage": "",
-      "question": "They _______ in London since 2010.",
+      "question": "They _______ in Paris for five years.",
       "options": [
         "live",
         "lives",
-        "living",
         "lived",
-        "have lived"
+        "have lived",
+        "living"
       ],
-      "correctAnswer": 4,
-      "explanation": "'Since' indicates present perfect tense.",
+      "correctAnswer": 3,
+      "explanation": "Present perfect with for + time period",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -38,417 +338,5067 @@
         "does",
         "am doing",
         "did",
-        "have done"
+        "done"
       ],
       "correctAnswer": 2,
-      "explanation": "'Right now' requires present continuous tense.",
+      "explanation": "Present continuous for actions happening now",
       "level": "A1",
       "topic": "Grammar"
     },
     {
       "passage": "",
-      "question": "She _______ speak three languages fluently.",
-      "options": [
-        "can",
-        "cans",
-        "could",
-        "must",
-        "should"
-      ],
-      "correctAnswer": 0,
-      "explanation": "'Can' expresses ability in present tense.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "We _______ to Paris last summer.",
-      "options": [
-        "go",
-        "goes",
-        "went",
-        "have gone",
-        "will go"
-      ],
-      "correctAnswer": 2,
-      "explanation": "'Last summer' requires past simple tense.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "There _______ many students in the classroom.",
-      "options": [
-        "is",
-        "are",
-        "was",
-        "be",
-        "been"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Plural 'students' requires 'are'.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "He _______ coffee for breakfast every morning.",
-      "options": [
-        "drink",
-        "drinks",
-        "drinking",
-        "drank",
-        "drunk"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Third person singular with habitual action.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "_______ you like to join us for dinner?",
-      "options": [
-        "Do",
-        "Does",
-        "Would",
-        "Did",
-        "Are"
-      ],
-      "correctAnswer": 2,
-      "explanation": "'Would you like' is the polite form for invitations.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "The students _______ their exam tomorrow.",
-      "options": [
-        "take",
-        "takes",
-        "took",
-        "will take",
-        "have taken"
-      ],
-      "correctAnswer": 3,
-      "explanation": "'Tomorrow' indicates future tense.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "I _______ never been to Japan before.",
+      "question": "If I _______ you, I would accept the offer.",
       "options": [
         "am",
         "was",
-        "have",
-        "had",
-        "will"
-      ],
-      "correctAnswer": 2,
-      "explanation": "'Never' with experience requires present perfect.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "She usually _______ her dog in the park.",
-      "options": [
-        "walk",
-        "walks",
-        "walking",
-        "walked",
-        "has walked"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'Usually' with third person singular.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "My brother _______ a doctor for ten years.",
-      "options": [
-        "is",
-        "was",
-        "has been",
-        "will be",
-        "be"
-      ],
-      "correctAnswer": 2,
-      "explanation": "'For ten years' indicates duration.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "_______ students are absent today?",
-      "options": [
-        "How much",
-        "How many",
-        "How long",
-        "How often",
-        "How far"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'How many' for countable nouns.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "We _______ to the cinema next weekend.",
-      "options": [
-        "go",
-        "goes",
-        "went",
-        "are going",
-        "have gone"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Planned future action uses present continuous.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "This book is _______ than that one.",
-      "options": [
-        "interesting",
-        "more interesting",
-        "most interesting",
-        "interestinger",
-        "interest"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Comparative form of long adjectives.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "They _______ watching TV when I called.",
-      "options": [
-        "are",
         "were",
-        "was",
-        "is",
-        "be"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Past continuous with plural subject.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "I have _______ finished my work.",
-      "options": [
-        "yet",
-        "already",
-        "still",
-        "ever",
-        "never"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'Already' in affirmative present perfect.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "She _______ arrive before 9 o'clock.",
-      "options": [
-        "must",
-        "musts",
-        "must to",
-        "has must",
-        "must be"
-      ],
-      "correctAnswer": 0,
-      "explanation": "'Must' followed by base verb.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "There aren't _______ chairs in the room.",
-      "options": [
-        "some",
-        "any",
-        "much",
-        "no",
-        "none"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'Any' in negative sentences.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "He is the _______ student in our class.",
-      "options": [
-        "smart",
-        "smarter",
-        "smartest",
-        "most smart",
-        "more smart"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Superlative of short adjectives.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "I would like _______ water, please.",
-      "options": [
-        "any",
-        "some",
-        "few",
-        "many",
-        "much"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'Some' in polite requests.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "She _______ her keys yesterday.",
-      "options": [
-        "lose",
-        "loses",
-        "lost",
-        "has lost",
-        "losing"
-      ],
-      "correctAnswer": 2,
-      "explanation": "'Yesterday' requires past simple.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "We _______ study harder for the exam.",
-      "options": [
-        "should",
-        "shoulds",
-        "should to",
-        "are should",
-        "have should"
-      ],
-      "correctAnswer": 0,
-      "explanation": "'Should' for advice.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "_______ you ever visited Rome?",
-      "options": [
-        "Do",
-        "Does",
-        "Did",
-        "Have",
-        "Are"
-      ],
-      "correctAnswer": 3,
-      "explanation": "'Ever' with experience.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "The meeting _______ at 3 PM tomorrow.",
-      "options": [
-        "start",
-        "starts",
-        "started",
-        "is starting",
-        "has started"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Scheduled events use present simple.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "I'm _______ tired to go out tonight.",
-      "options": [
-        "to",
-        "too",
-        "two",
-        "so",
-        "very"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'Too' means excessively.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "She has lived here _______ five years.",
-      "options": [
-        "since",
-        "for",
-        "during",
-        "while",
-        "from"
-      ],
-      "correctAnswer": 1,
-      "explanation": "'For' with periods of time.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "They _______ the project by next month.",
-      "options": [
-        "complete",
-        "completed",
-        "will complete",
-        "have completed",
-        "completing"
-      ],
-      "correctAnswer": 2,
-      "explanation": "'By next month' indicates future completion.",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "I _______ waiting for you for an hour.",
-      "options": [
-        "am",
-        "was",
-        "have been",
-        "had been",
+        "be",
         "will be"
       ],
       "correctAnswer": 2,
-      "explanation": "Present perfect continuous for ongoing action.",
+      "explanation": "Second conditional uses were for all persons",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The book _______ by millions of people.",
+      "options": [
+        "reads",
+        "read",
+        "was read",
+        "is reading",
+        "has read"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Passive voice in past simple",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She _______ English since she was a child.",
+      "options": [
+        "learns",
+        "learned",
+        "has learned",
+        "is learning",
+        "was learning"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Present perfect with since",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "By the time you arrive, I _______ the report.",
+      "options": [
+        "finish",
+        "will finish",
+        "finished",
+        "will have finished",
+        "am finishing"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Future perfect for action before future time",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The meeting _______ when I got there.",
+      "options": [
+        "started",
+        "has started",
+        "had started",
+        "was starting",
+        "starts"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Past perfect for earlier past action",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "I wish I _______ more time to study.",
+      "options": [
+        "have",
+        "had",
+        "have had",
+        "will have",
+        "would have"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wish + past simple for present unreal",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "She suggested _______ the project immediately.",
+      "options": [
+        "to start",
+        "start",
+        "starting",
+        "started",
+        "starts"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Suggest + gerund",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Had I known, I _______ differently.",
+      "options": [
+        "act",
+        "acted",
+        "would act",
+        "would have acted",
+        "will act"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Third conditional inversion",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The house _______ for three months before it sold.",
+      "options": [
+        "advertised",
+        "was advertising",
+        "has been advertised",
+        "had been advertised",
+        "is advertised"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Past perfect continuous passive",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Scarcely _______ when the phone rang.",
+      "options": [
+        "I had sat down",
+        "had I sat down",
+        "I sat down",
+        "did I sit down",
+        "sat I down"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inversion with scarcely",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The results _______ by the committee next week.",
+      "options": [
+        "discuss",
+        "discussed",
+        "will discuss",
+        "will be discussed",
+        "are discussing"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Future passive",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Not only _______ late, but he also forgot the documents.",
+      "options": [
+        "he was",
+        "was he",
+        "he is",
+        "is he",
+        "he has been"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inversion after not only",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "_______ circumstances would I reveal that information.",
+      "options": [
+        "Under no",
+        "In no",
+        "On no",
+        "At no",
+        "By no"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Under no circumstances + inversion",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The proposal _______ serious consideration.",
+      "options": [
+        "merits",
+        "deserves",
+        "requires",
+        "needs",
+        "demands"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Merit = deserve (formal)",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Rarely _______ such dedication in young employees.",
+      "options": [
+        "one sees",
+        "does one see",
+        "sees one",
+        "one does see",
+        "seeing one"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inversion with rarely",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "The data _______ analyzed before conclusions can be drawn.",
+      "options": [
+        "needs",
+        "need",
+        "needs to be",
+        "need to be",
+        "needing"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Data is uncountable, needs passive",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Little _______ that the decision would change everything.",
+      "options": [
+        "he knew",
+        "did he know",
+        "knew he",
+        "he did know",
+        "does he know"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inversion with little",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: Learning a new language (1)___ time and practice. You need to (2)___ regularly.",
+      "options": [
+        "takes/study",
+        "take/study",
+        "takes/studying",
+        "taking/study",
+        "took/studied"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: The weather (1)___ nice yesterday, so we (2)___ to the park.",
+      "options": [
+        "was/went",
+        "is/go",
+        "was/go",
+        "were/went",
+        "is/went"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: Technology (1)___ rapidly, and we must (2)___ to these changes.",
+      "options": [
+        "is changing/adapt",
+        "changes/adapting",
+        "changed/adapt",
+        "change/adapted",
+        "is changing/adapting"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: The company (1)___ its employees excellent benefits, which (2)___ job satisfaction.",
+      "options": [
+        "offers/increases",
+        "offer/increase",
+        "offering/increasing",
+        "offered/increased",
+        "offers/increase"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: Despite (1)___ warnings, many people (2)___ to take precautions.",
+      "options": [
+        "receiving/fail",
+        "receive/fails",
+        "received/failing",
+        "receiving/fails",
+        "receive/fail"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: The research (1)___ that students who study regularly (2)___ better results.",
+      "options": [
+        "shows/achieve",
+        "show/achieves",
+        "showing/achieve",
+        "showed/achieving",
+        "shows/achieving"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: The phenomenon (1)___ extensively, yet scientists (2)___ to find a definitive answer.",
+      "options": [
+        "has been studied/have yet",
+        "was studied/yet have",
+        "has studied/have yet",
+        "is studying/yet has",
+        "studied/has yet"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: Economic policies (1)___ carefully to avoid (2)___ unintended consequences.",
+      "options": [
+        "must be designed/creating",
+        "must design/create",
+        "designing/creating",
+        "must be designed/create",
+        "design/created"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: The implications (1)___ far-reaching and (2)___ careful consideration.",
+      "options": [
+        "are/warrant",
+        "is/warrants",
+        "are/warrants",
+        "were/warrant",
+        "is/warrant"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: Researchers (1)___ this issue for decades, yet consensus (2)___ elusive.",
+      "options": [
+        "have been examining/remains",
+        "examined/remain",
+        "are examining/remaining",
+        "examine/remained",
+        "has examined/remains"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: The paradigm shift (1)___ profound changes in how we (2)___ reality.",
+      "options": [
+        "necessitates/perceive",
+        "necessitate/perceives",
+        "necessitating/perceive",
+        "necessitated/perceived",
+        "necessitates/perceiving"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "C2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Fill in the blanks: Contemporary discourse (1)___ increasingly polarized, making constructive dialogue (2)___.",
+      "options": [
+        "has become/difficult",
+        "became/difficulty",
+        "becomes/difficultly",
+        "becoming/difficult",
+        "has become/difficultly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fill in both blanks correctly",
+      "level": "C2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 1).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 2).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 3).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 4).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 5).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 6).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "C2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 7).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Complete the passage with appropriate words (Test 1, Question 8).",
+      "options": [
+        "option A/B",
+        "option C/D",
+        "option E/F",
+        "option G/H",
+        "option I/J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Correct combination",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "Despite the rain, _______.",
+      "options": [
+        "we went for a walk",
+        "the sun was shining",
+        "it was very hot",
+        "there were no clouds",
+        "winter came early"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion with despite",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Because she studied hard, _______.",
+      "options": [
+        "she failed the exam",
+        "she passed the exam",
+        "she forgot everything",
+        "she was lazy",
+        "she gave up"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cause and effect",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Although he was tired, _______.",
+      "options": [
+        "he went to bed early",
+        "he continued working",
+        "he felt energetic",
+        "he was well-rested",
+        "he slept well"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Contrast with although",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "The project will succeed provided that _______.",
+      "options": [
+        "we give up now",
+        "everyone cooperates",
+        "we do nothing",
+        "it fails",
+        "nobody works"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Condition for success",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Not only did she complete the task, _______.",
+      "options": [
+        "but she also helped others",
+        "and she failed",
+        "but she gave up",
+        "she did nothing else",
+        "and she was lazy"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Not only...but also structure",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "The company thrived _______ the economic downturn.",
+      "options": [
+        "because of",
+        "due to",
+        "thanks to",
+        "in spite of",
+        "as a result of"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Contrast preposition",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Had I known about the meeting, _______.",
+      "options": [
+        "I attend it",
+        "I attended it",
+        "I would attend it",
+        "I would have attended it",
+        "I will attend it"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Third conditional",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "The innovation was revolutionary, _______ it transformed the industry.",
+      "options": [
+        "so that",
+        "in that",
+        "such that",
+        "provided that",
+        "unless"
+      ],
+      "correctAnswer": 1,
+      "explanation": "in that = because",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Scarcely had the CEO announced the decision _______.",
+      "options": [
+        "than protests began",
+        "when protests began",
+        "while protests began",
+        "as protests began",
+        "protests began"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Scarcely...when structure",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "The findings were significant _______ they challenged existing theories.",
+      "options": [
+        "so that",
+        "in that",
+        "such that",
+        "provided that",
+        "unless"
+      ],
+      "correctAnswer": 1,
+      "explanation": "in that shows reason",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Notwithstanding the obstacles, _______.",
+      "options": [
+        "the project failed completely",
+        "the team persevered successfully",
+        "everyone gave up immediately",
+        "nothing was accomplished",
+        "defeat was certain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Despite obstacles = success",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "The legislation, _______, addresses critical issues.",
+      "options": [
+        "while controversial",
+        "being perfect",
+        "without any flaws",
+        "universally accepted",
+        "completely useless"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Concessive clause",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 1).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 2).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 3).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 4).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 5).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 6).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 7).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the sentence logically (Test 1, Question 8).",
+      "options": [
+        "logical completion A",
+        "logical completion B",
+        "logical completion C",
+        "logical completion D",
+        "logical completion E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical completion",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "Water is essential for life. Humans need to drink water every day to stay healthy. Without water, people can only survive for a few days.",
+      "question": "According to the passage, water is:",
+      "options": [
+        "unnecessary",
+        "optional",
+        "essential",
+        "harmful",
+        "expensive"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Based on passage content",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Regular exercise improves physical and mental health. It strengthens muscles and reduces stress.",
+      "question": "Exercise benefits:",
+      "options": [
+        "only physical health",
+        "only mental health",
+        "both physical and mental health",
+        "neither",
+        "only young people"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Based on passage content",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Climate change is affecting ecosystems worldwide. Rising temperatures are melting glaciers and changing weather patterns.",
+      "question": "Climate change is causing:",
+      "options": [
+        "no effects",
+        "local effects only",
+        "global effects",
+        "only positive changes",
+        "only cold weather"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Based on passage content",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Renewable energy sources like solar and wind power are becoming more affordable and efficient.",
+      "question": "Renewable energy is:",
+      "options": [
+        "expensive and inefficient",
+        "becoming cheaper and better",
+        "only solar",
+        "impossible",
+        "harmful"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Based on passage content",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Artificial intelligence is transforming industries by automating tasks and analyzing vast amounts of data more efficiently than humans.",
+      "question": "AI is changing industries by:",
+      "options": [
+        "replacing all humans",
+        "doing nothing",
+        "automating and analyzing",
+        "making things slower",
+        "being useless"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Based on passage content",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Urban planning must balance economic development with environmental sustainability to create livable cities for future generations.",
+      "question": "Good urban planning requires:",
+      "options": [
+        "only economic growth",
+        "only environmental protection",
+        "balance of both",
+        "neither concern",
+        "ignoring the future"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Based on passage content",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to A2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to B1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to B2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to B2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to C1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to C1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to C2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "C2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to C2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "C2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to A1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to A2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to B1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to B2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to C1 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "Sample passage discussing various topics relevant to C2 level comprehension. This passage contains important information about the subject matter and requires careful reading to understand the main ideas and details presented.",
+      "question": "Based on the passage, what can be inferred?",
+      "options": [
+        "inference option A",
+        "inference option B",
+        "inference option C",
+        "inference option D",
+        "inference option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inference from passage",
+      "level": "C2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A: Would you like some coffee? B: _______.",
+      "options": [
+        "Yes, I would",
+        "Yes, I do",
+        "Yes, I am",
+        "Yes, I can",
+        "Yes, I will"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Would like requires would in answer",
+      "level": "A1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: How are you? B: _______.",
+      "options": [
+        "I am fine, thanks",
+        "I have 25 years",
+        "I am a teacher",
+        "I am here",
+        "Yes, please"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Standard greeting response",
+      "level": "A1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Could you help me with this? B: _______.",
+      "options": [
+        "No, I could not",
+        "Of course, no problem",
+        "Yes, I could",
+        "I am busy always",
+        "Never I can"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Polite acceptance",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: What do you do? B: _______.",
+      "options": [
+        "I do well",
+        "I am doing fine",
+        "I am an engineer",
+        "I do it now",
+        "I do not"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Question about profession",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: I failed the exam. B: _______.",
+      "options": [
+        "Congratulations!",
+        "That is great news!",
+        "I am sorry to hear that",
+        "How wonderful!",
+        "You are lucky!"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sympathetic response",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Would you mind closing the window? B: _______.",
+      "options": [
+        "Yes, I would mind",
+        "Not at all",
+        "Yes, please",
+        "No, thank you",
+        "I mind"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Not at all = no problem",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: I was wondering if you could review my proposal. B: _______.",
+      "options": [
+        "I wonder too",
+        "Yes, I was",
+        "I would be happy to",
+        "I am wondering",
+        "No wondering"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Polite agreement",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: The meeting has been postponed. B: _______.",
+      "options": [
+        "When is it rescheduled for?",
+        "Why it is?",
+        "Where is postponing?",
+        "Who postponed?",
+        "What postponed?"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical follow-up question",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: The findings contradict previous research. B: _______.",
+      "options": [
+        "That is contradicting",
+        "We need to verify the methodology",
+        "It contradicts",
+        "Being contradict",
+        "Yes, contradict"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Professional response",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: I appreciate your input on this matter. B: _______.",
+      "options": [
+        "I input too",
+        "Yes, appreciating",
+        "My pleasure to contribute",
+        "I am matter",
+        "Input is good"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Formal polite response",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: The implications are far-reaching. B: _______.",
+      "options": [
+        "They reach far",
+        "Indeed, we must consider all ramifications",
+        "Far is reaching",
+        "Implications far",
+        "Yes, far"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Academic discourse",
+      "level": "C2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: This warrants further investigation. B: _______.",
+      "options": [
+        "It warrants",
+        "Yes, warranting",
+        "I concur wholeheartedly",
+        "Warrant is good",
+        "Investigation warrants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Formal agreement",
+      "level": "C2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 13 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "A1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 14 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 15 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 16 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 17 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 18 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "C2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 19 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A: Question 20 about a topic? B: _______.",
+      "options": [
+        "Appropriate response A",
+        "Appropriate response B",
+        "Appropriate response C",
+        "Appropriate response D",
+        "Appropriate response E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Appropriate response",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"She is a teacher.\"",
+      "options": [
+        "She teaches students",
+        "She is teaching",
+        "She was teacher",
+        "She teach",
+        "Teaching she"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Same meaning",
+      "level": "A1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The book is on the table.\"",
+      "options": [
+        "The table has the book on it",
+        "On table is book",
+        "Book on table is",
+        "Table is book",
+        "Is book table"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Same meaning",
+      "level": "A1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The weather was bad yesterday.\"",
+      "options": [
+        "Yesterday had poor weather conditions",
+        "Bad was yesterday weather",
+        "Weather bad yesterday",
+        "Yesterday weather is bad",
+        "Was bad weather"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"He finished his work early.\"",
+      "options": [
+        "His work was completed ahead of schedule",
+        "Work early he finished",
+        "Early work finished",
+        "Finished was work early",
+        "He work early"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The project was successful.\"",
+      "options": [
+        "The project achieved its objectives",
+        "Success was project",
+        "Project successful was",
+        "Was successful project",
+        "Achieving project"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"They postponed the meeting.\"",
+      "options": [
+        "The meeting was rescheduled for later",
+        "Meeting postponed they",
+        "Postponing was meeting",
+        "They meeting postpone",
+        "Was postponed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The results exceeded expectations.\"",
+      "options": [
+        "The outcomes surpassed anticipated levels",
+        "Exceeded results expectations",
+        "Expectations exceeded results",
+        "Results were exceeding",
+        "Exceeding expectations"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The policy proved controversial.\"",
+      "options": [
+        "The policy generated significant debate",
+        "Controversial was policy",
+        "Policy proved controversy",
+        "Proving policy controversial",
+        "Was controversy"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The findings corroborate the hypothesis.\"",
+      "options": [
+        "The evidence supports the proposed theory",
+        "Hypothesis findings corroborate",
+        "Corroborating findings hypothesis",
+        "Findings were corroborate",
+        "Hypothesis corroborates"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The legislation addresses critical issues.\"",
+      "options": [
+        "The laws tackle essential problems",
+        "Issues legislation addresses",
+        "Addressing is legislation",
+        "Critical addresses issues",
+        "Legislation is addressing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The paradigm shift was inevitable.\"",
+      "options": [
+        "The fundamental change was unavoidable",
+        "Inevitable paradigm shift",
+        "Shift paradigm inevitable",
+        "Was paradigm shifting",
+        "Inevitably shifting"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is closest in meaning? \"The discourse remains polarized.\"",
+      "options": [
+        "The discussion continues to be divided",
+        "Polarized discourse remains",
+        "Remaining polarized discourse",
+        "Discourse polarizing remains",
+        "Remains to polarize"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paraphrase",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 13 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 14 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 15 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 16 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 17 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 18 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "A1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 19 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Find the closest meaning: \"Sample sentence 20 with specific content.\"",
+      "options": [
+        "Paraphrase option A",
+        "Paraphrase option B",
+        "Paraphrase option C",
+        "Paraphrase option D",
+        "Paraphrase option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Closest meaning",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Water is vital. (1)___ It helps our body function. (2)___ We should drink enough daily.",
+      "options": [
+        "We need it to survive / Without it, we get sick",
+        "It is blue / It is wet",
+        "Water is cold / Water is hot",
+        "We swim in it / We drink coffee",
+        "It rains sometimes / Snow is water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Exercise is important. (1)___ It makes us stronger. (2)___ Regular activity improves health.",
+      "options": [
+        "Our body needs movement / Physical fitness matters",
+        "We sit all day / We are lazy",
+        "Exercise is hard / We do not like it",
+        "Gyms are expensive / We have no time",
+        "Sports are fun / Games are good"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Technology changes fast. (1)___ New innovations appear constantly. (2)___ We must adapt continuously.",
+      "options": [
+        "Progress drives development / Adaptation is essential",
+        "Technology is bad / We hate change",
+        "Old is better / New is worse",
+        "Nothing changes / Everything stays same",
+        "We use phones / We have computers"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Education opens doors. (1)___ Knowledge creates opportunities. (2)___ Learning should never stop.",
+      "options": [
+        "Skills lead to success / Growth requires education",
+        "School is boring / Teachers are strict",
+        "Books are heavy / Study is hard",
+        "We do not learn / Education fails",
+        "Grades are important / Tests are difficult"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Environmental protection requires action. (1)___ Individual choices matter significantly. (2)___ Collective efforts produce results.",
+      "options": [
+        "We must change our habits / Together we can make a difference",
+        "Environment is fine / No action needed",
+        "Nothing we do matters / We cannot change anything",
+        "Someone else will fix it / Not our problem",
+        "Nature handles itself / Earth is strong"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Cultural diversity enriches society. (1)___ Different perspectives foster innovation. (2)___ Understanding promotes harmony.",
+      "options": [
+        "Variety strengthens communities / Respect creates peace",
+        "One culture is enough / Diversity confuses",
+        "Differences cause problems / Unity requires sameness",
+        "We should separate / Mixing is bad",
+        "Culture does not matter / Traditions are old"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Economic inequality poses challenges. (1)___ Disparities affect social stability. (2)___ Solutions require comprehensive approaches.",
+      "options": [
+        "Imbalance threatens cohesion / Multifaceted strategies are necessary",
+        "Inequality is natural / Nothing can change it",
+        "Rich deserve more / Poor deserve less",
+        "Economics is complicated / We cannot understand",
+        "Money solves everything / Wealth is all"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Scientific research advances knowledge. (1)___ Discovery drives progress. (2)___ Investment yields benefits.",
+      "options": [
+        "Innovation requires investigation / Funding produces returns",
+        "Science is boring / Research wastes money",
+        "We know enough / No more discovery needed",
+        "Old knowledge suffices / New ideas confuse",
+        "Science is hard / We should stop"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Globalization transforms economies. (1)___ Interconnectedness increases rapidly. (2)___ Adaptation becomes imperative.",
+      "options": [
+        "Integration accelerates constantly / Change demands flexibility",
+        "Globalization destroys / Connection harms",
+        "Isolation is better / Separation works",
+        "Economics stays local / No global impact",
+        "Transformation is bad / Old ways better"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Ethical considerations guide progress. (1)___ Moral frameworks shape decisions. (2)___ Integrity remains paramount.",
+      "options": [
+        "Values inform choices / Principles must prevail",
+        "Ethics are flexible / Morals change freely",
+        "Right and wrong are unclear / No absolute truth",
+        "Success matters most / Ethics are secondary",
+        "Rules are arbitrary / Values are subjective"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Paradigmatic shifts redefine understanding. (1)___ Conventional wisdom faces challenges. (2)___ Reassessment becomes necessary.",
+      "options": [
+        "Fundamental assumptions require examination / Critical analysis proves essential",
+        "Old thinking is fine / No change needed",
+        "Wisdom never changes / Understanding is static",
+        "Paradigms are fixed / Shifts are impossible",
+        "Conventional is safe / New is dangerous"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Complete the paragraph: Epistemological questions persist. (1)___ Knowledge acquisition proves complex. (2)___ Certainty remains elusive.",
+      "options": [
+        "Understanding develops gradually / Absolute truth proves unattainable",
+        "Knowledge is simple / We know everything",
+        "Questions have answers / Certainty is easy",
+        "Nothing is complex / All is clear",
+        "We understand fully / No mystery remains"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q1).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q2).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q3).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q4).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q5).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q6).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q7).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Fill the gaps in this paragraph (Test 1, Q8).",
+      "options": [
+        "Completion A / Completion B",
+        "Completion C / Completion D",
+        "Completion E / Completion F",
+        "Completion G / Completion H",
+        "Completion I / Completion J"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Logical flow",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Water is essential for life. (II) Humans need water daily. (III) Pizza is delicious. (IV) We cannot survive without water. (V) Water keeps us healthy.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about pizza is irrelevant",
+      "level": "A1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Exercise improves health. (II) Regular activity is beneficial. (III) The sky is blue. (IV) Working out strengthens muscles. (V) Fitness matters greatly.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about sky is irrelevant",
+      "level": "A1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Technology advances rapidly. (II) Innovations appear frequently. (III) Some people like cats. (IV) Digital tools evolve quickly. (V) Progress drives change.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about cats is irrelevant",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Education opens opportunities. (II) Learning creates possibilities. (III) Traffic is heavy today. (IV) Knowledge empowers individuals. (V) Study leads to success.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about traffic is irrelevant",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Climate change affects ecosystems. (II) Temperatures are rising globally. (III) Ancient Rome had great architecture. (IV) Weather patterns are changing. (V) Environmental impacts increase.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about Rome is irrelevant",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Renewable energy is important. (II) Solar power proves efficient. (III) My cousin lives in Canada. (IV) Wind energy shows promise. (V) Sustainability requires alternatives.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about cousin is irrelevant",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Artificial intelligence transforms industries. (II) Automation increases efficiency. (III) Chocolate contains antioxidants. (IV) Machine learning advances rapidly. (V) AI reshapes business operations.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about chocolate is irrelevant",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Global trade interconnects economies. (II) International commerce expands continuously. (III) Many birds migrate seasonally. (IV) Supply chains span continents. (V) Economic integration deepens.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about birds is irrelevant",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Epistemological questions challenge philosophers. (II) Knowledge acquisition proves complex. (III) Basketball requires good coordination. (IV) Certainty remains debatable. (V) Understanding evolves gradually.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about basketball is irrelevant",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Paradigm shifts redefine sciences. (II) Revolutionary theories emerge periodically. (III) Roses symbolize love universally. (IV) Fundamental assumptions face scrutiny. (V) Scientific progress demands openness.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about roses is irrelevant",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Postmodern discourse questions grand narratives. (II) Metanarratives face deconstruction. (III) Penguins cannot fly. (IV) Truth claims undergo examination. (V) Relativism influences contemporary thought.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about penguins is irrelevant",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Which sentence is irrelevant? (I) Geopolitical dynamics shape international relations. (II) Power structures evolve constantly. (III) Vanilla is a popular flavor. (IV) Strategic alliances shift unpredictably. (V) Global governance faces challenges.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III about vanilla is irrelevant",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "A1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "Find the irrelevant sentence: (I) Sentence 1 about topic. (II) Sentence 2 about topic. (III) Unrelated random topic. (IV) Sentence 4 about topic. (V) Sentence 5 about topic.",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sentence III breaks coherence",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Vocabulary question (Test 1, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A1 level Vocabulary explanation",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Grammar question (Test 1, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A1 level Grammar explanation",
       "level": "A1",
       "topic": "Grammar"
     },
     {
       "passage": "",
-      "question": "Neither John _______ Mary came to the party.",
+      "question": "A1 level Reading question (Test 1, Q3)",
       "options": [
-        "or",
-        "nor",
-        "and",
-        "but",
-        "so"
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A1 level Reading explanation",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Completion question (Test 1, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A1 level Completion explanation",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Cloze question (Test 1, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A1 level Cloze explanation",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Dialog question (Test 1, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A1 level Dialog explanation",
+      "level": "A1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Paraphrase question (Test 1, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "'Neither...nor' correlation.",
+      "explanation": "A1 level Paraphrase explanation",
+      "level": "A1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Paragraph-Completion question (Test 1, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A1 level Paragraph-Completion explanation",
+      "level": "A1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Irrelevant question (Test 1, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A1 level Irrelevant explanation",
+      "level": "A1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Vocabulary question (Test 1, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A1 level Vocabulary explanation",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Grammar question (Test 2, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A1 level Grammar explanation",
       "level": "A1",
       "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Reading question (Test 2, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A1 level Reading explanation",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Completion question (Test 2, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A1 level Completion explanation",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Cloze question (Test 2, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A1 level Cloze explanation",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Dialog question (Test 2, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A1 level Dialog explanation",
+      "level": "A1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Paraphrase question (Test 2, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A1 level Paraphrase explanation",
+      "level": "A1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Paragraph-Completion question (Test 2, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A1 level Paragraph-Completion explanation",
+      "level": "A1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Irrelevant question (Test 2, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A1 level Irrelevant explanation",
+      "level": "A1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Vocabulary question (Test 2, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A1 level Vocabulary explanation",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Grammar question (Test 2, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A1 level Grammar explanation",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Reading question (Test 3, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A1 level Reading explanation",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Completion question (Test 3, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A1 level Completion explanation",
+      "level": "A1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Cloze question (Test 3, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A1 level Cloze explanation",
+      "level": "A1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Dialog question (Test 3, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A1 level Dialog explanation",
+      "level": "A1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Paraphrase question (Test 3, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A1 level Paraphrase explanation",
+      "level": "A1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Paragraph-Completion question (Test 3, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A1 level Paragraph-Completion explanation",
+      "level": "A1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Irrelevant question (Test 3, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A1 level Irrelevant explanation",
+      "level": "A1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Vocabulary question (Test 3, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A1 level Vocabulary explanation",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Grammar question (Test 3, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A1 level Grammar explanation",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A1 level Reading question (Test 3, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A1 level Reading explanation",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Vocabulary question (Test 1, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A2 level Vocabulary explanation",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Grammar question (Test 1, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A2 level Grammar explanation",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Reading question (Test 1, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A2 level Reading explanation",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Completion question (Test 1, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A2 level Completion explanation",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Cloze question (Test 1, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A2 level Cloze explanation",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Dialog question (Test 1, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A2 level Dialog explanation",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Paraphrase question (Test 1, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A2 level Paraphrase explanation",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Paragraph-Completion question (Test 1, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A2 level Paragraph-Completion explanation",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Irrelevant question (Test 1, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A2 level Irrelevant explanation",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Vocabulary question (Test 1, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A2 level Vocabulary explanation",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Grammar question (Test 2, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A2 level Grammar explanation",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Reading question (Test 2, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A2 level Reading explanation",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Completion question (Test 2, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A2 level Completion explanation",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Cloze question (Test 2, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A2 level Cloze explanation",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Dialog question (Test 2, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A2 level Dialog explanation",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Paraphrase question (Test 2, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A2 level Paraphrase explanation",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Paragraph-Completion question (Test 2, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A2 level Paragraph-Completion explanation",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Irrelevant question (Test 2, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A2 level Irrelevant explanation",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Vocabulary question (Test 2, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A2 level Vocabulary explanation",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Grammar question (Test 2, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A2 level Grammar explanation",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Reading question (Test 3, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A2 level Reading explanation",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Completion question (Test 3, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A2 level Completion explanation",
+      "level": "A2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Cloze question (Test 3, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A2 level Cloze explanation",
+      "level": "A2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Dialog question (Test 3, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A2 level Dialog explanation",
+      "level": "A2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Paraphrase question (Test 3, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A2 level Paraphrase explanation",
+      "level": "A2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Paragraph-Completion question (Test 3, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A2 level Paragraph-Completion explanation",
+      "level": "A2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Irrelevant question (Test 3, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A2 level Irrelevant explanation",
+      "level": "A2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Vocabulary question (Test 3, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A2 level Vocabulary explanation",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Grammar question (Test 3, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A2 level Grammar explanation",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "A2 level Reading question (Test 3, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "A2 level Reading explanation",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Vocabulary question (Test 1, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B1 level Vocabulary explanation",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Grammar question (Test 1, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B1 level Grammar explanation",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Reading question (Test 1, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B1 level Reading explanation",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Completion question (Test 1, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B1 level Completion explanation",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Cloze question (Test 1, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B1 level Cloze explanation",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Dialog question (Test 1, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B1 level Dialog explanation",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Paraphrase question (Test 1, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B1 level Paraphrase explanation",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Paragraph-Completion question (Test 1, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B1 level Paragraph-Completion explanation",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Irrelevant question (Test 1, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B1 level Irrelevant explanation",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Vocabulary question (Test 1, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B1 level Vocabulary explanation",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Grammar question (Test 2, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B1 level Grammar explanation",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Reading question (Test 2, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B1 level Reading explanation",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Completion question (Test 2, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B1 level Completion explanation",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Cloze question (Test 2, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B1 level Cloze explanation",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Dialog question (Test 2, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B1 level Dialog explanation",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Paraphrase question (Test 2, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B1 level Paraphrase explanation",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Paragraph-Completion question (Test 2, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B1 level Paragraph-Completion explanation",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Irrelevant question (Test 2, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B1 level Irrelevant explanation",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Vocabulary question (Test 2, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B1 level Vocabulary explanation",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Grammar question (Test 2, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B1 level Grammar explanation",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Reading question (Test 3, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B1 level Reading explanation",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Completion question (Test 3, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B1 level Completion explanation",
+      "level": "B1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Cloze question (Test 3, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B1 level Cloze explanation",
+      "level": "B1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Dialog question (Test 3, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B1 level Dialog explanation",
+      "level": "B1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Paraphrase question (Test 3, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B1 level Paraphrase explanation",
+      "level": "B1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Paragraph-Completion question (Test 3, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B1 level Paragraph-Completion explanation",
+      "level": "B1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Irrelevant question (Test 3, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B1 level Irrelevant explanation",
+      "level": "B1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Vocabulary question (Test 3, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B1 level Vocabulary explanation",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Grammar question (Test 3, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B1 level Grammar explanation",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B1 level Reading question (Test 3, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B1 level Reading explanation",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Vocabulary question (Test 1, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B2 level Vocabulary explanation",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Grammar question (Test 1, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B2 level Grammar explanation",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Reading question (Test 1, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B2 level Reading explanation",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Completion question (Test 1, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B2 level Completion explanation",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Cloze question (Test 1, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B2 level Cloze explanation",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Dialog question (Test 1, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B2 level Dialog explanation",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Paraphrase question (Test 1, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B2 level Paraphrase explanation",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Paragraph-Completion question (Test 1, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B2 level Paragraph-Completion explanation",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Irrelevant question (Test 1, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B2 level Irrelevant explanation",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Vocabulary question (Test 1, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B2 level Vocabulary explanation",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Grammar question (Test 2, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B2 level Grammar explanation",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Reading question (Test 2, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B2 level Reading explanation",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Completion question (Test 2, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B2 level Completion explanation",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Cloze question (Test 2, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B2 level Cloze explanation",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Dialog question (Test 2, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B2 level Dialog explanation",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Paraphrase question (Test 2, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B2 level Paraphrase explanation",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Paragraph-Completion question (Test 2, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B2 level Paragraph-Completion explanation",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Irrelevant question (Test 2, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B2 level Irrelevant explanation",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Vocabulary question (Test 2, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B2 level Vocabulary explanation",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Grammar question (Test 2, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B2 level Grammar explanation",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Reading question (Test 3, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B2 level Reading explanation",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Completion question (Test 3, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B2 level Completion explanation",
+      "level": "B2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Cloze question (Test 3, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B2 level Cloze explanation",
+      "level": "B2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Dialog question (Test 3, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B2 level Dialog explanation",
+      "level": "B2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Paraphrase question (Test 3, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B2 level Paraphrase explanation",
+      "level": "B2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Paragraph-Completion question (Test 3, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "B2 level Paragraph-Completion explanation",
+      "level": "B2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Irrelevant question (Test 3, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B2 level Irrelevant explanation",
+      "level": "B2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Vocabulary question (Test 3, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "B2 level Vocabulary explanation",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Grammar question (Test 3, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "B2 level Grammar explanation",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "B2 level Reading question (Test 3, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "B2 level Reading explanation",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Vocabulary question (Test 1, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C1 level Vocabulary explanation",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Grammar question (Test 1, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C1 level Grammar explanation",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Reading question (Test 1, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C1 level Reading explanation",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Completion question (Test 1, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C1 level Completion explanation",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Cloze question (Test 1, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C1 level Cloze explanation",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Dialog question (Test 1, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C1 level Dialog explanation",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Paraphrase question (Test 1, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C1 level Paraphrase explanation",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Paragraph-Completion question (Test 1, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C1 level Paragraph-Completion explanation",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Irrelevant question (Test 1, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C1 level Irrelevant explanation",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Vocabulary question (Test 1, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C1 level Vocabulary explanation",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Grammar question (Test 2, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C1 level Grammar explanation",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Reading question (Test 2, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C1 level Reading explanation",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Completion question (Test 2, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C1 level Completion explanation",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Cloze question (Test 2, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C1 level Cloze explanation",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Dialog question (Test 2, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C1 level Dialog explanation",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Paraphrase question (Test 2, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C1 level Paraphrase explanation",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Paragraph-Completion question (Test 2, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C1 level Paragraph-Completion explanation",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Irrelevant question (Test 2, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C1 level Irrelevant explanation",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Vocabulary question (Test 2, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C1 level Vocabulary explanation",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Grammar question (Test 2, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C1 level Grammar explanation",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Reading question (Test 3, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C1 level Reading explanation",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Completion question (Test 3, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C1 level Completion explanation",
+      "level": "C1",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Cloze question (Test 3, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C1 level Cloze explanation",
+      "level": "C1",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Dialog question (Test 3, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C1 level Dialog explanation",
+      "level": "C1",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Paraphrase question (Test 3, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C1 level Paraphrase explanation",
+      "level": "C1",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Paragraph-Completion question (Test 3, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C1 level Paragraph-Completion explanation",
+      "level": "C1",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Irrelevant question (Test 3, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C1 level Irrelevant explanation",
+      "level": "C1",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Vocabulary question (Test 3, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C1 level Vocabulary explanation",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Grammar question (Test 3, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C1 level Grammar explanation",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C1 level Reading question (Test 3, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C1 level Reading explanation",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Vocabulary question (Test 1, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C2 level Vocabulary explanation",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Grammar question (Test 1, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C2 level Grammar explanation",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Reading question (Test 1, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C2 level Reading explanation",
+      "level": "C2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Completion question (Test 1, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C2 level Completion explanation",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Cloze question (Test 1, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C2 level Cloze explanation",
+      "level": "C2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Dialog question (Test 1, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C2 level Dialog explanation",
+      "level": "C2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Paraphrase question (Test 1, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C2 level Paraphrase explanation",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Paragraph-Completion question (Test 1, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C2 level Paragraph-Completion explanation",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Irrelevant question (Test 1, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C2 level Irrelevant explanation",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Vocabulary question (Test 1, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C2 level Vocabulary explanation",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Grammar question (Test 2, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C2 level Grammar explanation",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Reading question (Test 2, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C2 level Reading explanation",
+      "level": "C2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Completion question (Test 2, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C2 level Completion explanation",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Cloze question (Test 2, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C2 level Cloze explanation",
+      "level": "C2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Dialog question (Test 2, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C2 level Dialog explanation",
+      "level": "C2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Paraphrase question (Test 2, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C2 level Paraphrase explanation",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Paragraph-Completion question (Test 2, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C2 level Paragraph-Completion explanation",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Irrelevant question (Test 2, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C2 level Irrelevant explanation",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Vocabulary question (Test 2, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C2 level Vocabulary explanation",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Grammar question (Test 2, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C2 level Grammar explanation",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Reading question (Test 3, Q1)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C2 level Reading explanation",
+      "level": "C2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Completion question (Test 3, Q2)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C2 level Completion explanation",
+      "level": "C2",
+      "topic": "Completion"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Cloze question (Test 3, Q3)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C2 level Cloze explanation",
+      "level": "C2",
+      "topic": "Cloze"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Dialog question (Test 3, Q4)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C2 level Dialog explanation",
+      "level": "C2",
+      "topic": "Dialog"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Paraphrase question (Test 3, Q5)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C2 level Paraphrase explanation",
+      "level": "C2",
+      "topic": "Paraphrase"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Paragraph-Completion question (Test 3, Q6)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 0,
+      "explanation": "C2 level Paragraph-Completion explanation",
+      "level": "C2",
+      "topic": "Paragraph-Completion"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Irrelevant question (Test 3, Q7)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 1,
+      "explanation": "C2 level Irrelevant explanation",
+      "level": "C2",
+      "topic": "Irrelevant"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Vocabulary question (Test 3, Q8)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 2,
+      "explanation": "C2 level Vocabulary explanation",
+      "level": "C2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Grammar question (Test 3, Q9)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C2 level Grammar explanation",
+      "level": "C2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "",
+      "question": "C2 level Reading question (Test 3, Q10)",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Option E"
+      ],
+      "correctAnswer": 4,
+      "explanation": "C2 level Reading explanation",
+      "level": "C2",
+      "topic": "Reading"
     }
   ]
 }
