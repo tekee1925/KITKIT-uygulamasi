@@ -1616,7 +1616,7 @@ function renderTests() {
                                 <div style="color: #666; margin-top: 5px;">Yanlış Soru</div>
                             </div>
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
-                                <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${Math.ceil(state.userStats.wrongQuestions.length / 10)}</div>
+                                <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${Math.floor(state.userStats.wrongQuestions.length / 10)}</div>
                                 <div style="color: #666; margin-top: 5px;">Test Oluştu</div>
                             </div>
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
@@ -1624,45 +1624,57 @@ function renderTests() {
                                 <div style="color: #666; margin-top: 5px;">Hata Oranı</div>
                             </div>
                         </div>
-                        <div class="level-buttons" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 20px;">
-                            ${(() => {
-                                const testsCount = Math.ceil(state.userStats.wrongQuestions.length / 10);
-                                const tests = [];
-                                for (let i = 0; i < testsCount; i++) {
-                                    const testNumber = i + 1;
-                                    const startIndex = i * 10;
-                                    const endIndex = Math.min(startIndex + 10, state.userStats.wrongQuestions.length);
-                                    const questionCount = endIndex - startIndex;
-                                    const colors = [
-                                        ['#667eea', '#764ba2'],
-                                        ['#f093fb', '#f5576c'],
-                                        ['#4facfe', '#00f2fe'],
-                                        ['#43e97b', '#38f9d7'],
-                                        ['#fa709a', '#fee140'],
-                                        ['#30cfd0', '#a044ff']
-                                    ];
-                                    const colorPair = colors[i % colors.length];
-                                    const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
-                                    
-                                    tests.push(`
-                                        <button onclick="startPersonalizedTest(${testNumber})" class="btn-level" 
-                                            style="background: linear-gradient(135deg, ${colorPair[0]} 0%, ${colorPair[1]} 100%); 
-                                            color: white; border: none; padding: 25px; position: relative;">
-                                            <div style="font-size: 32px; margin-bottom: 10px;">${emojis[i] || testNumber + '️⃣'}</div>
-                                            <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">Test ${testNumber}</div>
-                                            <div style="font-size: 14px; opacity: 0.9;">${questionCount} Soru</div>
-                                        </button>
-                                    `);
-                                }
-                                return tests.join('');
-                            })()}
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px;">
-                            <div style="color: #666; font-size: 14px; line-height: 1.6;">
-                                💡 <strong>İpucu:</strong> Bu testleri çözdükçe zayıf noktalarını güçlendirebilirsin. 
-                                Aynı soruları tekrar görmek için istediğin testi tekrar çözebilirsin.
+                        ${state.userStats.wrongQuestions.length >= 10 ? `
+                            <div class="level-buttons" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 20px;">
+                                ${(() => {
+                                    const testsCount = Math.floor(state.userStats.wrongQuestions.length / 10);
+                                    const tests = [];
+                                    for (let i = 0; i < testsCount; i++) {
+                                        const testNumber = i + 1;
+                                        const questionCount = 10;
+                                        const colors = [
+                                            ['#667eea', '#764ba2'],
+                                            ['#f093fb', '#f5576c'],
+                                            ['#4facfe', '#00f2fe'],
+                                            ['#43e97b', '#38f9d7'],
+                                            ['#fa709a', '#fee140'],
+                                            ['#30cfd0', '#a044ff']
+                                        ];
+                                        const colorPair = colors[i % colors.length];
+                                        const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+                                        
+                                        tests.push(`
+                                            <button onclick="startPersonalizedTest(${testNumber})" class="btn-level" 
+                                                style="background: linear-gradient(135deg, ${colorPair[0]} 0%, ${colorPair[1]} 100%); 
+                                                color: white; border: none; padding: 25px; position: relative;">
+                                                <div style="font-size: 32px; margin-bottom: 10px;">${emojis[i] || testNumber + '️⃣'}</div>
+                                                <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">Test ${testNumber}</div>
+                                                <div style="font-size: 14px; opacity: 0.9;">${questionCount} Soru</div>
+                                            </button>
+                                        `);
+                                    }
+                                    return tests.join('');
+                                })()}
                             </div>
-                        </div>
+                            <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                                <div style="color: #666; font-size: 14px; line-height: 1.6;">
+                                    💡 <strong>İpucu:</strong> Bu testleri çözdükçe zayıf noktalarını güçlendirebilirsin. 
+                                    Aynı soruları tekrar görmek için istediğin testi tekrar çözebilirsin.
+                                </div>
+                            </div>
+                        ` : `
+                            <div style="background: linear-gradient(135deg, #FFA72615 0%, #FF572215 100%); padding: 25px; border-radius: 10px; border: 2px dashed #FF9800; text-align: center;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">⏳</div>
+                                <div style="font-size: 18px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">
+                                    Henüz test oluşmadı
+                                </div>
+                                <div style="color: #666; line-height: 1.6;">
+                                    İlk kişiselleştirilmiş testin için daha <strong>${10 - state.userStats.wrongQuestions.length} soru</strong> yanlış yapman gerekiyor!
+                                    <br>
+                                    Test çözmeye devam et, her 10 yanlış soruda yeni bir test oluşacak. 💪
+                                </div>
+                            </div>
+                        `}
                     ` : `
                         <div style="text-align: center; padding: 30px; color: #999;">
                             <div style="font-size: 48px; margin-bottom: 15px;">✨</div>
