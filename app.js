@@ -1493,7 +1493,6 @@ function renderTests() {
                 
                 <div class="card">
                     <h2>🎯 Seviyeye Göre Testler</h2>
-                    <p style="margin-bottom: 20px; color: var(--text-muted);">Her seviye için 3 test, her test 10 soru</p>
                     ${levels.map(level => {
                         const accordionId = `level-${level}`;
                         return `
@@ -1528,7 +1527,6 @@ function renderTests() {
                 
                 <div class="card">
                     <h2>📚 Konuya Göre Testler</h2>
-                    <p style="margin-bottom: 20px; color: var(--text-muted);">Her konu için 2 test, her test 10 soru</p>
                     ${topics.map(topic => {
                         const accordionId = `topic-${topic.id}`;
                         return `
