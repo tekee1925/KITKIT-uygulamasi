@@ -11,7 +11,7 @@
         "so"
       ],
       "correctAnswer": 1,
-      "explanation": "too + adjective means excessively",
+      "explanation": "too + sıfat = aşırı anlamına gelir",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -26,7 +26,7 @@
         "dropped"
       ],
       "correctAnswer": 1,
-      "explanation": "left = placed and forgot to take",
+      "explanation": "left = bıraktı ve almayı unuttu",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -41,7 +41,7 @@
         "rejected"
       ],
       "correctAnswer": 1,
-      "explanation": "postponed = rescheduled for later",
+      "explanation": "postponed = ileri tarihe ertelendi",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -56,7 +56,7 @@
         "cracked"
       ],
       "correctAnswer": 0,
-      "explanation": "break a promise is a common collocation",
+      "explanation": "break a promise yaygın bir söz öbeğidir",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -71,7 +71,7 @@
         "removed"
       ],
       "correctAnswer": 1,
-      "explanation": "laid off = terminated employment",
+      "explanation": "laid off = işten çıkarılmak",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -86,7 +86,7 @@
         "have"
       ],
       "correctAnswer": 1,
-      "explanation": "do someone a favor is idiomatic",
+      "explanation": "do someone a favor deyimsel bir ifadedir",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -101,7 +101,7 @@
         "provoked"
       ],
       "correctAnswer": 2,
-      "explanation": "arouse controversy is standard collocation",
+      "explanation": "arouse controversy standart söz öbeğidir",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -116,7 +116,7 @@
         "cut"
       ],
       "correctAnswer": 0,
-      "explanation": "turn down = reject",
+      "explanation": "turn down = reddetmek",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -131,7 +131,7 @@
         "got"
       ],
       "correctAnswer": 1,
-      "explanation": "fall through = fail to be completed",
+      "explanation": "fall through = tamamlanamamak, suya düşmek",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -146,7 +146,7 @@
         "hold"
       ],
       "correctAnswer": 0,
-      "explanation": "bring under control is standard phrase",
+      "explanation": "bring under control standart ifadedir",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -161,7 +161,7 @@
         "made"
       ],
       "correctAnswer": 0,
-      "explanation": "come to light = become known",
+      "explanation": "come to light = ortaya çıkmak, öğrenilmek",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -176,7 +176,7 @@
         "put"
       ],
       "correctAnswer": 0,
-      "explanation": "come up with = think of",
+      "explanation": "come up with = bulmak, düşünmek",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -191,7 +191,7 @@
         "presents"
       ],
       "correctAnswer": 0,
-      "explanation": "point to = suggest/indicate",
+      "explanation": "point to = işaret etmek, göstermek",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -206,7 +206,7 @@
         "put"
       ],
       "correctAnswer": 0,
-      "explanation": "come into effect = become active",
+      "explanation": "come into effect = yürürlüğe girmek",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -221,7 +221,7 @@
         "laid"
       ],
       "correctAnswer": 0,
-      "explanation": "step down = resign",
+      "explanation": "step down = istifa etmek",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -236,7 +236,7 @@
         "had"
       ],
       "correctAnswer": 0,
-      "explanation": "exploit loopholes is standard collocation",
+      "explanation": "exploit loopholes standart söz öbeğidir",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -251,7 +251,7 @@
         "put"
       ],
       "correctAnswer": 0,
-      "explanation": "turn a blind eye = ignore deliberately",
+      "explanation": "turn a blind eye = görmezden gelmek",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -266,7 +266,7 @@
         "did"
       ],
       "correctAnswer": 0,
-      "explanation": "go well = be received positively",
+      "explanation": "go well = iyi karşılanmak",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -281,7 +281,7 @@
         "distributed"
       ],
       "correctAnswer": 0,
-      "explanation": "flood the market is idiomatic",
+      "explanation": "flood the market deyimsel bir ifadedir",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -296,7 +296,7 @@
         "exploited"
       ],
       "correctAnswer": 0,
-      "explanation": "abuse authority/power is standard",
+      "explanation": "abuse authority/power standart kullanımdır",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -311,7 +311,7 @@
         "went"
       ],
       "correctAnswer": 1,
-      "explanation": "Third person singular takes -s",
+      "explanation": "Üçüncü tekil şahıs -s alır",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -326,7 +326,7 @@
         "living"
       ],
       "correctAnswer": 3,
-      "explanation": "Present perfect with for + time period",
+      "explanation": "For + zaman dilimi ile present perfect kullanılır",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -341,7 +341,7 @@
         "done"
       ],
       "correctAnswer": 2,
-      "explanation": "Present continuous for actions happening now",
+      "explanation": "Şu anda olan eylemler için present continuous kullanılır",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -356,7 +356,7 @@
         "will be"
       ],
       "correctAnswer": 2,
-      "explanation": "Second conditional uses were for all persons",
+      "explanation": "İkinci koşul cümlelerinde tüm şahıslar için were kullanılır",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -371,7 +371,7 @@
         "has read"
       ],
       "correctAnswer": 2,
-      "explanation": "Passive voice in past simple",
+      "explanation": "Geçmiş zamanda pasif yapı",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -386,7 +386,7 @@
         "was learning"
       ],
       "correctAnswer": 2,
-      "explanation": "Present perfect with since",
+      "explanation": "Since ile present perfect kullanılır",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -401,7 +401,7 @@
         "am finishing"
       ],
       "correctAnswer": 3,
-      "explanation": "Future perfect for action before future time",
+      "explanation": "Gelecekte bir zamandan önce tamamlanacak eylem için future perfect",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -416,7 +416,7 @@
         "starts"
       ],
       "correctAnswer": 2,
-      "explanation": "Past perfect for earlier past action",
+      "explanation": "Geçmişte daha önce olan eylem için past perfect",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -431,7 +431,7 @@
         "would have"
       ],
       "correctAnswer": 1,
-      "explanation": "Wish + past simple for present unreal",
+      "explanation": "Şimdiki zamanla ilgili hayaller için wish + geçmiş zaman",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -446,7 +446,7 @@
         "starts"
       ],
       "correctAnswer": 2,
-      "explanation": "Suggest + gerund",
+      "explanation": "Suggest fiilinden sonra -ing takısı gelir",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -461,7 +461,7 @@
         "will act"
       ],
       "correctAnswer": 3,
-      "explanation": "Third conditional inversion",
+      "explanation": "Üçüncü koşul cümlesinde devrik yapı",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -476,7 +476,7 @@
         "is advertised"
       ],
       "correctAnswer": 3,
-      "explanation": "Past perfect continuous passive",
+      "explanation": "Geçmiş zamanda süregelen pasif yapı",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -491,7 +491,7 @@
         "sat I down"
       ],
       "correctAnswer": 1,
-      "explanation": "Inversion with scarcely",
+      "explanation": "Scarcely ile devrik yapı kullanılır",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -506,7 +506,7 @@
         "are discussing"
       ],
       "correctAnswer": 3,
-      "explanation": "Future passive",
+      "explanation": "Gelecek zamanda pasif yapı",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -521,7 +521,7 @@
         "he has been"
       ],
       "correctAnswer": 1,
-      "explanation": "Inversion after not only",
+      "explanation": "Not only'den sonra devrik yapı",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -536,7 +536,7 @@
         "By no"
       ],
       "correctAnswer": 0,
-      "explanation": "Under no circumstances + inversion",
+      "explanation": "Under no circumstances ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -551,7 +551,7 @@
         "demands"
       ],
       "correctAnswer": 0,
-      "explanation": "Merit = deserve (formal)",
+      "explanation": "Merit = hak etmek (resmi)",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -566,7 +566,7 @@
         "seeing one"
       ],
       "correctAnswer": 1,
-      "explanation": "Inversion with rarely",
+      "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -581,7 +581,7 @@
         "needing"
       ],
       "correctAnswer": 2,
-      "explanation": "Data is uncountable, needs passive",
+      "explanation": "Data sayılamaz, pasif yapı gerektirir",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -596,7 +596,7 @@
         "does he know"
       ],
       "correctAnswer": 1,
-      "explanation": "Inversion with little",
+      "explanation": "Little ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -611,7 +611,7 @@
         "took/studied"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -626,7 +626,7 @@
         "is/went"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -641,7 +641,7 @@
         "is changing/adapting"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -656,7 +656,7 @@
         "offers/increase"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -671,7 +671,7 @@
         "receive/fail"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B1",
       "topic": "Cloze"
     },
@@ -686,7 +686,7 @@
         "shows/achieving"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B1",
       "topic": "Cloze"
     },
@@ -701,7 +701,7 @@
         "studied/has yet"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B2",
       "topic": "Cloze"
     },
@@ -716,7 +716,7 @@
         "design/created"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B2",
       "topic": "Cloze"
     },
@@ -731,7 +731,7 @@
         "is/warrant"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C1",
       "topic": "Cloze"
     },
@@ -746,7 +746,7 @@
         "has examined/remains"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C1",
       "topic": "Cloze"
     },
@@ -761,7 +761,7 @@
         "necessitates/perceiving"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C2",
       "topic": "Cloze"
     },
@@ -776,7 +776,7 @@
         "has become/difficultly"
       ],
       "correctAnswer": 0,
-      "explanation": "Fill in both blanks correctly",
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C2",
       "topic": "Cloze"
     },
@@ -791,7 +791,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -806,7 +806,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -821,7 +821,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "B1",
       "topic": "Cloze"
     },
@@ -836,7 +836,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "B2",
       "topic": "Cloze"
     },
@@ -851,7 +851,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "C1",
       "topic": "Cloze"
     },
@@ -866,7 +866,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "C2",
       "topic": "Cloze"
     },
@@ -881,7 +881,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -896,7 +896,7 @@
         "option I/J"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct combination",
+      "explanation": "Doğru kombinasyon",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -911,7 +911,7 @@
         "winter came early"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion with despite",
+      "explanation": "Despite ile mantıksal tamamlama",
       "level": "A1",
       "topic": "Completion"
     },
@@ -926,7 +926,7 @@
         "she gave up"
       ],
       "correctAnswer": 1,
-      "explanation": "Cause and effect",
+      "explanation": "Sebep ve sonuç",
       "level": "A1",
       "topic": "Completion"
     },
@@ -941,7 +941,7 @@
         "he slept well"
       ],
       "correctAnswer": 1,
-      "explanation": "Contrast with although",
+      "explanation": "Although ile karşıtlık",
       "level": "A2",
       "topic": "Completion"
     },
@@ -956,7 +956,7 @@
         "nobody works"
       ],
       "correctAnswer": 1,
-      "explanation": "Condition for success",
+      "explanation": "Başarı için koşul",
       "level": "A2",
       "topic": "Completion"
     },
@@ -971,7 +971,7 @@
         "and she was lazy"
       ],
       "correctAnswer": 0,
-      "explanation": "Not only...but also structure",
+      "explanation": "Not only...but also yapısı",
       "level": "B1",
       "topic": "Completion"
     },
@@ -986,7 +986,7 @@
         "as a result of"
       ],
       "correctAnswer": 3,
-      "explanation": "Contrast preposition",
+      "explanation": "Karşıtlık edatı",
       "level": "B1",
       "topic": "Completion"
     },
@@ -1001,7 +1001,7 @@
         "I will attend it"
       ],
       "correctAnswer": 3,
-      "explanation": "Third conditional",
+      "explanation": "Üçüncü koşul cümlesi",
       "level": "B2",
       "topic": "Completion"
     },
@@ -1016,7 +1016,7 @@
         "unless"
       ],
       "correctAnswer": 1,
-      "explanation": "in that = because",
+      "explanation": "in that = çünkü anlamında",
       "level": "B2",
       "topic": "Completion"
     },
@@ -1031,7 +1031,7 @@
         "protests began"
       ],
       "correctAnswer": 1,
-      "explanation": "Scarcely...when structure",
+      "explanation": "Scarcely...when yapısı",
       "level": "C1",
       "topic": "Completion"
     },
@@ -1046,7 +1046,7 @@
         "unless"
       ],
       "correctAnswer": 1,
-      "explanation": "in that shows reason",
+      "explanation": "in that sebep gösterir",
       "level": "C1",
       "topic": "Completion"
     },
@@ -1061,7 +1061,7 @@
         "defeat was certain"
       ],
       "correctAnswer": 1,
-      "explanation": "Despite obstacles = success",
+      "explanation": "Engellere rağmen = başarı",
       "level": "C2",
       "topic": "Completion"
     },
@@ -1076,7 +1076,7 @@
         "completely useless"
       ],
       "correctAnswer": 0,
-      "explanation": "Concessive clause",
+      "explanation": "İmtiyaç cümlesi",
       "level": "C2",
       "topic": "Completion"
     },
@@ -1091,7 +1091,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "A1",
       "topic": "Completion"
     },
@@ -1106,7 +1106,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "A2",
       "topic": "Completion"
     },
@@ -1121,7 +1121,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "B1",
       "topic": "Completion"
     },
@@ -1136,7 +1136,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "B2",
       "topic": "Completion"
     },
@@ -1151,7 +1151,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "C1",
       "topic": "Completion"
     },
@@ -1166,7 +1166,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "C2",
       "topic": "Completion"
     },
@@ -1181,7 +1181,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "A1",
       "topic": "Completion"
     },
@@ -1196,7 +1196,7 @@
         "logical completion E"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical completion",
+      "explanation": "Mantıksal tamamlama",
       "level": "A2",
       "topic": "Completion"
     },
@@ -1211,7 +1211,7 @@
         "expensive"
       ],
       "correctAnswer": 2,
-      "explanation": "Based on passage content",
+      "explanation": "Parça içeriğine göre",
       "level": "A1",
       "topic": "Reading"
     },
@@ -1226,7 +1226,7 @@
         "only young people"
       ],
       "correctAnswer": 2,
-      "explanation": "Based on passage content",
+      "explanation": "Parça içeriğine göre",
       "level": "A1",
       "topic": "Reading"
     },
@@ -1241,7 +1241,7 @@
         "only cold weather"
       ],
       "correctAnswer": 2,
-      "explanation": "Based on passage content",
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
@@ -1256,7 +1256,7 @@
         "harmful"
       ],
       "correctAnswer": 1,
-      "explanation": "Based on passage content",
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
@@ -1271,7 +1271,7 @@
         "being useless"
       ],
       "correctAnswer": 2,
-      "explanation": "Based on passage content",
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
@@ -1286,7 +1286,7 @@
         "ignoring the future"
       ],
       "correctAnswer": 2,
-      "explanation": "Based on passage content",
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
@@ -1301,7 +1301,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "A2",
       "topic": "Reading"
     },
@@ -1316,7 +1316,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "B1",
       "topic": "Reading"
     },
@@ -1331,7 +1331,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "B2",
       "topic": "Reading"
     },
@@ -1346,7 +1346,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "B2",
       "topic": "Reading"
     },
@@ -1361,7 +1361,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "C1",
       "topic": "Reading"
     },
@@ -1376,7 +1376,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "C1",
       "topic": "Reading"
     },
@@ -1391,7 +1391,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "C2",
       "topic": "Reading"
     },
@@ -1406,7 +1406,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "C2",
       "topic": "Reading"
     },
@@ -1421,7 +1421,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "A1",
       "topic": "Reading"
     },
@@ -1436,7 +1436,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "A2",
       "topic": "Reading"
     },
@@ -1451,7 +1451,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "B1",
       "topic": "Reading"
     },
@@ -1466,7 +1466,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "B2",
       "topic": "Reading"
     },
@@ -1481,7 +1481,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "C1",
       "topic": "Reading"
     },
@@ -1496,7 +1496,7 @@
         "inference option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Inference from passage",
+      "explanation": "Parçadan çıkarım",
       "level": "C2",
       "topic": "Reading"
     },
@@ -1511,7 +1511,7 @@
         "Yes, I will"
       ],
       "correctAnswer": 0,
-      "explanation": "Would like requires would in answer",
+      "explanation": "Would like cevabında would gerektirir",
       "level": "A1",
       "topic": "Dialog"
     },
@@ -1526,7 +1526,7 @@
         "Yes, please"
       ],
       "correctAnswer": 0,
-      "explanation": "Standard greeting response",
+      "explanation": "Standart selamlaşma cevabı",
       "level": "A1",
       "topic": "Dialog"
     },
@@ -1541,7 +1541,7 @@
         "Never I can"
       ],
       "correctAnswer": 1,
-      "explanation": "Polite acceptance",
+      "explanation": "Kibar kabul",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -1556,7 +1556,7 @@
         "I do not"
       ],
       "correctAnswer": 2,
-      "explanation": "Question about profession",
+      "explanation": "Meslek hakkında soru",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -1571,7 +1571,7 @@
         "You are lucky!"
       ],
       "correctAnswer": 2,
-      "explanation": "Sympathetic response",
+      "explanation": "Sempati gösteren cevap",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -1586,7 +1586,7 @@
         "I mind"
       ],
       "correctAnswer": 1,
-      "explanation": "Not at all = no problem",
+      "explanation": "Not at all = sorun değil",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -1601,7 +1601,7 @@
         "No wondering"
       ],
       "correctAnswer": 2,
-      "explanation": "Polite agreement",
+      "explanation": "Kibar kabul",
       "level": "B2",
       "topic": "Dialog"
     },
@@ -1616,7 +1616,7 @@
         "What postponed?"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical follow-up question",
+      "explanation": "Mantıklı takip sorusu",
       "level": "B2",
       "topic": "Dialog"
     },
@@ -1631,7 +1631,7 @@
         "Yes, contradict"
       ],
       "correctAnswer": 1,
-      "explanation": "Professional response",
+      "explanation": "Profesyonel cevap",
       "level": "C1",
       "topic": "Dialog"
     },
@@ -1646,7 +1646,7 @@
         "Input is good"
       ],
       "correctAnswer": 2,
-      "explanation": "Formal polite response",
+      "explanation": "Resmi kibar cevap",
       "level": "C1",
       "topic": "Dialog"
     },
@@ -1661,7 +1661,7 @@
         "Yes, far"
       ],
       "correctAnswer": 1,
-      "explanation": "Academic discourse",
+      "explanation": "Akademik söylem",
       "level": "C2",
       "topic": "Dialog"
     },
@@ -1676,7 +1676,7 @@
         "Investigation warrants"
       ],
       "correctAnswer": 2,
-      "explanation": "Formal agreement",
+      "explanation": "Resmi onay",
       "level": "C2",
       "topic": "Dialog"
     },
@@ -1691,7 +1691,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "A1",
       "topic": "Dialog"
     },
@@ -1706,7 +1706,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -1721,7 +1721,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -1736,7 +1736,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "B2",
       "topic": "Dialog"
     },
@@ -1751,7 +1751,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "C1",
       "topic": "Dialog"
     },
@@ -1766,7 +1766,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "C2",
       "topic": "Dialog"
     },
@@ -1781,7 +1781,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -1796,7 +1796,7 @@
         "Appropriate response E"
       ],
       "correctAnswer": 0,
-      "explanation": "Appropriate response",
+      "explanation": "Uygun cevap",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -1811,7 +1811,7 @@
         "Teaching she"
       ],
       "correctAnswer": 0,
-      "explanation": "Same meaning",
+      "explanation": "Aynı anlam",
       "level": "A1",
       "topic": "Paraphrase"
     },
@@ -1826,7 +1826,7 @@
         "Is book table"
       ],
       "correctAnswer": 0,
-      "explanation": "Same meaning",
+      "explanation": "Aynı anlam",
       "level": "A1",
       "topic": "Paraphrase"
     },
@@ -1841,7 +1841,7 @@
         "Was bad weather"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -1856,7 +1856,7 @@
         "He work early"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -1871,7 +1871,7 @@
         "Achieving project"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -1886,7 +1886,7 @@
         "Was postponed"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -1901,7 +1901,7 @@
         "Exceeding expectations"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "B2",
       "topic": "Paraphrase"
     },
@@ -1916,7 +1916,7 @@
         "Was controversy"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "B2",
       "topic": "Paraphrase"
     },
@@ -1931,7 +1931,7 @@
         "Hypothesis corroborates"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "C1",
       "topic": "Paraphrase"
     },
@@ -1946,7 +1946,7 @@
         "Legislation is addressing"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "C1",
       "topic": "Paraphrase"
     },
@@ -1961,7 +1961,7 @@
         "Inevitably shifting"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "C2",
       "topic": "Paraphrase"
     },
@@ -1976,7 +1976,7 @@
         "Remains to polarize"
       ],
       "correctAnswer": 0,
-      "explanation": "Paraphrase",
+      "explanation": "Açıklama, ifade değişimi",
       "level": "C2",
       "topic": "Paraphrase"
     },
@@ -1991,7 +1991,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -2006,7 +2006,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -2021,7 +2021,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "B2",
       "topic": "Paraphrase"
     },
@@ -2036,7 +2036,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "C1",
       "topic": "Paraphrase"
     },
@@ -2051,7 +2051,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "C2",
       "topic": "Paraphrase"
     },
@@ -2066,7 +2066,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "A1",
       "topic": "Paraphrase"
     },
@@ -2081,7 +2081,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -2096,7 +2096,7 @@
         "Paraphrase option E"
       ],
       "correctAnswer": 0,
-      "explanation": "Closest meaning",
+      "explanation": "En yakın anlam",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -2111,7 +2111,7 @@
         "It rains sometimes / Snow is water"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2126,7 +2126,7 @@
         "Sports are fun / Games are good"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2141,7 +2141,7 @@
         "We use phones / We have computers"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -2156,7 +2156,7 @@
         "Grades are important / Tests are difficult"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -2171,7 +2171,7 @@
         "Nature handles itself / Earth is strong"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -2186,7 +2186,7 @@
         "Culture does not matter / Traditions are old"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -2201,7 +2201,7 @@
         "Money solves everything / Wealth is all"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -2216,7 +2216,7 @@
         "Science is hard / We should stop"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -2231,7 +2231,7 @@
         "Transformation is bad / Old ways better"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -2246,7 +2246,7 @@
         "Rules are arbitrary / Values are subjective"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -2261,7 +2261,7 @@
         "Conventional is safe / New is dangerous"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -2276,7 +2276,7 @@
         "We understand fully / No mystery remains"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -2291,7 +2291,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -2306,7 +2306,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -2321,7 +2321,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -2336,7 +2336,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -2351,7 +2351,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -2366,7 +2366,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2381,7 +2381,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -2396,7 +2396,7 @@
         "Completion I / Completion J"
       ],
       "correctAnswer": 0,
-      "explanation": "Logical flow",
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -2411,7 +2411,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about pizza is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -2426,7 +2426,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about sky is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -2441,7 +2441,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about cats is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -2456,7 +2456,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about traffic is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -2471,7 +2471,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about Rome is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -2486,7 +2486,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about cousin is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -2501,7 +2501,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about chocolate is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -2516,7 +2516,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about birds is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -2531,7 +2531,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about basketball is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -2546,7 +2546,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about roses is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -2561,7 +2561,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about penguins is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -2576,7 +2576,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III about vanilla is irrelevant",
+      "explanation": "III numaralı cümle konuyla ilgisiz",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -2591,7 +2591,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -2606,7 +2606,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -2621,7 +2621,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -2636,7 +2636,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -2651,7 +2651,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -2666,7 +2666,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -2681,7 +2681,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -2696,7 +2696,7 @@
         "V"
       ],
       "correctAnswer": 2,
-      "explanation": "Sentence III breaks coherence",
+      "explanation": "III numaralı cümle bütünlüğü bozar",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -2711,7 +2711,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -2726,7 +2726,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -2741,7 +2741,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A1",
       "topic": "Reading"
     },
@@ -2756,7 +2756,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "A1",
       "topic": "Completion"
     },
@@ -2771,7 +2771,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -2786,7 +2786,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "A1",
       "topic": "Dialog"
     },
@@ -2801,7 +2801,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "A1",
       "topic": "Paraphrase"
     },
@@ -2816,7 +2816,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2831,7 +2831,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -2846,7 +2846,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -2861,7 +2861,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -2876,7 +2876,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A1",
       "topic": "Reading"
     },
@@ -2891,7 +2891,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "A1",
       "topic": "Completion"
     },
@@ -2906,7 +2906,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -2921,7 +2921,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "A1",
       "topic": "Dialog"
     },
@@ -2936,7 +2936,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "A1",
       "topic": "Paraphrase"
     },
@@ -2951,7 +2951,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2966,7 +2966,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -2981,7 +2981,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -2996,7 +2996,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -3011,7 +3011,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A1",
       "topic": "Reading"
     },
@@ -3026,7 +3026,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "A1",
       "topic": "Completion"
     },
@@ -3041,7 +3041,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "A1",
       "topic": "Cloze"
     },
@@ -3056,7 +3056,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "A1",
       "topic": "Dialog"
     },
@@ -3071,7 +3071,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "A1",
       "topic": "Paraphrase"
     },
@@ -3086,7 +3086,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -3101,7 +3101,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "A1",
       "topic": "Irrelevant"
     },
@@ -3116,7 +3116,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A1",
       "topic": "Vocabulary"
     },
@@ -3131,7 +3131,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A1",
       "topic": "Grammar"
     },
@@ -3146,7 +3146,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A1",
       "topic": "Reading"
     },
@@ -3161,7 +3161,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -3176,7 +3176,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -3191,7 +3191,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A2",
       "topic": "Reading"
     },
@@ -3206,7 +3206,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "A2",
       "topic": "Completion"
     },
@@ -3221,7 +3221,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -3236,7 +3236,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -3251,7 +3251,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -3266,7 +3266,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -3281,7 +3281,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -3296,7 +3296,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -3311,7 +3311,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -3326,7 +3326,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A2",
       "topic": "Reading"
     },
@@ -3341,7 +3341,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "A2",
       "topic": "Completion"
     },
@@ -3356,7 +3356,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -3371,7 +3371,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -3386,7 +3386,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -3401,7 +3401,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -3416,7 +3416,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -3431,7 +3431,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -3446,7 +3446,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -3461,7 +3461,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A2",
       "topic": "Reading"
     },
@@ -3476,7 +3476,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "A2",
       "topic": "Completion"
     },
@@ -3491,7 +3491,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "A2",
       "topic": "Cloze"
     },
@@ -3506,7 +3506,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "A2",
       "topic": "Dialog"
     },
@@ -3521,7 +3521,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "A2",
       "topic": "Paraphrase"
     },
@@ -3536,7 +3536,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "A2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -3551,7 +3551,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "A2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "A2",
       "topic": "Irrelevant"
     },
@@ -3566,7 +3566,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "A2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "A2",
       "topic": "Vocabulary"
     },
@@ -3581,7 +3581,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "A2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "A2",
       "topic": "Grammar"
     },
@@ -3596,7 +3596,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "A2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "A2",
       "topic": "Reading"
     },
@@ -3611,7 +3611,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -3626,7 +3626,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -3641,7 +3641,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B1",
       "topic": "Reading"
     },
@@ -3656,7 +3656,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "B1",
       "topic": "Completion"
     },
@@ -3671,7 +3671,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "B1",
       "topic": "Cloze"
     },
@@ -3686,7 +3686,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -3701,7 +3701,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -3716,7 +3716,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -3731,7 +3731,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -3746,7 +3746,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -3761,7 +3761,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -3776,7 +3776,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B1",
       "topic": "Reading"
     },
@@ -3791,7 +3791,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "B1",
       "topic": "Completion"
     },
@@ -3806,7 +3806,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "B1",
       "topic": "Cloze"
     },
@@ -3821,7 +3821,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -3836,7 +3836,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -3851,7 +3851,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -3866,7 +3866,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -3881,7 +3881,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -3896,7 +3896,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -3911,7 +3911,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B1",
       "topic": "Reading"
     },
@@ -3926,7 +3926,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "B1",
       "topic": "Completion"
     },
@@ -3941,7 +3941,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "B1",
       "topic": "Cloze"
     },
@@ -3956,7 +3956,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "B1",
       "topic": "Dialog"
     },
@@ -3971,7 +3971,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "B1",
       "topic": "Paraphrase"
     },
@@ -3986,7 +3986,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -4001,7 +4001,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "B1",
       "topic": "Irrelevant"
     },
@@ -4016,7 +4016,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B1",
       "topic": "Vocabulary"
     },
@@ -4031,7 +4031,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B1",
       "topic": "Grammar"
     },
@@ -4046,7 +4046,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B1",
       "topic": "Reading"
     },
@@ -4061,7 +4061,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -4076,7 +4076,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -4091,7 +4091,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B2",
       "topic": "Reading"
     },
@@ -4106,7 +4106,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "B2",
       "topic": "Completion"
     },
@@ -4121,7 +4121,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "B2",
       "topic": "Cloze"
     },
@@ -4136,7 +4136,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "B2",
       "topic": "Dialog"
     },
@@ -4151,7 +4151,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "B2",
       "topic": "Paraphrase"
     },
@@ -4166,7 +4166,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -4181,7 +4181,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -4196,7 +4196,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -4211,7 +4211,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -4226,7 +4226,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B2",
       "topic": "Reading"
     },
@@ -4241,7 +4241,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "B2",
       "topic": "Completion"
     },
@@ -4256,7 +4256,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "B2",
       "topic": "Cloze"
     },
@@ -4271,7 +4271,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "B2",
       "topic": "Dialog"
     },
@@ -4286,7 +4286,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "B2",
       "topic": "Paraphrase"
     },
@@ -4301,7 +4301,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -4316,7 +4316,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -4331,7 +4331,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -4346,7 +4346,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -4361,7 +4361,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B2",
       "topic": "Reading"
     },
@@ -4376,7 +4376,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "B2",
       "topic": "Completion"
     },
@@ -4391,7 +4391,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "B2",
       "topic": "Cloze"
     },
@@ -4406,7 +4406,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "B2",
       "topic": "Dialog"
     },
@@ -4421,7 +4421,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "B2",
       "topic": "Paraphrase"
     },
@@ -4436,7 +4436,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "B2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -4451,7 +4451,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "B2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "B2",
       "topic": "Irrelevant"
     },
@@ -4466,7 +4466,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "B2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "B2",
       "topic": "Vocabulary"
     },
@@ -4481,7 +4481,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "B2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "B2",
       "topic": "Grammar"
     },
@@ -4496,7 +4496,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "B2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "B2",
       "topic": "Reading"
     },
@@ -4511,7 +4511,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -4526,7 +4526,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -4541,7 +4541,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C1",
       "topic": "Reading"
     },
@@ -4556,7 +4556,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "C1",
       "topic": "Completion"
     },
@@ -4571,7 +4571,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "C1",
       "topic": "Cloze"
     },
@@ -4586,7 +4586,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "C1",
       "topic": "Dialog"
     },
@@ -4601,7 +4601,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "C1",
       "topic": "Paraphrase"
     },
@@ -4616,7 +4616,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -4631,7 +4631,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -4646,7 +4646,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -4661,7 +4661,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -4676,7 +4676,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C1",
       "topic": "Reading"
     },
@@ -4691,7 +4691,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "C1",
       "topic": "Completion"
     },
@@ -4706,7 +4706,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "C1",
       "topic": "Cloze"
     },
@@ -4721,7 +4721,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "C1",
       "topic": "Dialog"
     },
@@ -4736,7 +4736,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "C1",
       "topic": "Paraphrase"
     },
@@ -4751,7 +4751,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -4766,7 +4766,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -4781,7 +4781,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -4796,7 +4796,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -4811,7 +4811,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C1",
       "topic": "Reading"
     },
@@ -4826,7 +4826,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C1 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "C1",
       "topic": "Completion"
     },
@@ -4841,7 +4841,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C1 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "C1",
       "topic": "Cloze"
     },
@@ -4856,7 +4856,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C1 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "C1",
       "topic": "Dialog"
     },
@@ -4871,7 +4871,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C1 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "C1",
       "topic": "Paraphrase"
     },
@@ -4886,7 +4886,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C1 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -4901,7 +4901,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C1 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "C1",
       "topic": "Irrelevant"
     },
@@ -4916,7 +4916,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C1 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C1",
       "topic": "Vocabulary"
     },
@@ -4931,7 +4931,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C1 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C1",
       "topic": "Grammar"
     },
@@ -4946,7 +4946,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C1 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C1",
       "topic": "Reading"
     },
@@ -4961,7 +4961,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -4976,7 +4976,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -4991,7 +4991,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C2",
       "topic": "Reading"
     },
@@ -5006,7 +5006,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "C2",
       "topic": "Completion"
     },
@@ -5021,7 +5021,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "C2",
       "topic": "Cloze"
     },
@@ -5036,7 +5036,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "C2",
       "topic": "Dialog"
     },
@@ -5051,7 +5051,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "C2",
       "topic": "Paraphrase"
     },
@@ -5066,7 +5066,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -5081,7 +5081,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -5096,7 +5096,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -5111,7 +5111,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -5126,7 +5126,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C2",
       "topic": "Reading"
     },
@@ -5141,7 +5141,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "C2",
       "topic": "Completion"
     },
@@ -5156,7 +5156,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "C2",
       "topic": "Cloze"
     },
@@ -5171,7 +5171,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "C2",
       "topic": "Dialog"
     },
@@ -5186,7 +5186,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "C2",
       "topic": "Paraphrase"
     },
@@ -5201,7 +5201,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -5216,7 +5216,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -5231,7 +5231,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -5246,7 +5246,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -5261,7 +5261,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C2",
       "topic": "Reading"
     },
@@ -5276,7 +5276,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C2 level Completion explanation",
+      "explanation": "Cümle tamamlama mantığı",
       "level": "C2",
       "topic": "Completion"
     },
@@ -5291,7 +5291,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C2 level Cloze explanation",
+      "explanation": "Boşluk doldurma açıklaması",
       "level": "C2",
       "topic": "Cloze"
     },
@@ -5306,7 +5306,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C2 level Dialog explanation",
+      "explanation": "Diyalog tamamlama açıklaması",
       "level": "C2",
       "topic": "Dialog"
     },
@@ -5321,7 +5321,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C2 level Paraphrase explanation",
+      "explanation": "Anlam benzerliği açıklaması",
       "level": "C2",
       "topic": "Paraphrase"
     },
@@ -5336,7 +5336,7 @@
         "Option E"
       ],
       "correctAnswer": 0,
-      "explanation": "C2 level Paragraph-Completion explanation",
+      "explanation": "Paragraf akışı açıklaması",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -5351,7 +5351,7 @@
         "Option E"
       ],
       "correctAnswer": 1,
-      "explanation": "C2 level Irrelevant explanation",
+      "explanation": "İlgisiz cümle açıklaması",
       "level": "C2",
       "topic": "Irrelevant"
     },
@@ -5366,7 +5366,7 @@
         "Option E"
       ],
       "correctAnswer": 2,
-      "explanation": "C2 level Vocabulary explanation",
+      "explanation": "Kelime bilgisi açıklaması",
       "level": "C2",
       "topic": "Vocabulary"
     },
@@ -5381,7 +5381,7 @@
         "Option E"
       ],
       "correctAnswer": 3,
-      "explanation": "C2 level Grammar explanation",
+      "explanation": "Dilbilgisi kuralı açıklaması",
       "level": "C2",
       "topic": "Grammar"
     },
@@ -5396,7 +5396,7 @@
         "Option E"
       ],
       "correctAnswer": 4,
-      "explanation": "C2 level Reading explanation",
+      "explanation": "Okuma parçası açıklaması",
       "level": "C2",
       "topic": "Reading"
     }
