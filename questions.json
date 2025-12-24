@@ -1217,7 +1217,7 @@
     },
     {
       "passage": "Regular exercise improves physical and mental health. It strengthens muscles and reduces stress.",
-      "question": "Exercise benefits:",
+      "question": "According to the passage, exercise benefits:",
       "options": [
         "only physical health",
         "only mental health",
@@ -2702,121 +2702,121 @@
     },
     {
       "passage": "",
-      "question": "A1 level Vocabulary question (Test 1, Q1)",
+      "question": "The teacher asked the students to _______ their homework.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "do",
+        "make",
+        "give",
+        "take",
+        "have"
       ],
       "correctAnswer": 0,
-      "explanation": "Kelime bilgisi açıklaması",
+      "explanation": "do homework yaygın kullanımdır",
       "level": "A1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "A1 level Grammar question (Test 1, Q2)",
+      "question": "She _______ to school every day.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "go",
+        "goes",
+        "going",
+        "gone",
+        "went"
       ],
       "correctAnswer": 1,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "explanation": "Üçüncü tekil şahıs -s alır",
       "level": "A1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "A1 level Reading question (Test 1, Q3)",
+      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
+      "question": "According to the passage, sports help children:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "stay active and learn teamwork",
+        "only run fast",
+        "avoid exercise",
+        "play alone",
+        "watch TV"
       ],
-      "correctAnswer": 2,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "A1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "A1 level Completion question (Test 1, Q4)",
+      "question": "She went to the store _______ she needed milk.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "because",
+        "although",
+        "despite",
+        "unless",
+        "whereas"
       ],
-      "correctAnswer": 3,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "A1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "A1 level Cloze question (Test 1, Q5)",
+      "question": "Fill in the blanks: Students (1)___ hard for exams. They (2)___ to get good grades.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "study/want",
+        "studying/wanting",
+        "studies/wants",
+        "studied/wanted",
+        "study/wants"
       ],
-      "correctAnswer": 4,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "A1 level Dialog question (Test 1, Q6)",
+      "question": "A: How do you get to work? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I usually take the bus",
+        "Yes, I do",
+        "Work is good",
+        "Every day",
+        "I am worker"
       ],
       "correctAnswer": 0,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "explanation": "Uygun cevap",
       "level": "A1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "A1 level Paraphrase question (Test 1, Q7)",
+      "question": "Which is closest in meaning? \"The room is very big.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The room is spacious",
+        "Room is small",
+        "Big room is",
+        "Is very room",
+        "Room big"
       ],
-      "correctAnswer": 1,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "A1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "A1 level Paragraph-Completion question (Test 1, Q8)",
+      "question": "Complete: Healthy eating is important. (1)___ It provides energy. (2)___ Good nutrition improves wellbeing.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Fresh food contains vitamins / Balanced meals help growth",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 2,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2837,121 +2837,121 @@
     },
     {
       "passage": "",
-      "question": "A1 level Vocabulary question (Test 1, Q10)",
+      "question": "The teacher asked the students to _______ their homework.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "do",
+        "make",
+        "give",
+        "take",
+        "have"
       ],
-      "correctAnswer": 4,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "do homework yaygın kullanımdır",
       "level": "A1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "A1 level Grammar question (Test 2, Q1)",
+      "question": "She _______ to school every day.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "go",
+        "goes",
+        "going",
+        "gone",
+        "went"
       ],
-      "correctAnswer": 0,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Üçüncü tekil şahıs -s alır",
       "level": "A1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "A1 level Reading question (Test 2, Q2)",
+      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
+      "question": "According to the passage, sports help children:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "stay active and learn teamwork",
+        "only run fast",
+        "avoid exercise",
+        "play alone",
+        "watch TV"
       ],
-      "correctAnswer": 1,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "A1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "A1 level Completion question (Test 2, Q3)",
+      "question": "She went to the store _______ she needed milk.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "because",
+        "although",
+        "despite",
+        "unless",
+        "whereas"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "A1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "A1 level Cloze question (Test 2, Q4)",
+      "question": "Fill in the blanks: Students (1)___ hard for exams. They (2)___ to get good grades.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "study/want",
+        "studying/wanting",
+        "studies/wants",
+        "studied/wanted",
+        "study/wants"
       ],
-      "correctAnswer": 3,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "A1 level Dialog question (Test 2, Q5)",
+      "question": "A: How do you get to work? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I usually take the bus",
+        "Yes, I do",
+        "Work is good",
+        "Every day",
+        "I am worker"
       ],
-      "correctAnswer": 4,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "A1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "A1 level Paraphrase question (Test 2, Q6)",
+      "question": "Which is closest in meaning? \"The room is very big.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The room is spacious",
+        "Room is small",
+        "Big room is",
+        "Is very room",
+        "Room big"
       ],
       "correctAnswer": 0,
-      "explanation": "Anlam benzerliği açıklaması",
+      "explanation": "En yakın anlam",
       "level": "A1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "A1 level Paragraph-Completion question (Test 2, Q7)",
+      "question": "Complete: Healthy eating is important. (1)___ It provides energy. (2)___ Good nutrition improves wellbeing.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Fresh food contains vitamins / Balanced meals help growth",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 1,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -2972,121 +2972,121 @@
     },
     {
       "passage": "",
-      "question": "A1 level Vocabulary question (Test 2, Q9)",
+      "question": "The teacher asked the students to _______ their homework.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "do",
+        "make",
+        "give",
+        "take",
+        "have"
       ],
-      "correctAnswer": 3,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "do homework yaygın kullanımdır",
       "level": "A1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "A1 level Grammar question (Test 2, Q10)",
+      "question": "She _______ to school every day.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "go",
+        "goes",
+        "going",
+        "gone",
+        "went"
       ],
-      "correctAnswer": 4,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Üçüncü tekil şahıs -s alır",
       "level": "A1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "A1 level Reading question (Test 3, Q1)",
+      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
+      "question": "According to the passage, sports help children:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "stay active and learn teamwork",
+        "only run fast",
+        "avoid exercise",
+        "play alone",
+        "watch TV"
       ],
       "correctAnswer": 0,
-      "explanation": "Okuma parçası açıklaması",
+      "explanation": "Parça içeriğine göre",
       "level": "A1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "A1 level Completion question (Test 3, Q2)",
+      "question": "She went to the store _______ she needed milk.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "because",
+        "although",
+        "despite",
+        "unless",
+        "whereas"
       ],
-      "correctAnswer": 1,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "A1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "A1 level Cloze question (Test 3, Q3)",
+      "question": "Fill in the blanks: Students (1)___ hard for exams. They (2)___ to get good grades.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "study/want",
+        "studying/wanting",
+        "studies/wants",
+        "studied/wanted",
+        "study/wants"
       ],
-      "correctAnswer": 2,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "A1 level Dialog question (Test 3, Q4)",
+      "question": "A: How do you get to work? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I usually take the bus",
+        "Yes, I do",
+        "Work is good",
+        "Every day",
+        "I am worker"
       ],
-      "correctAnswer": 3,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "A1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "A1 level Paraphrase question (Test 3, Q5)",
+      "question": "Which is closest in meaning? \"The room is very big.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The room is spacious",
+        "Room is small",
+        "Big room is",
+        "Is very room",
+        "Room big"
       ],
-      "correctAnswer": 4,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "A1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "A1 level Paragraph-Completion question (Test 3, Q6)",
+      "question": "Complete: Healthy eating is important. (1)___ It provides energy. (2)___ Good nutrition improves wellbeing.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Fresh food contains vitamins / Balanced meals help growth",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
       "correctAnswer": 0,
-      "explanation": "Paragraf akışı açıklaması",
+      "explanation": "Mantıksal akış",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
@@ -3107,166 +3107,166 @@
     },
     {
       "passage": "",
-      "question": "A1 level Vocabulary question (Test 3, Q8)",
+      "question": "The teacher asked the students to _______ their homework.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Kelime bilgisi açıklaması",
-      "level": "A1",
-      "topic": "Vocabulary"
-    },
-    {
-      "passage": "",
-      "question": "A1 level Grammar question (Test 3, Q9)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Dilbilgisi kuralı açıklaması",
-      "level": "A1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "A1 level Reading question (Test 3, Q10)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 4,
-      "explanation": "Okuma parçası açıklaması",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "",
-      "question": "A2 level Vocabulary question (Test 1, Q1)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "do",
+        "make",
+        "give",
+        "take",
+        "have"
       ],
       "correctAnswer": 0,
-      "explanation": "Kelime bilgisi açıklaması",
+      "explanation": "do homework yaygın kullanımdır",
+      "level": "A1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "She _______ to school every day.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone",
+        "went"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Üçüncü tekil şahıs -s alır",
+      "level": "A1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
+      "question": "According to the passage, sports help children:",
+      "options": [
+        "stay active and learn teamwork",
+        "only run fast",
+        "avoid exercise",
+        "play alone",
+        "watch TV"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
+      "level": "A1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "The company decided to _______ off several employees.",
+      "options": [
+        "put",
+        "lay",
+        "take",
+        "get",
+        "make"
+      ],
+      "correctAnswer": 1,
+      "explanation": "lay off = işten çıkarmak",
       "level": "A2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "A2 level Grammar question (Test 1, Q2)",
+      "question": "They _______ in London since 2010.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "live",
+        "lived",
+        "have lived",
+        "are living",
+        "lives"
       ],
-      "correctAnswer": 1,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 2,
+      "explanation": "Since ile present perfect kullanılır",
       "level": "A2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "A2 level Reading question (Test 1, Q3)",
+      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
+      "question": "The internet allows people to:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "connect with others globally",
+        "only send letters",
+        "avoid communication",
+        "never use technology",
+        "only call"
       ],
-      "correctAnswer": 2,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "A2 level Completion question (Test 1, Q4)",
+      "question": "She went to the store _______ she needed milk.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "because",
+        "although",
+        "despite",
+        "unless",
+        "whereas"
       ],
-      "correctAnswer": 3,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "A2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "A2 level Cloze question (Test 1, Q5)",
+      "question": "Fill in the blanks: Students (1)___ hard for exams. They (2)___ to get good grades.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "study/want",
+        "studying/wanting",
+        "studies/wants",
+        "studied/wanted",
+        "study/wants"
       ],
-      "correctAnswer": 4,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "A2 level Dialog question (Test 1, Q6)",
+      "question": "A: How do you get to work? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I usually take the bus",
+        "Yes, I do",
+        "Work is good",
+        "Every day",
+        "I am worker"
       ],
       "correctAnswer": 0,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "explanation": "Uygun cevap",
       "level": "A2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "A2 level Paraphrase question (Test 1, Q7)",
+      "question": "Which is closest in meaning? \"The room is very big.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The room is spacious",
+        "Room is small",
+        "Big room is",
+        "Is very room",
+        "Room big"
       ],
-      "correctAnswer": 1,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "A2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "A2 level Paragraph-Completion question (Test 1, Q8)",
+      "question": "Complete: Healthy eating is important. (1)___ It provides energy. (2)___ Good nutrition improves wellbeing.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Fresh food contains vitamins / Balanced meals help growth",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 2,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -3287,121 +3287,121 @@
     },
     {
       "passage": "",
-      "question": "A2 level Vocabulary question (Test 1, Q10)",
+      "question": "The company decided to _______ off several employees.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "put",
+        "lay",
+        "take",
+        "get",
+        "make"
       ],
-      "correctAnswer": 4,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 1,
+      "explanation": "lay off = işten çıkarmak",
       "level": "A2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "A2 level Grammar question (Test 2, Q1)",
+      "question": "They _______ in London since 2010.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "live",
+        "lived",
+        "have lived",
+        "are living",
+        "lives"
       ],
-      "correctAnswer": 0,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 2,
+      "explanation": "Since ile present perfect kullanılır",
       "level": "A2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "A2 level Reading question (Test 2, Q2)",
+      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
+      "question": "The internet allows people to:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "connect with others globally",
+        "only send letters",
+        "avoid communication",
+        "never use technology",
+        "only call"
       ],
-      "correctAnswer": 1,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "A2 level Completion question (Test 2, Q3)",
+      "question": "She went to the store _______ she needed milk.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "because",
+        "although",
+        "despite",
+        "unless",
+        "whereas"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "A2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "A2 level Cloze question (Test 2, Q4)",
+      "question": "Fill in the blanks: Students (1)___ hard for exams. They (2)___ to get good grades.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "study/want",
+        "studying/wanting",
+        "studies/wants",
+        "studied/wanted",
+        "study/wants"
       ],
-      "correctAnswer": 3,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "A2 level Dialog question (Test 2, Q5)",
+      "question": "A: How do you get to work? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I usually take the bus",
+        "Yes, I do",
+        "Work is good",
+        "Every day",
+        "I am worker"
       ],
-      "correctAnswer": 4,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "A2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "A2 level Paraphrase question (Test 2, Q6)",
+      "question": "Which is closest in meaning? \"The room is very big.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The room is spacious",
+        "Room is small",
+        "Big room is",
+        "Is very room",
+        "Room big"
       ],
       "correctAnswer": 0,
-      "explanation": "Anlam benzerliği açıklaması",
+      "explanation": "En yakın anlam",
       "level": "A2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "A2 level Paragraph-Completion question (Test 2, Q7)",
+      "question": "Complete: Healthy eating is important. (1)___ It provides energy. (2)___ Good nutrition improves wellbeing.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Fresh food contains vitamins / Balanced meals help growth",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 1,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -3422,121 +3422,121 @@
     },
     {
       "passage": "",
-      "question": "A2 level Vocabulary question (Test 2, Q9)",
+      "question": "The company decided to _______ off several employees.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "put",
+        "lay",
+        "take",
+        "get",
+        "make"
       ],
-      "correctAnswer": 3,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 1,
+      "explanation": "lay off = işten çıkarmak",
       "level": "A2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "A2 level Grammar question (Test 2, Q10)",
+      "question": "They _______ in London since 2010.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "live",
+        "lived",
+        "have lived",
+        "are living",
+        "lives"
       ],
-      "correctAnswer": 4,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 2,
+      "explanation": "Since ile present perfect kullanılır",
       "level": "A2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "A2 level Reading question (Test 3, Q1)",
+      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
+      "question": "The internet allows people to:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "connect with others globally",
+        "only send letters",
+        "avoid communication",
+        "never use technology",
+        "only call"
       ],
       "correctAnswer": 0,
-      "explanation": "Okuma parçası açıklaması",
+      "explanation": "Parça içeriğine göre",
       "level": "A2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "A2 level Completion question (Test 3, Q2)",
+      "question": "She went to the store _______ she needed milk.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "because",
+        "although",
+        "despite",
+        "unless",
+        "whereas"
       ],
-      "correctAnswer": 1,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "A2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "A2 level Cloze question (Test 3, Q3)",
+      "question": "Fill in the blanks: Students (1)___ hard for exams. They (2)___ to get good grades.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "study/want",
+        "studying/wanting",
+        "studies/wants",
+        "studied/wanted",
+        "study/wants"
       ],
-      "correctAnswer": 2,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "A2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "A2 level Dialog question (Test 3, Q4)",
+      "question": "A: How do you get to work? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I usually take the bus",
+        "Yes, I do",
+        "Work is good",
+        "Every day",
+        "I am worker"
       ],
-      "correctAnswer": 3,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "A2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "A2 level Paraphrase question (Test 3, Q5)",
+      "question": "Which is closest in meaning? \"The room is very big.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The room is spacious",
+        "Room is small",
+        "Big room is",
+        "Is very room",
+        "Room big"
       ],
-      "correctAnswer": 4,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "A2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "A2 level Paragraph-Completion question (Test 3, Q6)",
+      "question": "Complete: Healthy eating is important. (1)___ It provides energy. (2)___ Good nutrition improves wellbeing.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Fresh food contains vitamins / Balanced meals help growth",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
       "correctAnswer": 0,
-      "explanation": "Paragraf akışı açıklaması",
+      "explanation": "Mantıksal akış",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
@@ -3557,166 +3557,166 @@
     },
     {
       "passage": "",
-      "question": "A2 level Vocabulary question (Test 3, Q8)",
+      "question": "The company decided to _______ off several employees.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Kelime bilgisi açıklaması",
-      "level": "A2",
-      "topic": "Vocabulary"
-    },
-    {
-      "passage": "",
-      "question": "A2 level Grammar question (Test 3, Q9)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Dilbilgisi kuralı açıklaması",
-      "level": "A2",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "A2 level Reading question (Test 3, Q10)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 4,
-      "explanation": "Okuma parçası açıklaması",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "",
-      "question": "B1 level Vocabulary question (Test 1, Q1)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Kelime bilgisi açıklaması",
-      "level": "B1",
-      "topic": "Vocabulary"
-    },
-    {
-      "passage": "",
-      "question": "B1 level Grammar question (Test 1, Q2)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "put",
+        "lay",
+        "take",
+        "get",
+        "make"
       ],
       "correctAnswer": 1,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "explanation": "lay off = işten çıkarmak",
+      "level": "A2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "They _______ in London since 2010.",
+      "options": [
+        "live",
+        "lived",
+        "have lived",
+        "are living",
+        "lives"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Since ile present perfect kullanılır",
+      "level": "A2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
+      "question": "The internet allows people to:",
+      "options": [
+        "connect with others globally",
+        "only send letters",
+        "avoid communication",
+        "never use technology",
+        "only call"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
+      "level": "A2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "The manager needs to _______ with this problem immediately.",
+      "options": [
+        "deal",
+        "make",
+        "do",
+        "take",
+        "get"
+      ],
+      "correctAnswer": 0,
+      "explanation": "deal with = ilgilenmek, çözmek",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "If I _______ more time, I would travel around the world.",
+      "options": [
+        "have",
+        "had",
+        "has",
+        "having",
+        "will have"
+      ],
+      "correctAnswer": 1,
+      "explanation": "İkinci tip koşul cümlesinde geçmiş zaman kullanılır",
       "level": "B1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "B1 level Reading question (Test 1, Q3)",
+      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
+      "question": "Sustainable development requires:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "balancing multiple factors",
+        "only economic growth",
+        "ignoring the environment",
+        "only social issues",
+        "no planning"
       ],
-      "correctAnswer": 2,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "B1 level Completion question (Test 1, Q4)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 3,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "B1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "B1 level Cloze question (Test 1, Q5)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 4,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "B1 level Dialog question (Test 1, Q6)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
       "correctAnswer": 0,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "explanation": "Uygun cevap",
       "level": "B1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "B1 level Paraphrase question (Test 1, Q7)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 1,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "B1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "B1 level Paragraph-Completion question (Test 1, Q8)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 2,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -3737,121 +3737,121 @@
     },
     {
       "passage": "",
-      "question": "B1 level Vocabulary question (Test 1, Q10)",
+      "question": "The manager needs to _______ with this problem immediately.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "deal",
+        "make",
+        "do",
+        "take",
+        "get"
       ],
-      "correctAnswer": 4,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "deal with = ilgilenmek, çözmek",
       "level": "B1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "B1 level Grammar question (Test 2, Q1)",
+      "question": "If I _______ more time, I would travel around the world.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have",
+        "had",
+        "has",
+        "having",
+        "will have"
       ],
-      "correctAnswer": 0,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "İkinci tip koşul cümlesinde geçmiş zaman kullanılır",
       "level": "B1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "B1 level Reading question (Test 2, Q2)",
+      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
+      "question": "Sustainable development requires:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "balancing multiple factors",
+        "only economic growth",
+        "ignoring the environment",
+        "only social issues",
+        "no planning"
       ],
-      "correctAnswer": 1,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "B1 level Completion question (Test 2, Q3)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "B1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "B1 level Cloze question (Test 2, Q4)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 3,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "B1 level Dialog question (Test 2, Q5)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 4,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "B1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "B1 level Paraphrase question (Test 2, Q6)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
       "correctAnswer": 0,
-      "explanation": "Anlam benzerliği açıklaması",
+      "explanation": "En yakın anlam",
       "level": "B1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "B1 level Paragraph-Completion question (Test 2, Q7)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 1,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -3872,121 +3872,121 @@
     },
     {
       "passage": "",
-      "question": "B1 level Vocabulary question (Test 2, Q9)",
+      "question": "The manager needs to _______ with this problem immediately.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "deal",
+        "make",
+        "do",
+        "take",
+        "get"
       ],
-      "correctAnswer": 3,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "deal with = ilgilenmek, çözmek",
       "level": "B1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "B1 level Grammar question (Test 2, Q10)",
+      "question": "If I _______ more time, I would travel around the world.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have",
+        "had",
+        "has",
+        "having",
+        "will have"
       ],
-      "correctAnswer": 4,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "İkinci tip koşul cümlesinde geçmiş zaman kullanılır",
       "level": "B1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "B1 level Reading question (Test 3, Q1)",
+      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
+      "question": "Sustainable development requires:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "balancing multiple factors",
+        "only economic growth",
+        "ignoring the environment",
+        "only social issues",
+        "no planning"
       ],
       "correctAnswer": 0,
-      "explanation": "Okuma parçası açıklaması",
+      "explanation": "Parça içeriğine göre",
       "level": "B1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "B1 level Completion question (Test 3, Q2)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 1,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "B1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "B1 level Cloze question (Test 3, Q3)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 2,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "B1 level Dialog question (Test 3, Q4)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 3,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "B1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "B1 level Paraphrase question (Test 3, Q5)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 4,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "B1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "B1 level Paragraph-Completion question (Test 3, Q6)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
       "correctAnswer": 0,
-      "explanation": "Paragraf akışı açıklaması",
+      "explanation": "Mantıksal akış",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
@@ -4007,166 +4007,166 @@
     },
     {
       "passage": "",
-      "question": "B1 level Vocabulary question (Test 3, Q8)",
+      "question": "The manager needs to _______ with this problem immediately.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Kelime bilgisi açıklaması",
-      "level": "B1",
-      "topic": "Vocabulary"
-    },
-    {
-      "passage": "",
-      "question": "B1 level Grammar question (Test 3, Q9)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Dilbilgisi kuralı açıklaması",
-      "level": "B1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "B1 level Reading question (Test 3, Q10)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 4,
-      "explanation": "Okuma parçası açıklaması",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "",
-      "question": "B2 level Vocabulary question (Test 1, Q1)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "deal",
+        "make",
+        "do",
+        "take",
+        "get"
       ],
       "correctAnswer": 0,
-      "explanation": "Kelime bilgisi açıklaması",
+      "explanation": "deal with = ilgilenmek, çözmek",
+      "level": "B1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "If I _______ more time, I would travel around the world.",
+      "options": [
+        "have",
+        "had",
+        "has",
+        "having",
+        "will have"
+      ],
+      "correctAnswer": 1,
+      "explanation": "İkinci tip koşul cümlesinde geçmiş zaman kullanılır",
+      "level": "B1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
+      "question": "Sustainable development requires:",
+      "options": [
+        "balancing multiple factors",
+        "only economic growth",
+        "ignoring the environment",
+        "only social issues",
+        "no planning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
+      "level": "B1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "The evidence _______ his claims about the incident.",
+      "options": [
+        "contradicts",
+        "says",
+        "tells",
+        "speaks",
+        "talks"
+      ],
+      "correctAnswer": 0,
+      "explanation": "contradict = çelişmek",
       "level": "B2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "B2 level Grammar question (Test 1, Q2)",
+      "question": "The report _______ by the committee before the deadline.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "must complete",
+        "must be completed",
+        "must completing",
+        "must to complete",
+        "must have complete"
       ],
       "correctAnswer": 1,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "explanation": "Modal + be + past participle pasif yapı",
       "level": "B2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "B2 level Reading question (Test 1, Q3)",
+      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
+      "question": "The passage suggests globalization:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "has both benefits and concerns",
+        "is only positive",
+        "has no effects",
+        "is completely negative",
+        "is impossible"
       ],
-      "correctAnswer": 2,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "B2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "B2 level Completion question (Test 1, Q4)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 3,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "B2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "B2 level Cloze question (Test 1, Q5)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 4,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "B2 level Dialog question (Test 1, Q6)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
       "correctAnswer": 0,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "explanation": "Uygun cevap",
       "level": "B2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "B2 level Paraphrase question (Test 1, Q7)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 1,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "B2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "B2 level Paragraph-Completion question (Test 1, Q8)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 2,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -4187,121 +4187,121 @@
     },
     {
       "passage": "",
-      "question": "B2 level Vocabulary question (Test 1, Q10)",
+      "question": "The evidence _______ his claims about the incident.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "contradicts",
+        "says",
+        "tells",
+        "speaks",
+        "talks"
       ],
-      "correctAnswer": 4,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "contradict = çelişmek",
       "level": "B2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "B2 level Grammar question (Test 2, Q1)",
+      "question": "The report _______ by the committee before the deadline.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "must complete",
+        "must be completed",
+        "must completing",
+        "must to complete",
+        "must have complete"
       ],
-      "correctAnswer": 0,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Modal + be + past participle pasif yapı",
       "level": "B2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "B2 level Reading question (Test 2, Q2)",
+      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
+      "question": "The passage suggests globalization:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "has both benefits and concerns",
+        "is only positive",
+        "has no effects",
+        "is completely negative",
+        "is impossible"
       ],
-      "correctAnswer": 1,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "B2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "B2 level Completion question (Test 2, Q3)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "B2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "B2 level Cloze question (Test 2, Q4)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 3,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "B2 level Dialog question (Test 2, Q5)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 4,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "B2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "B2 level Paraphrase question (Test 2, Q6)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
       "correctAnswer": 0,
-      "explanation": "Anlam benzerliği açıklaması",
+      "explanation": "En yakın anlam",
       "level": "B2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "B2 level Paragraph-Completion question (Test 2, Q7)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 1,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -4322,121 +4322,121 @@
     },
     {
       "passage": "",
-      "question": "B2 level Vocabulary question (Test 2, Q9)",
+      "question": "The evidence _______ his claims about the incident.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "contradicts",
+        "says",
+        "tells",
+        "speaks",
+        "talks"
       ],
-      "correctAnswer": 3,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "contradict = çelişmek",
       "level": "B2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "B2 level Grammar question (Test 2, Q10)",
+      "question": "The report _______ by the committee before the deadline.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "must complete",
+        "must be completed",
+        "must completing",
+        "must to complete",
+        "must have complete"
       ],
-      "correctAnswer": 4,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Modal + be + past participle pasif yapı",
       "level": "B2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "B2 level Reading question (Test 3, Q1)",
+      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
+      "question": "The passage suggests globalization:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "has both benefits and concerns",
+        "is only positive",
+        "has no effects",
+        "is completely negative",
+        "is impossible"
       ],
       "correctAnswer": 0,
-      "explanation": "Okuma parçası açıklaması",
+      "explanation": "Parça içeriğine göre",
       "level": "B2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "B2 level Completion question (Test 3, Q2)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 1,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "B2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "B2 level Cloze question (Test 3, Q3)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 2,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "B2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "B2 level Dialog question (Test 3, Q4)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 3,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "B2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "B2 level Paraphrase question (Test 3, Q5)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 4,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "B2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "B2 level Paragraph-Completion question (Test 3, Q6)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
       "correctAnswer": 0,
-      "explanation": "Paragraf akışı açıklaması",
+      "explanation": "Mantıksal akış",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
@@ -4457,166 +4457,166 @@
     },
     {
       "passage": "",
-      "question": "B2 level Vocabulary question (Test 3, Q8)",
+      "question": "The evidence _______ his claims about the incident.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Kelime bilgisi açıklaması",
-      "level": "B2",
-      "topic": "Vocabulary"
-    },
-    {
-      "passage": "",
-      "question": "B2 level Grammar question (Test 3, Q9)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Dilbilgisi kuralı açıklaması",
-      "level": "B2",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "B2 level Reading question (Test 3, Q10)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 4,
-      "explanation": "Okuma parçası açıklaması",
-      "level": "B2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "",
-      "question": "C1 level Vocabulary question (Test 1, Q1)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "contradicts",
+        "says",
+        "tells",
+        "speaks",
+        "talks"
       ],
       "correctAnswer": 0,
-      "explanation": "Kelime bilgisi açıklaması",
+      "explanation": "contradict = çelişmek",
+      "level": "B2",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "The report _______ by the committee before the deadline.",
+      "options": [
+        "must complete",
+        "must be completed",
+        "must completing",
+        "must to complete",
+        "must have complete"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Modal + be + past participle pasif yapı",
+      "level": "B2",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
+      "question": "The passage suggests globalization:",
+      "options": [
+        "has both benefits and concerns",
+        "is only positive",
+        "has no effects",
+        "is completely negative",
+        "is impossible"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
+      "level": "B2",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "The new policy will _______ significant changes in our operations.",
+      "options": [
+        "entail",
+        "have",
+        "make",
+        "do",
+        "take"
+      ],
+      "correctAnswer": 0,
+      "explanation": "entail = gerektirmek, içermek",
       "level": "C1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C1 level Grammar question (Test 1, Q2)",
+      "question": "Never _______ such a beautiful sunset.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I have seen",
+        "have I seen",
+        "I seen",
+        "did I seen",
+        "I had seen"
       ],
       "correctAnswer": 1,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "explanation": "Never ile devrik yapı kullanılır",
       "level": "C1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C1 level Reading question (Test 1, Q3)",
+      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
+      "question": "The research on neuroplasticity:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "challenges old assumptions",
+        "confirms all previous beliefs",
+        "proves nothing",
+        "is irrelevant",
+        "only applies to children"
       ],
-      "correctAnswer": 2,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "C1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "C1 level Completion question (Test 1, Q4)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 3,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "C1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "C1 level Cloze question (Test 1, Q5)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 4,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "C1 level Dialog question (Test 1, Q6)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
       "correctAnswer": 0,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "explanation": "Uygun cevap",
       "level": "C1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "C1 level Paraphrase question (Test 1, Q7)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 1,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "C1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "C1 level Paragraph-Completion question (Test 1, Q8)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 2,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -4637,121 +4637,121 @@
     },
     {
       "passage": "",
-      "question": "C1 level Vocabulary question (Test 1, Q10)",
+      "question": "The new policy will _______ significant changes in our operations.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "entail",
+        "have",
+        "make",
+        "do",
+        "take"
       ],
-      "correctAnswer": 4,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "entail = gerektirmek, içermek",
       "level": "C1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C1 level Grammar question (Test 2, Q1)",
+      "question": "Never _______ such a beautiful sunset.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I have seen",
+        "have I seen",
+        "I seen",
+        "did I seen",
+        "I had seen"
       ],
-      "correctAnswer": 0,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Never ile devrik yapı kullanılır",
       "level": "C1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C1 level Reading question (Test 2, Q2)",
+      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
+      "question": "The research on neuroplasticity:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "challenges old assumptions",
+        "confirms all previous beliefs",
+        "proves nothing",
+        "is irrelevant",
+        "only applies to children"
       ],
-      "correctAnswer": 1,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "C1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "C1 level Completion question (Test 2, Q3)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "C1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "C1 level Cloze question (Test 2, Q4)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 3,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "C1 level Dialog question (Test 2, Q5)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 4,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "C1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "C1 level Paraphrase question (Test 2, Q6)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
       "correctAnswer": 0,
-      "explanation": "Anlam benzerliği açıklaması",
+      "explanation": "En yakın anlam",
       "level": "C1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "C1 level Paragraph-Completion question (Test 2, Q7)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 1,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -4772,121 +4772,121 @@
     },
     {
       "passage": "",
-      "question": "C1 level Vocabulary question (Test 2, Q9)",
+      "question": "The new policy will _______ significant changes in our operations.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "entail",
+        "have",
+        "make",
+        "do",
+        "take"
       ],
-      "correctAnswer": 3,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "entail = gerektirmek, içermek",
       "level": "C1",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C1 level Grammar question (Test 2, Q10)",
+      "question": "Never _______ such a beautiful sunset.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I have seen",
+        "have I seen",
+        "I seen",
+        "did I seen",
+        "I had seen"
       ],
-      "correctAnswer": 4,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Never ile devrik yapı kullanılır",
       "level": "C1",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C1 level Reading question (Test 3, Q1)",
+      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
+      "question": "The research on neuroplasticity:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "challenges old assumptions",
+        "confirms all previous beliefs",
+        "proves nothing",
+        "is irrelevant",
+        "only applies to children"
       ],
       "correctAnswer": 0,
-      "explanation": "Okuma parçası açıklaması",
+      "explanation": "Parça içeriğine göre",
       "level": "C1",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "C1 level Completion question (Test 3, Q2)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 1,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "C1",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "C1 level Cloze question (Test 3, Q3)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 2,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C1",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "C1 level Dialog question (Test 3, Q4)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 3,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "C1",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "C1 level Paraphrase question (Test 3, Q5)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 4,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "C1",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "C1 level Paragraph-Completion question (Test 3, Q6)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
       "correctAnswer": 0,
-      "explanation": "Paragraf akışı açıklaması",
+      "explanation": "Mantıksal akış",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
@@ -4907,166 +4907,166 @@
     },
     {
       "passage": "",
-      "question": "C1 level Vocabulary question (Test 3, Q8)",
+      "question": "The new policy will _______ significant changes in our operations.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Kelime bilgisi açıklaması",
-      "level": "C1",
-      "topic": "Vocabulary"
-    },
-    {
-      "passage": "",
-      "question": "C1 level Grammar question (Test 3, Q9)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Dilbilgisi kuralı açıklaması",
-      "level": "C1",
-      "topic": "Grammar"
-    },
-    {
-      "passage": "",
-      "question": "C1 level Reading question (Test 3, Q10)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
-      ],
-      "correctAnswer": 4,
-      "explanation": "Okuma parçası açıklaması",
-      "level": "C1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "",
-      "question": "C2 level Vocabulary question (Test 1, Q1)",
-      "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "entail",
+        "have",
+        "make",
+        "do",
+        "take"
       ],
       "correctAnswer": 0,
-      "explanation": "Kelime bilgisi açıklaması",
+      "explanation": "entail = gerektirmek, içermek",
+      "level": "C1",
+      "topic": "Vocabulary"
+    },
+    {
+      "passage": "",
+      "question": "Never _______ such a beautiful sunset.",
+      "options": [
+        "I have seen",
+        "have I seen",
+        "I seen",
+        "did I seen",
+        "I had seen"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Never ile devrik yapı kullanılır",
+      "level": "C1",
+      "topic": "Grammar"
+    },
+    {
+      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
+      "question": "The research on neuroplasticity:",
+      "options": [
+        "challenges old assumptions",
+        "confirms all previous beliefs",
+        "proves nothing",
+        "is irrelevant",
+        "only applies to children"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
+      "level": "C1",
+      "topic": "Reading"
+    },
+    {
+      "passage": "",
+      "question": "The research findings _______ conventional wisdom on this topic.",
+      "options": [
+        "belie",
+        "show",
+        "prove",
+        "make",
+        "tell"
+      ],
+      "correctAnswer": 0,
+      "explanation": "belie = yalanlamak, çürütmek",
       "level": "C2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C2 level Grammar question (Test 1, Q2)",
+      "question": "Rarely _______ with such eloquence and precision.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "one speaks",
+        "does one speak",
+        "speaks one",
+        "one does speak",
+        "speaking one"
       ],
       "correctAnswer": 1,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C2 level Reading question (Test 1, Q3)",
+      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
+      "question": "Postcolonial theory examines:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "colonial power structures",
+        "only literature",
+        "modern economics",
+        "sports history",
+        "mathematics"
       ],
-      "correctAnswer": 2,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "C2 level Completion question (Test 1, Q4)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 3,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "C2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "C2 level Cloze question (Test 1, Q5)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 4,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "C2 level Dialog question (Test 1, Q6)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
       "correctAnswer": 0,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "explanation": "Uygun cevap",
       "level": "C2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "C2 level Paraphrase question (Test 1, Q7)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 1,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "C2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "C2 level Paragraph-Completion question (Test 1, Q8)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 2,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -5087,121 +5087,121 @@
     },
     {
       "passage": "",
-      "question": "C2 level Vocabulary question (Test 1, Q10)",
+      "question": "The research findings _______ conventional wisdom on this topic.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "belie",
+        "show",
+        "prove",
+        "make",
+        "tell"
       ],
-      "correctAnswer": 4,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "belie = yalanlamak, çürütmek",
       "level": "C2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C2 level Grammar question (Test 2, Q1)",
+      "question": "Rarely _______ with such eloquence and precision.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "one speaks",
+        "does one speak",
+        "speaks one",
+        "one does speak",
+        "speaking one"
       ],
-      "correctAnswer": 0,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C2 level Reading question (Test 2, Q2)",
+      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
+      "question": "Postcolonial theory examines:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "colonial power structures",
+        "only literature",
+        "modern economics",
+        "sports history",
+        "mathematics"
       ],
-      "correctAnswer": 1,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "C2 level Completion question (Test 2, Q3)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "C2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "C2 level Cloze question (Test 2, Q4)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 3,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "C2 level Dialog question (Test 2, Q5)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 4,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "C2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "C2 level Paraphrase question (Test 2, Q6)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
       "correctAnswer": 0,
-      "explanation": "Anlam benzerliği açıklaması",
+      "explanation": "En yakın anlam",
       "level": "C2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "C2 level Paragraph-Completion question (Test 2, Q7)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
-      "correctAnswer": 1,
-      "explanation": "Paragraf akışı açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal akış",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -5222,121 +5222,121 @@
     },
     {
       "passage": "",
-      "question": "C2 level Vocabulary question (Test 2, Q9)",
+      "question": "The research findings _______ conventional wisdom on this topic.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "belie",
+        "show",
+        "prove",
+        "make",
+        "tell"
       ],
-      "correctAnswer": 3,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "belie = yalanlamak, çürütmek",
       "level": "C2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C2 level Grammar question (Test 2, Q10)",
+      "question": "Rarely _______ with such eloquence and precision.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "one speaks",
+        "does one speak",
+        "speaks one",
+        "one does speak",
+        "speaking one"
       ],
-      "correctAnswer": 4,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C2 level Reading question (Test 3, Q1)",
+      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
+      "question": "Postcolonial theory examines:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "colonial power structures",
+        "only literature",
+        "modern economics",
+        "sports history",
+        "mathematics"
       ],
       "correctAnswer": 0,
-      "explanation": "Okuma parçası açıklaması",
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     },
     {
       "passage": "",
-      "question": "C2 level Completion question (Test 3, Q2)",
+      "question": "The project succeeded _______ numerous obstacles.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "despite",
+        "because of",
+        "due to",
+        "owing to",
+        "thanks to"
       ],
-      "correctAnswer": 1,
-      "explanation": "Cümle tamamlama mantığı",
+      "correctAnswer": 0,
+      "explanation": "Mantıksal tamamlama",
       "level": "C2",
       "topic": "Completion"
     },
     {
       "passage": "",
-      "question": "C2 level Cloze question (Test 3, Q3)",
+      "question": "Fill in the blanks: Researchers (1)___ this phenomenon extensively. Their findings (2)___ significant implications.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "have investigated/have",
+        "investigates/has",
+        "investigating/having",
+        "investigated/had",
+        "investigate/has"
       ],
-      "correctAnswer": 2,
-      "explanation": "Boşluk doldurma açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Her iki boşluğu da doğru doldurun",
       "level": "C2",
       "topic": "Cloze"
     },
     {
       "passage": "",
-      "question": "C2 level Dialog question (Test 3, Q4)",
+      "question": "A: Would you be available for a meeting tomorrow? B: _______.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "I should be free in the afternoon",
+        "Yes, available",
+        "Tomorrow is day",
+        "Meeting good",
+        "I am tomorrow"
       ],
-      "correctAnswer": 3,
-      "explanation": "Diyalog tamamlama açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Uygun cevap",
       "level": "C2",
       "topic": "Dialog"
     },
     {
       "passage": "",
-      "question": "C2 level Paraphrase question (Test 3, Q5)",
+      "question": "Which is closest in meaning? \"The evidence corroborates the theory.\"",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "The data supports the hypothesis",
+        "Evidence is theory",
+        "Theory evidence",
+        "Corroborates is",
+        "Theory proves"
       ],
-      "correctAnswer": 4,
-      "explanation": "Anlam benzerliği açıklaması",
+      "correctAnswer": 0,
+      "explanation": "En yakın anlam",
       "level": "C2",
       "topic": "Paraphrase"
     },
     {
       "passage": "",
-      "question": "C2 level Paragraph-Completion question (Test 3, Q6)",
+      "question": "Complete: Innovation drives progress. (1)___ New technologies emerge rapidly. (2)___ Adaptation becomes essential.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "Change accelerates continuously / Organizations must evolve",
+        "Random / Unrelated",
+        "Wrong / Bad",
+        "Not fit / Poor",
+        "Off / Wrong"
       ],
       "correctAnswer": 0,
-      "explanation": "Paragraf akışı açıklaması",
+      "explanation": "Mantıksal akış",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
@@ -5357,46 +5357,46 @@
     },
     {
       "passage": "",
-      "question": "C2 level Vocabulary question (Test 3, Q8)",
+      "question": "The research findings _______ conventional wisdom on this topic.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "belie",
+        "show",
+        "prove",
+        "make",
+        "tell"
       ],
-      "correctAnswer": 2,
-      "explanation": "Kelime bilgisi açıklaması",
+      "correctAnswer": 0,
+      "explanation": "belie = yalanlamak, çürütmek",
       "level": "C2",
       "topic": "Vocabulary"
     },
     {
       "passage": "",
-      "question": "C2 level Grammar question (Test 3, Q9)",
+      "question": "Rarely _______ with such eloquence and precision.",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "one speaks",
+        "does one speak",
+        "speaks one",
+        "one does speak",
+        "speaking one"
       ],
-      "correctAnswer": 3,
-      "explanation": "Dilbilgisi kuralı açıklaması",
+      "correctAnswer": 1,
+      "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
     },
     {
-      "passage": "",
-      "question": "C2 level Reading question (Test 3, Q10)",
+      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
+      "question": "Postcolonial theory examines:",
       "options": [
-        "Option A",
-        "Option B",
-        "Option C",
-        "Option D",
-        "Option E"
+        "colonial power structures",
+        "only literature",
+        "modern economics",
+        "sports history",
+        "mathematics"
       ],
-      "correctAnswer": 4,
-      "explanation": "Okuma parçası açıklaması",
+      "correctAnswer": 0,
+      "explanation": "Parça içeriğine göre",
       "level": "C2",
       "topic": "Reading"
     }
