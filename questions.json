@@ -1201,306 +1201,6 @@
       "topic": "Completion"
     },
     {
-      "passage": "Water is essential for life. Humans need to drink water every day to stay healthy. Without water, people can only survive for a few days.",
-      "question": "According to the passage, water is:",
-      "options": [
-        "unnecessary",
-        "optional",
-        "essential",
-        "harmful",
-        "expensive"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Regular exercise improves physical and mental health. It strengthens muscles and reduces stress.",
-      "question": "According to the passage, exercise benefits:",
-      "options": [
-        "only physical health",
-        "only mental health",
-        "both physical and mental health",
-        "neither",
-        "only young people"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Climate change is affecting ecosystems worldwide. Rising temperatures are melting glaciers and changing weather patterns.",
-      "question": "Climate change is causing:",
-      "options": [
-        "no effects",
-        "local effects only",
-        "global effects",
-        "only positive changes",
-        "only cold weather"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Renewable energy sources like solar and wind power are becoming more affordable and efficient.",
-      "question": "Renewable energy is:",
-      "options": [
-        "expensive and inefficient",
-        "becoming cheaper and better",
-        "only solar",
-        "impossible",
-        "harmful"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Artificial intelligence is transforming industries by automating tasks and analyzing vast amounts of data more efficiently than humans.",
-      "question": "AI is changing industries by:",
-      "options": [
-        "replacing all humans",
-        "doing nothing",
-        "automating and analyzing",
-        "making things slower",
-        "being useless"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Urban planning must balance economic development with environmental sustainability to create livable cities for future generations.",
-      "question": "Good urban planning requires:",
-      "options": [
-        "only economic growth",
-        "only environmental protection",
-        "balance of both",
-        "neither concern",
-        "ignoring the future"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Social media connects people worldwide. It allows instant communication and information sharing. However, users should be cautious about privacy and misinformation.",
-      "question": "The passage suggests social media users should:",
-      "options": [
-        "be careful about privacy",
-        "share everything",
-        "avoid all communication",
-        "ignore information",
-        "delete their accounts"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Globalization has transformed international trade and cultural exchange. While it creates economic opportunities, it also presents challenges regarding cultural identity and environmental sustainability.",
-      "question": "The passage indicates globalization:",
-      "options": [
-        "has both benefits and challenges",
-        "is only positive",
-        "is only negative",
-        "has no impact",
-        "is impossible"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Quantum computing represents a paradigm shift in computational technology. Unlike classical computers that use bits, quantum computers utilize qubits, enabling exponentially faster processing for specific problems.",
-      "question": "What distinguishes quantum computers from classical ones?",
-      "options": [
-        "use of qubits instead of bits",
-        "larger size",
-        "different color",
-        "lower cost",
-        "simpler design"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Quantum computing represents a paradigm shift in computational technology. Unlike classical computers that use bits, quantum computers utilize qubits, enabling exponentially faster processing for specific problems.",
-      "question": "What distinguishes quantum computers from classical ones?",
-      "options": [
-        "use of qubits instead of bits",
-        "larger size",
-        "different color",
-        "lower cost",
-        "simpler design"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Contemporary discourse on artificial intelligence encompasses ethical considerations regarding autonomy, accountability, and the potential displacement of human labor. Policymakers must navigate these complexities while fostering innovation.",
-      "question": "The passage emphasizes that AI policy requires:",
-      "options": [
-        "balancing ethics with innovation",
-        "ignoring ethical concerns",
-        "stopping all development",
-        "only technical focus",
-        "avoiding regulation"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Contemporary discourse on artificial intelligence encompasses ethical considerations regarding autonomy, accountability, and the potential displacement of human labor. Policymakers must navigate these complexities while fostering innovation.",
-      "question": "The passage emphasizes that AI policy requires:",
-      "options": [
-        "balancing ethics with innovation",
-        "ignoring ethical concerns",
-        "stopping all development",
-        "only technical focus",
-        "avoiding regulation"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Poststructuralist theory problematizes traditional epistemological frameworks by deconstructing binary oppositions and questioning the stability of meaning. This intellectual movement has profoundly influenced literary criticism and cultural studies.",
-      "question": "Poststructuralism challenges traditional thinking by:",
-      "options": [
-        "deconstructing binary oppositions",
-        "accepting all traditions",
-        "avoiding all questions",
-        "simplifying everything",
-        "ignoring meaning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Poststructuralist theory problematizes traditional epistemological frameworks by deconstructing binary oppositions and questioning the stability of meaning. This intellectual movement has profoundly influenced literary criticism and cultural studies.",
-      "question": "Poststructuralism challenges traditional thinking by:",
-      "options": [
-        "deconstructing binary oppositions",
-        "accepting all traditions",
-        "avoiding all questions",
-        "simplifying everything",
-        "ignoring meaning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Books are important for learning. They help us gain knowledge and understand the world better. Reading regularly improves vocabulary and comprehension skills.",
-      "question": "According to the passage, reading helps with:",
-      "options": [
-        "vocabulary and comprehension",
-        "only grammar",
-        "nothing useful",
-        "sports skills",
-        "cooking"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Social media connects people worldwide. It allows instant communication and information sharing. However, users should be cautious about privacy and misinformation.",
-      "question": "The passage suggests social media users should:",
-      "options": [
-        "be careful about privacy",
-        "share everything",
-        "avoid all communication",
-        "ignore information",
-        "delete their accounts"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Globalization has transformed international trade and cultural exchange. While it creates economic opportunities, it also presents challenges regarding cultural identity and environmental sustainability.",
-      "question": "The passage indicates globalization:",
-      "options": [
-        "has both benefits and challenges",
-        "is only positive",
-        "is only negative",
-        "has no impact",
-        "is impossible"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Quantum computing represents a paradigm shift in computational technology. Unlike classical computers that use bits, quantum computers utilize qubits, enabling exponentially faster processing for specific problems.",
-      "question": "What distinguishes quantum computers from classical ones?",
-      "options": [
-        "use of qubits instead of bits",
-        "larger size",
-        "different color",
-        "lower cost",
-        "simpler design"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Contemporary discourse on artificial intelligence encompasses ethical considerations regarding autonomy, accountability, and the potential displacement of human labor. Policymakers must navigate these complexities while fostering innovation.",
-      "question": "The passage emphasizes that AI policy requires:",
-      "options": [
-        "balancing ethics with innovation",
-        "ignoring ethical concerns",
-        "stopping all development",
-        "only technical focus",
-        "avoiding regulation"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
-    },
-    {
-      "passage": "Poststructuralist theory problematizes traditional epistemological frameworks by deconstructing binary oppositions and questioning the stability of meaning. This intellectual movement has profoundly influenced literary criticism and cultural studies.",
-      "question": "Poststructuralism challenges traditional thinking by:",
-      "options": [
-        "deconstructing binary oppositions",
-        "accepting all traditions",
-        "avoiding all questions",
-        "simplifying everything",
-        "ignoring meaning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "A: Would you like some coffee? B: _______.",
       "options": [
@@ -2731,21 +2431,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
-      "question": "According to the passage, sports help children:",
-      "options": [
-        "stay active and learn teamwork",
-        "only run fast",
-        "avoid exercise",
-        "play alone",
-        "watch TV"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "She went to the store _______ she needed milk.",
       "options": [
@@ -2864,21 +2549,6 @@
       "explanation": "Üçüncü tekil şahıs -s alır",
       "level": "A1",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
-      "question": "According to the passage, sports help children:",
-      "options": [
-        "stay active and learn teamwork",
-        "only run fast",
-        "avoid exercise",
-        "play alone",
-        "watch TV"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -3001,21 +2671,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
-      "question": "According to the passage, sports help children:",
-      "options": [
-        "stay active and learn teamwork",
-        "only run fast",
-        "avoid exercise",
-        "play alone",
-        "watch TV"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "She went to the store _______ she needed milk.",
       "options": [
@@ -3136,21 +2791,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Sports are good for health. Playing sports helps children stay active and build strong bodies. It also teaches teamwork and discipline.",
-      "question": "According to the passage, sports help children:",
-      "options": [
-        "stay active and learn teamwork",
-        "only run fast",
-        "avoid exercise",
-        "play alone",
-        "watch TV"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The company decided to _______ off several employees.",
       "options": [
@@ -3179,21 +2819,6 @@
       "explanation": "Since ile present perfect kullanılır",
       "level": "A2",
       "topic": "Grammar"
-    },
-    {
-      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
-      "question": "The internet allows people to:",
-      "options": [
-        "connect with others globally",
-        "only send letters",
-        "avoid communication",
-        "never use technology",
-        "only call"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -3316,21 +2941,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
-      "question": "The internet allows people to:",
-      "options": [
-        "connect with others globally",
-        "only send letters",
-        "avoid communication",
-        "never use technology",
-        "only call"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "She went to the store _______ she needed milk.",
       "options": [
@@ -3449,21 +3059,6 @@
       "explanation": "Since ile present perfect kullanılır",
       "level": "A2",
       "topic": "Grammar"
-    },
-    {
-      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
-      "question": "The internet allows people to:",
-      "options": [
-        "connect with others globally",
-        "only send letters",
-        "avoid communication",
-        "never use technology",
-        "only call"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -3586,21 +3181,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "The internet has changed how we communicate. People can now connect instantly with others around the world through email and social media.",
-      "question": "The internet allows people to:",
-      "options": [
-        "connect with others globally",
-        "only send letters",
-        "avoid communication",
-        "never use technology",
-        "only call"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "A2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The manager needs to _______ with this problem immediately.",
       "options": [
@@ -3629,21 +3209,6 @@
       "explanation": "İkinci tip koşul cümlesinde geçmiş zaman kullanılır",
       "level": "B1",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
-      "question": "Sustainable development requires:",
-      "options": [
-        "balancing multiple factors",
-        "only economic growth",
-        "ignoring the environment",
-        "only social issues",
-        "no planning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -3766,21 +3331,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
-      "question": "Sustainable development requires:",
-      "options": [
-        "balancing multiple factors",
-        "only economic growth",
-        "ignoring the environment",
-        "only social issues",
-        "no planning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The project succeeded _______ numerous obstacles.",
       "options": [
@@ -3899,21 +3449,6 @@
       "explanation": "İkinci tip koşul cümlesinde geçmiş zaman kullanılır",
       "level": "B1",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
-      "question": "Sustainable development requires:",
-      "options": [
-        "balancing multiple factors",
-        "only economic growth",
-        "ignoring the environment",
-        "only social issues",
-        "no planning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -4036,21 +3571,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Sustainable development aims to meet present needs without compromising future generations. It requires balancing economic growth, environmental protection, and social equity.",
-      "question": "Sustainable development requires:",
-      "options": [
-        "balancing multiple factors",
-        "only economic growth",
-        "ignoring the environment",
-        "only social issues",
-        "no planning"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The evidence _______ his claims about the incident.",
       "options": [
@@ -4079,21 +3599,6 @@
       "explanation": "Modal + be + past participle pasif yapı",
       "level": "B2",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
-      "question": "The passage suggests globalization:",
-      "options": [
-        "has both benefits and concerns",
-        "is only positive",
-        "has no effects",
-        "is completely negative",
-        "is impossible"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -4216,21 +3721,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
-      "question": "The passage suggests globalization:",
-      "options": [
-        "has both benefits and concerns",
-        "is only positive",
-        "has no effects",
-        "is completely negative",
-        "is impossible"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The project succeeded _______ numerous obstacles.",
       "options": [
@@ -4349,21 +3839,6 @@
       "explanation": "Modal + be + past participle pasif yapı",
       "level": "B2",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
-      "question": "The passage suggests globalization:",
-      "options": [
-        "has both benefits and concerns",
-        "is only positive",
-        "has no effects",
-        "is completely negative",
-        "is impossible"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -4486,21 +3961,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Globalization has interconnected economies and cultures worldwide. While it facilitates trade and cultural exchange, it also raises concerns about inequality and cultural homogenization.",
-      "question": "The passage suggests globalization:",
-      "options": [
-        "has both benefits and concerns",
-        "is only positive",
-        "has no effects",
-        "is completely negative",
-        "is impossible"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "B2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The new policy will _______ significant changes in our operations.",
       "options": [
@@ -4529,21 +3989,6 @@
       "explanation": "Never ile devrik yapı kullanılır",
       "level": "C1",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
-      "question": "The research on neuroplasticity:",
-      "options": [
-        "challenges old assumptions",
-        "confirms all previous beliefs",
-        "proves nothing",
-        "is irrelevant",
-        "only applies to children"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -4666,21 +4111,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
-      "question": "The research on neuroplasticity:",
-      "options": [
-        "challenges old assumptions",
-        "confirms all previous beliefs",
-        "proves nothing",
-        "is irrelevant",
-        "only applies to children"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The project succeeded _______ numerous obstacles.",
       "options": [
@@ -4799,21 +4229,6 @@
       "explanation": "Never ile devrik yapı kullanılır",
       "level": "C1",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
-      "question": "The research on neuroplasticity:",
-      "options": [
-        "challenges old assumptions",
-        "confirms all previous beliefs",
-        "proves nothing",
-        "is irrelevant",
-        "only applies to children"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -4936,21 +4351,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Contemporary neuroscience research suggests that neuroplasticity persists throughout adulthood. This finding challenges traditional assumptions about the rigidity of the mature brain.",
-      "question": "The research on neuroplasticity:",
-      "options": [
-        "challenges old assumptions",
-        "confirms all previous beliefs",
-        "proves nothing",
-        "is irrelevant",
-        "only applies to children"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C1",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The research findings _______ conventional wisdom on this topic.",
       "options": [
@@ -4979,21 +4379,6 @@
       "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
-      "question": "Postcolonial theory examines:",
-      "options": [
-        "colonial power structures",
-        "only literature",
-        "modern economics",
-        "sports history",
-        "mathematics"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
     },
     {
       "passage": "",
@@ -5116,21 +4501,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
-      "question": "Postcolonial theory examines:",
-      "options": [
-        "colonial power structures",
-        "only literature",
-        "modern economics",
-        "sports history",
-        "mathematics"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The project succeeded _______ numerous obstacles.",
       "options": [
@@ -5251,21 +4621,6 @@
       "topic": "Grammar"
     },
     {
-      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
-      "question": "Postcolonial theory examines:",
-      "options": [
-        "colonial power structures",
-        "only literature",
-        "modern economics",
-        "sports history",
-        "mathematics"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
-    },
-    {
       "passage": "",
       "question": "The project succeeded _______ numerous obstacles.",
       "options": [
@@ -5384,21 +4739,6 @@
       "explanation": "Rarely ile devrik yapı",
       "level": "C2",
       "topic": "Grammar"
-    },
-    {
-      "passage": "Postcolonial literary theory interrogates the cultural legacy of colonialism and imperialism. It examines how colonial discourse constructed knowledge and perpetuated power asymmetries.",
-      "question": "Postcolonial theory examines:",
-      "options": [
-        "colonial power structures",
-        "only literature",
-        "modern economics",
-        "sports history",
-        "mathematics"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Parça içeriğine göre",
-      "level": "C2",
-      "topic": "Reading"
     }
   ]
 }
