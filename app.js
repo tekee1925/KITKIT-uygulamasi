@@ -87,15 +87,16 @@ function toggleBackgroundMusic() {
         sounds.music.play().catch(() => {});
     } else {
         sounds.music.pause();
+        sounds.music.currentTime = 0; // Müziği başa sar
     }
-    saveUserData();
     render();
+    saveUserData(); // render'dan sonra kaydet
 }
 
 function toggleSoundEffects() {
     state.soundEnabled = !state.soundEnabled;
-    saveUserData();
     render();
+    saveUserData(); // render'dan sonra kaydet
 }
 
 function startBackgroundMusic() {
