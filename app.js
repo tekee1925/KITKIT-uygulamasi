@@ -1657,7 +1657,7 @@ function renderTests() {
                     <p>Seviyene ve konuya göre test çöz</p>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, rgba(0, 100, 255, 0.1), rgba(0, 212, 255, 0.05)); border: 1px solid rgba(0, 212, 255, 0.3);">
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 100, 255, 0.1), rgba(0, 212, 255, 0.05)); border: 1px solid rgba(0, 212, 255, 0.3); margin-bottom: 30px;">
                     <h2>⚙️ Test Ayarları</h2>
                     <div style="margin-top: 15px;">
                         <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
@@ -1669,7 +1669,7 @@ function renderTests() {
                     </div>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722;">
+                <div class="card" style="background: linear-gradient(135deg, #FF572215 0%, #F0932415 100%); border: 2px solid #FF5722; margin-bottom: 30px;">
                     <h2>🎓 Kişiselleştirilmiş Testler</h2>
                     <p style="margin-bottom: 20px; color: #666;">Yanlış yaptığın sorulardan oluşan özel testler - Hatalarından öğren!</p>
                     ${(state.userStats.wrongQuestions && state.userStats.wrongQuestions.length > 0) ? `
@@ -1743,7 +1743,7 @@ function renderTests() {
                     `}
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #FFC10715 0%, #FFD70015 100%); border: 2px solid #FFC107;">
+                <div class="card" style="background: linear-gradient(135deg, #FFC10715 0%, #FFD70015 100%); border: 2px solid #FFC107; margin-bottom: 30px;">
                     <h2>⭐ Favori Sorularım</h2>
                     <p style="margin-bottom: 20px; color: #666;">Favorilerine eklediğin sorulardan oluşan özel test</p>
                     ${(state.userStats.favoriteQuestions && state.userStats.favoriteQuestions.length > 0) ? `
@@ -1777,7 +1777,7 @@ function renderTests() {
                     `}
                 </div>
                 
-                <div class="card">
+                <div class="card" style="margin-bottom: 30px;">
                     <h2>🎯 Seviyeye Göre Testler</h2>
                     ${levels.map(level => {
                         const accordionId = `level-${level}`;
@@ -1811,7 +1811,7 @@ function renderTests() {
                     }).join('')}
                 </div>
                 
-                <div class="card">
+                <div class="card" style="margin-bottom: 30px;">
                     <h2>📚 Konuya Göre Testler</h2>
                     ${topics.map(topic => {
                         const accordionId = `topic-${topic.id}`;
