@@ -665,7 +665,7 @@ function startMockExam(examNumber) {
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
-    state.timer = 80 * 60; // 80 dakika (soru başına 1 dakika)
+    state.timer = 180 * 60; // 180 dakika (YDS süresi)
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = null;
@@ -1266,46 +1266,6 @@ function renderHome() {
                         `}
                     </div>
                 </div>
-                
-                <div class="cards-grid" style="margin-top: 30px;">
-                    <div class="card">
-                        <h2>🎯 Hızlı Başlat</h2>
-                        <p style="margin-bottom: 20px; color: #666;">Hemen teste başla!</p>
-                        <button onclick="startQuiz(null, null)" class="btn-primary">🚀 Rastgele Test (20 Soru)</button>
-                        <button onclick="changePage(event, 'tests')" class="btn-secondary" style="margin-top: 10px;">📝 Testlere Git</button>
-                    </div>
-                    
-                    <div class="card">
-                        <h2>🎯 Deneme Sınavları</h2>
-                        <p style="margin-bottom: 20px; color: #666;">80 soruluk tam denemeler</p>
-                        <button onclick="startMockExam(1)" class="btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">1. Deneme Başlat</button>
-                        <button onclick="changePage(event, 'mock-exams')" class="btn-secondary" style="margin-top: 10px;">Tüm Denemelere Git</button>
-                    </div>
-                </div>
-                
-                ${recentQuizzes.length > 0 ? `
-                <div class="card" style="margin-top: 30px;">
-                    <h2>📚 Son Testlerin</h2>
-                    ${recentQuizzes.map(quiz => `
-                        <div class="quiz-history-item">
-                            <div>
-                                <div class="quiz-score">${quiz.score}/${quiz.total}</div>
-                                <div class="quiz-date">${new Date(quiz.date).toLocaleDateString('tr-TR')}</div>
-                            </div>
-                            <div class="quiz-percentage" style="color: ${quiz.percentage >= 70 ? '#4CAF50' : '#FF9800'}">
-                                %${quiz.percentage}
-                            </div>
-                        </div>
-                    `).join('')}
-                    <button onclick="changePage(event, 'stats')" class="btn-secondary" style="margin-top: 15px;">Tüm İstatistikleri Gör</button>
-                </div>
-                ` : `
-                <div class="card" style="text-align: center; padding: 40px; margin-top: 30px;">
-                    <h2>📚 İlk Testini Çöz!</h2>
-                    <p style="color: #666; margin: 20px 0;">Henüz hiç test çözmedin. Hemen başla ve ilerlemeni takip et!</p>
-                    <button onclick="startQuiz(null, null)" class="btn-primary">İlk Testi Başlat</button>
-                </div>
-                `}
             </div>
         </div>
     `;
@@ -1610,18 +1570,14 @@ function renderTests() {
                     <h2>🎓 Kişiselleştirilmiş Testler</h2>
                     <p style="margin-bottom: 20px; color: #666;">Yanlış yaptığın sorulardan oluşan özel testler - Hatalarından öğren!</p>
                     ${(state.userStats.wrongQuestions && state.userStats.wrongQuestions.length > 0) ? `
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px;">
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 20px;">
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
                                 <div style="font-size: 36px; font-weight: bold; color: #FF5722;">${state.userStats.wrongQuestions.length}</div>
                                 <div style="color: #666; margin-top: 5px;">Yanlış Soru</div>
                             </div>
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
                                 <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${Math.floor(state.userStats.wrongQuestions.length / 10)}</div>
-                                <div style="color: #666; margin-top: 5px;">Test Oluştu</div>
-                            </div>
-                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
-                                <div style="font-size: 36px; font-weight: bold; color: #4CAF50;">%${state.userStats.wrongQuestions.length > 0 ? Math.round((state.userStats.wrongQuestions.length / (state.userStats.totalQuestions || 1)) * 100) : 0}</div>
-                                <div style="color: #666; margin-top: 5px;">Hata Oranı</div>
+                                <div style="color: #666; margin-top: 5px;">Kişiselleştirilmiş Test</div>
                             </div>
                         </div>
                         ${state.userStats.wrongQuestions.length >= 10 ? `
@@ -1789,9 +1745,9 @@ function renderMockExams() {
                 </div>
                 
                 <div class="card">
-                    <h2>📝 Deneme Sınavları (80 Soru - 80 Dakika)</h2>
+                    <h2>📝 Deneme Sınavları (80 Soru - 180 Dakika)</h2>
                     <p style="margin-bottom: 20px; color: #666;">
-                        Her deneme tüm konular ve düzeylerden 80 soru içerir. Her deneme için 80 dakika süreniz var.
+                        Her deneme tüm konular ve düzeylerden 80 soru içerir. Her deneme için 180 dakika süreniz var.
                         <br><strong>Not:</strong> Her deneme başlatıldığında farklı sorular gelir.
                     </p>
                     <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
@@ -2144,18 +2100,18 @@ function renderQuizResult() {
                             const isCorrect = userAnswer === q.correctAnswer;
                             
                             return `
-                                <div style="padding: 15px; background: ${isCorrect ? '#4CAF5010' : '#EF535010'}; border-left: 4px solid ${isCorrect ? '#4CAF50' : '#EF5350'}; border-radius: 8px;">
-                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                                <div style="padding: 20px; background: ${isCorrect ? '#4CAF5015' : '#EF535015'}; border-left: 5px solid ${isCorrect ? '#4CAF50' : '#EF5350'}; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px;">
                                         <div style="flex: 1;">
-                                            <div style="font-weight: bold; color: #333; margin-bottom: 5px;">
+                                            <div style="font-weight: 700; color: #1a1a1a; font-size: 17px; line-height: 1.6; margin-bottom: 8px;">
                                                 ${index + 1}. ${q.question}
                                             </div>
                                         </div>
                                         <div style="margin-left: 15px;">
-                                            <span style="font-size: 24px;">${isCorrect ? '✓' : '✗'}</span>
+                                            <span style="font-size: 28px;">${isCorrect ? '✓' : '✗'}</span>
                                         </div>
                                     </div>
-                                    <div style="display: grid; gap: 8px; margin-top: 10px;">
+                                    <div style="display: grid; gap: 10px; margin-top: 12px;">
                                         ${q.options.map((option, optIndex) => {
                                             const isUserAnswer = userAnswer === optIndex;
                                             const isCorrectAnswer = q.correctAnswer === optIndex;
@@ -2165,21 +2121,21 @@ function renderQuizResult() {
                                             let fontWeight = 'normal';
                                             
                                             if (isCorrectAnswer) {
-                                                bgColor = '#4CAF5020';
+                                                bgColor = '#4CAF5025';
                                                 borderColor = '#4CAF50';
                                                 fontWeight = 'bold';
                                             } else if (isUserAnswer && !isCorrect) {
-                                                bgColor = '#EF535020';
+                                                bgColor = '#EF535025';
                                                 borderColor = '#EF5350';
                                                 fontWeight = 'bold';
                                             }
                                             
                                             return `
-                                                <div style="padding: 10px; background: ${bgColor}; border: 2px solid ${borderColor}; border-radius: 6px; font-weight: ${fontWeight};">
-                                                    <span style="margin-right: 10px; color: #666;">${String.fromCharCode(65 + optIndex)})</span>
+                                                <div style="padding: 14px; background: ${bgColor}; border: 2px solid ${borderColor}; border-radius: 8px; font-weight: ${fontWeight}; font-size: 16px; line-height: 1.6; color: #1a1a1a;">
+                                                    <span style="margin-right: 12px; color: #555; font-weight: bold;">${String.fromCharCode(65 + optIndex)})</span>
                                                     ${option}
-                                                    ${isCorrectAnswer ? '<span style="margin-left: 10px; color: #4CAF50;">✓ Doğru Cevap</span>' : ''}
-                                                    ${isUserAnswer && !isCorrect ? '<span style="margin-left: 10px; color: #EF5350;">✗ Senin Cevabın</span>' : ''}
+                                                    ${isCorrectAnswer ? '<span style="margin-left: 12px; color: #4CAF50; font-weight: bold;">✓ Doğru Cevap</span>' : ''}
+                                                    ${isUserAnswer && !isCorrect ? '<span style="margin-left: 12px; color: #EF5350; font-weight: bold;">✗ Senin Cevabın</span>' : ''}
                                                 </div>
                                             `;
                                         }).join('')}
@@ -2290,7 +2246,7 @@ function renderNavbar(activePage) {
         <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
             <div class="logo">
                 <img src="KİTKİTlogo.jpg" alt="KİTKİT Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
-                <span style="font-weight: bold; font-size: 20px; margin-left: 10px;">KİTKİT</span>
+                <span style="font-weight: 900; font-size: 28px; margin-left: 10px; background: linear-gradient(135deg, #2196F3 0%, #00BCD4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 20px rgba(33, 150, 243, 0.5), 0 0 40px rgba(33, 150, 243, 0.3), 0 0 60px rgba(33, 150, 243, 0.2); filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.6));">KİTKİT</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#" class="${activePage === 'home' ? 'active' : ''}" onclick="changePage(event, 'home')">🏠 Anasayfa</a></li>
