@@ -1213,10 +1213,16 @@ function submitAnswer() {
         if (correct) {
             state.score++;
             state.correctAnswers++;
-            playCorrectSound(); // Doğru cevap sesi
+            // Ses efekti sadece anında geri bildirim açıksa çalsın
+            if (state.showImmediateFeedback) {
+                playCorrectSound();
+            }
         } else {
             state.wrongAnswers++;
-            playWrongSound(); // Yanlış cevap sesi
+            // Ses efekti sadece anında geri bildirim açıksa çalsın
+            if (state.showImmediateFeedback) {
+                playWrongSound();
+            }
         }
     }
     
