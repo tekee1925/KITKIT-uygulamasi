@@ -23,6 +23,9 @@ const state = {
     quizCompleted: false, // Test tamamlandı mı
     testTimerDuration: 10, // Test süresi (dakika), 0 = süresiz
     showQuestionDetails: false, // Soru detaylarını göster
+    // Ses ayarları
+    soundEnabled: true, // Ses efektleri (doğru/yanlış)
+    musicEnabled: true, // Arka plan müziği
     userStats: {
         totalQuizzes: 0,
         totalQuestions: 0,
@@ -44,6 +47,62 @@ const state = {
 };
 
 let allQuestions = [];
+
+// ============================================
+// SES SİSTEMİ
+// ============================================
+
+// Ses objeleri
+const sounds = {
+    correct: new Audio('assets/correct-6033.mp3'),
+    wrong: new Audio('assets/wrong-answer-126515.mp3'),
+    music: new Audio('assets/chill-drum-loop-6887.mp3')
+};
+
+// Arka plan müziğini loop yap
+sounds.music.loop = true;
+sounds.music.volume = 0.3; // %30 ses seviyesi
+
+// Ses efektleri için ses seviyesi
+sounds.correct.volume = 0.5;
+sounds.wrong.volume = 0.5;
+
+function playCorrectSound() {
+    if (state.soundEnabled) {
+        sounds.correct.currentTime = 0;
+        sounds.correct.play().catch(() => {});
+    }
+}
+
+function playWrongSound() {
+    if (state.soundEnabled) {
+        sounds.wrong.currentTime = 0;
+        sounds.wrong.play().catch(() => {});
+    }
+}
+
+function toggleBackgroundMusic() {
+    state.musicEnabled = !state.musicEnabled;
+    if (state.musicEnabled) {
+        sounds.music.play().catch(() => {});
+    } else {
+        sounds.music.pause();
+    }
+    saveUserData();
+    render();
+}
+
+function toggleSoundEffects() {
+    state.soundEnabled = !state.soundEnabled;
+    saveUserData();
+    render();
+}
+
+function startBackgroundMusic() {
+    if (state.musicEnabled) {
+        sounds.music.play().catch(() => {});
+    }
+}
 
 // ============================================
 // FIREBASE FUNCTIONS
@@ -174,7 +233,9 @@ async function saveUserData() {
         
         await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
             'stats.favoriteQuestions': state.userStats.favoriteQuestions || [],
-            'stats.questionReactions': state.userStats.questionReactions || {}
+            'stats.questionReactions': state.userStats.questionReactions || {},
+            'soundEnabled': state.soundEnabled,
+            'musicEnabled': state.musicEnabled
         });
     } catch (error) {
         console.error('Save user data error:', error);
@@ -214,6 +275,13 @@ async function loadUserData(uid) {
             if (!state.userStats.completedTests) state.userStats.completedTests = [];
             if (!state.userStats.favoriteQuestions) state.userStats.favoriteQuestions = [];
             if (!state.userStats.questionReactions) state.userStats.questionReactions = {};
+            
+            // Ses ayarlarını yükle
+            if (userData.soundEnabled !== undefined) state.soundEnabled = userData.soundEnabled;
+            if (userData.musicEnabled !== undefined) state.musicEnabled = userData.musicEnabled;
+            
+            // Arka plan müziğini başlat (eğer açıksa)
+            startBackgroundMusic();
             
             // Yeni gün kontrolü - eğer son güncelleme bugün değilse progress'i sıfırla
             const today = new Date().toDateString();
@@ -507,6 +575,11 @@ async function deleteTodo(id) {
 function logout() {
     const { signOut } = window.firebaseModules;
     signOut(window.firebaseAuth);
+    
+    // Müziği durdur
+    sounds.music.pause();
+    sounds.music.currentTime = 0;
+    
     state.user = null;
     state.userStats = {
         totalQuizzes: 0,
@@ -1139,8 +1212,10 @@ function submitAnswer() {
         if (correct) {
             state.score++;
             state.correctAnswers++;
+            playCorrectSound(); // Doğru cevap sesi
         } else {
             state.wrongAnswers++;
+            playWrongSound(); // Yanlış cevap sesi
         }
     }
     
@@ -1215,7 +1290,7 @@ function renderLogin() {
         <div class="login-container">
             <div class="login-box">
                 <div class="logo-section">
-                    <img src="KİTKİTlogo.jpg" alt="KİTKİT Logo" width="120" height="120" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
+                    <img src="assets/KİTKİTlogo.jpg" alt="KİTKİT Logo" width="120" height="120" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
                     <h1>KİTKİT</h1>
                     <p>İngilizce Sınav Başarısı için Dijital Asistanın</p>
                 </div>
@@ -2450,7 +2525,30 @@ function renderProfile() {
                             💾 İsmi Güncelle
                         </button>
                         
-                        <button onclick="confirmDeleteAccount()" class="btn-secondary" style="width: 100%; background: rgba(255, 0, 80, 0.2); color: var(--pink-accent); border: 1px solid var(--pink-accent);">
+                        <!-- Ses Ayarları -->
+                        <div style="margin-top: 30px; padding: 20px; background: rgba(0, 212, 255, 0.05); border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 8px;">
+                            <h3 style="margin-bottom: 20px; color: var(--cyan-accent); font-size: 16px;">🔊 Ses Ayarları</h3>
+                            
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px; background: rgba(0, 26, 51, 0.3); border-radius: 4px;">
+                                <span style="color: var(--text-light);">🎵 Arka Plan Müziği</span>
+                                <button onclick="toggleBackgroundMusic()" class="btn-secondary" style="min-width: 80px; padding: 8px 16px; ${state.musicEnabled ? 'background: rgba(0, 255, 136, 0.2); color: #00ff88; border-color: #00ff88;' : 'background: rgba(255, 0, 80, 0.2); color: #ff0050; border-color: #ff0050;'}">
+                                    ${state.musicEnabled ? 'Açık' : 'Kapalı'}
+                                </button>
+                            </div>
+                            
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background: rgba(0, 26, 51, 0.3); border-radius: 4px;">
+                                <span style="color: var(--text-light);">🔔 Ses Efektleri</span>
+                                <button onclick="toggleSoundEffects()" class="btn-secondary" style="min-width: 80px; padding: 8px 16px; ${state.soundEnabled ? 'background: rgba(0, 255, 136, 0.2); color: #00ff88; border-color: #00ff88;' : 'background: rgba(255, 0, 80, 0.2); color: #ff0050; border-color: #ff0050;'}">
+                                    ${state.soundEnabled ? 'Açık' : 'Kapalı'}
+                                </button>
+                            </div>
+                            
+                            <p style="margin-top: 12px; font-size: 12px; color: var(--text-muted);">
+                                Ses efektleri doğru/yanlış cevaplarda çalar. Arka plan müziği uygulama genelinde çalar.
+                            </p>
+                        </div>
+                        
+                        <button onclick="confirmDeleteAccount()" class="btn-secondary" style="width: 100%; margin-top: 20px; background: rgba(255, 0, 80, 0.2); color: var(--pink-accent); border: 1px solid var(--pink-accent);">
                             🗑️ Hesabı Sil
                         </button>
                     </div>
@@ -2464,7 +2562,7 @@ function renderNavbar(activePage) {
     return `
         <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
             <div class="logo">
-                <img src="KİTKİTlogo.jpg" alt="KİTKİT Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
+                <img src="assets/KİTKİTlogo.jpg" alt="KİTKİT Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
                 <span style="font-weight: 900; font-size: 28px; margin-left: 10px; background: linear-gradient(135deg, #2196F3 0%, #00BCD4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 20px rgba(33, 150, 243, 0.5), 0 0 40px rgba(33, 150, 243, 0.3), 0 0 60px rgba(33, 150, 243, 0.2); filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.6));">KİTKİT</span>
             </div>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
