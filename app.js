@@ -2076,9 +2076,9 @@ function renderQuiz() {
                             bgColor = isCorrect ? '#4CAF50' : '#EF5350';
                             textColor = 'white';
                         } else if (answered) {
-                            // Sadece cevaplandı (anında geri bildirim kapalı)
-                            borderColor = '#4CAF50';
-                            bgColor = '#4CAF50';
+                            // Sadece cevaplandı (anında geri bildirim kapalı) - SARI
+                            borderColor = '#FFC107';
+                            bgColor = '#FFC107';
                             textColor = 'white';
                         } else {
                             // Cevaplanmadı
