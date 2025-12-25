@@ -333,6 +333,26 @@ body::before {
         inset 0 0 20px rgba(0, 212, 255, 0.1);
 }
 
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--neon-blue);
+    padding: 5px;
+}
+
+.mobile-only-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-only-nav {
+        display: block;
+    }
+}
+
 .btn-logout {
     padding: 12px 24px;
     background: rgba(255, 0, 80, 0.2);
@@ -345,6 +365,13 @@ body::before {
     transition: all 0.3s;
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .btn-logout {
+        display: none !important;
+    }
 }
 
 .btn-logout:hover {
@@ -1077,10 +1104,61 @@ body::before {
     
     .navbar {
         padding: 15px 20px;
+        flex-wrap: wrap;
     }
     
     .nav-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        order: 3;
+        gap: 0;
+        margin-top: 15px;
+        background: rgba(13, 20, 32, 0.95);
+        border-radius: 8px;
+        padding: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .nav-links.active {
+        max-height: 500px;
+    }
+    
+    .nav-links li {
+        width: 100%;
+    }
+    
+    .nav-links a {
+        padding: 15px;
+        border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+        text-align: center;
+    }
+    
+    .nav-links li:last-child a {
+        border-bottom: none;
+    }
+    
+    .logo {
+        flex: 1;
+    }
+    
+    .mobile-menu-toggle {
+        display: block !important;
+        background: none;
+        border: 2px solid rgba(0, 212, 255, 0.5);
+        color: var(--neon-blue);
+        font-size: 24px;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+    
+    .mobile-menu-toggle:hover {
+        background: rgba(0, 212, 255, 0.1);
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
     }
     
     .welcome-section h1 {

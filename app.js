@@ -892,6 +892,21 @@ function toggleAccordion(accordionId) {
     }
 }
 
+// Mobile menu toggle
+function toggleMobileMenu() {
+    const navLinks = document.getElementById('navLinks');
+    if (navLinks) {
+        navLinks.classList.toggle('active');
+    }
+}
+
+function closeMobileMenu() {
+    const navLinks = document.getElementById('navLinks');
+    if (navLinks) {
+        navLinks.classList.remove('active');
+    }
+}
+
 function startQuiz(level = null, topic = null) {
     if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
         alert('Sorular henüz yüklenmedi. Lütfen bekleyin.');
@@ -2407,12 +2422,14 @@ function renderNavbar(activePage) {
                 <img src="KİTKİTlogo.jpg" alt="KİTKİT Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; object-position: center 10%;">
                 <span style="font-weight: 900; font-size: 28px; margin-left: 10px; background: linear-gradient(135deg, #2196F3 0%, #00BCD4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 20px rgba(33, 150, 243, 0.5), 0 0 40px rgba(33, 150, 243, 0.3), 0 0 60px rgba(33, 150, 243, 0.2); filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.6));">KİTKİT</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#" class="${activePage === 'home' ? 'active' : ''}" onclick="changePage(event, 'home')">🏠 Anasayfa</a></li>
-                <li><a href="#" class="${activePage === 'stats' ? 'active' : ''}" onclick="changePage(event, 'stats')">📊 İstatistikler</a></li>
-                <li><a href="#" class="${activePage === 'tests' ? 'active' : ''}" onclick="changePage(event, 'tests')">📝 Testler</a></li>
-                <li><a href="#" class="${activePage === 'mock-exams' ? 'active' : ''}" onclick="changePage(event, 'mock-exams')">🎯 Denemeler</a></li>
-                <li><a href="#" class="${activePage === 'profile' ? 'active' : ''}" onclick="changePage(event, 'profile')">👤 Profil</a></li>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="${activePage === 'home' ? 'active' : ''}" onclick="changePage(event, 'home'); closeMobileMenu()">🏠 Anasayfa</a></li>
+                <li><a href="#" class="${activePage === 'stats' ? 'active' : ''}" onclick="changePage(event, 'stats'); closeMobileMenu()">📊 İstatistikler</a></li>
+                <li><a href="#" class="${activePage === 'tests' ? 'active' : ''}" onclick="changePage(event, 'tests'); closeMobileMenu()">📝 Testler</a></li>
+                <li><a href="#" class="${activePage === 'mock-exams' ? 'active' : ''}" onclick="changePage(event, 'mock-exams'); closeMobileMenu()">🎯 Denemeler</a></li>
+                <li><a href="#" class="${activePage === 'profile' ? 'active' : ''}" onclick="changePage(event, 'profile'); closeMobileMenu()">👤 Profil</a></li>
+                <li class="mobile-only-nav"><a href="#" onclick="logout(); closeMobileMenu()" style="color: #EF5350;">🚪 Çıkış Yap</a></li>
             </ul>
             <button onclick="logout()" class="btn-logout">Çıkış Yap</button>
         </nav>
