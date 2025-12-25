@@ -104,7 +104,7 @@ Tarayıcınızda **http://localhost:8000** adresini açın.
 ## 📁 Proje Yapısı
 
 ```
-YDS-uygulamasi/
+KITKIT-uygulamasi/
 ├── index.html                      # Ana HTML dosyası
 ├── app.js                          # Uygulama mantığı
 ├── styles.css                      # Stil dosyası
@@ -112,8 +112,14 @@ YDS-uygulamasi/
 ├── firebase-config.js              # Firebase config (GİZLİ - .gitignore)
 ├── firebase-config.template.js     # Config şablonu
 ├── .gitignore                      # Git ignore kuralları
-├── FIREBASE_SETUP.md              # Detaylı Firebase kurulum
-└── README.md                       # Bu dosya
+├── README.md                       # Bu dosya
+├── FIREBASE_SETUP.md               # Detaylı Firebase kurulum
+├── DOMAIN_AUTHORIZATION_FIX.md     # Domain yetkilendirme kılavuzu
+└── assets/                         # Medya dosyaları
+    ├── KİTKİTlogo.jpg              # Uygulama logosu
+    ├── chill-drum-loop-6887.mp3    # Arka plan müziği
+    ├── correct-6033.mp3            # Doğru cevap sesi
+    └── wrong-answer-126515.mp3     # Yanlış cevap sesi
 ```
 
 ## 🔒 Güvenlik
