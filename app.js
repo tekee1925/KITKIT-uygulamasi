@@ -21,6 +21,7 @@ const state = {
     showImmediateFeedback: false, // Anında doğru/yanlış göster
     userAnswers: [], // Her soru için verilen cevaplar
     quizCompleted: false, // Test tamamlandı mı
+    testTimerDuration: 10, // Test süresi (dakika), 0 = süresiz
     showQuestionDetails: false, // Soru detaylarını göster
     userStats: {
         totalQuizzes: 0,
@@ -684,12 +685,14 @@ function startMockExam(examNumber) {
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
-    state.timer = 180 * 60; // 180 dakika (YDS süresi)
+    state.timer = 180 * 60; // 180 dakika (YDS süresi) - sabit
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = null;
     state.currentExamNumber = examNumber;
     state.currentTestNumber = null;
+    state.isMockExam = true; // Deneme sınavı işareti
+    state.showImmediateFeedback = false; // Deneme sınavında cevaplar test bitince gösterilir
     
     // Timer başlat
     startTimer();
@@ -737,12 +740,13 @@ function startLevelTest(level, testNumber) {
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
-    state.timer = 600; // 10 dakika (10 soru için)
+    state.timer = state.testTimerDuration > 0 ? state.testTimerDuration * 60 : null; // Kullanıcı ayarına göre
     state.startTime = Date.now();
     state.selectedLevel = level;
     state.selectedTopic = null;
     state.currentTestNumber = testNumber;
     state.currentExamNumber = null;
+    state.isMockExam = false; // Normal test
     
     // Timer başlat
     startTimer();
@@ -786,12 +790,13 @@ function startTopicTest(topic, testNumber = 1) {
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
-    state.timer = 600; // 10 dakika
+    state.timer = state.testTimerDuration > 0 ? state.testTimerDuration * 60 : null; // Kullanıcı ayarına göre
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = topic;
     state.currentTestNumber = testNumber;
     state.currentExamNumber = null;
+    state.isMockExam = false; // Normal test
     
     // Timer başlat
     startTimer();
@@ -830,13 +835,14 @@ function startPersonalizedTest(testNumber) {
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
-    state.timer = state.currentTestQuestions.length * 60; // Soru başına 1 dakika
+    state.timer = state.testTimerDuration > 0 ? state.testTimerDuration * 60 : null; // Kullanıcı ayarına göre
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = 'Kişiselleştirilmiş';
     state.currentTestNumber = testNumber;
     state.currentExamNumber = null;
     state.isPersonalizedTest = true; // Kişiselleştirilmiş test işareti
+    state.isMockExam = false; // Normal test
     
     // Timer başlat
     startTimer();
@@ -941,12 +947,13 @@ function startQuiz(level = null, topic = null) {
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(questionCount).fill(null);
-    state.timer = 1200; // 20 dakika
+    state.timer = state.testTimerDuration > 0 ? state.testTimerDuration * 60 : null; // Kullanıcı ayarına göre
     state.startTime = Date.now();
     state.selectedLevel = level;
     state.selectedTopic = topic;
     state.currentTestNumber = null;
     state.currentExamNumber = null;
+    state.isMockExam = false; // Normal test
     
     // Timer başlat
     startTimer();
@@ -959,6 +966,11 @@ function startQuiz(level = null, topic = null) {
 function startTimer() {
     if (state.timerInterval) {
         clearInterval(state.timerInterval);
+    }
+    
+    // Eğer süre null ise (süresiz mod), timer başlatma
+    if (state.timer === null) {
+        return;
     }
     
     state.timerInterval = setInterval(() => {
@@ -977,6 +989,11 @@ function startTimer() {
             endQuiz();
         }
     }, 1000);
+}
+
+function setTestTimerDuration(minutes) {
+    state.testTimerDuration = minutes;
+    render();
 }
 
 function selectAnswer(index) {
@@ -1045,23 +1062,39 @@ function reactToQuestion(reaction) {
     render();
 }
 
-function startFavoriteTest() {
+function startFavoriteTest(testNumber = 1) {
     if (state.userStats.favoriteQuestions.length === 0) {
         alert('Henüz favori sorunuz yok!');
         return;
     }
     
-    state.currentTestQuestions = [...state.userStats.favoriteQuestions];
+    // Test numarasına göre 10'arlık gruplar halinde soruları al
+    const startIndex = (testNumber - 1) * 10;
+    const endIndex = Math.min(startIndex + 10, state.userStats.favoriteQuestions.length);
+    
+    state.currentTestQuestions = state.userStats.favoriteQuestions.slice(startIndex, endIndex);
     state.currentQuestion = 0;
+    state.score = 0;
+    state.correctAnswers = 0;
+    state.wrongAnswers = 0;
     state.selectedAnswer = null;
     state.quizActive = true;
     state.quizCompleted = false;
     state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
-    state.timer = null;
+    state.timer = state.testTimerDuration > 0 ? state.testTimerDuration * 60 : null;
     state.startTime = Date.now();
     state.selectedLevel = null;
     state.selectedTopic = 'Favori Sorular';
+    state.currentTestNumber = testNumber;
+    state.currentExamNumber = null;
+    state.isMockExam = false; // Normal test
     
+    // Timer başlat (eğer süre varsa)
+    if (state.timer !== null) {
+        startTimer();
+    }
+    
+    state.currentPage = 'quiz';
     render();
 }
 
@@ -1377,7 +1410,7 @@ function renderHome() {
 function renderStats() {
     const allQuizzes = state.userStats.quizHistory.slice().reverse();
     const successRate = state.userStats.totalQuestions > 0 ? Math.round((state.userStats.correctAnswers / state.userStats.totalQuestions) * 100) : 0;
-    const failureRate = 100 - successRate;
+    const failureRate = state.userStats.totalQuestions > 0 ? 100 - successRate : 0;
     
     return `
         <div class="dashboard">
@@ -1547,11 +1580,10 @@ function renderStats() {
                     // Sadece çözülmüş konuları göster
                     const solvedTopics = topics.filter(topic => topicStats[topic.id]);
                     
-                    if (solvedTopics.length === 0) return '';
-                    
                     return `
                         <div class="card">
                             <h2>🎯 Konuya Göre Başarı Grafikleri</h2>
+                            ${solvedTopics.length > 0 ? `
                             <div style="display: grid; gap: 20px; margin-top: 20px;">
                                 ${solvedTopics.map(topic => {
                                     const stats = topicStats[topic.id];
@@ -1596,30 +1628,15 @@ function renderStats() {
                                     `;
                                 }).join('')}
                             </div>
+                            ` : `
+                            <div style="text-align: center; padding: 40px; color: #999;">
+                                <div style="font-size: 48px; margin-bottom: 15px;">📊</div>
+                                <div>Henüz konu bazlı test çözmedin. Konulara göre test çözerek burada istatistiklerini görebilirsin!</div>
+                            </div>
+                            `}
                         </div>
                     `;
                 })()}
-                
-                <div class="card">
-                    <h2>📈 Test Geçmişi</h2>
-                    ${allQuizzes.length > 0 ? allQuizzes.map(quiz => `
-                        <div class="quiz-history-item">
-                            <div>
-                                <div class="quiz-score">${quiz.score}/${quiz.total} Soru</div>
-                                <div class="quiz-date">${new Date(quiz.date).toLocaleDateString('tr-TR', { 
-                                    year: 'numeric', 
-                                    month: 'long', 
-                                    day: 'numeric',
-                                    hour: '2-digit',
-                                    minute: '2-digit'
-                                })}</div>
-                            </div>
-                            <div class="quiz-percentage" style="color: ${quiz.percentage >= 70 ? '#4CAF50' : quiz.percentage >= 50 ? '#FF9800' : '#EF5350'}">
-                                %${quiz.percentage}
-                            </div>
-                        </div>
-                    `).join('') : '<p style="text-align: center; color: #999; padding: 40px;">Henüz test çözmedin. İlk testini çöz ve istatistiklerini görmeye başla!</p>'}
-                </div>
             </div>
         </div>
     `;
@@ -1660,12 +1677,36 @@ function renderTests() {
                 <div class="card" style="background: linear-gradient(135deg, rgba(0, 100, 255, 0.1), rgba(0, 212, 255, 0.05)); border: 1px solid rgba(0, 212, 255, 0.3); margin-bottom: 60px;">
                     <h2>⚙️ Test Ayarları</h2>
                     <div style="margin-top: 15px;">
-                        <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
+                        <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px; margin-bottom: 15px;">
                             ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
                         </button>
-                        <p style="font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center;">
+                        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; text-align: center;">
                             ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
                         </p>
+                        
+                        <div style="border-top: 1px solid rgba(0, 212, 255, 0.2); padding-top: 15px;">
+                            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--text-light);">⏱️ Test Süresi</label>
+                            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+                                <button onclick="setTestTimerDuration(0)" class="btn-secondary" style="padding: 12px 8px; font-size: 14px; ${state.testTimerDuration === 0 ? 'background: var(--neon-blue); color: white; border-color: var(--neon-blue);' : ''}">
+                                    ♾️ Süresiz
+                                </button>
+                                <button onclick="setTestTimerDuration(5)" class="btn-secondary" style="padding: 12px 8px; font-size: 14px; ${state.testTimerDuration === 5 ? 'background: var(--neon-blue); color: white; border-color: var(--neon-blue);' : ''}">
+                                    5 dk
+                                </button>
+                                <button onclick="setTestTimerDuration(10)" class="btn-secondary" style="padding: 12px 8px; font-size: 14px; ${state.testTimerDuration === 10 ? 'background: var(--neon-blue); color: white; border-color: var(--neon-blue);' : ''}">
+                                    10 dk
+                                </button>
+                                <button onclick="setTestTimerDuration(15)" class="btn-secondary" style="padding: 12px 8px; font-size: 14px; ${state.testTimerDuration === 15 ? 'background: var(--neon-blue); color: white; border-color: var(--neon-blue);' : ''}">
+                                    15 dk
+                                </button>
+                                <button onclick="setTestTimerDuration(20)" class="btn-secondary" style="padding: 12px 8px; font-size: 14px; ${state.testTimerDuration === 20 ? 'background: var(--neon-blue); color: white; border-color: var(--neon-blue);' : ''}">
+                                    20 dk
+                                </button>
+                            </div>
+                            <p style="font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center;">
+                                ${state.testTimerDuration === 0 ? '♾️ Süre sınırı yok, istediğin kadar düşünebilirsin' : `⏱️ Her test için ${state.testTimerDuration} dakika süre`}
+                            </p>
+                        </div>
                     </div>
                 </div>
                 
@@ -1679,61 +1720,49 @@ function renderTests() {
                                 <div style="color: #666; margin-top: 5px;">Yanlış Soru</div>
                             </div>
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
-                                <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${Math.floor(state.userStats.wrongQuestions.length / 10)}</div>
+                                <div style="font-size: 36px; font-weight: bold; color: #2196F3;">${Math.ceil(state.userStats.wrongQuestions.length / 10)}</div>
                                 <div style="color: #666; margin-top: 5px;">Kişiselleştirilmiş Test</div>
                             </div>
                         </div>
-                        ${state.userStats.wrongQuestions.length >= 10 ? `
-                            <div class="level-buttons" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 20px;">
-                                ${(() => {
-                                    const testsCount = Math.floor(state.userStats.wrongQuestions.length / 10);
-                                    const tests = [];
-                                    for (let i = 0; i < testsCount; i++) {
-                                        const testNumber = i + 1;
-                                        const questionCount = 10;
-                                        const colors = [
-                                            ['#667eea', '#764ba2'],
-                                            ['#f093fb', '#f5576c'],
-                                            ['#4facfe', '#00f2fe'],
-                                            ['#43e97b', '#38f9d7'],
-                                            ['#fa709a', '#fee140'],
-                                            ['#30cfd0', '#a044ff']
-                                        ];
-                                        const colorPair = colors[i % colors.length];
-                                        const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
-                                        
-                                        tests.push(`
-                                            <button onclick="startPersonalizedTest(${testNumber})" class="btn-level" 
-                                                style="background: linear-gradient(135deg, ${colorPair[0]} 0%, ${colorPair[1]} 100%); 
-                                                color: white; border: none; padding: 25px; position: relative;">
-                                                <div style="font-size: 32px; margin-bottom: 10px;">${emojis[i] || testNumber + '️⃣'}</div>
-                                                <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">Test ${testNumber}</div>
-                                                <div style="font-size: 14px; opacity: 0.9;">${questionCount} Soru</div>
-                                            </button>
-                                        `);
-                                    }
-                                    return tests.join('');
-                                })()}
+                        <div class="level-buttons" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 20px;">
+                            ${(() => {
+                                const testsCount = Math.ceil(state.userStats.wrongQuestions.length / 10);
+                                const tests = [];
+                                for (let i = 0; i < testsCount; i++) {
+                                    const testNumber = i + 1;
+                                    const startIndex = i * 10;
+                                    const endIndex = Math.min(startIndex + 10, state.userStats.wrongQuestions.length);
+                                    const questionCount = endIndex - startIndex;
+                                    const colors = [
+                                        ['#667eea', '#764ba2'],
+                                        ['#f093fb', '#f5576c'],
+                                        ['#4facfe', '#00f2fe'],
+                                        ['#43e97b', '#38f9d7'],
+                                        ['#fa709a', '#fee140'],
+                                        ['#30cfd0', '#a044ff']
+                                    ];
+                                    const colorPair = colors[i % colors.length];
+                                    const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+                                    
+                                    tests.push(`
+                                        <button onclick="startPersonalizedTest(${testNumber})" class="btn-level" 
+                                            style="background: linear-gradient(135deg, ${colorPair[0]} 0%, ${colorPair[1]} 100%); 
+                                            color: white; border: none; padding: 25px; position: relative;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">${emojis[i] || testNumber + '️⃣'}</div>
+                                            <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">Test ${testNumber}</div>
+                                            <div style="font-size: 14px; opacity: 0.9;">${questionCount} Soru</div>
+                                        </button>
+                                    `);
+                                }
+                                return tests.join('');
+                            })()}
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                            <div style="color: #666; font-size: 14px; line-height: 1.6;">
+                                💡 <strong>İpucu:</strong> Bu testleri çözdükçe zayıf noktalarını güçlendirebilirsin. 
+                                Aynı soruları tekrar görmek için istediğin testi tekrar çözebilirsin. Her 10 soruda yeni bir test oluşur!
                             </div>
-                            <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 20px;">
-                                <div style="color: #666; font-size: 14px; line-height: 1.6;">
-                                    💡 <strong>İpucu:</strong> Bu testleri çözdükçe zayıf noktalarını güçlendirebilirsin. 
-                                    Aynı soruları tekrar görmek için istediğin testi tekrar çözebilirsin.
-                                </div>
-                            </div>
-                        ` : `
-                            <div style="background: linear-gradient(135deg, #FFA72615 0%, #FF572215 100%); padding: 25px; border-radius: 10px; border: 2px dashed #FF9800; text-align: center;">
-                                <div style="font-size: 48px; margin-bottom: 15px;">⏳</div>
-                                <div style="font-size: 18px; font-weight: bold; color: #FF5722; margin-bottom: 10px;">
-                                    Henüz test oluşmadı
-                                </div>
-                                <div style="color: #666; line-height: 1.6;">
-                                    İlk kişiselleştirilmiş testin için daha <strong>${10 - state.userStats.wrongQuestions.length} soru</strong> yanlış yapman gerekiyor!
-                                    <br>
-                                    Test çözmeye devam et, her 10 yanlış soruda yeni bir test oluşacak. 💪
-                                </div>
-                            </div>
-                        `}
+                        </div>
                     ` : `
                         <div style="text-align: center; padding: 30px; color: #999;">
                             <div style="font-size: 48px; margin-bottom: 15px;">✨</div>
@@ -1745,7 +1774,7 @@ function renderTests() {
                 
                 <div class="card" style="background: linear-gradient(135deg, #FFC10715 0%, #FFD70015 100%); border: 2px solid #FFC107; margin-bottom: 60px;">
                     <h2>⭐ Favori Sorularım</h2>
-                    <p style="margin-bottom: 20px; color: #666;">Favorilerine eklediğin sorulardan oluşan özel test</p>
+                    <p style="margin-bottom: 20px; color: #666;">Favorilerine eklediğin sorulardan oluşan özel testler - her 10 soruda yeni test!</p>
                     ${(state.userStats.favoriteQuestions && state.userStats.favoriteQuestions.length > 0) ? `
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
@@ -1753,16 +1782,37 @@ function renderTests() {
                                 <div style="color: #666; margin-top: 5px;">Favori Soru</div>
                             </div>
                             <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
-                                <div style="font-size: 36px; font-weight: bold; color: #FF9800;">⭐</div>
-                                <div style="color: #666; margin-top: 5px;">Hazır</div>
+                                <div style="font-size: 36px; font-weight: bold; color: #FF9800;">${Math.ceil(state.userStats.favoriteQuestions.length / 10)}</div>
+                                <div style="color: #666; margin-top: 5px;">Favori Test</div>
                             </div>
                         </div>
-                        <button onclick="startFavoriteTest()" class="btn-primary" style="width: 100%; background: linear-gradient(135deg, #FFC107 0%, #FFD700 100%); font-size: 18px; padding: 20px;">
-                            ⭐ Favori Testini Başlat (${state.userStats.favoriteQuestions.length} Soru)
-                        </button>
-                        <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 15px;">
+                        <div class="level-buttons" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-bottom: 20px;">
+                            ${(() => {
+                                const testsCount = Math.ceil(state.userStats.favoriteQuestions.length / 10);
+                                const tests = [];
+                                for (let i = 0; i < testsCount; i++) {
+                                    const testNumber = i + 1;
+                                    const startIndex = i * 10;
+                                    const endIndex = Math.min(startIndex + 10, state.userStats.favoriteQuestions.length);
+                                    const questionCount = endIndex - startIndex;
+                                    const emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+                                    
+                                    tests.push(`
+                                        <button onclick="startFavoriteTest(${testNumber})" class="btn-level" 
+                                            style="background: linear-gradient(135deg, #FFC107 0%, #FFD700 100%); 
+                                            color: #333; border: none; padding: 25px; position: relative;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">${emojis[i] || testNumber + '️⃣'}</div>
+                                            <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">Favori Test ${testNumber}</div>
+                                            <div style="font-size: 14px; opacity: 0.8;">${questionCount} Soru</div>
+                                        </button>
+                                    `);
+                                }
+                                return tests.join('');
+                            })()}
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 10px;">
                             <div style="color: #666; font-size: 14px; line-height: 1.6;">
-                                💡 <strong>İpucu:</strong> Test çözerken ⭐ Favoriye Ekle butonuna basarak soruları favorilerine ekleyebilirsin.
+                                💡 <strong>İpucu:</strong> Test çözerken ⭐ Favoriye Ekle butonuna basarak soruları favorilerine ekleyebilirsin. Her 10 soruda yeni bir test oluşur!
                             </div>
                         </div>
                     ` : `
@@ -1869,23 +1919,11 @@ function renderMockExams() {
                     <p>Gerçek sınav formatında 80 soruluk tam denemeler</p>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea;">
-                    <h2>⚙️ Sınav Ayarları</h2>
-                    <div style="margin-top: 15px;">
-                        <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="width: 100%; padding: 15px; font-size: 16px;">
-                            ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK ✓' : '👁️ Cevabı Hemen Göster: KAPALI ✗'}
-                        </button>
-                        <p style="font-size: 13px; color: #666; margin-top: 10px; text-align: center;">
-                            ${state.showImmediateFeedback ? '✓ Cevap verince hemen doğru/yanlış gösterilecek' : '✗ Test sonunda sonuçlar gösterilecek'}
-                        </p>
-                    </div>
-                </div>
-                
                 <div class="card">
                     <h2>📝 Deneme Sınavları (80 Soru - 180 Dakika)</h2>
                     <p style="margin-bottom: 20px; color: #666;">
                         Her deneme tüm konular ve düzeylerden 80 soru içerir. Her deneme için 180 dakika süreniz var.
-                        <br><strong>Not:</strong> Her deneme başlatıldığında farklı sorular gelir.
+                        <br><strong>Not:</strong> Her deneme başlatıldığında farklı sorular gelir. Cevaplar test bittikten sonra gösterilir.
                     </p>
                     <div class="level-buttons" style="grid-template-columns: repeat(3, 1fr);">
                         <button onclick="startMockExam(1)" class="btn-level" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px; position: relative;">
@@ -2041,14 +2079,18 @@ function renderQuiz() {
     }
     
     const currentQ = state.currentTestQuestions[state.currentQuestion];
-    const minutes = Math.floor(state.timer / 60);
-    const seconds = state.timer % 60;
+    const hasTimer = state.timer !== null;
+    const minutes = hasTimer ? Math.floor(state.timer / 60) : 0;
+    const seconds = hasTimer ? state.timer % 60 : 0;
     
     // Bu soru cevaplandı mı?
     const isAnswered = state.userAnswers[state.currentQuestion] !== null;
     const userAnswer = state.userAnswers[state.currentQuestion];
     const correctAnswer = currentQ.correctAnswer;
     const showFeedback = state.showImmediateFeedback && isAnswered;
+    
+    // Deneme sınavı mı? (Deneme sınavında cevabı hemen göster butonu gizlenir)
+    const isMockExam = state.isMockExam === true;
     
     // Test tamamlandı mı?
     const allAnswered = state.userAnswers.every(answer => answer !== null);
@@ -2057,11 +2099,14 @@ function renderQuiz() {
         <div class="quiz-container">
             <div class="quiz-header">
                 <div class="quiz-progress">Soru ${state.currentQuestion + 1} / ${state.currentTestQuestions.length}</div>
-                ${!state.quizCompleted ? `<div class="timer">⏱️ ${minutes}:${seconds.toString().padStart(2, '0')}</div>` : ''}
+                ${!state.quizCompleted && hasTimer ? `<div class="timer">⏱️ ${minutes}:${seconds.toString().padStart(2, '0')}</div>` : ''}
+                ${!state.quizCompleted && !hasTimer ? `<div class="timer">♾️ Süresiz</div>` : ''}
                 <div style="display: flex; gap: 10px; align-items: center;">
+                    ${!isMockExam ? `
                     <button onclick="toggleImmediateFeedback()" class="btn-secondary" style="padding: 8px 16px; font-size: 14px;" title="${state.showImmediateFeedback ? 'Cevabı hemen göstermeyi kapat' : 'Cevabı hemen göstermeyi aç'}">
                         ${state.showImmediateFeedback ? '👁️ Cevabı Hemen Göster: AÇIK' : '👁️ Cevabı Hemen Göster: KAPALI'}
                     </button>
+                    ` : ''}
                     <button onclick="exitQuiz()" class="btn-exit-quiz" title="Ana Sayfaya Dön">✕ Çıkış</button>
                 </div>
             </div>

@@ -1982,121 +1982,121 @@
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q1).",
+      "question": "Complete the paragraph: Learning a new language is challenging. (1)___ However, the rewards are significant. (2)___ Many opportunities open up for those who are bilingual.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "It requires consistent practice and dedication / Career prospects improve considerably",
+        "Languages are easy to learn / Nothing changes for learners",
+        "Everyone speaks one language / Jobs remain the same",
+        "Practice is unnecessary / Benefits are minimal",
+        "Learning is impossible / No advantages exist"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "İlk boşlukta dil öğrenmenin zorluğu, ikincide ise kariyer avantajları vurgulanır",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q2).",
+      "question": "Complete the paragraph: Technology has transformed education. (1)___ Students can access information instantly. (2)___ This digital revolution continues to reshape how we learn.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Online resources are now widely available / Traditional methods are being supplemented",
+        "Technology has no impact / Schools remain unchanged",
+        "Internet is dangerous / Learning has stopped",
+        "Computers are rare / Information is limited",
+        "Digital tools are useless / Education is declining"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "Paragraf teknolojinin eğitimdeki olumlu etkilerini anlatır",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q3).",
+      "question": "Complete the paragraph: Climate change poses serious threats to our planet. (1)___ Scientists are working to find solutions. (2)___ Individual actions can also make a difference.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Rising temperatures affect ecosystems worldwide / Renewable energy offers hope for the future",
+        "Climate is stable / No solutions are needed",
+        "Weather never changes / Scientists are idle",
+        "Ecosystems are unaffected / Energy is unlimited",
+        "Temperatures are falling / Nothing can be done"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "İklim değişikliğinin etkileri ve çözüm önerilerini içerir",
       "level": "B2",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q4).",
+      "question": "Complete the paragraph: Globalization has interconnected economies worldwide. (1)___ However, this interdependence brings vulnerabilities. (2)___ Policymakers must balance openness with protection.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Trade flows have increased dramatically / Economic crises can spread rapidly across borders",
+        "Economies are isolated / Crises remain local",
+        "Trade has decreased / Nothing spreads globally",
+        "Countries are independent / Policies are irrelevant",
+        "Globalization has stopped / Economies are stable"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "Küreselleşmenin avantaj ve dezavantajlarını ele alır",
       "level": "C1",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q5).",
+      "question": "Complete the paragraph: Artificial intelligence raises profound ethical questions. (1)___ The implications for employment are particularly concerning. (2)___ Society must establish frameworks for responsible development.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Autonomous systems make decisions affecting human lives / Many jobs may be automated within decades",
+        "AI is simple / Employment is unaffected",
+        "Technology is harmless / Jobs are permanent",
+        "Ethics are irrelevant / Automation is impossible",
+        "Systems need humans / Work will increase"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "Yapay zekanın etik ve istihdam üzerindeki etkilerini tartışır",
       "level": "C2",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q6).",
+      "question": "Complete the paragraph: Reading is a fundamental skill. (1)___ It opens doors to knowledge. (2)___ Everyone should read regularly.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Children learn to read at school / Books contain valuable information",
+        "Reading is difficult / Knowledge is unnecessary",
+        "Nobody reads anymore / Books are outdated",
+        "Learning is impossible / Information is useless",
+        "Schools ignore reading / Nothing is valuable"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "Okuma becerisinin önemi ve faydaları vurgulanır",
       "level": "A1",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q7).",
+      "question": "Complete the paragraph: Healthy eating is important for well-being. (1)___ A balanced diet provides essential nutrients. (2)___ Making good food choices leads to better health outcomes.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Many people struggle with dietary choices / Fruits and vegetables should be consumed daily",
+        "Diet has no effect / Nutrients are unnecessary",
+        "Everyone eats perfectly / Vegetables are harmful",
+        "Food choices are irrelevant / Health is random",
+        "Eating is unimportant / Outcomes are unpredictable"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "Sağlıklı beslenmenin önemi ve dengeli diyet vurgulanır",
       "level": "A2",
       "topic": "Paragraph-Completion"
     },
     {
       "passage": "",
-      "question": "Fill the gaps in this paragraph (Test 1, Q8).",
+      "question": "Complete the paragraph: Exercise benefits both body and mind. (1)___ Physical activity releases endorphins. (2)___ Regular workouts improve overall quality of life.",
       "options": [
-        "Completion A / Completion B",
-        "Completion C / Completion D",
-        "Completion E / Completion F",
-        "Completion G / Completion H",
-        "Completion I / Completion J"
+        "Sedentary lifestyles contribute to health problems / These chemicals improve mood and reduce stress",
+        "Exercise is harmful / Chemicals cause depression",
+        "Activity is unnecessary / Mood never changes",
+        "Sitting is healthy / Stress is beneficial",
+        "Movement is dangerous / Life quality decreases"
       ],
       "correctAnswer": 0,
-      "explanation": "Mantıksal akış",
+      "explanation": "Egzersizin fiziksel ve mental faydalarını anlatır",
       "level": "B1",
       "topic": "Paragraph-Completion"
     },
