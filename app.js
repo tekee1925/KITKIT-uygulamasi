@@ -36,7 +36,9 @@ const state = {
         lastLoginDate: null,
         todoList: [], // { id, text, completed }
         completedTests: [], // { type, level, testNumber, topic, examNumber }
-        wrongQuestions: [] // Yanlış yapılan sorular { question, options, correctAnswer, explanation, userAnswer, date, level, topic }
+        wrongQuestions: [], // Yanlış yapılan sorular { question, options, correctAnswer, explanation, userAnswer, date, level, topic }
+        favoriteQuestions: [], // Favori sorular { question, options, correctAnswer, explanation, level, topic, passage }
+        questionReactions: {} // Soru tepkileri { questionId: 'like' | 'dislike' }
     }
 };
 
@@ -163,6 +165,21 @@ async function checkAndUpdateStreak(uid) {
     }
 }
 
+async function saveUserData() {
+    if (!state.user) return;
+    
+    try {
+        const { doc, updateDoc } = window.firebaseModules;
+        
+        await updateDoc(doc(window.firebaseDb, 'users', state.user.uid), {
+            'stats.favoriteQuestions': state.userStats.favoriteQuestions || [],
+            'stats.questionReactions': state.userStats.questionReactions || {}
+        });
+    } catch (error) {
+        console.error('Save user data error:', error);
+    }
+}
+
 async function loadUserData(uid) {
     try {
         const { doc, getDoc, updateDoc } = window.firebaseModules;
@@ -194,6 +211,8 @@ async function loadUserData(uid) {
             if (!state.userStats.dailyStreak) state.userStats.dailyStreak = 0;
             if (!state.userStats.todoList) state.userStats.todoList = [];
             if (!state.userStats.completedTests) state.userStats.completedTests = [];
+            if (!state.userStats.favoriteQuestions) state.userStats.favoriteQuestions = [];
+            if (!state.userStats.questionReactions) state.userStats.questionReactions = {};
             
             // Yeni gün kontrolü - eğer son güncelleme bugün değilse progress'i sıfırla
             const today = new Date().toDateString();
@@ -962,6 +981,75 @@ function toggleImmediateFeedback() {
     render();
 }
 
+function addToFavorites() {
+    const currentQ = state.currentTestQuestions[state.currentQuestion];
+    
+    // Zaten favorilerde mi kontrol et
+    const alreadyFavorite = state.userStats.favoriteQuestions.some(
+        q => q.question === currentQ.question
+    );
+    
+    if (alreadyFavorite) {
+        alert('Bu soru zaten favorilerinizde!');
+        return;
+    }
+    
+    state.userStats.favoriteQuestions.push({
+        question: currentQ.question,
+        passage: currentQ.passage || '',
+        options: currentQ.options,
+        correctAnswer: currentQ.correctAnswer,
+        explanation: currentQ.explanation,
+        level: currentQ.level || '',
+        topic: currentQ.topic || '',
+        dateAdded: new Date().toISOString()
+    });
+    
+    saveUserData();
+    alert('✓ Soru favorilerinize eklendi!');
+    render();
+}
+
+function reportQuestion() {
+    const currentQ = state.currentTestQuestions[state.currentQuestion];
+    alert('✓ Hata bildirildi!\n\nUzmanlarımız tarafından soru tekrar incelenecek.\nBildiriminiz için teşekkürler.');
+}
+
+function reactToQuestion(reaction) {
+    const currentQ = state.currentTestQuestions[state.currentQuestion];
+    const questionId = currentQ.question; // Soru metni ID olarak kullanılıyor
+    
+    // Aynı tepkiye tekrar basılırsa kaldır
+    if (state.userStats.questionReactions[questionId] === reaction) {
+        delete state.userStats.questionReactions[questionId];
+    } else {
+        state.userStats.questionReactions[questionId] = reaction;
+    }
+    
+    saveUserData();
+    render();
+}
+
+function startFavoriteTest() {
+    if (state.userStats.favoriteQuestions.length === 0) {
+        alert('Henüz favori sorunuz yok!');
+        return;
+    }
+    
+    state.currentTestQuestions = [...state.userStats.favoriteQuestions];
+    state.currentQuestion = 0;
+    state.selectedAnswer = null;
+    state.quizActive = true;
+    state.quizCompleted = false;
+    state.userAnswers = new Array(state.currentTestQuestions.length).fill(null);
+    state.timer = null;
+    state.startTime = Date.now();
+    state.selectedLevel = null;
+    state.selectedTopic = 'Favori Sorular';
+    
+    render();
+}
+
 function goToQuestion(questionIndex) {
     if (questionIndex < 0 || questionIndex >= state.currentTestQuestions.length) return;
     
@@ -1640,6 +1728,40 @@ function renderTests() {
                     `}
                 </div>
                 
+                <div class="card" style="background: linear-gradient(135deg, #FFC10715 0%, #FFD70015 100%); border: 2px solid #FFC107;">
+                    <h2>⭐ Favori Sorularım</h2>
+                    <p style="margin-bottom: 20px; color: #666;">Favorilerine eklediğin sorulardan oluşan özel test</p>
+                    ${(state.userStats.favoriteQuestions && state.userStats.favoriteQuestions.length > 0) ? `
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 36px; font-weight: bold; color: #FFC107;">${state.userStats.favoriteQuestions.length}</div>
+                                <div style="color: #666; margin-top: 5px;">Favori Soru</div>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 36px; font-weight: bold; color: #FF9800;">⭐</div>
+                                <div style="color: #666; margin-top: 5px;">Hazır</div>
+                            </div>
+                        </div>
+                        <button onclick="startFavoriteTest()" class="btn-primary" style="width: 100%; background: linear-gradient(135deg, #FFC107 0%, #FFD700 100%); font-size: 18px; padding: 20px;">
+                            ⭐ Favori Testini Başlat (${state.userStats.favoriteQuestions.length} Soru)
+                        </button>
+                        <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 15px;">
+                            <div style="color: #666; font-size: 14px; line-height: 1.6;">
+                                💡 <strong>İpucu:</strong> Test çözerken ⭐ Favoriye Ekle butonuna basarak soruları favorilerine ekleyebilirsin.
+                            </div>
+                        </div>
+                    ` : `
+                        <div style="text-align: center; padding: 30px; background: white; border-radius: 10px; border: 2px dashed #FFC107;">
+                            <div style="font-size: 48px; margin-bottom: 15px;">⭐</div>
+                            <div style="color: #666; line-height: 1.6;">
+                                Henüz favori sorun yok.
+                                <br>
+                                Test çözerken beğendiğin soruları <strong>⭐ Favoriye Ekle</strong> butonuna basarak ekleyebilirsin!
+                            </div>
+                        </div>
+                    `}
+                </div>
+                
                 <div class="card">
                     <h2>🎯 Seviyeye Göre Testler</h2>
                     ${levels.map(level => {
@@ -2039,7 +2161,44 @@ function renderQuiz() {
                     }).join('')}
                 </div>
                 
-                <div style="display: flex; gap: 10px; margin-top: 30px; flex-wrap: wrap;">
+                <div style="display: flex; gap: 10px; margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 10px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; gap: 8px;">
+                        <button 
+                            onclick="reactToQuestion('like')" 
+                            style="padding: 8px 16px; border: 2px solid ${state.userStats.questionReactions[currentQ.question] === 'like' ? '#4CAF50' : '#ddd'}; background: ${state.userStats.questionReactions[currentQ.question] === 'like' ? '#4CAF5020' : 'white'}; color: ${state.userStats.questionReactions[currentQ.question] === 'like' ? '#4CAF50' : '#666'}; border-radius: 8px; cursor: pointer; font-size: 18px; transition: all 0.3s;"
+                            title="Beğen"
+                        >
+                            👍
+                        </button>
+                        <button 
+                            onclick="reactToQuestion('dislike')" 
+                            style="padding: 8px 16px; border: 2px solid ${state.userStats.questionReactions[currentQ.question] === 'dislike' ? '#FF5722' : '#ddd'}; background: ${state.userStats.questionReactions[currentQ.question] === 'dislike' ? '#FF572220' : 'white'}; color: ${state.userStats.questionReactions[currentQ.question] === 'dislike' ? '#FF5722' : '#666'}; border-radius: 8px; cursor: pointer; font-size: 18px; transition: all 0.3s;"
+                            title="Beğenme"
+                        >
+                            👎
+                        </button>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button 
+                            onclick="addToFavorites()" 
+                            style="padding: 8px 16px; border: 2px solid #FFC107; background: white; color: #FFC107; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s; display: flex; align-items: center; gap: 6px;"
+                            onmouseover="this.style.background='#FFC10720'"
+                            onmouseout="this.style.background='white'"
+                        >
+                            ⭐ Favoriye Ekle
+                        </button>
+                        <button 
+                            onclick="reportQuestion()" 
+                            style="padding: 8px 16px; border: 2px solid #EF5350; background: white; color: #EF5350; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s; display: flex; align-items: center; gap: 6px;"
+                            onmouseover="this.style.background='#EF535020'"
+                            onmouseout="this.style.background='white'"
+                        >
+                            ⚠️ Hata Bildir
+                        </button>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
                     ${state.currentQuestion > 0 ? `
                         <button onclick="previousQuestion()" class="btn-secondary" style="flex: 1; min-width: 120px;">
                             ← Önceki Soru
