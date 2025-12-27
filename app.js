@@ -117,9 +117,14 @@ function startBackgroundMusic() {
 // GEMINI AI SORU ÜRETME
 // ============================================
 
-const GEMINI_API_KEY = 'AIzaSyCyEBzTgWSliT8nW8Aqg2BpuJRLm1uuW30';
+// GEMINI_API_KEY gemini-config.js dosyasından yüklenir
 
 async function generateAIQuestion() {
+    if (typeof GEMINI_API_KEY === 'undefined' || !GEMINI_API_KEY || GEMINI_API_KEY === 'YOUR_GEMINI_API_KEY_HERE') {
+        alert('Gemini API Key bulunamadı! Lütfen gemini-config.js dosyasını kontrol edin.');
+        return;
+    }
+    
     state.aiLoading = true;
     state.aiQuestion = null;
     state.aiAnswered = false;

@@ -2,6 +2,9 @@
 # NOT: Production için firebase-config.js commit edildi
 # firebase-config.js
 
+# Gemini API Key (GİZLİ!)
+gemini-config.js
+
 # Python
 __pycache__/
 *.py[cod]
