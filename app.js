@@ -194,8 +194,15 @@ correctAnswer 0-4 arası bir sayı olmalı (0=A, 1=B, 2=C, 3=D, 4=E).`;
         
         const data = await response.json();
         
+        console.log('Gemini API Response:', data);
+        
+        if (data.error) {
+            throw new Error(data.error.message || 'API Hatası');
+        }
+        
         if (data.candidates && data.candidates[0] && data.candidates[0].content) {
             const text = data.candidates[0].content.parts[0].text;
+            console.log('AI Response Text:', text);
             
             // JSON'u parse et
             const jsonMatch = text.match(/\{[\s\S]*\}/);
@@ -213,11 +220,12 @@ correctAnswer 0-4 arası bir sayı olmalı (0=A, 1=B, 2=C, 3=D, 4=E).`;
                 throw new Error('JSON parse edilemedi');
             }
         } else {
-            throw new Error('API yanıtı geçersiz');
+            console.error('Unexpected response structure:', data);
+            throw new Error('API yanıtı geçersiz: ' + JSON.stringify(data));
         }
     } catch (error) {
         console.error('AI Soru üretme hatası:', error);
-        alert('Soru üretilirken bir hata oluştu. Lütfen tekrar deneyin.');
+        alert('Hata: ' + error.message);
     }
     
     state.aiLoading = false;
