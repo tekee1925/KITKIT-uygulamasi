@@ -26,6 +26,14 @@ const state = {
     // Ses ayarları
     soundEnabled: true, // Ses efektleri (doğru/yanlış)
     musicEnabled: true, // Arka plan müziği
+    // AI Soru Üretme
+    aiQuestion: null, // Üretilen AI sorusu
+    aiLoading: false, // AI yükleniyor mu
+    aiSelectedLevel: 'B1', // Seçilen zorluk
+    aiSelectedTopic: 'Vocabulary', // Seçilen konu
+    aiKeyword: '', // Opsiyonel kelime
+    aiAnswered: false, // AI sorusu cevaplandı mı
+    aiSelectedAnswer: null, // AI sorusunda seçilen cevap
     userStats: {
         totalQuizzes: 0,
         totalQuestions: 0,
@@ -103,6 +111,148 @@ function startBackgroundMusic() {
     if (state.musicEnabled) {
         sounds.music.play().catch(() => {});
     }
+}
+
+// ============================================
+// GEMINI AI SORU ÜRETME
+// ============================================
+
+const GEMINI_API_KEY = 'AIzaSyCyEBzTgWSliT8nW8Aqg2BpuJRLm1uuW30';
+
+async function generateAIQuestion() {
+    state.aiLoading = true;
+    state.aiQuestion = null;
+    state.aiAnswered = false;
+    state.aiSelectedAnswer = null;
+    render();
+    
+    const levelDescriptions = {
+        'A1': 'çok basit, temel seviye, günlük hayatta kullanılan basit kelimeler',
+        'A2': 'basit, temel seviye, sık kullanılan kelimeler ve basit cümleler',
+        'B1': 'orta seviye, günlük ve iş hayatında kullanılan kelimeler',
+        'B2': 'orta-üst seviye, akademik ve profesyonel kelimeler',
+        'C1': 'ileri seviye, karmaşık akademik kelimeler ve deyimler',
+        'C2': 'en ileri seviye, nadir kullanılan kelimeler ve karmaşık yapılar'
+    };
+    
+    const topicDescriptions = {
+        'Vocabulary': 'kelime bilgisi, eş anlamlılar, zıt anlamlılar, kelime seçimi',
+        'Grammar': 'dilbilgisi, zaman ekleri, cümle yapısı, preposition kullanımı',
+        'Cloze': 'boşluk doldurma, paragrafta eksik kelimeleri bulma',
+        'Completion': 'cümle tamamlama, anlam bütünlüğü',
+        'Dialog': 'diyalog tamamlama, konuşma kalıpları',
+        'Paraphrase': 'yakın anlamlı cümle bulma, aynı anlamı farklı şekilde ifade etme',
+        'Paragraph-Completion': 'paragraf tamamlama, paragrafın akışına uygun cümle seçme',
+        'Irrelevant': 'anlam bütünlüğünü bozan cümleyi bulma'
+    };
+    
+    const keywordInstruction = state.aiKeyword.trim() 
+        ? `Soruda veya seçeneklerde mutlaka "${state.aiKeyword}" kelimesini kullan.` 
+        : '';
+    
+    const prompt = `Sen bir YDS/YÖKDİL İngilizce sınav sorusu hazırlayan uzmansın. 
+
+Aşağıdaki kriterlere göre TEK BİR soru hazırla:
+- Seviye: ${state.aiSelectedLevel} (${levelDescriptions[state.aiSelectedLevel]})
+- Konu: ${topicDescriptions[state.aiSelectedTopic]}
+${keywordInstruction}
+
+KURALLAR:
+1. Soru İngilizce olmalı
+2. 5 şık olmalı (A, B, C, D, E)
+3. Sadece 1 doğru cevap olmalı
+4. Açıklama Türkçe olmalı
+
+SADECE aşağıdaki JSON formatında yanıt ver, başka hiçbir şey yazma:
+{
+  "question": "Soru metni buraya (boşluk varsa _______ kullan)",
+  "options": ["A şıkkı", "B şıkkı", "C şıkkı", "D şıkkı", "E şıkkı"],
+  "correctAnswer": 0,
+  "explanation": "Türkçe açıklama buraya"
+}
+
+correctAnswer 0-4 arası bir sayı olmalı (0=A, 1=B, 2=C, 3=D, 4=E).`;
+
+    try {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{
+                        text: prompt
+                    }]
+                }],
+                generationConfig: {
+                    temperature: 0.7,
+                    maxOutputTokens: 1024
+                }
+            })
+        });
+        
+        const data = await response.json();
+        
+        if (data.candidates && data.candidates[0] && data.candidates[0].content) {
+            const text = data.candidates[0].content.parts[0].text;
+            
+            // JSON'u parse et
+            const jsonMatch = text.match(/\{[\s\S]*\}/);
+            if (jsonMatch) {
+                const questionData = JSON.parse(jsonMatch[0]);
+                state.aiQuestion = {
+                    question: questionData.question,
+                    options: questionData.options,
+                    correctAnswer: questionData.correctAnswer,
+                    explanation: questionData.explanation,
+                    level: state.aiSelectedLevel,
+                    topic: state.aiSelectedTopic
+                };
+            } else {
+                throw new Error('JSON parse edilemedi');
+            }
+        } else {
+            throw new Error('API yanıtı geçersiz');
+        }
+    } catch (error) {
+        console.error('AI Soru üretme hatası:', error);
+        alert('Soru üretilirken bir hata oluştu. Lütfen tekrar deneyin.');
+    }
+    
+    state.aiLoading = false;
+    render();
+}
+
+function selectAIAnswer(index) {
+    if (state.aiAnswered) return;
+    state.aiSelectedAnswer = index;
+    render();
+}
+
+function submitAIAnswer() {
+    if (state.aiSelectedAnswer === null) {
+        alert('Lütfen bir cevap seçin');
+        return;
+    }
+    
+    state.aiAnswered = true;
+    
+    const correct = state.aiQuestion.correctAnswer === state.aiSelectedAnswer;
+    if (correct) {
+        playCorrectSound();
+    } else {
+        playWrongSound();
+    }
+    
+    render();
+}
+
+function resetAIQuestion() {
+    state.aiQuestion = null;
+    state.aiAnswered = false;
+    state.aiSelectedAnswer = null;
+    render();
 }
 
 // ============================================
@@ -1982,6 +2132,179 @@ function renderTests() {
     `;
 }
 
+function renderAIQuestion() {
+    const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    const topics = [
+        { id: 'Vocabulary', name: 'Kelime & Deyimler', icon: '📖' },
+        { id: 'Grammar', name: 'Dilbilgisi & Zamanlar', icon: '📚' },
+        { id: 'Cloze', name: 'Boşluk Doldurma', icon: '📝' },
+        { id: 'Completion', name: 'Cümle Tamamlama', icon: '✍️' },
+        { id: 'Dialog', name: 'Diyalog Tamamlama', icon: '💬' },
+        { id: 'Paraphrase', name: 'Yakın Anlamlı Cümle', icon: '🔁' },
+        { id: 'Paragraph-Completion', name: 'Paragraf Tamamlama', icon: '📄' },
+        { id: 'Irrelevant', name: 'Anlam Bütünlüğünü Bozan Cümle', icon: '❌' }
+    ];
+    
+    return `
+        <div class="dashboard">
+            ${renderNavbar('ai-question')}
+            
+            <div class="dashboard-content">
+                <div class="welcome-section">
+                    <h1>🤖 AI Soru Üret</h1>
+                    <p>Yapay zeka ile istediğin zorlukta ve konuda soru üret</p>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(233, 30, 99, 0.05)); border: 2px solid #9C27B0;">
+                    <h2>⚙️ Soru Ayarları</h2>
+                    
+                    <div style="margin-top: 20px;">
+                        <label style="display: block; margin-bottom: 10px; color: var(--cyan-accent); font-weight: 600;">📊 Zorluk Seviyesi</label>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            ${levels.map(level => `
+                                <button 
+                                    onclick="state.aiSelectedLevel = '${level}'; render();"
+                                    style="padding: 12px 24px; border: 2px solid ${state.aiSelectedLevel === level ? '#9C27B0' : 'rgba(156, 39, 176, 0.3)'}; background: ${state.aiSelectedLevel === level ? 'rgba(156, 39, 176, 0.3)' : 'rgba(0, 26, 51, 0.5)'}; color: var(--text-light); border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+                                    ${level}
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px;">
+                        <label style="display: block; margin-bottom: 10px; color: var(--cyan-accent); font-weight: 600;">📚 Konu</label>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+                            ${topics.map(topic => `
+                                <button 
+                                    onclick="state.aiSelectedTopic = '${topic.id}'; render();"
+                                    style="padding: 12px 16px; border: 2px solid ${state.aiSelectedTopic === topic.id ? '#9C27B0' : 'rgba(156, 39, 176, 0.3)'}; background: ${state.aiSelectedTopic === topic.id ? 'rgba(156, 39, 176, 0.3)' : 'rgba(0, 26, 51, 0.5)'}; color: var(--text-light); border-radius: 8px; cursor: pointer; font-weight: 500; text-align: left; transition: all 0.3s;">
+                                    ${topic.icon} ${topic.name}
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 25px;">
+                        <label style="display: block; margin-bottom: 10px; color: var(--cyan-accent); font-weight: 600;">✏️ Kelime (Opsiyonel)</label>
+                        <input 
+                            type="text" 
+                            id="aiKeywordInput"
+                            placeholder="Soruda kullanılmasını istediğin kelime..."
+                            value="${state.aiKeyword}"
+                            onchange="state.aiKeyword = this.value;"
+                            style="width: 100%; max-width: 400px; padding: 12px 16px; background: rgba(0, 26, 51, 0.5); border: 1px solid rgba(156, 39, 176, 0.3); border-radius: 8px; color: var(--text-light); font-size: 16px;"
+                        />
+                        <p style="margin-top: 8px; font-size: 13px; color: var(--text-muted);">Bu kelime soruda veya şıklarda kullanılacak</p>
+                    </div>
+                    
+                    <button 
+                        onclick="generateAIQuestion()"
+                        ${state.aiLoading ? 'disabled' : ''}
+                        style="margin-top: 30px; padding: 16px 40px; background: linear-gradient(135deg, #9C27B0, #E91E63); color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: 600; cursor: pointer; transition: all 0.3s; ${state.aiLoading ? 'opacity: 0.6;' : ''}"
+                    >
+                        ${state.aiLoading ? '⏳ Soru Üretiliyor...' : '✨ Soru Üret'}
+                    </button>
+                </div>
+                
+                ${state.aiLoading ? `
+                    <div class="card" style="text-align: center; padding: 60px;">
+                        <div style="font-size: 60px; margin-bottom: 20px;">🤖</div>
+                        <h2>Soru Üretiliyor...</h2>
+                        <p style="color: var(--text-muted);">Yapay zeka sorunuzu hazırlıyor, lütfen bekleyin...</p>
+                        <div style="margin-top: 20px; width: 200px; height: 4px; background: rgba(156, 39, 176, 0.2); border-radius: 2px; margin-left: auto; margin-right: auto; overflow: hidden;">
+                            <div style="width: 50%; height: 100%; background: linear-gradient(90deg, #9C27B0, #E91E63); animation: loading 1s infinite;"></div>
+                        </div>
+                    </div>
+                    <style>
+                        @keyframes loading {
+                            0% { transform: translateX(-100%); }
+                            100% { transform: translateX(200%); }
+                        }
+                    </style>
+                ` : ''}
+                
+                ${state.aiQuestion && !state.aiLoading ? `
+                    <div class="card" style="margin-top: 30px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h2>📝 Üretilen Soru</h2>
+                            <div style="display: flex; gap: 10px;">
+                                <span style="padding: 5px 12px; background: rgba(156, 39, 176, 0.2); border-radius: 20px; font-size: 13px; color: #E91E63;">${state.aiQuestion.level}</span>
+                                <span style="padding: 5px 12px; background: rgba(0, 212, 255, 0.2); border-radius: 20px; font-size: 13px; color: var(--cyan-accent);">${topics.find(t => t.id === state.aiQuestion.topic)?.name || state.aiQuestion.topic}</span>
+                            </div>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(0, 26, 51, 0.3); border-radius: 8px; margin-bottom: 20px;">
+                            <p style="font-size: 18px; line-height: 1.6; color: var(--text-light);">${state.aiQuestion.question}</p>
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            ${state.aiQuestion.options.map((option, index) => {
+                                const isSelected = state.aiSelectedAnswer === index;
+                                const isCorrect = state.aiQuestion.correctAnswer === index;
+                                const showResult = state.aiAnswered;
+                                
+                                let bgColor = 'rgba(0, 26, 51, 0.5)';
+                                let borderColor = 'rgba(0, 212, 255, 0.3)';
+                                
+                                if (showResult) {
+                                    if (isCorrect) {
+                                        bgColor = 'rgba(0, 255, 136, 0.2)';
+                                        borderColor = '#00ff88';
+                                    } else if (isSelected && !isCorrect) {
+                                        bgColor = 'rgba(255, 0, 80, 0.2)';
+                                        borderColor = '#ff0050';
+                                    }
+                                } else if (isSelected) {
+                                    bgColor = 'rgba(156, 39, 176, 0.3)';
+                                    borderColor = '#9C27B0';
+                                }
+                                
+                                return `
+                                    <button 
+                                        onclick="selectAIAnswer(${index})"
+                                        ${state.aiAnswered ? 'disabled' : ''}
+                                        style="padding: 16px 20px; background: ${bgColor}; border: 2px solid ${borderColor}; border-radius: 8px; color: var(--text-light); font-size: 16px; text-align: left; cursor: ${state.aiAnswered ? 'default' : 'pointer'}; transition: all 0.3s; display: flex; align-items: center; gap: 15px;">
+                                        <span style="width: 32px; height: 32px; background: rgba(0, 212, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">${String.fromCharCode(65 + index)}</span>
+                                        <span>${option}</span>
+                                        ${showResult && isCorrect ? '<span style="margin-left: auto; color: #00ff88;">✓</span>' : ''}
+                                        ${showResult && isSelected && !isCorrect ? '<span style="margin-left: auto; color: #ff0050;">✗</span>' : ''}
+                                    </button>
+                                `;
+                            }).join('')}
+                        </div>
+                        
+                        ${!state.aiAnswered ? `
+                            <button 
+                                onclick="submitAIAnswer()"
+                                style="margin-top: 25px; padding: 14px 30px; background: linear-gradient(135deg, #2196F3, #00BCD4); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer;">
+                                Cevabı Kontrol Et
+                            </button>
+                        ` : `
+                            <div style="margin-top: 25px; padding: 20px; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 8px;">
+                                <h3 style="color: var(--cyan-accent); margin-bottom: 10px;">💡 Açıklama</h3>
+                                <p style="color: var(--text-light); line-height: 1.6;">${state.aiQuestion.explanation}</p>
+                            </div>
+                            
+                            <div style="display: flex; gap: 15px; margin-top: 20px;">
+                                <button 
+                                    onclick="generateAIQuestion()"
+                                    style="flex: 1; padding: 14px 20px; background: linear-gradient(135deg, #9C27B0, #E91E63); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer;">
+                                    ✨ Yeni Soru Üret
+                                </button>
+                                <button 
+                                    onclick="resetAIQuestion()"
+                                    style="padding: 14px 20px; background: rgba(0, 26, 51, 0.5); color: var(--text-light); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 8px; font-size: 16px; cursor: pointer;">
+                                    🔄 Sıfırla
+                                </button>
+                            </div>
+                        `}
+                    </div>
+                ` : ''}
+            </div>
+        </div>
+    `;
+}
+
 function renderMockExams() {
     // Deneme sınavlarının tamamlanma durumunu kontrol et
     const isMockExamCompleted = (examNumber) => {
@@ -2577,6 +2900,7 @@ function renderNavbar(activePage) {
                 <li><a href="#" class="${activePage === 'stats' ? 'active' : ''}" onclick="changePage(event, 'stats'); closeMobileMenu()">📊 İstatistikler</a></li>
                 <li><a href="#" class="${activePage === 'tests' ? 'active' : ''}" onclick="changePage(event, 'tests'); closeMobileMenu()">📝 Testler</a></li>
                 <li><a href="#" class="${activePage === 'mock-exams' ? 'active' : ''}" onclick="changePage(event, 'mock-exams'); closeMobileMenu()">🎯 Denemeler</a></li>
+                <li><a href="#" class="${activePage === 'ai-question' ? 'active' : ''}" onclick="changePage(event, 'ai-question'); closeMobileMenu()">🤖 AI Soru</a></li>
                 <li><a href="#" class="${activePage === 'profile' ? 'active' : ''}" onclick="changePage(event, 'profile'); closeMobileMenu()">👤 Profil</a></li>
                 <li class="mobile-only-nav"><a href="#" onclick="logout(); closeMobileMenu()" style="color: #EF5350;">🚪 Çıkış Yap</a></li>
             </ul>
@@ -2609,6 +2933,9 @@ function render() {
             break;
         case 'mock-exams':
             content = renderMockExams();
+            break;
+        case 'ai-question':
+            content = renderAIQuestion();
             break;
         case 'personalized-tests':
             content = renderPersonalizedTests();
