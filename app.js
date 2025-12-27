@@ -1531,7 +1531,7 @@ function renderStats() {
                     </div>
                 </div>
                 
-                <div class="card" style="background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
+                <div class="card" style="margin-top: 60px; background: linear-gradient(135deg, #4CAF5015 0%, #8BC34A15 100%); border: 2px solid #4CAF50;">
                     <h2>📊 Genel Başarı Grafiği</h2>
                     <div style="margin: 30px 0;">
                         <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
@@ -1602,7 +1602,7 @@ function renderStats() {
                     const maxQuestions = Math.max(...Object.values(dailyQuestions), 1);
                     
                     return `
-                        <div class="card" style="background: linear-gradient(135deg, #2196F315 0%, #00BCD415 100%); border: 2px solid #2196F3;">
+                        <div class="card" style="margin-top: 60px; background: linear-gradient(135deg, #2196F315 0%, #00BCD415 100%); border: 2px solid #2196F3;">
                             <h2>📅 Son 7 Gün Soru Çözüm Grafiği</h2>
                             <div style="margin-top: 30px;">
                                 <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 200px; gap: 8px; padding: 0 10px;">
@@ -1663,7 +1663,7 @@ function renderStats() {
                     const solvedTopics = topics.filter(topic => topicStats[topic.id]);
                     
                     return `
-                        <div class="card">
+                        <div class="card" style="margin-top: 60px;">
                             <h2>🎯 Konuya Göre Başarı Grafikleri</h2>
                             ${solvedTopics.length > 0 ? `
                             <div style="display: grid; gap: 20px; margin-top: 20px;">
