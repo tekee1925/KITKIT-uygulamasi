@@ -45,13 +45,6 @@
 
         console.log('Firebase initialized successfully');
 
-        // Gemini config'i yükle
-        const geminiScript = document.createElement('script');
-        geminiScript.src = 'gemini-config.js';
-        geminiScript.onload = () => console.log('Gemini config loaded');
-        geminiScript.onerror = () => console.log('Gemini config not found - AI features disabled');
-        document.head.appendChild(geminiScript);
-
         // Firebase hazır olduğunda app.js'i yükle
         const script = document.createElement('script');
         script.src = 'app.js';
