@@ -1726,14 +1726,14 @@ function renderStats() {
 function renderTests() {
     const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     const topics = [
-        { id: 'Vocabulary', name: 'Vocabulary & Phrasal Verbs', icon: '📖' },
-        { id: 'Grammar', name: 'Grammar & Tenses', icon: '📚' },
-        { id: 'Cloze', name: 'Cloze Test', icon: '📝' },
-        { id: 'Completion', name: 'Sentence Completion', icon: '✍️' },
-        { id: 'Dialog', name: 'Dialogue Completion', icon: '💬' },
-        { id: 'Paraphrase', name: 'Paraphrasing', icon: '🔁' },
-        { id: 'Paragraph-Completion', name: 'Paragraph Completion', icon: '📄' },
-        { id: 'Irrelevant', name: 'Finding Irrelevant Sentence', icon: '❌' }
+        { id: 'Vocabulary', name: 'Kelime & Deyimler', icon: '📖' },
+        { id: 'Grammar', name: 'Dilbilgisi & Zamanlar', icon: '📚' },
+        { id: 'Cloze', name: 'Boşluk Doldurma', icon: '📝' },
+        { id: 'Completion', name: 'Cümle Tamamlama', icon: '✍️' },
+        { id: 'Dialog', name: 'Diyalog Tamamlama', icon: '💬' },
+        { id: 'Paraphrase', name: 'Yakın Anlamlı Cümle', icon: '🔁' },
+        { id: 'Paragraph-Completion', name: 'Paragraf Tamamlama', icon: '📄' },
+        { id: 'Irrelevant', name: 'Anlam Bütünlüğünü Bozan Cümle', icon: '❌' }
     ];
     
     // Tamamlanan testleri kontrol et
