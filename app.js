@@ -1363,7 +1363,6 @@ function renderHome() {
             <div class="dashboard-content">
                 <div class="welcome-section">
                     <h1>Hoş geldin, ${state.user.name}! 👋</h1>
-                    <p>Bugün hangi konuya odaklanmak istersin?</p>
                 </div>
                 
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 30px;">
