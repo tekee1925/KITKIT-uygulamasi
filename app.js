@@ -1530,6 +1530,215 @@ function renderLogin() {
                 </div>
             </div>
         </div>
+        
+        <!-- Gizlilik Politikası Modal -->
+        <div id="privacy-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content kvkk-modal">
+                <div class="modal-header">
+                    <h2>🔒 Gizlilik Politikası</h2>
+                    <button onclick="closePrivacyModal()" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3>1. Giriş</h3>
+                    <p>KİTKİT İngilizce Öğrenme Platformu olarak, kullanıcılarımızın gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, platformumuzu kullanırken kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+                    
+                    <h3>2. Toplanan Bilgiler</h3>
+                    <p><strong>Doğrudan sağladığınız bilgiler:</strong></p>
+                    <ul>
+                        <li>Hesap oluşturma sırasında: Ad, soyad, kullanıcı adı, e-posta adresi</li>
+                        <li>Profil bilgileri: Profil fotoğrafı, biyografi</li>
+                        <li>İletişim: Destek talepleriniz ve geri bildirimleriniz</li>
+                    </ul>
+                    
+                    <p><strong>Otomatik olarak toplanan bilgiler:</strong></p>
+                    <ul>
+                        <li>Kullanım verileri: Test sonuçları, çalışma süreleri, ilerleme verileri</li>
+                        <li>Cihaz bilgileri: IP adresi, tarayıcı türü, işletim sistemi, cihaz türü</li>
+                        <li>Çerezler: Oturum yönetimi ve tercihlerinizi hatırlamak için</li>
+                    </ul>
+                    
+                    <h3>3. Bilgilerin Kullanımı</h3>
+                    <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanıyoruz:</p>
+                    <ul>
+                        <li>Hesabınızı oluşturmak ve yönetmek</li>
+                        <li>Kişiselleştirilmiş öğrenme deneyimi sunmak</li>
+                        <li>İlerlemenizi takip etmek ve analiz raporları oluşturmak</li>
+                        <li>Teknik destek sağlamak</li>
+                        <li>Platformu geliştirmek ve iyileştirmek</li>
+                        <li>Güvenliği sağlamak ve dolandırıcılığı önlemek</li>
+                        <li>Yasal yükümlülüklerimizi yerine getirmek</li>
+                    </ul>
+                    
+                    <h3>4. Bilgi Paylaşımı</h3>
+                    <p>Kişisel bilgilerinizi üçüncü taraflarla satmıyoruz. Bilgileriniz yalnızca aşağıdaki durumlarda paylaşılabilir:</p>
+                    <ul>
+                        <li><strong>Hizmet sağlayıcılar:</strong> Firebase (kimlik doğrulama ve veritabanı), Google Analytics (kullanım analizi)</li>
+                        <li><strong>Yasal zorunluluklar:</strong> Mahkeme kararı veya yasal süreç gerektirdiğinde</li>
+                        <li><strong>Güvenlik:</strong> Platformun ve kullanıcıların güvenliğini korumak için gerektiğinde</li>
+                    </ul>
+                    
+                    <h3>5. Veri Güvenliği</h3>
+                    <p>Verilerinizi korumak için aşağıdaki önlemleri alıyoruz:</p>
+                    <ul>
+                        <li>SSL/TLS şifreleme ile güvenli veri iletimi</li>
+                        <li>Şifreli veritabanı depolama</li>
+                        <li>Düzenli güvenlik denetimleri</li>
+                        <li>Erişim kontrolü ve yetkilendirme</li>
+                        <li>Güvenlik duvarı koruması</li>
+                    </ul>
+                    
+                    <h3>6. Çerezler</h3>
+                    <p>Platformumuz aşağıdaki amaçlarla çerez kullanmaktadır:</p>
+                    <ul>
+                        <li><strong>Zorunlu çerezler:</strong> Oturum yönetimi ve güvenlik</li>
+                        <li><strong>İşlevsel çerezler:</strong> Tercihlerinizi hatırlamak</li>
+                        <li><strong>Analitik çerezler:</strong> Platform kullanımını analiz etmek</li>
+                    </ul>
+                    <p>Tarayıcı ayarlarınızdan çerezleri devre dışı bırakabilirsiniz, ancak bu bazı özelliklerin çalışmamasına neden olabilir.</p>
+                    
+                    <h3>7. Veri Saklama</h3>
+                    <p>Kişisel verileriniz, hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde, verileriniz yasal saklama süreleri dışında 30 gün içinde kalıcı olarak silinir.</p>
+                    
+                    <h3>8. Çocukların Gizliliği</h3>
+                    <p>Platformumuz 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki kullanıcılardan bilerek kişisel bilgi toplamıyoruz.</p>
+                    
+                    <h3>9. Haklarınız</h3>
+                    <p>Kişisel verilerinizle ilgili aşağıdaki haklara sahipsiniz:</p>
+                    <ul>
+                        <li>Verilerinize erişim talep etme</li>
+                        <li>Verilerinizin düzeltilmesini isteme</li>
+                        <li>Verilerinizin silinmesini talep etme</li>
+                        <li>Veri işlemeye itiraz etme</li>
+                        <li>Verilerinizin taşınabilirliğini talep etme</li>
+                    </ul>
+                    
+                    <h3>10. Politika Değişiklikleri</h3>
+                    <p>Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda sizi e-posta veya platform içi bildirim ile bilgilendireceğiz.</p>
+                    
+                    <h3>11. İletişim</h3>
+                    <p>Gizlilik ile ilgili sorularınız için <strong>privacy@kitkit.app</strong> adresinden bize ulaşabilirsiniz.</p>
+                    
+                    <p style="margin-top: 20px; font-style: italic;">Son güncelleme: 30 Aralık 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closePrivacyModal()" class="btn-primary">Anladım</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kullanım Koşulları Modal -->
+        <div id="terms-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content kvkk-modal">
+                <div class="modal-header">
+                    <h2>📜 Kullanım Koşulları</h2>
+                    <button onclick="closeTermsModal()" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3>1. Kabul</h3>
+                    <p>KİTKİT platformunu kullanarak, bu Kullanım Koşulları'nı kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız, platformu kullanmayınız.</p>
+                    
+                    <h3>2. Hizmet Tanımı</h3>
+                    <p>KİTKİT, İngilizce dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS vb.) hazırlık amacıyla tasarlanmış çevrimiçi bir eğitim platformudur. Platform şunları içerir:</p>
+                    <ul>
+                        <li>Seviye bazlı alıştırma testleri (A1-C2)</li>
+                        <li>Gramer, kelime, okuma anlama soruları</li>
+                        <li>Deneme sınavları</li>
+                        <li>İlerleme takibi ve istatistikler</li>
+                        <li>Kişiselleştirilmiş çalışma önerileri</li>
+                    </ul>
+                    
+                    <h3>3. Hesap Oluşturma</h3>
+                    <p>Platformu kullanmak için bir hesap oluşturmanız gerekmektedir. Hesap oluştururken:</p>
+                    <ul>
+                        <li>Doğru ve güncel bilgiler vermelisiniz</li>
+                        <li>Hesap bilgilerinizi gizli tutmalısınız</li>
+                        <li>Hesabınızdaki tüm etkinliklerden sorumlusunuz</li>
+                        <li>Hesabınızın yetkisiz kullanımını derhal bildirmelisiniz</li>
+                    </ul>
+                    
+                    <h3>4. Kullanım Kuralları</h3>
+                    <p>Platformu kullanırken aşağıdaki kuralara uymalısınız:</p>
+                    <ul>
+                        <li>Yasalara ve bu koşullara uygun davranmak</li>
+                        <li>Başkalarının haklarına saygı göstermek</li>
+                        <li>Platformu kötüye kullanmamak (spam, hack girişimi vb.)</li>
+                        <li>İçerikleri izinsiz kopyalamamak veya dağıtmamak</li>
+                        <li>Diğer kullanıcıları rahatsız etmemek</li>
+                        <li>Yanlış veya yanıltıcı bilgi paylaşmamak</li>
+                    </ul>
+                    
+                    <h3>5. Fikri Mülkiyet</h3>
+                    <p>Platformdaki tüm içerikler (sorular, metinler, tasarım, logo, yazılım) KİTKİT'e aittir ve telif hakkı ile korunmaktadır:</p>
+                    <ul>
+                        <li>İçerikleri kopyalayamaz, çoğaltamaz veya dağıtamazsınız</li>
+                        <li>Ticari amaçla kullanamazsınız</li>
+                        <li>Tersine mühendislik yapamazsınız</li>
+                        <li>Yalnızca kişisel öğrenme amacıyla kullanabilirsiniz</li>
+                    </ul>
+                    
+                    <h3>6. Ücretlendirme ve Abonelik</h3>
+                    <p><strong>Ücretsiz Plan:</strong> Sınırlı özelliklerle ücretsiz kullanım.</p>
+                    <p><strong>Premium Planlar:</strong></p>
+                    <ul>
+                        <li>Aylık, yıllık veya ömür boyu abonelik seçenekleri mevcuttur</li>
+                        <li>Fiyatlar vergiler dahildir</li>
+                        <li>Abonelikler otomatik olarak yenilenir (iptal edilmediği sürece)</li>
+                        <li>İptal, mevcut dönemin sonunda geçerli olur</li>
+                        <li>Kısmi dönem iadesi yapılmaz</li>
+                    </ul>
+                    
+                    <h3>7. İade Politikası</h3>
+                    <ul>
+                        <li>İlk 7 gün içinde tam iade talep edilebilir</li>
+                        <li>İade talepleri <strong>destek@kitkit.app</strong> adresine yapılmalıdır</li>
+                        <li>İade işlemi 5-10 iş günü içinde gerçekleştirilir</li>
+                        <li>Ömür boyu aboneliklerde 14 gün iade süresi geçerlidir</li>
+                    </ul>
+                    
+                    <h3>8. Hizmet Değişiklikleri</h3>
+                    <p>KİTKİT, herhangi bir zamanda:</p>
+                    <ul>
+                        <li>Hizmetleri değiştirme veya güncelleme</li>
+                        <li>Yeni özellikler ekleme veya kaldırma</li>
+                        <li>Fiyatları değiştirme (mevcut abonelikleri etkilemez)</li>
+                        <li>Hizmeti geçici veya kalıcı olarak durdurma</li>
+                    </ul>
+                    <p>hakkını saklı tutar. Önemli değişiklikler önceden bildirilir.</p>
+                    
+                    <h3>9. Sorumluluk Sınırlaması</h3>
+                    <ul>
+                        <li>Platform "olduğu gibi" sunulmaktadır</li>
+                        <li>Sınav başarısı garanti edilmemektedir</li>
+                        <li>Teknik aksaklıklardan kaynaklanan zararlardan sorumlu değiliz</li>
+                        <li>Maksimum sorumluluk, ödenen abonelik ücreti ile sınırlıdır</li>
+                    </ul>
+                    
+                    <h3>10. Hesap Askıya Alma ve Fesih</h3>
+                    <p>KİTKİT, aşağıdaki durumlarda hesabınızı askıya alabilir veya feshedebilir:</p>
+                    <ul>
+                        <li>Kullanım koşullarının ihlali</li>
+                        <li>Yasadışı faaliyetler</li>
+                        <li>Diğer kullanıcılara zarar verme</li>
+                        <li>Ödeme yapılmaması</li>
+                    </ul>
+                    
+                    <h3>11. Uyuşmazlık Çözümü</h3>
+                    <p>Bu koşullardan doğan uyuşmazlıklarda Türkiye Cumhuriyeti kanunları geçerlidir. Uyuşmazlıkların çözümünde İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+                    
+                    <h3>12. İletişim</h3>
+                    <p>Sorularınız için:</p>
+                    <ul>
+                        <li>E-posta: <strong>destek@kitkit.app</strong></li>
+                        <li>Web: <strong>www.kitkit.app/iletisim</strong></li>
+                    </ul>
+                    
+                    <p style="margin-top: 20px; font-style: italic;">Son güncelleme: 30 Aralık 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeTermsModal()" class="btn-primary">Anladım</button>
+                </div>
+            </div>
+        </div>
     `;
 }
 
@@ -1543,11 +1752,19 @@ function closeKvkkModal() {
 }
 
 function showPrivacyModal() {
-    alert('Gizlilik Politikası sayfası yakında eklenecektir.');
+    document.getElementById('privacy-modal').style.display = 'flex';
+}
+
+function closePrivacyModal() {
+    document.getElementById('privacy-modal').style.display = 'none';
 }
 
 function showTermsModal() {
-    alert('Kullanım Koşulları sayfası yakında eklenecektir.');
+    document.getElementById('terms-modal').style.display = 'flex';
+}
+
+function closeTermsModal() {
+    document.getElementById('terms-modal').style.display = 'none';
 }
 
 function renderHome() {
