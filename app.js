@@ -446,10 +446,17 @@ async function handleRegisterSubmit() {
     const fullname = document.getElementById('reg-fullname').value.trim();
     const password = document.getElementById('reg-password').value;
     const confirmPassword = document.getElementById('reg-confirm-password').value;
+    const kvkkConsent = document.getElementById('kvkk-consent')?.checked;
     
     // Validasyon
     if (!username || !fullname || !password || !confirmPassword) {
         alert('Lütfen tüm alanları doldurun');
+        return;
+    }
+    
+    // KVKK onay kontrolü
+    if (!kvkkConsent) {
+        alert('Kayıt olabilmek için KVKK Aydınlatma Metni\'ni okuyup onaylamanız gerekmektedir.');
         return;
     }
     
@@ -1313,6 +1320,18 @@ function renderLogin() {
                         <input type="text" id="reg-fullname" placeholder="Ad Soyad">
                         <input type="password" id="reg-password" placeholder="Şifre" minlength="6">
                         <input type="password" id="reg-confirm-password" placeholder="Şifre Tekrar">
+                        
+                        <!-- KVKK Onay -->
+                        <div class="kvkk-container">
+                            <label class="kvkk-checkbox">
+                                <input type="checkbox" id="kvkk-consent">
+                                <span class="checkmark"></span>
+                                <span class="kvkk-text">
+                                    <a href="#" onclick="showKvkkModal(); return false;" class="kvkk-link">KVKK Aydınlatma Metni</a>'ni okudum ve kişisel verilerimin işlenmesini kabul ediyorum.
+                                </span>
+                            </label>
+                        </div>
+                        
                         <button onclick="handleRegisterSubmit()" class="btn-primary">Kayıt Ol</button>
                         <p style="text-align: center; margin-top: 20px;">
                             Hesabın var mı? 
@@ -1333,7 +1352,202 @@ function renderLogin() {
                 `}
             </div>
         </div>
+        
+        <!-- Fiyatlandırma Bölümü -->
+        <div class="pricing-section">
+            <div class="pricing-header">
+                <h2>💎 Premium Planlar</h2>
+                <p>İngilizce öğrenme yolculuğunuzda size en uygun planı seçin</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <!-- Ücretsiz Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>🆓 Ücretsiz</h3>
+                        <div class="pricing-price">
+                            <span class="price">₺0</span>
+                            <span class="period">/ sonsuza dek</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Günlük 10 soru çözme hakkı</li>
+                        <li>✅ Temel seviye testler (A1-A2)</li>
+                        <li>✅ İlerleme takibi</li>
+                        <li>❌ Sınırsız soru erişimi</li>
+                        <li>❌ Tüm seviyeler (B1-C2)</li>
+                        <li>❌ Deneme sınavları</li>
+                        <li>❌ Reklamsız deneyim</li>
+                        <li>❌ Öncelikli destek</li>
+                    </ul>
+                    <button class="pricing-btn pricing-btn-free">Mevcut Plan</button>
+                </div>
+                
+                <!-- Aylık Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>📅 Aylık</h3>
+                        <div class="pricing-price">
+                            <span class="price">₺149</span>
+                            <span class="period">/ ay</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Sınırsız soru çözme</li>
+                        <li>✅ Tüm seviyeler (A1-C2)</li>
+                        <li>✅ Deneme sınavları</li>
+                        <li>✅ Detaylı analiz raporları</li>
+                        <li>✅ Reklamsız deneyim</li>
+                        <li>✅ Yanlış sorular bankası</li>
+                        <li>❌ Canlı destek</li>
+                        <li>❌ 1'e 1 mentorluk</li>
+                    </ul>
+                    <button class="pricing-btn pricing-btn-monthly" onclick="alert('Ödeme sistemi yakında aktif olacak!')">Başla</button>
+                </div>
+                
+                <!-- Yıllık Plan (Popüler) -->
+                <div class="pricing-card pricing-card-popular">
+                    <div class="popular-badge">🔥 En Popüler</div>
+                    <div class="pricing-card-header">
+                        <h3>🌟 Yıllık</h3>
+                        <div class="pricing-price">
+                            <span class="price">₺999</span>
+                            <span class="period">/ yıl</span>
+                        </div>
+                        <div class="pricing-savings">%44 Tasarruf!</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Sınırsız soru çözme</li>
+                        <li>✅ Tüm seviyeler (A1-C2)</li>
+                        <li>✅ Sınırsız deneme sınavı</li>
+                        <li>✅ Detaylı analiz raporları</li>
+                        <li>✅ Reklamsız deneyim</li>
+                        <li>✅ Yanlış sorular bankası</li>
+                        <li>✅ Öncelikli destek</li>
+                        <li>✅ Özel çalışma planı</li>
+                    </ul>
+                    <button class="pricing-btn pricing-btn-yearly" onclick="alert('Ödeme sistemi yakında aktif olacak!')">En İyi Fırsat</button>
+                </div>
+                
+                <!-- Ömür Boyu Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>♾️ Ömür Boyu</h3>
+                        <div class="pricing-price">
+                            <span class="price">₺2499</span>
+                            <span class="period">/ tek seferlik</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Tüm premium özellikler</li>
+                        <li>✅ Ömür boyu erişim</li>
+                        <li>✅ Gelecek güncellemeler dahil</li>
+                        <li>✅ VIP destek</li>
+                        <li>✅ Beta özelliklere erken erişim</li>
+                        <li>✅ 1'e 1 mentorluk (3 seans)</li>
+                        <li>✅ Sertifika programı</li>
+                        <li>✅ Özel Discord kanalı</li>
+                    </ul>
+                    <button class="pricing-btn pricing-btn-lifetime" onclick="alert('Ödeme sistemi yakında aktif olacak!')">Satın Al</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- KVKK Footer -->
+        <div class="kvkk-footer">
+            <p>© 2025 KİTKİT - Tüm hakları saklıdır.</p>
+            <p class="kvkk-footer-links">
+                <a href="#" onclick="showKvkkModal(); return false;">KVKK Aydınlatma Metni</a> | 
+                <a href="#" onclick="showPrivacyModal(); return false;">Gizlilik Politikası</a> | 
+                <a href="#" onclick="showTermsModal(); return false;">Kullanım Koşulları</a>
+            </p>
+        </div>
+        
+        <!-- KVKK Modal -->
+        <div id="kvkk-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content kvkk-modal">
+                <div class="modal-header">
+                    <h2>📋 KVKK Aydınlatma Metni</h2>
+                    <button onclick="closeKvkkModal()" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3>1. Veri Sorumlusu</h3>
+                    <p>KİTKİT İngilizce Öğrenme Platformu olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla kişisel verilerinizi işlemekteyiz.</p>
+                    
+                    <h3>2. İşlenen Kişisel Veriler</h3>
+                    <p>Platformumuz aracılığıyla aşağıdaki kişisel verileriniz işlenmektedir:</p>
+                    <ul>
+                        <li><strong>Kimlik Bilgileri:</strong> Ad, soyad, kullanıcı adı</li>
+                        <li><strong>İletişim Bilgileri:</strong> E-posta adresi</li>
+                        <li><strong>Kullanım Verileri:</strong> Test sonuçları, ilerleme verileri, çalışma süreleri</li>
+                        <li><strong>Cihaz Bilgileri:</strong> IP adresi, tarayıcı türü, işletim sistemi</li>
+                    </ul>
+                    
+                    <h3>3. Kişisel Verilerin İşlenme Amaçları</h3>
+                    <p>Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:</p>
+                    <ul>
+                        <li>Üyelik kaydının oluşturulması ve yönetimi</li>
+                        <li>Eğitim hizmetlerinin sunulması</li>
+                        <li>Kişiselleştirilmiş öğrenme deneyimi sağlanması</li>
+                        <li>İlerleme ve performans analizlerinin yapılması</li>
+                        <li>Müşteri desteği sağlanması</li>
+                        <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+                    </ul>
+                    
+                    <h3>4. Kişisel Verilerin Aktarılması</h3>
+                    <p>Kişisel verileriniz, yasal zorunluluklar ve hizmet gereksinimleri çerçevesinde;</p>
+                    <ul>
+                        <li>Yasal mercilere (mahkemeler, savcılıklar vb.)</li>
+                        <li>Altyapı hizmeti sağlayıcılarına (Firebase, Google Cloud)</li>
+                        <li>Ödeme sistemleri sağlayıcılarına</li>
+                    </ul>
+                    <p>aktarılabilmektedir.</p>
+                    
+                    <h3>5. Veri Güvenliği</h3>
+                    <p>Kişisel verilerinizin güvenliği için gerekli teknik ve idari tedbirler alınmaktadır. Verileriniz şifreli olarak saklanmakta ve yetkisiz erişime karşı korunmaktadır.</p>
+                    
+                    <h3>6. Haklarınız</h3>
+                    <p>KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:</p>
+                    <ul>
+                        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+                        <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+                        <li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+                        <li>Yurt içinde/dışında aktarıldığı üçüncü kişileri bilme</li>
+                        <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+                        <li>KVKK'nın 7. maddesindeki şartlar çerçevesinde silinmesini/yok edilmesini isteme</li>
+                        <li>Yapılan işlemlerin aktarılan üçüncü kişilere bildirilmesini isteme</li>
+                        <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+                        <li>Kanuna aykırı işleme sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+                    </ul>
+                    
+                    <h3>7. İletişim</h3>
+                    <p>KVKK kapsamındaki haklarınızı kullanmak için <strong>kvkk@kitkit.app</strong> adresine başvurabilirsiniz.</p>
+                    
+                    <p style="margin-top: 20px; font-style: italic;">Son güncelleme: 30 Aralık 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeKvkkModal()" class="btn-primary">Anladım</button>
+                </div>
+            </div>
+        </div>
     `;
+}
+
+// KVKK Modal Functions
+function showKvkkModal() {
+    document.getElementById('kvkk-modal').style.display = 'flex';
+}
+
+function closeKvkkModal() {
+    document.getElementById('kvkk-modal').style.display = 'none';
+}
+
+function showPrivacyModal() {
+    alert('Gizlilik Politikası sayfası yakında eklenecektir.');
+}
+
+function showTermsModal() {
+    alert('Kullanım Koşulları sayfası yakında eklenecektir.');
 }
 
 function renderHome() {

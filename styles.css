@@ -1313,3 +1313,436 @@ body::before {
     33% { transform: translate(2px, -2px); }
     66% { transform: translate(-2px, 2px); }
 }
+
+/* ============================================
+   KVKK CHECKBOX STYLES
+   ============================================ */
+
+.kvkk-container {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 26, 51, 0.5);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 4px;
+}
+
+.kvkk-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.kvkk-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.kvkk-checkbox .checkmark {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border: 2px solid rgba(0, 212, 255, 0.5);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    background: rgba(0, 26, 51, 0.5);
+}
+
+.kvkk-checkbox input[type="checkbox"]:checked + .checkmark {
+    background: var(--neon-blue);
+    border-color: var(--neon-blue);
+}
+
+.kvkk-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    color: var(--deep-blue);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.kvkk-text {
+    color: var(--text-muted);
+}
+
+.kvkk-link {
+    color: var(--neon-blue);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.kvkk-link:hover {
+    color: var(--cyan-glow);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* ============================================
+   PRICING SECTION
+   ============================================ */
+
+.pricing-section {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+    font-size: 36px;
+    background: linear-gradient(135deg, var(--neon-blue), var(--primary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+}
+
+.pricing-header p {
+    color: var(--text-muted);
+    font-size: 18px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.pricing-card {
+    background: rgba(13, 20, 32, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 10px 40px rgba(0, 212, 255, 0.2);
+}
+
+.pricing-card-popular {
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.pricing-card-popular:hover {
+    transform: scale(1.08) translateY(-5px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--neon-blue), var(--primary-blue));
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.pricing-card-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pricing-card-header h3 {
+    font-size: 24px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pricing-price .price {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--neon-blue);
+}
+
+.pricing-price .period {
+    font-size: 16px;
+    color: var(--text-muted);
+}
+
+.pricing-savings {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    color: var(--text-light);
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing-btn-free {
+    background: rgba(136, 153, 187, 0.2);
+    color: var(--text-muted);
+    border: 1px solid rgba(136, 153, 187, 0.3);
+    cursor: default;
+}
+
+.pricing-btn-monthly {
+    background: linear-gradient(135deg, var(--primary-blue), var(--electric-blue));
+    color: white;
+    border: 1px solid var(--neon-blue);
+}
+
+.pricing-btn-monthly:hover {
+    box-shadow: 0 5px 20px rgba(0, 100, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.pricing-btn-yearly {
+    background: linear-gradient(135deg, var(--neon-blue), var(--cyan-glow));
+    color: var(--deep-blue);
+    font-weight: 800;
+}
+
+.pricing-btn-yearly:hover {
+    box-shadow: 0 5px 25px rgba(0, 212, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.pricing-btn-lifetime {
+    background: linear-gradient(135deg, var(--purple-accent), var(--pink-accent));
+    color: white;
+}
+
+.pricing-btn-lifetime:hover {
+    box-shadow: 0 5px 25px rgba(102, 0, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   KVKK FOOTER
+   ============================================ */
+
+.kvkk-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 10, 20, 0.9);
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.kvkk-footer p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.kvkk-footer-links {
+    margin-top: 15px;
+}
+
+.kvkk-footer-links a {
+    color: var(--neon-blue);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.kvkk-footer-links a:hover {
+    color: var(--cyan-glow);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* ============================================
+   KVKK MODAL
+   ============================================ */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 10, 20, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.2);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.modal-header h2 {
+    color: var(--neon-blue);
+    font-size: 22px;
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--pink-accent);
+}
+
+.modal-body {
+    padding: 25px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.modal-body h3 {
+    color: var(--neon-blue);
+    font-size: 18px;
+    margin: 25px 0 15px 0;
+}
+
+.modal-body h3:first-child {
+    margin-top: 0;
+}
+
+.modal-body p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.modal-body ul {
+    color: var(--text-light);
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.modal-body ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    padding: 20px 25px;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    text-align: center;
+}
+
+.modal-footer .btn-primary {
+    max-width: 200px;
+}
+
+/* ============================================
+   RESPONSIVE PRICING
+   ============================================ */
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 40px 15px;
+    }
+    
+    .pricing-header h2 {
+        font-size: 28px;
+    }
+    
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card {
+        max-width: 100%;
+    }
+    
+    .pricing-card-popular {
+        transform: scale(1);
+    }
+    
+    .pricing-card-popular:hover {
+        transform: translateY(-5px);
+    }
+    
+    .modal-content {
+        max-height: 95vh;
+    }
+    
+    .modal-header h2 {
+        font-size: 18px;
+    }
+    
+    .modal-body {
+        padding: 20px 15px;
+    }
+}
