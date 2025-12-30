@@ -1457,9 +1457,7 @@ function renderLogin() {
         <div class="kvkk-footer">
             <p>© 2025 KİTKİT - Tüm hakları saklıdır.</p>
             <p class="kvkk-footer-links">
-                <a href="#" onclick="showKvkkModal(); return false;">KVKK Aydınlatma Metni</a> | 
-                <a href="#" onclick="showPrivacyModal(); return false;">Gizlilik Politikası</a> | 
-                <a href="#" onclick="showTermsModal(); return false;">Kullanım Koşulları</a>
+                <a href="#" onclick="showKvkkModal(); return false;">KVKK Aydınlatma Metni</a>
             </p>
         </div>
         
