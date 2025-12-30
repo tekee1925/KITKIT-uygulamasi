@@ -1371,7 +1371,7 @@ function renderLogin() {
                         </div>
                     </div>
                     <ul class="pricing-features">
-                        <li>✅ Günlük 10 soru çözme hakkı</li>
+                        <li>✅ Günlük 50 soru çözme hakkı</li>
                         <li>✅ Temel seviye testler (A1-A2)</li>
                         <li>✅ İlerleme takibi</li>
                         <li>❌ Sınırsız soru erişimi</li>
