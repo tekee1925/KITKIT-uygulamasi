@@ -2462,7 +2462,6 @@ function renderMockExams() {
                     <h2>💡 İpuçları</h2>
                     <ul style="color: #666; line-height: 2;">
                         <li>✅ Deneme sınavlarını gerçek sınav gibi düşünün</li>
-                        <li>⏱️ Süre yönetimini pratik edin (soru başına ~1 dakika)</li>
                         <li>📊 Her denemeden sonra sonuçlarınızı inceleyin</li>
                         <li>🎯 Zayıf olduğunuz konulara odaklanın</li>
                         <li>🔄 Aynı denemeyi tekrar çözerek ilerlemenizi ölçün</li>
@@ -2986,10 +2985,6 @@ function renderProfile() {
                                 Ses efektleri doğru/yanlış cevaplarda çalar. Arka plan müziği uygulama genelinde çalar.
                             </p>
                         </div>
-                        
-                        <button onclick="confirmDeleteAccount()" class="btn-secondary" style="width: 100%; margin-top: 20px; background: rgba(255, 0, 80, 0.2); color: var(--pink-accent); border: 1px solid var(--pink-accent);">
-                            🗑️ Hesabı Sil
-                        </button>
                     </div>
                 </div>
             </div>
